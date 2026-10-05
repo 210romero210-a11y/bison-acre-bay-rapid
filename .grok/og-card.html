@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="./og-fonts/fonts.css" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 1200px; height: 630px; overflow: hidden; background: #0B1214; }
+    .stage {
+      width: 1200px;
+      height: 630px;
+      position: relative;
+      background:
+        radial-gradient(ellipse 70% 55% at 50% 62%, rgba(0, 174, 152, 0.16) 0%, rgba(20, 32, 34, 0.0) 55%),
+        radial-gradient(ellipse 90% 80% at 50% 40%, #142022 0%, #0B1214 70%);
+      color: #F5FAFA;
+      font-family: Oswald, "Liberation Sans Narrow", sans-serif;
+    }
+    .vignette {
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at center, transparent 42%, rgba(11, 18, 20, 0.72) 100%);
+      pointer-events: none;
+    }
+    .frame {
+      position: absolute;
+      inset: 36px;
+      border: 1px solid rgba(0, 174, 152, 0.28);
+      pointer-events: none;
+    }
+    .frame::after {
+      content: "";
+      position: absolute;
+      inset: 6px;
+      border: 1px solid rgba(183, 198, 200, 0.08);
+    }
+    .car {
+      position: absolute;
+      left: 50%;
+      bottom: 78px;
+      transform: translateX(-50%);
+      width: 760px;
+      height: 150px;
+      opacity: 0.22;
+    }
+    .car svg { width: 100%; height: 100%; display: block; }
+    .floor {
+      position: absolute;
+      left: 50%;
+      bottom: 70px;
+      transform: translateX(-50%);
+      width: 640px;
+      height: 28px;
+      background: radial-gradient(ellipse at center, rgba(0, 174, 152, 0.35) 0%, transparent 70%);
+      filter: blur(10px);
+    }
+    .lockup {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -52%);
+      text-align: center;
+      width: 780px;
+    }
+    .mark {
+      width: 22px;
+      height: 28px;
+      margin: 0 auto 22px;
+    }
+    .kicker {
+      font-family: Oswald, sans-serif;
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.46em;
+      text-transform: uppercase;
+      color: #B7C6C8;
+      margin-bottom: 22px;
+    }
+    .title-1 {
+      font-weight: 600;
+      font-size: 92px;
+      line-height: 0.92;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #F5FAFA;
+    }
+    .title-2 {
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 1.05;
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
+      color: #F5FAFA;
+      margin-top: 8px;
+      white-space: nowrap;
+    }
+    .rule {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin: 22px auto 18px;
+      width: 420px;
+    }
+    .rule span {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #00AE98, transparent);
+    }
+    .rule i {
+      width: 7px;
+      height: 7px;
+      background: #FF4F8B;
+      transform: rotate(45deg);
+      display: block;
+      flex: 0 0 7px;
+    }
+    .tag {
+      font-family: "Cormorant Garamond", "Liberation Serif", serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 26px;
+      letter-spacing: 0.04em;
+      color: #B7C6C8;
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="car" aria-hidden="true">
+      <svg viewBox="0 0 760 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M92 108
+          C110 108 122 78 168 72
+          C214 66 250 46 318 44
+          C392 42 470 50 538 62
+          C590 70 628 72 668 78
+          C700 82 722 94 728 108
+          L92 108 Z" fill="#00AE98"/>
+        <circle cx="198" cy="108" r="26" fill="#0B1214" stroke="#00AE98" stroke-width="5"/>
+        <circle cx="198" cy="108" r="11" fill="#142022"/>
+        <circle cx="582" cy="108" r="26" fill="#0B1214" stroke="#00AE98" stroke-width="5"/>
+        <circle cx="582" cy="108" r="11" fill="#142022"/>
+        <path d="M250 72 C290 58 360 52 430 58 C470 62 500 68 522 72" stroke="#0B1214" stroke-width="3" opacity="0.55"/>
+      </svg>
+    </div>
+    <div class="floor"></div>
+    <div class="lockup">
+      <svg class="mark" viewBox="0 0 22 28" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11 1.2C11 1.2 3.4 12.4 3.4 18.2a7.6 7.6 0 1 0 15.2 0C18.6 12.4 11 1.2 11 1.2z" fill="#00AE98"/>
+        <ellipse cx="8.6" cy="16.6" rx="2" ry="3.1" fill="#F5FAFA" opacity="0.85"/>
+      </svg>
+      <div class="kicker">Ceramic · Paint · Gloss</div>
+      <div class="title-1">Southern</div>
+      <div class="title-2">Auto Detailers</div>
+      <div class="rule"><span></span><i></i><span></span></div>
+      <div class="tag">Paint that looks wet</div>
+    </div>
+    <div class="vignette"></div>
+    <div class="frame"></div>
+  </div>
+</body>
+</html>

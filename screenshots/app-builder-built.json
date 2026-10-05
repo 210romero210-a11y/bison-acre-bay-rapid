@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Auto Detailing San Antonio TX | Southern Auto Detailers",
+      "hasCanvas": false,
+      "bodyTextLen": 5936,
+      "bodyTextHash": "53d2f6eb674faf0d511d8294c818becaa0fb3ab63926e7d3a1e77f8c9e2df403",
+      "bodyTextPrefix": "Skip to content Tue–Sun 7 AM–11 PM · Monday closed 11692 Bricken",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Auto Detailing San Antonio TX | Southern Auto Detailers",
+      "hasCanvas": false,
+      "bodyTextLen": 5777,
+      "bodyTextHash": "fb501d5e9bba4c2c67800c7ec8141edd31d6375aa405e7fc507f8bdd00ec80ec",
+      "bodyTextPrefix": "Skip to content SOUTHERN Auto Detailers SAN ANTONIO BASED AUTO D",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
