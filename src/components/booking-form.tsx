@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { BUSINESS, SERVICE_OPTIONS } from "@/lib/site";
+import { submitBookingRequest } from "@/lib/booking";
 import { cn } from "@/lib/utils";
 
-const STORAGE_KEY = "southern-auto-detailers-requests";
+import { BUSINESS, DEPOSIT, SERVICE_OPTIONS } from "@/lib/site";
 
 type FormState = {
   name: string;
@@ -18,6 +18,7 @@ type FormState = {
   service: string;
   date: string;
   notes: string;
+  deposit: boolean;
 };
 
 const empty: FormState = {
@@ -28,6 +29,7 @@ const empty: FormState = {
   service: "",
   date: "",
   notes: "",
+  deposit: false,
 };
 
 function digits(value: string) {
@@ -37,6 +39,8 @@ function digits(value: string) {
 export function BookingForm({ className }: { className?: string }) {
   const [form, setForm] = useState<FormState>(empty);
   const [errors, setErrors] = useState<Partial<Record<keyof FormState, string>>>({});
+  const [formError, setFormError] = useState<string | null>(null);
+  const [pending, setPending] = useState(false);
   const [submitted, setSubmitted] = useState<FormState | null>(null);
 
   const minDate = useMemo(() => new Date().toISOString().slice(0, 10), []);
@@ -56,10 +60,14 @@ export function BookingForm({ className }: { className?: string }) {
     if (next.vehicle.trim().length < 3) nextErrors.vehicle = "Enter year, make, and model.";
     if (!next.service) nextErrors.service = "Choose a service.";
     if (!next.date) nextErrors.date = "Choose a preferred date.";
+    else if (new Date(`${next.date}T12:00:00`).getDay() === 1) {
+      nextErrors.date = "The studio is closed Monday. Pick Tuesday through Sunday.";
+    }
+    if (!next.deposit) nextErrors.deposit = "Confirm the 20% deposit to request a slot.";
     return nextErrors;
   }
 
-  function onSubmit(event: FormEvent) {
+  async function onSubmit(event: FormEvent) {
     event.preventDefault();
     const nextErrors = validate(form);
     if (Object.keys(nextErrors).length) {
@@ -67,14 +75,20 @@ export function BookingForm({ className }: { className?: string }) {
       return;
     }
 
-    const payload = { ...form, createdAt: new Date().toISOString() };
+    setPending(true);
+    setFormError(null);
     try {
-      const existing = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "[]") as unknown[];
-      localStorage.setItem(STORAGE_KEY, JSON.stringify([payload, ...existing].slice(0, 25)));
+      const result = await submitBookingRequest({ data: form });
+      if (!result.ok) {
+        setFormError(result.error);
+        return;
+      }
+      setSubmitted(form);
     } catch {
-      /* ignore quota / private mode */
+      setFormError("We could not send this request. Call (210) 201-4847.");
+    } finally {
+      setPending(false);
     }
-    setSubmitted(form);
   }
 
   if (submitted) {
@@ -89,7 +103,8 @@ export function BookingForm({ className }: { className?: string }) {
           <a className="font-semibold text-primary" href={BUSINESS.phoneTel}>
             {BUSINESS.phoneDisplay}
           </a>
-          .
+          . Your slot is not held until the 20% non-refundable deposit of the quoted total
+          is received.
         </p>
         <Button className="mt-6" variant="outline" onClick={() => { setSubmitted(null); setForm(empty); }}>
           Send another request
@@ -112,7 +127,8 @@ export function BookingForm({ className }: { className?: string }) {
         <p className="text-xs font-semibold tracking-[0.2em] text-primary uppercase">Book a detail</p>
         <h3 className="mt-2 font-display text-2xl">Request an appointment</h3>
         <p className="mt-2 text-sm text-muted">
-          Short form. We confirm by phone — typically the same business day.
+          Short form. We confirm by phone. A {DEPOSIT.title.toLowerCase()} — 20% of the
+          quoted total — is required to secure the slot.
         </p>
       </div>
       <div className="grid gap-4 sm:grid-cols-2">
@@ -178,9 +194,31 @@ export function BookingForm({ className }: { className?: string }) {
             onChange={(e) => update("notes", e.target.value)}
           />
         </div>
+        <label className="mt-4 flex items-start gap-3 text-sm text-muted sm:col-span-2">
+          <input
+            type="checkbox"
+            className="mt-1 size-4 accent-primary"
+            checked={form.deposit}
+            onChange={(e) => update("deposit", e.target.checked)}
+          />
+          <span>
+            I understand a 20% non-refundable deposit (20% of the quoted total) is required
+            to secure my booking slot. See the{" "}
+            <Link to="/refund-policy" className="font-semibold text-primary">
+              Refund Policy
+            </Link>{" "}
+            and{" "}
+            <Link to="/terms" className="font-semibold text-primary">
+              Terms
+            </Link>
+            .
+          </span>
+        </label>
+        {errors.deposit ? <p className="mt-2 text-xs text-danger">{errors.deposit}</p> : null}
       </div>
-      <Button type="submit" size="lg" className="mt-6 w-full">
-        Request a Detail
+      {formError ? <p className="mt-4 text-sm text-danger">{formError}</p> : null}
+      <Button type="submit" size="lg" className="mt-6 w-full" disabled={pending}>
+        {pending ? "Sending…" : "Request a Detail"}
       </Button>
       <p className="mt-3 text-center text-xs text-muted">
         Prefer to talk now?{" "}

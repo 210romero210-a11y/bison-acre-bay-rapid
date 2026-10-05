@@ -88,6 +88,9 @@ export function localBusinessJsonLd() {
           addressCountry: "US",
         },
       },
+      { "@type": "Place", name: "Royal Ridge, San Antonio" },
+      { "@type": "Place", name: "Rolling Oaks Mall area, northeast San Antonio" },
+      { "@type": "Place", name: "Fort Sam Houston, San Antonio" },
     ],
     knowsAbout: [
       "Auto detailing",
@@ -162,16 +165,54 @@ export function faqJsonLd(items: readonly { q: string; a: string }[]) {
   };
 }
 
+export function articleJsonLd(headline: string, description: string, path: string) {
+  const url = absoluteUrl(path);
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline,
+    description,
+    ...(url ? { url, mainEntityOfPage: url } : {}),
+    datePublished: "2026-10-05",
+    dateModified: "2026-10-05",
+    author: { "@type": "Person", name: BUSINESS.founder },
+    publisher: { "@id": businessId() },
+    image: absoluteUrl("/logo.png"),
+  };
+}
+
 export function pageHead(title: string, description: string, jsonLd?: object | object[]) {
   const extra = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+  const scripts = [localBusinessJsonLd(), ...extra].map((data) => ({
+    type: "application/ld+json",
+    children: JSON.stringify(data),
+  }));
   return {
     meta: [
       { title },
       { name: "description", content: description },
     ],
-    scripts: extra.map((data) => ({
-      type: "application/ld+json",
-      children: JSON.stringify(data),
-    })),
+    scripts,
   };
+}
+
+export function contentHead(page: {
+  title: string;
+  description: string;
+  path: string;
+  h1: string;
+  kind: "service" | "place" | "article" | "page";
+  serviceName?: string;
+  faqs: readonly { q: string; a: string }[];
+}) {
+  const blocks: object[] = [faqJsonLd(page.faqs)];
+  if (page.kind === "service") {
+    blocks.unshift(
+      serviceJsonLd(page.serviceName ?? page.h1, page.description, page.path),
+    );
+  }
+  if (page.kind === "article") {
+    blocks.unshift(articleJsonLd(page.h1, page.description, page.path));
+  }
+  return pageHead(page.title, page.description, blocks);
 }

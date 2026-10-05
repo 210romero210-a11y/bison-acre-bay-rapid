@@ -11,18 +11,39 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
+import { Route as BlogRouteImport } from './routes/blog'
 import { Route as CeramicCoatingRouteImport } from './routes/ceramic-coating'
 import { Route as CeramicCoatingsRouteImport } from './routes/ceramic-coatings'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ConverseRouteImport } from './routes/converse'
 import { Route as ExteriorDetailingRouteImport } from './routes/exterior-detailing'
+import { Route as FortSamHoustonRouteImport } from './routes/fort-sam-houston'
 import { Route as FullDetailingRouteImport } from './routes/full-detailing'
-import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as InteriorDetailingRouteImport } from './routes/interior-detailing'
+import { Route as LiveOakRouteImport } from './routes/live-oak'
+import { Route as OakMeadowRouteImport } from './routes/oak-meadow'
 import { Route as PaintCorrectionRouteImport } from './routes/paint-correction'
+import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as RefundPolicyRouteImport } from './routes/refund-policy'
+import { Route as RollingOaksRouteImport } from './routes/rolling-oaks'
+import { Route as RoyalRidgeRouteImport } from './routes/royal-ridge'
 import { Route as SanAntonio78233RouteImport } from './routes/san-antonio-78233'
+import { Route as SchertzRouteImport } from './routes/schertz'
 import { Route as ServiceAreasRouteImport } from './routes/service-areas'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as TermsRouteImport } from './routes/terms'
+import { Route as UniversalCityRouteImport } from './routes/universal-city'
+import { Route as WindcrestRouteImport } from './routes/windcrest'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
+import { Route as BlogAutoDetailingSanAntonioTxGuideRouteImport } from './routes/blog.auto-detailing-san-antonio-tx-guide'
+import { Route as BlogBestAutoDetailerNortheastSanAntonioRouteImport } from './routes/blog.best-auto-detailer-northeast-san-antonio'
+import { Route as BlogCeramicCoatingVsWaxRouteImport } from './routes/blog.ceramic-coating-vs-wax'
+import { Route as BlogHowLongDoesCeramicCoatingLastRouteImport } from './routes/blog.how-long-does-ceramic-coating-last'
+import { Route as BlogWhatIsPaintCorrectionRouteImport } from './routes/blog.what-is-paint-correction'
+import { Route as CeramicCoatingIndexRouteImport } from './routes/ceramic-coating.index'
+import { Route as CeramicCoatingCostRouteImport } from './routes/ceramic-coating.cost'
+import { Route as CeramicCoatingProcessRouteImport } from './routes/ceramic-coating.process'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -32,6 +53,11 @@ const IndexRoute = IndexRouteImport.update({
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogRoute = BlogRouteImport.update({
+  id: '/blog',
+  path: '/blog',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CeramicCoatingRoute = CeramicCoatingRouteImport.update({
@@ -49,9 +75,19 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ConverseRoute = ConverseRouteImport.update({
+  id: '/converse',
+  path: '/converse',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ExteriorDetailingRoute = ExteriorDetailingRouteImport.update({
   id: '/exterior-detailing',
   path: '/exterior-detailing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FortSamHoustonRoute = FortSamHoustonRouteImport.update({
+  id: '/fort-sam-houston',
+  path: '/fort-sam-houston',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FullDetailingRoute = FullDetailingRouteImport.update({
@@ -59,14 +95,19 @@ const FullDetailingRoute = FullDetailingRouteImport.update({
   path: '/full-detailing',
   getParentRoute: () => rootRouteImport,
 } as any)
-const GalleryRoute = GalleryRouteImport.update({
-  id: '/gallery',
-  path: '/gallery',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const InteriorDetailingRoute = InteriorDetailingRouteImport.update({
   id: '/interior-detailing',
   path: '/interior-detailing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LiveOakRoute = LiveOakRouteImport.update({
+  id: '/live-oak',
+  path: '/live-oak',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OakMeadowRoute = OakMeadowRouteImport.update({
+  id: '/oak-meadow',
+  path: '/oak-meadow',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PaintCorrectionRoute = PaintCorrectionRouteImport.update({
@@ -74,14 +115,39 @@ const PaintCorrectionRoute = PaintCorrectionRouteImport.update({
   path: '/paint-correction',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PricingRoute = PricingRouteImport.update({
+  id: '/pricing',
+  path: '/pricing',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RefundPolicyRoute = RefundPolicyRouteImport.update({
+  id: '/refund-policy',
+  path: '/refund-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RollingOaksRoute = RollingOaksRouteImport.update({
+  id: '/rolling-oaks',
+  path: '/rolling-oaks',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RoyalRidgeRoute = RoyalRidgeRouteImport.update({
+  id: '/royal-ridge',
+  path: '/royal-ridge',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SanAntonio78233Route = SanAntonio78233RouteImport.update({
   id: '/san-antonio-78233',
   path: '/san-antonio-78233',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SchertzRoute = SchertzRouteImport.update({
+  id: '/schertz',
+  path: '/schertz',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServiceAreasRoute = ServiceAreasRouteImport.update({
@@ -94,122 +160,320 @@ const ServicesRoute = ServicesRouteImport.update({
   path: '/services',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UniversalCityRoute = UniversalCityRouteImport.update({
+  id: '/universal-city',
+  path: '/universal-city',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WindcrestRoute = WindcrestRouteImport.update({
+  id: '/windcrest',
+  path: '/windcrest',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => BlogRoute,
+} as any)
+const BlogAutoDetailingSanAntonioTxGuideRoute =
+  BlogAutoDetailingSanAntonioTxGuideRouteImport.update({
+    id: '/auto-detailing-san-antonio-tx-guide',
+    path: '/auto-detailing-san-antonio-tx-guide',
+    getParentRoute: () => BlogRoute,
+  } as any)
+const BlogBestAutoDetailerNortheastSanAntonioRoute =
+  BlogBestAutoDetailerNortheastSanAntonioRouteImport.update({
+    id: '/best-auto-detailer-northeast-san-antonio',
+    path: '/best-auto-detailer-northeast-san-antonio',
+    getParentRoute: () => BlogRoute,
+  } as any)
+const BlogCeramicCoatingVsWaxRoute = BlogCeramicCoatingVsWaxRouteImport.update({
+  id: '/ceramic-coating-vs-wax',
+  path: '/ceramic-coating-vs-wax',
+  getParentRoute: () => BlogRoute,
+} as any)
+const BlogHowLongDoesCeramicCoatingLastRoute =
+  BlogHowLongDoesCeramicCoatingLastRouteImport.update({
+    id: '/how-long-does-ceramic-coating-last',
+    path: '/how-long-does-ceramic-coating-last',
+    getParentRoute: () => BlogRoute,
+  } as any)
+const BlogWhatIsPaintCorrectionRoute =
+  BlogWhatIsPaintCorrectionRouteImport.update({
+    id: '/what-is-paint-correction',
+    path: '/what-is-paint-correction',
+    getParentRoute: () => BlogRoute,
+  } as any)
+const CeramicCoatingIndexRoute = CeramicCoatingIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => CeramicCoatingRoute,
+} as any)
+const CeramicCoatingCostRoute = CeramicCoatingCostRouteImport.update({
+  id: '/cost',
+  path: '/cost',
+  getParentRoute: () => CeramicCoatingRoute,
+} as any)
+const CeramicCoatingProcessRoute = CeramicCoatingProcessRouteImport.update({
+  id: '/process',
+  path: '/process',
+  getParentRoute: () => CeramicCoatingRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/ceramic-coating': typeof CeramicCoatingRoute
+  '/blog': typeof BlogRouteWithChildren
+  '/ceramic-coating': typeof CeramicCoatingRouteWithChildren
   '/ceramic-coatings': typeof CeramicCoatingsRoute
   '/contact': typeof ContactRoute
+  '/converse': typeof ConverseRoute
   '/exterior-detailing': typeof ExteriorDetailingRoute
+  '/fort-sam-houston': typeof FortSamHoustonRoute
   '/full-detailing': typeof FullDetailingRoute
-  '/gallery': typeof GalleryRoute
   '/interior-detailing': typeof InteriorDetailingRoute
+  '/live-oak': typeof LiveOakRoute
+  '/oak-meadow': typeof OakMeadowRoute
   '/paint-correction': typeof PaintCorrectionRoute
+  '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/refund-policy': typeof RefundPolicyRoute
+  '/rolling-oaks': typeof RollingOaksRoute
+  '/royal-ridge': typeof RoyalRidgeRoute
   '/san-antonio-78233': typeof SanAntonio78233Route
+  '/schertz': typeof SchertzRoute
   '/service-areas': typeof ServiceAreasRoute
   '/services': typeof ServicesRoute
+  '/terms': typeof TermsRoute
+  '/universal-city': typeof UniversalCityRoute
+  '/windcrest': typeof WindcrestRoute
+  '/blog/auto-detailing-san-antonio-tx-guide': typeof BlogAutoDetailingSanAntonioTxGuideRoute
+  '/blog/best-auto-detailer-northeast-san-antonio': typeof BlogBestAutoDetailerNortheastSanAntonioRoute
+  '/blog/ceramic-coating-vs-wax': typeof BlogCeramicCoatingVsWaxRoute
+  '/blog/how-long-does-ceramic-coating-last': typeof BlogHowLongDoesCeramicCoatingLastRoute
+  '/blog/what-is-paint-correction': typeof BlogWhatIsPaintCorrectionRoute
+  '/ceramic-coating/cost': typeof CeramicCoatingCostRoute
+  '/ceramic-coating/process': typeof CeramicCoatingProcessRoute
+  '/blog/': typeof BlogIndexRoute
+  '/ceramic-coating/': typeof CeramicCoatingIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/ceramic-coating': typeof CeramicCoatingRoute
   '/ceramic-coatings': typeof CeramicCoatingsRoute
   '/contact': typeof ContactRoute
+  '/converse': typeof ConverseRoute
   '/exterior-detailing': typeof ExteriorDetailingRoute
+  '/fort-sam-houston': typeof FortSamHoustonRoute
   '/full-detailing': typeof FullDetailingRoute
-  '/gallery': typeof GalleryRoute
   '/interior-detailing': typeof InteriorDetailingRoute
+  '/live-oak': typeof LiveOakRoute
+  '/oak-meadow': typeof OakMeadowRoute
   '/paint-correction': typeof PaintCorrectionRoute
+  '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/refund-policy': typeof RefundPolicyRoute
+  '/rolling-oaks': typeof RollingOaksRoute
+  '/royal-ridge': typeof RoyalRidgeRoute
   '/san-antonio-78233': typeof SanAntonio78233Route
+  '/schertz': typeof SchertzRoute
   '/service-areas': typeof ServiceAreasRoute
   '/services': typeof ServicesRoute
+  '/terms': typeof TermsRoute
+  '/universal-city': typeof UniversalCityRoute
+  '/windcrest': typeof WindcrestRoute
+  '/blog/auto-detailing-san-antonio-tx-guide': typeof BlogAutoDetailingSanAntonioTxGuideRoute
+  '/blog/best-auto-detailer-northeast-san-antonio': typeof BlogBestAutoDetailerNortheastSanAntonioRoute
+  '/blog/ceramic-coating-vs-wax': typeof BlogCeramicCoatingVsWaxRoute
+  '/blog/how-long-does-ceramic-coating-last': typeof BlogHowLongDoesCeramicCoatingLastRoute
+  '/blog/what-is-paint-correction': typeof BlogWhatIsPaintCorrectionRoute
+  '/ceramic-coating/cost': typeof CeramicCoatingCostRoute
+  '/ceramic-coating/process': typeof CeramicCoatingProcessRoute
+  '/blog': typeof BlogIndexRoute
+  '/ceramic-coating': typeof CeramicCoatingIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/ceramic-coating': typeof CeramicCoatingRoute
+  '/blog': typeof BlogRouteWithChildren
+  '/ceramic-coating': typeof CeramicCoatingRouteWithChildren
   '/ceramic-coatings': typeof CeramicCoatingsRoute
   '/contact': typeof ContactRoute
+  '/converse': typeof ConverseRoute
   '/exterior-detailing': typeof ExteriorDetailingRoute
+  '/fort-sam-houston': typeof FortSamHoustonRoute
   '/full-detailing': typeof FullDetailingRoute
-  '/gallery': typeof GalleryRoute
   '/interior-detailing': typeof InteriorDetailingRoute
+  '/live-oak': typeof LiveOakRoute
+  '/oak-meadow': typeof OakMeadowRoute
   '/paint-correction': typeof PaintCorrectionRoute
+  '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/refund-policy': typeof RefundPolicyRoute
+  '/rolling-oaks': typeof RollingOaksRoute
+  '/royal-ridge': typeof RoyalRidgeRoute
   '/san-antonio-78233': typeof SanAntonio78233Route
+  '/schertz': typeof SchertzRoute
   '/service-areas': typeof ServiceAreasRoute
   '/services': typeof ServicesRoute
+  '/terms': typeof TermsRoute
+  '/universal-city': typeof UniversalCityRoute
+  '/windcrest': typeof WindcrestRoute
+  '/blog/auto-detailing-san-antonio-tx-guide': typeof BlogAutoDetailingSanAntonioTxGuideRoute
+  '/blog/best-auto-detailer-northeast-san-antonio': typeof BlogBestAutoDetailerNortheastSanAntonioRoute
+  '/blog/ceramic-coating-vs-wax': typeof BlogCeramicCoatingVsWaxRoute
+  '/blog/how-long-does-ceramic-coating-last': typeof BlogHowLongDoesCeramicCoatingLastRoute
+  '/blog/what-is-paint-correction': typeof BlogWhatIsPaintCorrectionRoute
+  '/ceramic-coating/cost': typeof CeramicCoatingCostRoute
+  '/ceramic-coating/process': typeof CeramicCoatingProcessRoute
+  '/blog/': typeof BlogIndexRoute
+  '/ceramic-coating/': typeof CeramicCoatingIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/about'
+    | '/blog'
     | '/ceramic-coating'
     | '/ceramic-coatings'
     | '/contact'
+    | '/converse'
     | '/exterior-detailing'
+    | '/fort-sam-houston'
     | '/full-detailing'
-    | '/gallery'
     | '/interior-detailing'
+    | '/live-oak'
+    | '/oak-meadow'
     | '/paint-correction'
+    | '/pricing'
     | '/privacy'
+    | '/refund-policy'
+    | '/rolling-oaks'
+    | '/royal-ridge'
     | '/san-antonio-78233'
+    | '/schertz'
     | '/service-areas'
     | '/services'
+    | '/terms'
+    | '/universal-city'
+    | '/windcrest'
+    | '/blog/auto-detailing-san-antonio-tx-guide'
+    | '/blog/best-auto-detailer-northeast-san-antonio'
+    | '/blog/ceramic-coating-vs-wax'
+    | '/blog/how-long-does-ceramic-coating-last'
+    | '/blog/what-is-paint-correction'
+    | '/ceramic-coating/cost'
+    | '/ceramic-coating/process'
+    | '/blog/'
+    | '/ceramic-coating/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
-    | '/ceramic-coating'
     | '/ceramic-coatings'
     | '/contact'
+    | '/converse'
     | '/exterior-detailing'
+    | '/fort-sam-houston'
     | '/full-detailing'
-    | '/gallery'
     | '/interior-detailing'
+    | '/live-oak'
+    | '/oak-meadow'
     | '/paint-correction'
+    | '/pricing'
     | '/privacy'
+    | '/refund-policy'
+    | '/rolling-oaks'
+    | '/royal-ridge'
     | '/san-antonio-78233'
+    | '/schertz'
     | '/service-areas'
     | '/services'
+    | '/terms'
+    | '/universal-city'
+    | '/windcrest'
+    | '/blog/auto-detailing-san-antonio-tx-guide'
+    | '/blog/best-auto-detailer-northeast-san-antonio'
+    | '/blog/ceramic-coating-vs-wax'
+    | '/blog/how-long-does-ceramic-coating-last'
+    | '/blog/what-is-paint-correction'
+    | '/ceramic-coating/cost'
+    | '/ceramic-coating/process'
+    | '/blog'
+    | '/ceramic-coating'
   id:
     | '__root__'
     | '/'
     | '/about'
+    | '/blog'
     | '/ceramic-coating'
     | '/ceramic-coatings'
     | '/contact'
+    | '/converse'
     | '/exterior-detailing'
+    | '/fort-sam-houston'
     | '/full-detailing'
-    | '/gallery'
     | '/interior-detailing'
+    | '/live-oak'
+    | '/oak-meadow'
     | '/paint-correction'
+    | '/pricing'
     | '/privacy'
+    | '/refund-policy'
+    | '/rolling-oaks'
+    | '/royal-ridge'
     | '/san-antonio-78233'
+    | '/schertz'
     | '/service-areas'
     | '/services'
+    | '/terms'
+    | '/universal-city'
+    | '/windcrest'
+    | '/blog/auto-detailing-san-antonio-tx-guide'
+    | '/blog/best-auto-detailer-northeast-san-antonio'
+    | '/blog/ceramic-coating-vs-wax'
+    | '/blog/how-long-does-ceramic-coating-last'
+    | '/blog/what-is-paint-correction'
+    | '/ceramic-coating/cost'
+    | '/ceramic-coating/process'
+    | '/blog/'
+    | '/ceramic-coating/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  CeramicCoatingRoute: typeof CeramicCoatingRoute
+  BlogRoute: typeof BlogRouteWithChildren
+  CeramicCoatingRoute: typeof CeramicCoatingRouteWithChildren
   CeramicCoatingsRoute: typeof CeramicCoatingsRoute
   ContactRoute: typeof ContactRoute
+  ConverseRoute: typeof ConverseRoute
   ExteriorDetailingRoute: typeof ExteriorDetailingRoute
+  FortSamHoustonRoute: typeof FortSamHoustonRoute
   FullDetailingRoute: typeof FullDetailingRoute
-  GalleryRoute: typeof GalleryRoute
   InteriorDetailingRoute: typeof InteriorDetailingRoute
+  LiveOakRoute: typeof LiveOakRoute
+  OakMeadowRoute: typeof OakMeadowRoute
   PaintCorrectionRoute: typeof PaintCorrectionRoute
+  PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
+  RefundPolicyRoute: typeof RefundPolicyRoute
+  RollingOaksRoute: typeof RollingOaksRoute
+  RoyalRidgeRoute: typeof RoyalRidgeRoute
   SanAntonio78233Route: typeof SanAntonio78233Route
+  SchertzRoute: typeof SchertzRoute
   ServiceAreasRoute: typeof ServiceAreasRoute
   ServicesRoute: typeof ServicesRoute
+  TermsRoute: typeof TermsRoute
+  UniversalCityRoute: typeof UniversalCityRoute
+  WindcrestRoute: typeof WindcrestRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -226,6 +490,13 @@ declare module '@tanstack/react-router' {
       path: '/about'
       fullPath: '/about'
       preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog': {
+      id: '/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof BlogRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ceramic-coating': {
@@ -249,11 +520,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/converse': {
+      id: '/converse'
+      path: '/converse'
+      fullPath: '/converse'
+      preLoaderRoute: typeof ConverseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/exterior-detailing': {
       id: '/exterior-detailing'
       path: '/exterior-detailing'
       fullPath: '/exterior-detailing'
       preLoaderRoute: typeof ExteriorDetailingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fort-sam-houston': {
+      id: '/fort-sam-houston'
+      path: '/fort-sam-houston'
+      fullPath: '/fort-sam-houston'
+      preLoaderRoute: typeof FortSamHoustonRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/full-detailing': {
@@ -263,18 +548,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FullDetailingRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/gallery': {
-      id: '/gallery'
-      path: '/gallery'
-      fullPath: '/gallery'
-      preLoaderRoute: typeof GalleryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/interior-detailing': {
       id: '/interior-detailing'
       path: '/interior-detailing'
       fullPath: '/interior-detailing'
       preLoaderRoute: typeof InteriorDetailingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/live-oak': {
+      id: '/live-oak'
+      path: '/live-oak'
+      fullPath: '/live-oak'
+      preLoaderRoute: typeof LiveOakRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/oak-meadow': {
+      id: '/oak-meadow'
+      path: '/oak-meadow'
+      fullPath: '/oak-meadow'
+      preLoaderRoute: typeof OakMeadowRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/paint-correction': {
@@ -284,6 +576,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PaintCorrectionRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/pricing': {
+      id: '/pricing'
+      path: '/pricing'
+      fullPath: '/pricing'
+      preLoaderRoute: typeof PricingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/privacy': {
       id: '/privacy'
       path: '/privacy'
@@ -291,11 +590,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PrivacyRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/refund-policy': {
+      id: '/refund-policy'
+      path: '/refund-policy'
+      fullPath: '/refund-policy'
+      preLoaderRoute: typeof RefundPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/rolling-oaks': {
+      id: '/rolling-oaks'
+      path: '/rolling-oaks'
+      fullPath: '/rolling-oaks'
+      preLoaderRoute: typeof RollingOaksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/royal-ridge': {
+      id: '/royal-ridge'
+      path: '/royal-ridge'
+      fullPath: '/royal-ridge'
+      preLoaderRoute: typeof RoyalRidgeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/san-antonio-78233': {
       id: '/san-antonio-78233'
       path: '/san-antonio-78233'
       fullPath: '/san-antonio-78233'
       preLoaderRoute: typeof SanAntonio78233RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/schertz': {
+      id: '/schertz'
+      path: '/schertz'
+      fullPath: '/schertz'
+      preLoaderRoute: typeof SchertzRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/service-areas': {
@@ -312,24 +639,159 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/universal-city': {
+      id: '/universal-city'
+      path: '/universal-city'
+      fullPath: '/universal-city'
+      preLoaderRoute: typeof UniversalCityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/windcrest': {
+      id: '/windcrest'
+      path: '/windcrest'
+      fullPath: '/windcrest'
+      preLoaderRoute: typeof WindcrestRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/': {
+      id: '/blog/'
+      path: '/'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/auto-detailing-san-antonio-tx-guide': {
+      id: '/blog/auto-detailing-san-antonio-tx-guide'
+      path: '/auto-detailing-san-antonio-tx-guide'
+      fullPath: '/blog/auto-detailing-san-antonio-tx-guide'
+      preLoaderRoute: typeof BlogAutoDetailingSanAntonioTxGuideRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/best-auto-detailer-northeast-san-antonio': {
+      id: '/blog/best-auto-detailer-northeast-san-antonio'
+      path: '/best-auto-detailer-northeast-san-antonio'
+      fullPath: '/blog/best-auto-detailer-northeast-san-antonio'
+      preLoaderRoute: typeof BlogBestAutoDetailerNortheastSanAntonioRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/ceramic-coating-vs-wax': {
+      id: '/blog/ceramic-coating-vs-wax'
+      path: '/ceramic-coating-vs-wax'
+      fullPath: '/blog/ceramic-coating-vs-wax'
+      preLoaderRoute: typeof BlogCeramicCoatingVsWaxRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/how-long-does-ceramic-coating-last': {
+      id: '/blog/how-long-does-ceramic-coating-last'
+      path: '/how-long-does-ceramic-coating-last'
+      fullPath: '/blog/how-long-does-ceramic-coating-last'
+      preLoaderRoute: typeof BlogHowLongDoesCeramicCoatingLastRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/what-is-paint-correction': {
+      id: '/blog/what-is-paint-correction'
+      path: '/what-is-paint-correction'
+      fullPath: '/blog/what-is-paint-correction'
+      preLoaderRoute: typeof BlogWhatIsPaintCorrectionRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/ceramic-coating/': {
+      id: '/ceramic-coating/'
+      path: '/'
+      fullPath: '/ceramic-coating/'
+      preLoaderRoute: typeof CeramicCoatingIndexRouteImport
+      parentRoute: typeof CeramicCoatingRoute
+    }
+    '/ceramic-coating/cost': {
+      id: '/ceramic-coating/cost'
+      path: '/cost'
+      fullPath: '/ceramic-coating/cost'
+      preLoaderRoute: typeof CeramicCoatingCostRouteImport
+      parentRoute: typeof CeramicCoatingRoute
+    }
+    '/ceramic-coating/process': {
+      id: '/ceramic-coating/process'
+      path: '/process'
+      fullPath: '/ceramic-coating/process'
+      preLoaderRoute: typeof CeramicCoatingProcessRouteImport
+      parentRoute: typeof CeramicCoatingRoute
+    }
   }
 }
+
+interface BlogRouteChildren {
+  BlogAutoDetailingSanAntonioTxGuideRoute: typeof BlogAutoDetailingSanAntonioTxGuideRoute
+  BlogBestAutoDetailerNortheastSanAntonioRoute: typeof BlogBestAutoDetailerNortheastSanAntonioRoute
+  BlogCeramicCoatingVsWaxRoute: typeof BlogCeramicCoatingVsWaxRoute
+  BlogHowLongDoesCeramicCoatingLastRoute: typeof BlogHowLongDoesCeramicCoatingLastRoute
+  BlogWhatIsPaintCorrectionRoute: typeof BlogWhatIsPaintCorrectionRoute
+  BlogIndexRoute: typeof BlogIndexRoute
+}
+
+const BlogRouteChildren: BlogRouteChildren = {
+  BlogAutoDetailingSanAntonioTxGuideRoute:
+    BlogAutoDetailingSanAntonioTxGuideRoute,
+  BlogBestAutoDetailerNortheastSanAntonioRoute:
+    BlogBestAutoDetailerNortheastSanAntonioRoute,
+  BlogCeramicCoatingVsWaxRoute: BlogCeramicCoatingVsWaxRoute,
+  BlogHowLongDoesCeramicCoatingLastRoute:
+    BlogHowLongDoesCeramicCoatingLastRoute,
+  BlogWhatIsPaintCorrectionRoute: BlogWhatIsPaintCorrectionRoute,
+  BlogIndexRoute: BlogIndexRoute,
+}
+
+const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
+
+interface CeramicCoatingRouteChildren {
+  CeramicCoatingCostRoute: typeof CeramicCoatingCostRoute
+  CeramicCoatingProcessRoute: typeof CeramicCoatingProcessRoute
+  CeramicCoatingIndexRoute: typeof CeramicCoatingIndexRoute
+}
+
+const CeramicCoatingRouteChildren: CeramicCoatingRouteChildren = {
+  CeramicCoatingCostRoute: CeramicCoatingCostRoute,
+  CeramicCoatingProcessRoute: CeramicCoatingProcessRoute,
+  CeramicCoatingIndexRoute: CeramicCoatingIndexRoute,
+}
+
+const CeramicCoatingRouteWithChildren = CeramicCoatingRoute._addFileChildren(
+  CeramicCoatingRouteChildren,
+)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  CeramicCoatingRoute: CeramicCoatingRoute,
+  BlogRoute: BlogRouteWithChildren,
+  CeramicCoatingRoute: CeramicCoatingRouteWithChildren,
   CeramicCoatingsRoute: CeramicCoatingsRoute,
   ContactRoute: ContactRoute,
+  ConverseRoute: ConverseRoute,
   ExteriorDetailingRoute: ExteriorDetailingRoute,
+  FortSamHoustonRoute: FortSamHoustonRoute,
   FullDetailingRoute: FullDetailingRoute,
-  GalleryRoute: GalleryRoute,
   InteriorDetailingRoute: InteriorDetailingRoute,
+  LiveOakRoute: LiveOakRoute,
+  OakMeadowRoute: OakMeadowRoute,
   PaintCorrectionRoute: PaintCorrectionRoute,
+  PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
+  RefundPolicyRoute: RefundPolicyRoute,
+  RollingOaksRoute: RollingOaksRoute,
+  RoyalRidgeRoute: RoyalRidgeRoute,
   SanAntonio78233Route: SanAntonio78233Route,
+  SchertzRoute: SchertzRoute,
   ServiceAreasRoute: ServiceAreasRoute,
   ServicesRoute: ServicesRoute,
+  TermsRoute: TermsRoute,
+  UniversalCityRoute: UniversalCityRoute,
+  WindcrestRoute: WindcrestRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

@@ -208,6 +208,18 @@ export const AREAS = [
   },
 ] as const;
 
+export const PLACE_LINKS = [
+  { to: "/san-antonio-78233", label: "78233 / Northeast SA" },
+  { to: "/royal-ridge", label: "Royal Ridge" },
+  { to: "/rolling-oaks", label: "Rolling Oaks Mall" },
+  { to: "/fort-sam-houston", label: "Fort Sam Houston" },
+  { to: "/live-oak", label: "Live Oak" },
+  { to: "/universal-city", label: "Universal City" },
+  { to: "/converse", label: "Converse" },
+  { to: "/windcrest", label: "Windcrest" },
+  { to: "/schertz", label: "Schertz" },
+] as const;
+
 export const FAQS = [
   {
     q: "How long does an auto detail take?",
@@ -357,8 +369,8 @@ export const STEPS = [
   },
   {
     n: "02",
-    title: "Get a clear recommendation",
-    body: "We match interior, exterior, full, correction, or coating work to the vehicle’s condition.",
+    title: "Quote and 20% deposit",
+    body: "We price the vehicle in front of the conversation. A 20% non-refundable deposit of that total secures the slot.",
   },
   {
     n: "03",

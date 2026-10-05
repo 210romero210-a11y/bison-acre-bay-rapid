@@ -1,17 +1,34 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CtaBand } from "@/components/cta-band";
+import { FaqList } from "@/components/faq-list";
 import { PageHero } from "@/components/page-hero";
 import { Photo } from "@/components/photo";
 import { Section, Eyebrow } from "@/components/section";
 import { ServiceCard } from "@/components/service-card";
-import { pageHead } from "@/lib/seo";
+import { faqJsonLd, pageHead } from "@/lib/seo";
 import { IMAGES, SERVICES } from "@/lib/site";
+
+const FAQS = [
+  {
+    q: "Which service page should I open?",
+    a: "Interior detailing for the cabin, exterior detailing for the paint and wheels, full detailing for both, paint correction for swirls, and ceramic coating only after the paint is ready. Pricing explains what changes the quote.",
+  },
+  {
+    q: "Do you publish package prices?",
+    a: "No. Condition changes the job. Call (210) 201-4847 with the vehicle and you get a quote. A 20% non-refundable deposit of that total holds the slot.",
+  },
+  {
+    q: "Where is the work done?",
+    a: "At the studio, 11692 Bricken Circle, San Antonio, TX 78233.",
+  },
+] as const;
 
 export const Route = createFileRoute("/services")({
   head: () =>
     pageHead(
       "Auto Detailing Services San Antonio TX | Interior, Exterior, Full Detail",
       "Auto detailing service in San Antonio, TX — interior, exterior, full auto detailing, paint correction, and ceramic coating. Call (210) 201-4847.",
+      faqJsonLd(FAQS),
     ),
   component: ServicesPage,
 });
@@ -81,6 +98,14 @@ function ServicesPage() {
               a realistic schedule.
             </p>
           </div>
+        </div>
+      </Section>
+
+      <Section tone="surface">
+        <Eyebrow>Questions</Eyebrow>
+        <h2 className="font-display text-3xl">Service FAQs</h2>
+        <div className="mt-8 max-w-3xl">
+          <FaqList items={FAQS} />
         </div>
       </Section>
 

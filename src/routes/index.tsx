@@ -178,14 +178,9 @@ function Home() {
       </Section>
 
       <Section>
-        <div className="flex items-end justify-between gap-4">
-          <div>
-            <Eyebrow>Gallery</Eyebrow>
-            <h2 className="font-display text-3xl md:text-4xl">The finish we aim for</h2>
-          </div>
-          <Link to="/gallery" className="text-sm font-semibold text-primary">
-            Full gallery
-          </Link>
+        <div>
+          <Eyebrow>Finish</Eyebrow>
+          <h2 className="font-display text-3xl md:text-4xl">The finish we aim for</h2>
         </div>
         <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-4">
           {GALLERY.slice(0, 4).map((item) => (
@@ -219,12 +214,12 @@ function Home() {
               vehicle, request a quote, or schedule your next detail.
             </p>
             <p className="mt-4 text-sm text-muted">
-              Phone:{" "}
+              A 20% non-refundable deposit of the quoted total secures the slot. Phone:{" "}
               <a className="font-semibold text-primary" href={BUSINESS.phoneTel}>
                 {BUSINESS.phoneDisplay}
               </a>
               <br />
-              {BUSINESS.servingLine}
+              {BUSINESS.addressLine}
             </p>
             <BookingForm className="mt-8" />
           </div>

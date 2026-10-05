@@ -1,17 +1,34 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CtaBand } from "@/components/cta-band";
 import { CommunityPledge } from "@/components/community-pledge";
+import { FaqList } from "@/components/faq-list";
 import { PageHero } from "@/components/page-hero";
 import { Photo } from "@/components/photo";
 import { Section, Eyebrow } from "@/components/section";
-import { pageHead } from "@/lib/seo";
+import { faqJsonLd, pageHead } from "@/lib/seo";
 import { BUSINESS, IMAGES, JUNIOR_ACHIEVEMENT } from "@/lib/site";
+
+const FAQS = [
+  {
+    q: "Who does the work?",
+    a: "Robert Romero Jr., an IDA-certified detailer from Alamo Heights with auto body and paint experience. One vehicle at a time.",
+  },
+  {
+    q: "Where is the studio?",
+    a: "11692 Bricken Circle, San Antonio, TX 78233. Tuesday through Sunday, 7:00 AM to 11:00 PM. Monday closed.",
+  },
+  {
+    q: "What happens to 10% of the sale?",
+    a: "It goes to Junior Achievement of South Texas. That is not a discount off your quote.",
+  },
+] as const;
 
 export const Route = createFileRoute("/about")({
   head: () =>
     pageHead(
       "About Southern Auto Detailers | Robert Romero Jr. | San Antonio, TX",
       "San Antonio based auto detailing owned by Robert Romero Jr., an Alamo Heights graduate and IDA-certified detailer. Private studio at 11692 Bricken Circle. Call (210) 201-4847.",
+      faqJsonLd(FAQS),
     ),
   component: AboutPage,
 });
@@ -118,6 +135,13 @@ function AboutPage() {
               <p className="mt-2 text-sm text-muted">{body}</p>
             </div>
           ))}
+        </div>
+      </Section>
+      <Section>
+        <Eyebrow>Questions</Eyebrow>
+        <h2 className="font-display text-3xl">About the studio</h2>
+        <div className="mt-8 max-w-3xl">
+          <FaqList items={FAQS} />
         </div>
       </Section>
       <CtaBand />

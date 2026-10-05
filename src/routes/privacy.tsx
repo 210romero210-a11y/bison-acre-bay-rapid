@@ -65,11 +65,22 @@ function PrivacyPage() {
             </p>
           </section>
           <section>
-            <h2 className="font-display text-2xl text-fg">Browser storage</h2>
+            <h2 className="font-display text-2xl text-fg">Where requests go</h2>
             <p className="mt-3">
-              The website may store a copy of a submitted request in your own browser
-              (local storage) so you can see a confirmation on this device. That copy
-              stays on your device unless you clear site data.
+              An appointment request is sent to the studio email and saved in a private
+              Google Sheet so we can reply. It is not stored in your browser. The form
+              does not hold a slot and does not collect card numbers. We use the details
+              only to quote and schedule your vehicle.
+            </p>
+          </section>
+          <section>
+            <h2 className="font-display text-2xl text-fg">Deposits</h2>
+            <p className="mt-3">
+              A booking slot is secured with a 20% non-refundable deposit of the quoted
+              total. Do not send card numbers through the website form. We will tell you
+              how to pay the deposit when the appointment is confirmed. Deposit records are
+              used only to hold and document the booking. See the Refund Policy for how
+              cancellations work.
             </p>
           </section>
           <section>

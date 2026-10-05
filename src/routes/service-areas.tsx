@@ -1,15 +1,32 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CtaBand } from "@/components/cta-band";
+import { FaqList } from "@/components/faq-list";
 import { Photo } from "@/components/photo";
 import { Section, Eyebrow } from "@/components/section";
-import { pageHead } from "@/lib/seo";
-import { AREAS, BUSINESS, IMAGES } from "@/lib/site";
+import { faqJsonLd, pageHead } from "@/lib/seo";
+import { AREAS, BUSINESS, IMAGES, PLACE_LINKS } from "@/lib/site";
+
+const FAQS = [
+  {
+    q: "Which northeast places do you actually name?",
+    a: "78233 is home. Royal Ridge is in 78233 and 78239. Rolling Oaks Mall is at Loop 1604 and Nacogdoches in 78247. Fort Sam Houston is 78234, and we are not on base. Live Oak, Universal City, Converse, Windcrest, and Schertz bring the vehicle to the studio.",
+  },
+  {
+    q: "Is Oak Meadow part of 78233?",
+    a: "No. Oak Meadow is north-central San Antonio. You can still book the northeast studio if the drive works. We do not pretend the shop is in that neighborhood.",
+  },
+  {
+    q: "Do you come to these neighborhoods?",
+    a: "No. Every appointment is at 11692 Bricken Circle, San Antonio, TX 78233.",
+  },
+] as const;
 
 export const Route = createFileRoute("/service-areas")({
   head: () =>
     pageHead(
-      "Auto Detailing Near San Antonio TX | 78233, Live Oak, Schertz",
-      "Auto detailing near San Antonio, TX — Northeast San Antonio, 78233, Live Oak, Universal City, Converse, Schertz, Cibolo, and Windcrest. Call (210) 201-4847.",
+      "Auto Detailing Near San Antonio TX | 78233, Royal Ridge, Fort Sam",
+      "Auto detailing for 78233, Royal Ridge, Rolling Oaks Mall, Fort Sam Houston, Live Oak, Universal City, Converse, Windcrest, and Schertz. Call (210) 201-4847.",
+      faqJsonLd(FAQS),
     ),
   component: AreasPage,
 });
@@ -35,22 +52,17 @@ function AreasPage() {
         />
       </Section>
       <Section tone="surface" className="pt-8">
-        <Link
-          to="/san-antonio-78233"
-          className="mb-8 block rounded-3xl border border-primary/40 bg-bg p-6 md:p-8"
-        >
-          <p className="text-xs font-semibold tracking-[0.18em] text-primary uppercase">
-            Featured ZIP
-          </p>
-          <h2 className="mt-2 font-display text-2xl md:text-3xl">
-            Auto detailing 78233 San Antonio TX
-          </h2>
-          <p className="mt-3 max-w-3xl text-sm text-muted">
-            Car detailing and ceramic coating for Northeast San Antonio, Rolling Oaks Mall
-            area, Windcrest, Live Oak, and Universal City. Open the 78233 page for local
-            details.
-          </p>
-        </Link>
+        <div className="mb-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {PLACE_LINKS.map((place) => (
+            <Link
+              key={place.to}
+              to={place.to}
+              className="rounded-2xl border border-border bg-bg px-4 py-3 text-sm font-semibold text-primary"
+            >
+              {place.label}
+            </Link>
+          ))}
+        </div>
         <div className="grid gap-5 md:grid-cols-2">
           {AREAS.map((area) => (
             <article key={area.name} className="rounded-3xl border border-border bg-bg p-6 md:p-8">
@@ -60,11 +72,15 @@ function AreasPage() {
           ))}
         </div>
         <p className="mt-10 max-w-3xl text-muted">
-          Searching auto detailing near Live Oak TX, Universal City, Schertz, Converse, or
-          Windcrest? Start with a call. We will ask about vehicle size, interior soil, and
-          paint condition, then recommend interior, exterior, full, correction, or coating
-          work.
+          Royal Ridge, the Rolling Oaks Mall area, and Fort Sam Houston are the northeast
+          names competitors skip. Oak Meadow is north-central, not this ZIP. Start with a
+          call to {BUSINESS.phoneDisplay}. We will ask about vehicle size, interior soil,
+          and paint condition, then recommend interior, exterior, full, correction, or
+          coating work at the studio.
         </p>
+        <div className="mt-10 max-w-3xl">
+          <FaqList items={FAQS} />
+        </div>
       </Section>
       <CtaBand title="See if we can take your vehicle" />
     </main>

@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://southernautodetailers.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://southernautodetailers.com/services</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://southernautodetailers.com/interior-detailing</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://southernautodetailers.com/exterior-detailing</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://southernautodetailers.com/full-detailing</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://southernautodetailers.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://southernautodetailers.com/services</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/interior-detailing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/exterior-detailing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/full-detailing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://southernautodetailers.com/paint-correction</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://southernautodetailers.com/ceramic-coatings</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://southernautodetailers.com/about</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://southernautodetailers.com/gallery</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://southernautodetailers.com/contact</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://southernautodetailers.com/ceramic-coating</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/ceramic-coating/cost</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/ceramic-coating/process</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/pricing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/contact</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://southernautodetailers.com/service-areas</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://southernautodetailers.com/san-antonio-78233</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://southernautodetailers.com/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://southernautodetailers.com/royal-ridge</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/rolling-oaks</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/fort-sam-houston</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/oak-meadow</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://southernautodetailers.com/universal-city</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/live-oak</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/converse</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/windcrest</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/schertz</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/blog</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/blog/ceramic-coating-vs-wax</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/blog/how-long-does-ceramic-coating-last</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/blog/what-is-paint-correction</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/blog/auto-detailing-san-antonio-tx-guide</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/blog/best-auto-detailer-northeast-san-antonio</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/privacy</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/terms</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://southernautodetailers.com/refund-policy</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
