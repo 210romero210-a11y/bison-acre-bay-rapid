@@ -8,15 +8,16 @@ import { Section, Eyebrow } from "@/components/section";
 import { ServiceCard } from "@/components/service-card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { faqJsonLd, pageHead } from "@/lib/seo";
+import { faqJsonLd, pageHead, websiteJsonLd } from "@/lib/seo";
 import { BUSINESS, FAQS, GALLERY, IMAGES, REASONS, SERVICES, STEPS } from "@/lib/site";
 
 export const Route = createFileRoute("/")({
   head: () =>
     pageHead(
       "Auto Detailing San Antonio TX | Southern Auto Detailers",
-      "Professional auto detailing in San Antonio, TX — car detailing, interiors, exteriors, paint correction, and ceramic coating. Call (210) 201-4847 to book.",
-      faqJsonLd(FAQS),
+      "Southern Auto Detailers provides professional in-shop auto detailing in San Antonio, Texas.",
+      "/",
+      [websiteJsonLd(), faqJsonLd("/", FAQS)],
     ),
   component: Home,
 });

@@ -1,16 +1,20 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { BookingForm } from "@/components/booking-form";
 import { HoursList } from "@/components/hours-list";
 import { Section, Eyebrow } from "@/components/section";
-import { pageHead } from "@/lib/seo";
+import { crumbsFor, pageHead } from "@/lib/seo";
 import { AREAS, BUSINESS } from "@/lib/site";
 
 export const Route = createFileRoute("/contact")({
   head: () =>
     pageHead(
-      "Book Auto Detailing San Antonio TX | 11692 Bricken Circle | (210) 201-4847",
-      "Book Southern Auto Detailers at 11692 Bricken Circle, San Antonio, TX 78233. Call (210) 201-4847 or email contact@southernautodetailers.com. Tue–Sun 7 AM–11 PM.",
+      "Contact Southern Auto Detailers | San Antonio, TX 78233",
+      "Schedule in-shop auto detailing at Southern Auto Detailers in San Antonio, Texas.",
+      "/contact",
+      [],
+      "Book auto detailing in San Antonio",
     ),
   component: ContactPage,
 });
@@ -19,6 +23,7 @@ function ContactPage() {
   return (
     <main>
       <Section>
+        <Breadcrumbs items={crumbsFor("/contact")} className="mb-6" />
         <Eyebrow>Calls and appointment requests</Eyebrow>
         <h1 className="max-w-3xl font-display text-4xl md:text-5xl">
           Book auto detailing in San Antonio

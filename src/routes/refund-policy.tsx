@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { Section, Eyebrow } from "@/components/section";
-import { pageHead } from "@/lib/seo";
+import { crumbsFor, pageHead } from "@/lib/seo";
 import { BUSINESS, DEPOSIT } from "@/lib/site";
 
 export const Route = createFileRoute("/refund-policy")({
@@ -8,6 +9,9 @@ export const Route = createFileRoute("/refund-policy")({
     pageHead(
       "Refund Policy | Southern Auto Detailers",
       "Refund policy for Southern Auto Detailers. A 20% non-refundable deposit of the quoted total is required to secure a booking slot in San Antonio, TX.",
+      "/refund-policy",
+      [],
+      "Refund Policy",
     ),
   component: RefundPage,
 });
@@ -16,6 +20,7 @@ function RefundPage() {
   return (
     <main>
       <Section>
+        <Breadcrumbs items={crumbsFor("/refund-policy")} className="mb-6" />
         <Eyebrow>Legal</Eyebrow>
         <h1 className="max-w-3xl font-display text-4xl md:text-5xl">Refund Policy</h1>
         <p className="mt-4 max-w-2xl text-muted">

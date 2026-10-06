@@ -5,6 +5,7 @@ import { FaqList } from "@/components/faq-list";
 import { PageHero } from "@/components/page-hero";
 import { Section, Eyebrow } from "@/components/section";
 import type { ContentPage } from "@/lib/content/types";
+import { crumbsFor } from "@/lib/seo";
 
 export function Longform({ page }: { page: ContentPage }) {
   return (
@@ -16,6 +17,7 @@ export function Longform({ page }: { page: ContentPage }) {
         description={page.lede}
         imageSrc={page.image.src}
         imageAlt={page.image.alt}
+        crumbs={crumbsFor(page.path, page.h1)}
       />
       <Section>
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_18rem]">

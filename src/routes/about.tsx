@@ -5,7 +5,7 @@ import { FaqList } from "@/components/faq-list";
 import { PageHero } from "@/components/page-hero";
 import { Photo } from "@/components/photo";
 import { Section, Eyebrow } from "@/components/section";
-import { faqJsonLd, pageHead } from "@/lib/seo";
+import { crumbsFor, faqJsonLd, pageHead } from "@/lib/seo";
 import { BUSINESS, IMAGES, JUNIOR_ACHIEVEMENT } from "@/lib/site";
 
 const FAQS = [
@@ -27,8 +27,10 @@ export const Route = createFileRoute("/about")({
   head: () =>
     pageHead(
       "About Southern Auto Detailers | Robert Romero Jr. | San Antonio, TX",
-      "San Antonio based auto detailing owned by Robert Romero Jr., an Alamo Heights graduate and IDA-certified detailer. Private studio at 11692 Bricken Circle. Call (210) 201-4847.",
-      faqJsonLd(FAQS),
+      "Learn about Southern Auto Detailers, an in-shop auto detailing business in San Antonio, Texas.",
+      "/about",
+      [faqJsonLd("/about", FAQS)],
+      "A private detailing studio with a community mission",
     ),
   component: AboutPage,
 });
@@ -43,6 +45,7 @@ function AboutPage() {
         description="Southern Auto Detailers is San Antonio based. Owner Robert Romero Jr. is from Alamo Heights, where he graduated, and still serves the city he calls home."
         imageSrc={IMAGES.coupe.src}
         imageAlt={IMAGES.coupe.alt}
+        crumbs={crumbsFor("/about")}
       />
 
       <Section>

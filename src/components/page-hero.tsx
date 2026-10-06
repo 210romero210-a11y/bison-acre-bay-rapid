@@ -1,7 +1,9 @@
 import { Link } from "@tanstack/react-router";
 import { Phone } from "lucide-react";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import type { Crumb } from "@/lib/seo";
 import { BUSINESS } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
@@ -12,6 +14,7 @@ type PageHeroProps = {
   imageSrc: string;
   imageAlt: string;
   compact?: boolean;
+  crumbs?: Crumb[];
 };
 
 export function PageHero({
@@ -21,6 +24,7 @@ export function PageHero({
   imageSrc,
   imageAlt,
   compact = false,
+  crumbs,
 }: PageHeroProps) {
   return (
     <section className={cn("relative isolate overflow-hidden", compact ? "min-h-[28rem]" : "min-h-svh")}>
@@ -42,6 +46,7 @@ export function PageHero({
           compact ? "min-h-[28rem] py-16" : "min-h-svh py-24",
         )}
       >
+        <Breadcrumbs items={crumbs ?? []} className="mb-6" />
         <p className="mb-4 text-xs font-semibold tracking-[0.22em] text-primary uppercase">
           {eyebrow}
         </p>

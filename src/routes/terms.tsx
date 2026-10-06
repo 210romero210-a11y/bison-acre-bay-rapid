@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { Section, Eyebrow } from "@/components/section";
-import { pageHead } from "@/lib/seo";
+import { crumbsFor, pageHead } from "@/lib/seo";
 import { BUSINESS, DEPOSIT } from "@/lib/site";
 
 export const Route = createFileRoute("/terms")({
@@ -8,6 +9,9 @@ export const Route = createFileRoute("/terms")({
     pageHead(
       "Terms & Conditions | Southern Auto Detailers",
       "Terms for booking auto detailing with Southern Auto Detailers in San Antonio, TX, including the 20% non-refundable deposit required to secure a slot.",
+      "/terms",
+      [],
+      "Terms & Conditions",
     ),
   component: TermsPage,
 });
@@ -47,6 +51,7 @@ function TermsPage() {
   return (
     <main>
       <Section>
+        <Breadcrumbs items={crumbsFor("/terms")} className="mb-6" />
         <Eyebrow>Legal</Eyebrow>
         <h1 className="max-w-3xl font-display text-4xl md:text-5xl">Terms & Conditions</h1>
         <p className="mt-4 max-w-2xl text-muted">

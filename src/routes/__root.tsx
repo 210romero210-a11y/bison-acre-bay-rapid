@@ -4,7 +4,7 @@ import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { MobileCta } from "@/components/mobile-cta";
-import { localBusinessJsonLd } from "@/lib/seo";
+import { siteGraphJsonLd } from "@/lib/seo";
 import appCss from "../styles.css?url";
 
 const APP_NAME = "Southern Auto Detailers";
@@ -25,7 +25,7 @@ export const Route = createRootRoute({
     scripts: [
       {
         type: "application/ld+json",
-        children: JSON.stringify(localBusinessJsonLd()),
+        children: JSON.stringify(siteGraphJsonLd()),
       },
     ],
     links: [

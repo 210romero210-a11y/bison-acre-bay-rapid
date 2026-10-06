@@ -1,13 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { blogPosts } from "@/lib/content/pages";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { Section, Eyebrow } from "@/components/section";
-import { pageHead } from "@/lib/seo";
+import { crumbsFor, pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/blog/")({
   head: () =>
     pageHead(
       "Auto Detailing Blog | San Antonio TX",
-      "Guides from Southern Auto Detailers on ceramic coating, paint correction, pricing, and Northeast San Antonio detailing. Call (210) 201-4847.",
+      "Guides from Southern Auto Detailers on ceramic coating, paint correction, and in-shop detailing in San Antonio.",
+      "/blog",
+      [],
+      "Detailing notes for San Antonio",
     ),
   component: BlogIndex,
 });
@@ -16,6 +20,7 @@ function BlogIndex() {
   return (
     <main>
       <Section>
+        <Breadcrumbs items={crumbsFor("/blog")} className="mb-6" />
         <Eyebrow>Studio notes</Eyebrow>
         <h1 className="max-w-3xl font-display text-4xl md:text-5xl">
           Detailing notes for San Antonio

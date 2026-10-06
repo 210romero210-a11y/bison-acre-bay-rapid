@@ -5,7 +5,7 @@ import { PageHero } from "@/components/page-hero";
 import { Photo } from "@/components/photo";
 import { Section, Eyebrow } from "@/components/section";
 import { ServiceCard } from "@/components/service-card";
-import { faqJsonLd, pageHead } from "@/lib/seo";
+import { crumbsFor, faqJsonLd, pageHead } from "@/lib/seo";
 import { IMAGES, SERVICES } from "@/lib/site";
 
 const FAQS = [
@@ -27,8 +27,10 @@ export const Route = createFileRoute("/services")({
   head: () =>
     pageHead(
       "Auto Detailing Services San Antonio TX | Interior, Exterior, Full Detail",
-      "Auto detailing service in San Antonio, TX — interior, exterior, full auto detailing, paint correction, and ceramic coating. Call (210) 201-4847.",
-      faqJsonLd(FAQS),
+      "Browse in-shop auto detailing, ceramic coating, paint correction, interior detailing, exterior detailing, and full detailing services.",
+      "/services",
+      [faqJsonLd("/services", FAQS)],
+      "Auto Detailing Services in San Antonio, TX",
     ),
   component: ServicesPage,
 });
@@ -43,6 +45,7 @@ function ServicesPage() {
         description="Choose the level of care your vehicle needs — a deep interior, a careful exterior, a full reset, paint correction, or ceramic protection. We recommend from condition, not a one-size ticket."
         imageSrc={IMAGES.truck.src}
         imageAlt={IMAGES.truck.alt}
+        crumbs={crumbsFor("/services")}
       />
 
       <Section>

@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { Section, Eyebrow } from "@/components/section";
-import { pageHead } from "@/lib/seo";
+import { crumbsFor, pageHead } from "@/lib/seo";
 import { BUSINESS } from "@/lib/site";
 
 export const Route = createFileRoute("/privacy")({
@@ -8,6 +9,9 @@ export const Route = createFileRoute("/privacy")({
     pageHead(
       "Privacy Policy | Southern Auto Detailers",
       "Privacy policy for Southern Auto Detailers in San Antonio, TX. How we handle appointment requests, contact details, and studio privacy.",
+      "/privacy",
+      [],
+      "Privacy Policy",
     ),
   component: PrivacyPage,
 });
@@ -16,6 +20,7 @@ function PrivacyPage() {
   return (
     <main>
       <Section>
+        <Breadcrumbs items={crumbsFor("/privacy")} className="mb-6" />
         <Eyebrow>Legal</Eyebrow>
         <h1 className="max-w-3xl font-display text-4xl md:text-5xl">Privacy Policy</h1>
         <p className="mt-4 max-w-2xl text-muted">

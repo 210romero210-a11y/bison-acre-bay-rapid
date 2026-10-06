@@ -1,9 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { CtaBand } from "@/components/cta-band";
 import { FaqList } from "@/components/faq-list";
 import { Photo } from "@/components/photo";
 import { Section, Eyebrow } from "@/components/section";
-import { faqJsonLd, pageHead } from "@/lib/seo";
+import { crumbsFor, faqJsonLd, pageHead } from "@/lib/seo";
 import { AREAS, BUSINESS, IMAGES, PLACE_LINKS } from "@/lib/site";
 
 const FAQS = [
@@ -25,8 +26,10 @@ export const Route = createFileRoute("/service-areas")({
   head: () =>
     pageHead(
       "Auto Detailing Near San Antonio TX | 78233, Royal Ridge, Fort Sam",
-      "Auto detailing for 78233, Royal Ridge, Rolling Oaks Mall, Fort Sam Houston, Live Oak, Universal City, Converse, Windcrest, and Schertz. Call (210) 201-4847.",
-      faqJsonLd(FAQS),
+      "Customers from northeast San Antonio and nearby cities visit the in-shop studio at 11692 Bricken Circle.",
+      "/service-areas",
+      [faqJsonLd("/service-areas", FAQS)],
+      "Auto detailing near San Antonio, TX",
     ),
   component: AreasPage,
 });
@@ -35,6 +38,7 @@ function AreasPage() {
   return (
     <main>
       <Section>
+        <Breadcrumbs items={crumbsFor("/service-areas")} className="mb-6" />
         <Eyebrow>San Antonio-area geographic keywords</Eyebrow>
         <h1 className="max-w-3xl font-display text-4xl md:text-5xl">
           Auto detailing near San Antonio, TX
