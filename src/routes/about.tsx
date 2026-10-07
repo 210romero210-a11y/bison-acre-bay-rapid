@@ -59,8 +59,9 @@ function AboutPage() {
             <p className="mt-4 text-muted">
               We are more than just a car detailing service — we are a community-centered,
               quality-driven, and customer-focused business dedicated to excellence and
-              generosity. Southern Auto Detailers is San Antonio based, located at{" "}
-              {BUSINESS.addressLine}, and rooted in Alamo Heights.
+              generosity. Southern Auto Detailers opened {BUSINESS.foundingDateDisplay}. The
+              studio is San Antonio based, located at {BUSINESS.addressLine}, and rooted in
+              Alamo Heights.
             </p>
             <p className="mt-4 text-muted">
               Our founder, {BUSINESS.founder}, is from Alamo Heights and is an Alamo Heights

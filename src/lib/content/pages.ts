@@ -569,6 +569,14 @@ export const contentPages: ContentPage[] =
       {
         "to": "/paint-correction",
         "label": "Paint correction"
+      },
+      {
+        "to": "/blog/questions-before-ceramic-coating",
+        "label": "Questions before coating"
+      },
+      {
+        "to": "/blog/paint-correction-before-ceramic-coating",
+        "label": "Correction before coating"
       }
     ]
   },
@@ -649,6 +657,14 @@ export const contentPages: ContentPage[] =
       {
         "to": "/paint-correction",
         "label": "Paint correction"
+      },
+      {
+        "to": "/blog/what-clay-bar-does",
+        "label": "What clay does"
+      },
+      {
+        "to": "/blog/washing-a-ceramic-coated-car",
+        "label": "Washing a coated car"
       }
     ]
   },
@@ -746,6 +762,14 @@ export const contentPages: ContentPage[] =
       {
         "to": "/refund-policy",
         "label": "Refund policy"
+      },
+      {
+        "to": "/blog/how-long-a-detail-takes",
+        "label": "How long a detail takes"
+      },
+      {
+        "to": "/blog/what-a-full-detail-includes",
+        "label": "What a full detail includes"
       }
     ],
     "compare": {
@@ -3550,6 +3574,10 @@ export const contentPages: ContentPage[] =
     ],
     "related": [
       {
+        "to": "/ceramic-coating",
+        "label": "Ceramic coating"
+      },
+      {
         "to": "/ceramic-coating/process",
         "label": "Install process"
       },
@@ -3690,6 +3718,18 @@ export const contentPages: ContentPage[] =
       {
         "to": "/san-antonio-78233",
         "label": "78233"
+      },
+      {
+        "to": "/full-detailing",
+        "label": "Full detailing"
+      },
+      {
+        "to": "/interior-detailing",
+        "label": "Interior detailing"
+      },
+      {
+        "to": "/exterior-detailing",
+        "label": "Exterior detailing"
       }
     ]
   },
@@ -3755,6 +3795,18 @@ export const contentPages: ContentPage[] =
       {
         "to": "/contact",
         "label": "Contact"
+      },
+      {
+        "to": "/full-detailing",
+        "label": "Full detailing"
+      },
+      {
+        "to": "/exterior-detailing",
+        "label": "Exterior detailing"
+      },
+      {
+        "to": "/interior-detailing",
+        "label": "Interior detailing"
       }
     ]
   }

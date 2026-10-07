@@ -11,11 +11,14 @@ export const BUSINESS = {
   postalCode: "78233",
   country: "US",
   addressLine: "11692 Bricken Circle, San Antonio, TX 78233",
-  mapsUrl: "https://maps.google.com/?q=11692+Bricken+Circle,+San+Antonio,+TX+78233",
+  mapsUrl: "https://www.google.com/maps/place/Southern+Auto+Detailers/@29.5447716,-98.3597922,17z",
+  googleBusinessUrl: "https://maps.app.goo.gl/vEsJcW9x4PHftyKBA",
   mapsEmbed:
     "https://maps.google.com/maps?q=11692%20Bricken%20Circle%2C%20San%20Antonio%2C%20TX%2078233&z=15&output=embed",
-  latitude: 29.545327,
-  longitude: -98.360003,
+  latitude: 29.5447716,
+  longitude: -98.3597922,
+  foundingDate: "2026-10-05",
+  foundingDateDisplay: "October 5, 2026",
   websiteDisplay: "southernautodetailers.com",
   servingLine: "San Antonio based · 11692 Bricken Circle, 78233",
   founder: "Robert Romero Jr.",
@@ -286,22 +289,22 @@ export const SERVICE_OPTIONS = [
 export const GALLERY = [
   {
     ...IMAGES.neglected,
-    title: "Sun-baked paint before a reset",
+    title: "Sun-baked paint",
     tag: "Exterior",
   },
   {
     ...IMAGES.hero,
-    title: "Wet-look finish after careful exterior work",
+    title: "Gloss on a finished exterior",
     tag: "Exterior",
   },
   {
     ...IMAGES.interior,
-    title: "Leather cabin after interior detailing",
+    title: "Cleaned leather cabin",
     tag: "Interior",
   },
   {
     ...IMAGES.suvInterior,
-    title: "Family SUV interior, deep cleaned",
+    title: "Family SUV cabin",
     tag: "Interior",
   },
   {

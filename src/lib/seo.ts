@@ -165,6 +165,8 @@ export function siteGraphJsonLd() {
     image: photos,
     address: postalAddress(),
     hasMap: BUSINESS.mapsUrl,
+    sameAs: [BUSINESS.googleBusinessUrl],
+    foundingDate: BUSINESS.foundingDate,
     geo: {
       "@type": "GeoCoordinates" as const,
       latitude: BUSINESS.latitude,

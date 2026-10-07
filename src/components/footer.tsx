@@ -100,6 +100,13 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+            <a
+              href={BUSINESS.googleBusinessUrl}
+              className="mt-4 inline-block text-sm text-muted hover:text-primary"
+              rel="noopener noreferrer"
+            >
+              Google listing
+            </a>
           </nav>
         </div>
       </div>

@@ -31,12 +31,11 @@ function RefundPage() {
             <h2 className="font-display text-2xl text-fg">20% non-refundable deposit</h2>
             <p className="mt-3">{DEPOSIT.blurb}</p>
             <p className="mt-3">
-              The deposit is always 20% of the quoted total for that vehicle. If the quoted
-              total is $200, the deposit is $40. If the quoted total is $500, the deposit
-              is $100. Those figures are only the math — they are not a menu. Your quote
-              depends on size, condition, and the service you book. The remaining 80% is
-              due when the work is finished. If you cancel, reschedule in a way that leaves
-              the slot empty, or do not show, the deposit is not refunded.
+              The deposit is always 20% of the quoted total for that vehicle. It is not a
+              published package price. Your quote depends on size, condition, and the
+              service you book. The remaining 80% is due when the work is finished. If you
+              cancel, reschedule in a way that leaves the slot empty, or do not show, the
+              deposit is not refunded.
             </p>
           </section>
           <section>

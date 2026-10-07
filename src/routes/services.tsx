@@ -109,6 +109,31 @@ function ServicesPage() {
         </div>
       </Section>
 
+      <Section>
+        <Eyebrow>From the studio</Eyebrow>
+        <h2 className="font-display text-3xl">Notes that match each service</h2>
+        <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+          {[
+            ["/blog/floor-mats-and-carpets", "Interior: mats and carpets"],
+            ["/blog/pet-hair-interior-detailing", "Interior: pet hair"],
+            ["/blog/wheel-detailing-san-antonio", "Exterior: wheels"],
+            ["/blog/bird-droppings-on-car-paint", "Exterior: bird droppings"],
+            ["/blog/what-a-full-detail-includes", "Full detail: what is included"],
+            ["/blog/detailing-trucks-and-suvs-san-antonio", "Full detail: trucks and SUVs"],
+            ["/blog/swirl-marks-from-car-washes", "Paint correction: swirl marks"],
+            ["/blog/what-is-paint-correction", "Paint correction: what it is"],
+            ["/blog/questions-before-ceramic-coating", "Ceramic coating: questions to ask"],
+            ["/blog/ceramic-coating-vs-wax", "Ceramic coating versus wax"],
+          ].map(([to, label]) => (
+            <li key={to}>
+              <Link to={to as never} className="font-semibold text-primary">
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </Section>
+
       <Section tone="surface">
         <Eyebrow>Questions</Eyebrow>
         <h2 className="font-display text-3xl">Service FAQs</h2>
