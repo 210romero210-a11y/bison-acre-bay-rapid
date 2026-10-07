@@ -31,6 +31,7 @@ export const Route = createFileRoute("/services")({
       "/services",
       [faqJsonLd("/services", FAQS)],
       "Auto Detailing Services in San Antonio, TX",
+      IMAGES.truck,
     ),
   component: ServicesPage,
 });
@@ -52,11 +53,9 @@ function ServicesPage() {
         <Eyebrow>Menu</Eyebrow>
         <h2 className="font-display text-3xl">Core services</h2>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {SERVICES.filter((s) => s.slug !== "full-detail" && s.slug !== "maintenance").map(
-            (service) => (
+          {SERVICES.filter((s) => s.slug !== "maintenance").map((service) => (
               <ServiceCard key={service.slug} {...service} />
-            ),
-          )}
+            ))}
         </div>
       </Section>
 
@@ -78,6 +77,12 @@ function ServicesPage() {
             </p>
             <Link to="/full-detailing" className="mt-6 inline-block text-sm font-semibold text-primary">
               Full auto detailing in San Antonio
+            </Link>
+            <Link
+              to="/blog/what-a-full-detail-includes"
+              className="mt-3 block text-sm font-semibold text-primary"
+            >
+              What a full detail includes
             </Link>
           </div>
           <Photo src={IMAGES.hero.src} alt={IMAGES.hero.alt} className="aspect-3/2 rounded-3xl" />

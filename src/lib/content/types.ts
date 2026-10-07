@@ -13,6 +13,7 @@ export type ContentPage = {
   related: { to: string; label: string }[];
   kind: "service" | "place" | "article" | "page";
   serviceName?: string;
+  published?: string;
   compare?: {
     caption: string;
     headers: string[];

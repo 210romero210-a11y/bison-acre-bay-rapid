@@ -31,6 +31,7 @@ export const Route = createFileRoute("/about")({
       "/about",
       [faqJsonLd("/about", FAQS)],
       "A private detailing studio with a community mission",
+      IMAGES.coupe,
     ),
   component: AboutPage,
 });

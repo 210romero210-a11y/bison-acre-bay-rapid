@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { blogPosts } from "@/lib/content/pages";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { Section, Eyebrow } from "@/components/section";
-import { crumbsFor, pageHead } from "@/lib/seo";
+import { crumbsFor, pageHead, absoluteUrl } from "@/lib/seo";
 
 export const Route = createFileRoute("/blog/")({
   head: () =>
@@ -10,7 +10,19 @@ export const Route = createFileRoute("/blog/")({
       "Auto Detailing Blog | San Antonio TX",
       "Guides from Southern Auto Detailers on ceramic coating, paint correction, and in-shop detailing in San Antonio.",
       "/blog",
-      [],
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: "Southern Auto Detailers articles",
+          itemListElement: blogPosts.map((post, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            name: post.h1,
+            url: absoluteUrl(post.path),
+          })),
+        },
+      ],
       "Detailing notes for San Antonio",
     ),
   component: BlogIndex,
@@ -33,11 +45,20 @@ function BlogIndex() {
           {blogPosts.map((post) => (
             <li key={post.path}>
               <Link
-                to={post.path as "/blog/ceramic-coating-vs-wax"}
-                className="block rounded-3xl border border-border bg-surface p-6 hover:border-primary/50"
+                to={post.path as never}
+                className="grid gap-5 rounded-3xl border border-border bg-surface p-4 hover:border-primary/50 sm:grid-cols-[12rem_1fr] sm:p-5"
               >
-                <h2 className="font-display text-2xl">{post.h1}</h2>
-                <p className="mt-2 text-sm text-muted">{post.description}</p>
+                <img
+                  src={post.image.src}
+                  alt={post.image.alt}
+                  width={1600}
+                  height={900}
+                  className="aspect-video w-full rounded-2xl object-cover"
+                />
+                <span>
+                  <h2 className="font-display text-2xl">{post.h1}</h2>
+                  <p className="mt-2 text-sm text-muted">{post.description}</p>
+                </span>
               </Link>
             </li>
           ))}

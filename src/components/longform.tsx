@@ -7,6 +7,23 @@ import { Section, Eyebrow } from "@/components/section";
 import type { ContentPage } from "@/lib/content/types";
 import { crumbsFor } from "@/lib/seo";
 
+function RichText({ text }: { text: string }) {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  return (
+    <>
+      {parts.map((part, index) => {
+        const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+        if (!match) return <span key={index}>{part}</span>;
+        return (
+          <Link key={index} to={match[2] as never} className="font-semibold text-primary">
+            {match[1]}
+          </Link>
+        );
+      })}
+    </>
+  );
+}
+
 export function Longform({ page }: { page: ContentPage }) {
   return (
     <main>
@@ -22,6 +39,18 @@ export function Longform({ page }: { page: ContentPage }) {
       <Section>
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_18rem]">
           <article className="max-w-3xl">
+            {page.published ? (
+              <p className="mb-8 text-sm text-muted">
+                Published{" "}
+                <time dateTime={page.published}>
+                  {new Date(`${page.published}T12:00:00`).toLocaleDateString("en-US", {
+                    month: "long",
+                    day: "numeric",
+                    year: "numeric",
+                  })}
+                </time>
+              </p>
+            ) : null}
             {page.compare ? (
               <div className="overflow-x-auto rounded-3xl border border-border">
                 <table className="w-full min-w-[36rem] text-left text-sm">
@@ -59,7 +88,7 @@ export function Longform({ page }: { page: ContentPage }) {
                 <h2 className="font-display text-2xl md:text-3xl">{section.heading}</h2>
                 {section.paragraphs.map((paragraph) => (
                   <p key={paragraph.slice(0, 48)} className="mt-4 text-muted leading-relaxed">
-                    {paragraph}
+                    <RichText text={paragraph} />
                   </p>
                 ))}
                 {section.bullets ? (

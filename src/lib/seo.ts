@@ -1,4 +1,4 @@
-import { BUSINESS, SITE_ORIGIN } from "@/lib/site";
+import { BUSINESS, HOURS, IMAGES, SITE_ORIGIN } from "@/lib/site";
 
 const ORIGIN = (SITE_ORIGIN || "https://southernautodetailers.com").replace(/\/$/, "");
 
@@ -119,20 +119,69 @@ function script(data: object) {
   return { type: "application/ld+json", children: JSON.stringify(data) };
 }
 
-/** Shop entity only. No hours, email, logo, geo, prices, or review fields. */
+function to24(value: string) {
+  const match = value.trim().match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
+  if (!match) return null;
+  let hour = Number(match[1]);
+  const minute = match[2];
+  const meridiem = match[3].toUpperCase();
+  if (meridiem === "PM" && hour !== 12) hour += 12;
+  if (meridiem === "AM" && hour === 12) hour = 0;
+  return `${String(hour).padStart(2, "0")}:${minute}`;
+}
+
+function openingHoursSpecification() {
+  return HOURS.flatMap((row) => {
+    if (row.time === "Closed") return [];
+    const [opensRaw, closesRaw] = row.time.split(/\s+[–-]\s+/);
+    const opens = to24(opensRaw ?? "");
+    const closes = to24(closesRaw ?? "");
+    if (!opens || !closes) return [];
+    return [
+      {
+        "@type": "OpeningHoursSpecification" as const,
+        dayOfWeek: row.day,
+        opens,
+        closes,
+      },
+    ];
+  });
+}
+
+function photoUrls() {
+  return Object.values(IMAGES).map((image) => absoluteUrl(image.src));
+}
+
+/** Shop entity. Hours, email, logo, photos, map, and coordinates are the confirmed studio facts. */
 export function siteGraphJsonLd() {
+  const logo = absoluteUrl("/logo.png");
+  const photos = photoUrls();
+  const placeFacts = {
+    name: BUSINESS.name,
+    url: `${ORIGIN}/`,
+    telephone: BUSINESS.phoneE164,
+    email: BUSINESS.email,
+    logo,
+    image: photos,
+    address: postalAddress(),
+    hasMap: BUSINESS.mapsUrl,
+    geo: {
+      "@type": "GeoCoordinates" as const,
+      latitude: BUSINESS.latitude,
+      longitude: BUSINESS.longitude,
+    },
+    openingHoursSpecification: openingHoursSpecification(),
+  };
+
   return {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "AutoWash",
         "@id": businessId(),
-        name: BUSINESS.name,
         description:
           "Southern Auto Detailers provides professional in-shop auto detailing, ceramic coating, paint correction, interior detailing, exterior detailing, and full detailing services in San Antonio, Texas.",
-        url: `${ORIGIN}/`,
-        telephone: BUSINESS.phoneE164,
-        address: postalAddress(),
+        ...placeFacts,
         hasOfferCatalog: {
           "@type": "OfferCatalog",
           name: "In-Shop Auto Detailing Services",
@@ -149,10 +198,7 @@ export function siteGraphJsonLd() {
       {
         "@type": "Organization",
         "@id": organizationId(),
-        name: BUSINESS.name,
-        url: `${ORIGIN}/`,
-        telephone: BUSINESS.phoneE164,
-        address: postalAddress(),
+        ...placeFacts,
       },
     ],
   };
@@ -204,7 +250,12 @@ function pageTypeFor(path: string): PageKind {
   return "WebPage";
 }
 
-export function webPageJsonLd(path: string, name: string, description: string) {
+export function webPageJsonLd(
+  path: string,
+  name: string,
+  description: string,
+  image?: { src: string; alt: string },
+) {
   const url = absoluteUrl(path);
   const service = SERVICE_PAGES.find((item) => item.path === path);
   const place = PLACES[path];
@@ -226,6 +277,15 @@ export function webPageJsonLd(path: string, name: string, description: string) {
     about: { "@id": ceramicChild ? `${absoluteUrl("/ceramic-coating")}#service` : businessId() },
     mainEntity: { "@id": mainEntity },
     ...(place ? { spatialCoverage: place.spatial } : {}),
+    ...(image
+      ? {
+          primaryImageOfPage: {
+            "@type": "ImageObject",
+            contentUrl: absoluteUrl(image.src),
+            caption: image.alt,
+          },
+        }
+      : {}),
     inLanguage: "en-US",
   };
 }
@@ -246,7 +306,7 @@ export function breadcrumbJsonLd(path: string, current?: string) {
   };
 }
 
-export function serviceJsonLd(path: string) {
+export function serviceJsonLd(path: string, image?: { src: string; alt: string }) {
   const service = SERVICE_PAGES.find((item) => item.path === path);
   if (!service) return null;
   const url = absoluteUrl(service.path);
@@ -264,6 +324,15 @@ export function serviceJsonLd(path: string) {
       "@type": "ServiceChannel",
       serviceLocation: { "@id": businessId() },
     },
+    ...(image
+      ? {
+          image: {
+            "@type": "ImageObject",
+            contentUrl: absoluteUrl(image.src),
+            caption: image.alt,
+          },
+        }
+      : {}),
   };
 }
 
@@ -281,7 +350,13 @@ export function faqJsonLd(path: string, items: readonly { q: string; a: string }
   };
 }
 
-export function articleJsonLd(path: string, headline: string, description: string) {
+export function articleJsonLd(
+  path: string,
+  headline: string,
+  description: string,
+  image?: { src: string; alt: string },
+  published?: string,
+) {
   const url = absoluteUrl(path);
   return {
     "@context": "https://schema.org",
@@ -290,6 +365,20 @@ export function articleJsonLd(path: string, headline: string, description: strin
     mainEntityOfPage: { "@type": "WebPage", "@id": `${url}#webpage` },
     headline,
     description,
+    ...(published ? { datePublished: published, dateModified: published } : {}),
+    ...(image
+      ? {
+          image: [
+            {
+              "@type": "ImageObject",
+              "@id": `${absoluteUrl(image.src)}#image`,
+              contentUrl: absoluteUrl(image.src),
+              url: absoluteUrl(image.src),
+              caption: image.alt,
+            },
+          ],
+        }
+      : {}),
     author: { "@type": "Organization", "@id": organizationId() },
     publisher: { "@id": organizationId() },
     inLanguage: "en-US",
@@ -301,9 +390,10 @@ function blocksFor(
   name: string,
   description: string,
   extras: Array<object | null | undefined> = [],
+  image?: { src: string; alt: string },
 ) {
   const crumb = breadcrumbJsonLd(path, name);
-  return [webPageJsonLd(path, name, description), crumb, ...extras].filter(
+  return [webPageJsonLd(path, name, description, image), crumb, ...extras].filter(
     (block): block is object => Boolean(block),
   );
 }
@@ -314,13 +404,14 @@ export function pageHead(
   path: string,
   extras: Array<object | null | undefined> = [],
   pageName?: string,
+  image?: { src: string; alt: string },
 ) {
   return {
     meta: [
       { title },
       { name: "description", content: description },
     ],
-    scripts: blocksFor(path, pageName || title, description, extras).map(script),
+    scripts: blocksFor(path, pageName || title, description, extras, image).map(script),
   };
 }
 
@@ -331,10 +422,13 @@ export function contentHead(page: {
   h1: string;
   kind: "service" | "place" | "article" | "page";
   faqs: readonly { q: string; a: string }[];
+  image?: { src: string; alt: string };
+  published?: string;
 }) {
   const extras: Array<object | null> = [faqJsonLd(page.path, page.faqs)];
-  if (page.kind === "service") extras.unshift(serviceJsonLd(page.path));
-  if (page.kind === "article") extras.unshift(articleJsonLd(page.path, page.h1, page.description));
-  const crumbName = page.h1;
-  return pageHead(page.title, page.description, page.path, extras, crumbName);
+  if (page.kind === "service") extras.unshift(serviceJsonLd(page.path, page.image));
+  if (page.kind === "article") {
+    extras.unshift(articleJsonLd(page.path, page.h1, page.description, page.image, page.published));
+  }
+  return pageHead(page.title, page.description, page.path, extras, page.h1, page.image);
 }

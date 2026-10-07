@@ -14,6 +14,8 @@ export const BUSINESS = {
   mapsUrl: "https://maps.google.com/?q=11692+Bricken+Circle,+San+Antonio,+TX+78233",
   mapsEmbed:
     "https://maps.google.com/maps?q=11692%20Bricken%20Circle%2C%20San%20Antonio%2C%20TX%2078233&z=15&output=embed",
+  latitude: 29.545327,
+  longitude: -98.360003,
   websiteDisplay: "southernautodetailers.com",
   servingLine: "San Antonio based · 11692 Bricken Circle, 78233",
   founder: "Robert Romero Jr.",

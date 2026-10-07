@@ -18,6 +18,8 @@ export const Route = createFileRoute("/")({
       "Southern Auto Detailers provides professional in-shop auto detailing in San Antonio, Texas.",
       "/",
       [websiteJsonLd(), faqJsonLd("/", FAQS)],
+      "Auto Detailing San Antonio TX | Southern Auto Detailers",
+      IMAGES.hero,
     ),
   component: Home,
 });

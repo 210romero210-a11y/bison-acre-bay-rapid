@@ -77,6 +77,18 @@ export const contentPages: ContentPage[] =
     ],
     "related": [
       {
+        "to": "/blog/floor-mats-and-carpets",
+        "label": "Mats and carpets"
+      },
+      {
+        "to": "/blog/leather-conditioning-san-antonio",
+        "label": "Leather in the heat"
+      },
+      {
+        "to": "/blog/pet-hair-interior-detailing",
+        "label": "Pet hair interiors"
+      },
+      {
         "to": "/full-detailing",
         "label": "Full auto detailing"
       },
@@ -157,6 +169,18 @@ export const contentPages: ContentPage[] =
       }
     ],
     "related": [
+      {
+        "to": "/blog/bird-droppings-on-car-paint",
+        "label": "Bird droppings"
+      },
+      {
+        "to": "/blog/wheel-detailing-san-antonio",
+        "label": "Wheel detailing"
+      },
+      {
+        "to": "/blog/hard-water-spots-san-antonio",
+        "label": "Hard water spots"
+      },
       {
         "to": "/paint-correction",
         "label": "Paint correction"
@@ -241,6 +265,18 @@ export const contentPages: ContentPage[] =
       }
     ],
     "related": [
+      {
+        "to": "/blog/door-jambs-in-a-detail",
+        "label": "Door jambs"
+      },
+      {
+        "to": "/blog/detailing-trucks-and-suvs-san-antonio",
+        "label": "Trucks and SUVs"
+      },
+      {
+        "to": "/blog/what-a-full-detail-includes",
+        "label": "What a full detail includes"
+      },
       {
         "to": "/interior-detailing",
         "label": "Interior detailing"
@@ -327,6 +363,18 @@ export const contentPages: ContentPage[] =
     ],
     "related": [
       {
+        "to": "/blog/tree-sap-on-paint",
+        "label": "Tree sap"
+      },
+      {
+        "to": "/blog/swirl-marks-from-car-washes",
+        "label": "Swirls from washes"
+      },
+      {
+        "to": "/blog/paint-correction-before-ceramic-coating",
+        "label": "Correction before coating"
+      },
+      {
         "to": "/ceramic-coating",
         "label": "Ceramic coating"
       },
@@ -404,6 +452,18 @@ export const contentPages: ContentPage[] =
       }
     ],
     "related": [
+      {
+        "to": "/blog/what-clay-bar-does",
+        "label": "What clay does"
+      },
+      {
+        "to": "/blog/questions-before-ceramic-coating",
+        "label": "Questions before coating"
+      },
+      {
+        "to": "/blog/paint-correction-before-ceramic-coating",
+        "label": "Correction before coating"
+      },
       {
         "to": "/ceramic-coating/cost",
         "label": "Ceramic coating cost"
@@ -808,6 +868,10 @@ export const contentPages: ContentPage[] =
     ],
     "related": [
       {
+        "to": "/blog/how-often-to-detail-san-antonio",
+        "label": "How often to detail"
+      },
+      {
         "to": "/royal-ridge",
         "label": "Royal Ridge"
       },
@@ -882,6 +946,10 @@ export const contentPages: ContentPage[] =
     ],
     "related": [
       {
+        "to": "/blog/how-often-to-detail-san-antonio",
+        "label": "How often to detail"
+      },
+      {
         "to": "/san-antonio-78233",
         "label": "78233 detailing"
       },
@@ -948,6 +1016,14 @@ export const contentPages: ContentPage[] =
       }
     ],
     "related": [
+      {
+        "to": "/blog/tree-sap-on-paint",
+        "label": "Tree sap"
+      },
+      {
+        "to": "/blog/oak-pollen-san-antonio-paint",
+        "label": "Oak pollen"
+      },
       {
         "to": "/san-antonio-78233",
         "label": "78233 studio"
@@ -1169,6 +1245,10 @@ export const contentPages: ContentPage[] =
     ],
     "related": [
       {
+        "to": "/blog/car-seat-interior-detailing",
+        "label": "Car seats"
+      },
+      {
         "to": "/san-antonio-78233",
         "label": "78233 studio"
       },
@@ -1251,6 +1331,18 @@ export const contentPages: ContentPage[] =
       }
     ],
     "related": [
+      {
+        "to": "/blog/tree-sap-on-paint",
+        "label": "Tree sap"
+      },
+      {
+        "to": "/blog/oak-pollen-san-antonio-paint",
+        "label": "Oak pollen"
+      },
+      {
+        "to": "/blog/pet-hair-interior-detailing",
+        "label": "Pet hair interiors"
+      },
       {
         "to": "/interior-detailing",
         "label": "Interior detailing"
@@ -1335,6 +1427,14 @@ export const contentPages: ContentPage[] =
     ],
     "related": [
       {
+        "to": "/blog/construction-dust-on-paint",
+        "label": "Construction dust"
+      },
+      {
+        "to": "/blog/swirl-marks-from-car-washes",
+        "label": "Swirls from washes"
+      },
+      {
         "to": "/exterior-detailing",
         "label": "Exterior detailing"
       },
@@ -1417,6 +1517,14 @@ export const contentPages: ContentPage[] =
       }
     ],
     "related": [
+      {
+        "to": "/blog/sun-damaged-dashboard",
+        "label": "Sun-baked dashes"
+      },
+      {
+        "to": "/blog/hard-water-spots-san-antonio",
+        "label": "Hard water spots"
+      },
       {
         "to": "/san-antonio-78233",
         "label": "78233 studio"
@@ -1504,6 +1612,14 @@ export const contentPages: ContentPage[] =
     ],
     "related": [
       {
+        "to": "/blog/bugs-and-tar-on-paint",
+        "label": "Bugs and tar"
+      },
+      {
+        "to": "/blog/detailing-trucks-and-suvs-san-antonio",
+        "label": "Trucks and SUVs"
+      },
+      {
         "to": "/full-detailing",
         "label": "Full detailing"
       },
@@ -1514,6 +1630,1810 @@ export const contentPages: ContentPage[] =
       {
         "to": "/live-oak",
         "label": "Live Oak"
+      }
+    ]
+  },
+  {
+    "path": "/blog/bird-droppings-on-car-paint",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Bird Droppings on Car Paint in San Antonio",
+    "description": "Bird droppings etch San Antonio paint if they sit in the sun. What an exterior detail can lift, and when the spot needs paint correction.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Bird droppings on car paint",
+    "lede": "A dropping is not just dirty. In this sun it etches the clear coat. Wipe it dry and you add a scratch to the etch.",
+    "image": {
+      "src": "/images/bird-droppings-on-car-paint.webp",
+      "alt": "Bird dropping etched into red car paint"
+    },
+    "sections": [
+      {
+        "heading": "Why they etch",
+        "paragraphs": [
+          "The dropping is acidic. On a cool panel it sits. By afternoon on a [Live Oak](/live-oak) driveway the panel is hot and the acid has started a ring. [Exterior detailing](/exterior-detailing) soaks and lifts a fresh dropping. A ring that has already eaten the clear coat does not wash off.",
+          "That ring is a [paint correction](/paint-correction) question, and only if the clear is thick enough to polish. We look before we promise."
+        ]
+      },
+      {
+        "heading": "What not to do",
+        "paragraphs": [
+          "Do not scrape it with a fingernail or a dry towel. Soak it, then wash the panel. A [ceramic coating](/ceramic-coating) makes the next dropping easier to release. It does not make an etched ring disappear. Coating over the ring locks it in.",
+          "If the rest of the car is due, the dropping is one note on an exterior visit, not a separate emergency price. We still quote the vehicle."
+        ]
+      },
+      {
+        "heading": "Where",
+        "paragraphs": [
+          "Bring it to 11692 Bricken Circle in [78233](/san-antonio-78233). Call (210) 201-4847. Tuesday through Sunday, 7:00 AM to 11:00 PM. The slot is held with a 20% non-refundable deposit of the quoted total."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Will a wash remove an etched ring?",
+        "a": "A fresh dropping, often yes. A ring that has sat in the sun may need correction, and only if the clear coat allows it."
+      },
+      {
+        "q": "Does ceramic coating stop bird droppings?",
+        "a": "It makes them easier to wash off. It does not stop the etch if they sit."
+      },
+      {
+        "q": "Where is the work done?",
+        "a": "11692 Bricken Circle, San Antonio, TX 78233."
+      }
+    ],
+    "related": [
+      {
+        "to": "/exterior-detailing",
+        "label": "Exterior detailing"
+      },
+      {
+        "to": "/paint-correction",
+        "label": "Paint correction"
+      },
+      {
+        "to": "/live-oak",
+        "label": "Live Oak"
+      },
+      {
+        "to": "/san-antonio-78233",
+        "label": "78233"
+      },
+      {
+        "to": "/blog/hard-water-spots-san-antonio",
+        "label": "Hard water spots"
+      }
+    ]
+  },
+  {
+    "path": "/blog/bugs-and-tar-on-paint",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Bugs and Road Tar on San Antonio Paint",
+    "description": "Highway bugs and tar on the nose of a San Antonio car need a chemical dwell, not a dry scrape. Exterior detailing at the 78233 studio.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Bugs and road tar on paint",
+    "lede": "I-35 bugs and tar dots are bonded film. A towel turns them into scratches. They come off with the right dwell, then a wash.",
+    "image": {
+      "src": "/images/bugs-and-tar-on-paint.webp",
+      "alt": "Dried bugs and tar on a white front bumper"
+    },
+    "sections": [
+      {
+        "heading": "Where it collects",
+        "paragraphs": [
+          "The bumper, the mirrors, and the leading edge of the hood take the hits. [Schertz](/schertz) and [Fort Sam Houston](/fort-sam-houston) commuters see it every week. [Exterior detailing](/exterior-detailing) softens the bugs and the tar, then washes them off. Scraping first cuts the clear coat.",
+          "Tar on the lower doors is the same family of problem. It is not a reason to polish the whole car."
+        ]
+      },
+      {
+        "heading": "When it becomes a paint job",
+        "paragraphs": [
+          "If someone already scraped the bugs, the scratches are in the clear. That is [paint correction](/paint-correction), after the film is gone. Read [swirl marks](/blog/swirl-marks-from-car-washes) if the cobwebs showed up after a tunnel wash.",
+          "A [full detail](/full-detailing) is the right visit only when the cabin is due too. Bugs alone are an exterior visit."
+        ]
+      },
+      {
+        "heading": "Book it",
+        "paragraphs": [
+          "Call (210) 201-4847 and say how long the bugs have been baked on. The studio is 11692 Bricken Circle, San Antonio, TX 78233. Deposit is 20% of the quoted total."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I pick bugs off with a card?",
+        "a": "No. You will scratch the paint. Soften them first."
+      },
+      {
+        "q": "Is tar the same as bugs?",
+        "a": "Both are bonded film. Both want a dwell, not a scrape. The products are not identical."
+      },
+      {
+        "q": "Do you remove them at my house?",
+        "a": "No. The studio is on Bricken Circle in 78233."
+      }
+    ],
+    "related": [
+      {
+        "to": "/exterior-detailing",
+        "label": "Exterior detailing"
+      },
+      {
+        "to": "/paint-correction",
+        "label": "Paint correction"
+      },
+      {
+        "to": "/schertz",
+        "label": "Schertz"
+      },
+      {
+        "to": "/fort-sam-houston",
+        "label": "Fort Sam Houston"
+      },
+      {
+        "to": "/blog/swirl-marks-from-car-washes",
+        "label": "Swirl marks"
+      }
+    ]
+  },
+  {
+    "path": "/blog/floor-mats-and-carpets",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Floor Mats and Carpets in a San Antonio Detail",
+    "description": "Sand and caliche live in San Antonio carpets and under the mats. What interior detailing does with them, and what it will not promise.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Floor mats and carpets",
+    "lede": "The mat hides the dirty carpet. A real interior detail pulls the mats, cleans both, and does not call a vacuum line a shampoo.",
+    "image": {
+      "src": "/images/floor-mats-and-carpets.webp",
+      "alt": "Muddy floor mats beside a cleaned car carpet"
+    },
+    "sections": [
+      {
+        "heading": "What is under the mat",
+        "paragraphs": [
+          "Sand, caliche, and spilled drinks sit in the pad under a mat that has not moved in a year. [Interior detailing](/interior-detailing) removes the mats, cleans the carpet, and cleans the mat itself. Rubber mats can be washed. Carpet mats can be improved. A mat that is rotting stays rotting.",
+          "[Universal City](/universal-city) and [Converse](/converse) cars that park on construction edges bring the dust in on shoes. That is a cabin problem, not a paint problem."
+        ]
+      },
+      {
+        "heading": "Stains",
+        "paragraphs": [
+          "A fresh spill can leave. A stain that has dyed the fiber may stay as a shadow. We say which one you have before the deposit. Pet hair in the same carpet is covered in [pet hair](/blog/pet-hair-interior-detailing). Crumbs under a seat are in [car seats](/blog/car-seat-interior-detailing).",
+          "If the outside is equally tired, book the [full detail](/full-detailing)."
+        ]
+      },
+      {
+        "heading": "Drop-off",
+        "paragraphs": [
+          "Shake the loose gravel at home if you want. Leave the mats in the car. We will pull them. Studio: 11692 Bricken Circle, [78233](/san-antonio-78233). Call (210) 201-4847."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do you remove the mats?",
+        "a": "Yes. The carpet under them is part of the interior."
+      },
+      {
+        "q": "Will every stain leave?",
+        "a": "Fresh spills often do. A dyed-in stain may only lighten. We will say so."
+      },
+      {
+        "q": "Where?",
+        "a": "11692 Bricken Circle, San Antonio, TX 78233."
+      }
+    ],
+    "related": [
+      {
+        "to": "/interior-detailing",
+        "label": "Interior detailing"
+      },
+      {
+        "to": "/full-detailing",
+        "label": "Full detailing"
+      },
+      {
+        "to": "/universal-city",
+        "label": "Universal City"
+      },
+      {
+        "to": "/blog/pet-hair-interior-detailing",
+        "label": "Pet hair"
+      },
+      {
+        "to": "/blog/car-seat-interior-detailing",
+        "label": "Car seats"
+      }
+    ]
+  },
+  {
+    "path": "/blog/sun-damaged-dashboard",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Sun-Damaged Dashboards in San Antonio",
+    "description": "San Antonio sun dries dashboards and interior plastic. What a detail can clean, and what cracked vinyl will not become.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Sun-damaged dashboards",
+    "lede": "A dusty dash in this heat looks gray even when the seats are fine. Cleaning lifts the film. It does not heal a crack.",
+    "image": {
+      "src": "/images/sun-damaged-dashboard.webp",
+      "alt": "Sun-cracked dusty dashboard in harsh daylight"
+    },
+    "sections": [
+      {
+        "heading": "What the sun does",
+        "paragraphs": [
+          "The dash, the top of the rear deck, and the door caps bake. Dust bonds. Plastics fade. [Interior detailing](/interior-detailing) cleans those panels without soaking the electronics or leaving a greasy shine that glare-blinds you on I-35.",
+          "Cars parked outside in [Windcrest](/windcrest) and [Royal Ridge](/royal-ridge) show it first. A garage slows it. It does not reverse a crack that is already there."
+        ]
+      },
+      {
+        "heading": "What we will not claim",
+        "paragraphs": [
+          "Conditioner does not close a split in the dash. Dye does not make faded plastic a factory color. If the leather is the real complaint, read [leather conditioning](/blog/leather-conditioning-san-antonio). If the whole cabin is tired, that is still one interior visit, not a trim repair.",
+          "We do not coat the dashboard and call it paint protection. [Ceramic coating](/ceramic-coating) on this site means the paint outside."
+        ]
+      },
+      {
+        "heading": "Book",
+        "paragraphs": [
+          "Tell us if the dash is dusty or actually cracked. Call (210) 201-4847. The studio is 11692 Bricken Circle. Deposit is 20% of the quoted total."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can you fix a cracked dash?",
+        "a": "No. We clean it. A split in the vinyl stays."
+      },
+      {
+        "q": "Will the dash be glossy?",
+        "a": "No. A greasy shine glares. The goal is clean, not wet-looking."
+      },
+      {
+        "q": "Where is the studio?",
+        "a": "11692 Bricken Circle, San Antonio, TX 78233."
+      }
+    ],
+    "related": [
+      {
+        "to": "/interior-detailing",
+        "label": "Interior detailing"
+      },
+      {
+        "to": "/windcrest",
+        "label": "Windcrest"
+      },
+      {
+        "to": "/royal-ridge",
+        "label": "Royal Ridge"
+      },
+      {
+        "to": "/blog/leather-conditioning-san-antonio",
+        "label": "Leather conditioning"
+      },
+      {
+        "to": "/full-detailing",
+        "label": "Full detailing"
+      }
+    ]
+  },
+  {
+    "path": "/blog/what-clay-bar-does",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "What a Clay Bar Does on Car Paint",
+    "description": "A clay bar pulls bonded grit off San Antonio paint before polish or ceramic coating. It is not a wax and it is not paint correction.",
+    "eyebrow": "Notes from the studio",
+    "h1": "What a clay bar does",
+    "lede": "If the paint feels rough after a wash, the roughness is often bonded grit. Clay shears it off. Clay does not remove swirls.",
+    "image": {
+      "src": "/images/what-clay-bar-does.webp",
+      "alt": "Clay bar and lubricant on a silver car door"
+    },
+    "sections": [
+      {
+        "heading": "What it removes",
+        "paragraphs": [
+          "Industrial fallout, leftover bug film, and rail dust make a panel feel like sandpaper after the loose dirt is gone. [Exterior detailing](/exterior-detailing) clays that grit when the panel needs it. The lubricant keeps the bar from dragging dry. Dry clay adds the marks you were trying to avoid.",
+          "Clay is a step before [paint correction](/paint-correction) and before [ceramic coating](/ceramic-coating). The [process page](/ceramic-coating/process) lists it in that order."
+        ]
+      },
+      {
+        "heading": "What it does not do",
+        "paragraphs": [
+          "It does not fill swirls. It does not etch water spots out of the clear coat. It does not replace a wash. If the panel is smooth and clean, claying it for the ritual is wasted time. We clay when the panel asks for it.",
+          "After clay, the paint is bare of that grit and needs a seal or a coating if you want protection. A bare panel in this sun picks film back up."
+        ]
+      },
+      {
+        "heading": "Where it happens",
+        "paragraphs": [
+          "In the studio at 11692 Bricken Circle, not in a parking lot. [Converse](/converse) dust and highway film are common reasons the paint feels rough. Call (210) 201-4847."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is clay the same as polish?",
+        "a": "No. Clay removes bonded grit on top of the clear coat. Polish levels the clear coat itself."
+      },
+      {
+        "q": "Does every detail include clay?",
+        "a": "Only when the paint feels rough after the wash. A smooth panel does not need it."
+      },
+      {
+        "q": "Can I clay a coated car?",
+        "a": "Ask first. A coated panel usually does not want a clay unless something is stuck on it."
+      }
+    ],
+    "related": [
+      {
+        "to": "/exterior-detailing",
+        "label": "Exterior detailing"
+      },
+      {
+        "to": "/ceramic-coating/process",
+        "label": "Coating process"
+      },
+      {
+        "to": "/paint-correction",
+        "label": "Paint correction"
+      },
+      {
+        "to": "/converse",
+        "label": "Converse"
+      },
+      {
+        "to": "/blog/bugs-and-tar-on-paint",
+        "label": "Bugs and tar"
+      }
+    ]
+  },
+  {
+    "path": "/blog/construction-dust-on-paint",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Construction Dust on Northeast San Antonio Paint",
+    "description": "Caliche and construction dust along 78233 and the northeast side bond to paint. How an exterior detail removes the film without scratching it.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Construction dust on paint",
+    "lede": "White dust on the rocker panels is not just dirt you can wipe. It is fine grit. A dry hand makes it sandpaper.",
+    "image": {
+      "src": "/images/construction-dust-on-paint.webp",
+      "alt": "White construction dust on a black rocker panel"
+    },
+    "sections": [
+      {
+        "heading": "Where the dust comes from",
+        "paragraphs": [
+          "Road work, new lots, and caliche shoulders put a pale film on the lower doors. You see it on cars that live in [78233](/san-antonio-78233) and [Converse](/converse). [Exterior detailing](/exterior-detailing) rinses the grit off before anything touches the paint, then washes what bonded.",
+          "The same dust rides into the cabin on shoes. If the carpets are gray with it, add [interior detailing](/interior-detailing) or book the [full detail](/full-detailing)."
+        ]
+      },
+      {
+        "heading": "Do not wipe it",
+        "paragraphs": [
+          "A towel on dry dust cuts the clear. So does a brush tunnel. If the dust has been there long enough to haze the paint, look at [paint correction](/paint-correction) only after the film is gone. Correction through grit makes more scratches.",
+          "Oak pollen is a different season and a different dust. That note is [oak pollen](/blog/oak-pollen-san-antonio-paint)."
+        ]
+      },
+      {
+        "heading": "Book",
+        "paragraphs": [
+          "Call (210) 201-4847 and say whether the dust is on the paint, in the cabin, or both. Studio hours are Tuesday through Sunday, 7:00 AM to 11:00 PM. Deposit is 20% of the quoted total."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I wipe construction dust off dry?",
+        "a": "No. Rinse it. Dry grit scratches the paint."
+      },
+      {
+        "q": "Is white dust the same as pollen?",
+        "a": "No. Caliche and job-site dust are grit. Pollen is a different film."
+      },
+      {
+        "q": "Where do I bring the car?",
+        "a": "11692 Bricken Circle, San Antonio, TX 78233."
+      }
+    ],
+    "related": [
+      {
+        "to": "/exterior-detailing",
+        "label": "Exterior detailing"
+      },
+      {
+        "to": "/full-detailing",
+        "label": "Full detailing"
+      },
+      {
+        "to": "/san-antonio-78233",
+        "label": "78233"
+      },
+      {
+        "to": "/converse",
+        "label": "Converse"
+      },
+      {
+        "to": "/blog/oak-pollen-san-antonio-paint",
+        "label": "Oak pollen"
+      }
+    ]
+  },
+  {
+    "path": "/blog/tree-sap-on-paint",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Tree Sap on Car Paint in San Antonio",
+    "description": "Oak and other trees drop sap onto San Antonio paint. What dissolves it, and what a fingernail will do to the clear coat.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Tree sap on car paint",
+    "lede": "Sap dots feel like hard amber. They are stuck to the clear coat. Picking them off takes paint with them.",
+    "image": {
+      "src": "/images/tree-sap-on-paint.webp",
+      "alt": "Amber tree sap droplets on a white car roof"
+    },
+    "sections": [
+      {
+        "heading": "Where it lands",
+        "paragraphs": [
+          "Roofs, hoods, and mirrors under live oaks. [Rolling Oaks](/rolling-oaks) and [Live Oak](/live-oak) parking spots collect it every warm month. Fresh sap is easier than sap that has baked. [Exterior detailing](/exterior-detailing) uses a solvent that releases the drop, then washes the panel.",
+          "A fingernail, a card, or a razor is how a dot becomes a chip. Do not do that."
+        ]
+      },
+      {
+        "heading": "After the dots are gone",
+        "paragraphs": [
+          "If the sap etched a mark, that mark may need [paint correction](/paint-correction). If it did not, the panel just needs protection so the next drop lets go faster. That protection conversation is [ceramic coating](/ceramic-coating), and only after the sap is gone.",
+          "Sap is not bird droppings and it is not water spots. Those have their own notes: [droppings](/blog/bird-droppings-on-car-paint) and [hard water](/blog/hard-water-spots-san-antonio)."
+        ]
+      },
+      {
+        "heading": "Studio",
+        "paragraphs": [
+          "11692 Bricken Circle, San Antonio, TX 78233. Call (210) 201-4847. Twenty percent of the quoted total holds the slot and is not refunded."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I peel sap off?",
+        "a": "No. You lift clear coat with it. Dissolve it."
+      },
+      {
+        "q": "Will sap stains polish out?",
+        "a": "Some etching will. Some will not. We look at the clear coat first."
+      },
+      {
+        "q": "Do you come to the driveway under the tree?",
+        "a": "No. Bring the car to the studio."
+      }
+    ],
+    "related": [
+      {
+        "to": "/exterior-detailing",
+        "label": "Exterior detailing"
+      },
+      {
+        "to": "/paint-correction",
+        "label": "Paint correction"
+      },
+      {
+        "to": "/rolling-oaks",
+        "label": "Rolling Oaks"
+      },
+      {
+        "to": "/live-oak",
+        "label": "Live Oak"
+      },
+      {
+        "to": "/blog/bird-droppings-on-car-paint",
+        "label": "Bird droppings"
+      }
+    ]
+  },
+  {
+    "path": "/blog/door-jambs-in-a-detail",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Door Jambs in a Full Detail",
+    "description": "Door jambs hold dust, wax buildup, and fingerprints. A full detail at the San Antonio studio includes them. A quick wash usually does not.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Door jambs in a full detail",
+    "lede": "The panel you see with the door closed can look clean while the jamb is still brown. That edge is part of a full detail.",
+    "image": {
+      "src": "/images/door-jambs-detail.webp",
+      "alt": "Dirty door jamb and weatherstrip before a detail"
+    },
+    "sections": [
+      {
+        "heading": "What collects there",
+        "paragraphs": [
+          "Dust, old dressing, and the film from your hands live on the jamb, the sill, and the weatherstrip. [Full detailing](/full-detailing) opens the doors and cleans those edges. A tunnel wash does not. An exterior-only visit cleans the jambs we can reach as part of making the outside honest. Say if the jambs are the reason you called.",
+          "The same dust is often in the cabin. If the carpets match the jambs, the [interior](/interior-detailing) is the other half."
+        ]
+      },
+      {
+        "heading": "What we do not remove",
+        "paragraphs": [
+          "We do not repaint a hinge and we do not promise to erase every scuff on a sill that has been stepped on for a decade. Grease at a hinge gets cleaned. A chip in the paint stays a chip unless you have asked about [paint correction](/paint-correction) on the outer panels. Correction is not a jamb repaint."
+        ]
+      },
+      {
+        "heading": "Before you come",
+        "paragraphs": [
+          "You do not need to pre-clean the jambs. Take valuables out of the doors. Read [how to prepare](/blog/how-to-prepare-for-a-detail). The studio is in [78233](/san-antonio-78233). Call (210) 201-4847."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Are door jambs included?",
+        "a": "Yes on a full detail. Tell us if they are the main complaint."
+      },
+      {
+        "q": "Will you fix chipped paint on the sill?",
+        "a": "No. We clean the edge. Paint repair is a different job."
+      },
+      {
+        "q": "Where?",
+        "a": "11692 Bricken Circle, San Antonio, TX 78233."
+      }
+    ],
+    "related": [
+      {
+        "to": "/full-detailing",
+        "label": "Full detailing"
+      },
+      {
+        "to": "/exterior-detailing",
+        "label": "Exterior detailing"
+      },
+      {
+        "to": "/interior-detailing",
+        "label": "Interior detailing"
+      },
+      {
+        "to": "/blog/how-to-prepare-for-a-detail",
+        "label": "Prepare for a detail"
+      },
+      {
+        "to": "/san-antonio-78233",
+        "label": "78233"
+      }
+    ]
+  },
+  {
+    "path": "/blog/windshield-film-san-antonio",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Windshield Film and Wiper Grime in San Antonio",
+    "description": "Road film and wiper chatter on San Antonio glass. What an exterior detail cleans, and what a worn blade will keep smearing.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Windshield film in San Antonio",
+    "lede": "A hazy windshield at dusk is usually film at the glass and oil on the blade, not a failure of the washer fluid.",
+    "image": {
+      "src": "/images/windshield-film-san-antonio.webp",
+      "alt": "Road film and debris at the base of a windshield"
+    },
+    "sections": [
+      {
+        "heading": "What you are seeing",
+        "paragraphs": [
+          "Highway film, sap mist, and the smear a dry blade leaves sit on the outside of the glass. [Exterior detailing](/exterior-detailing) cleans the glass, the cowl edge, and the grime under the blade. The inside of the glass, the haze you see when the defroster hits, is part of an [interior detail](/interior-detailing).",
+          "Hard water spots on glass are the same minerals as [spots on the paint](/blog/hard-water-spots-san-antonio). Fresh ones lift. Etched ones may stay as a faint mark."
+        ]
+      },
+      {
+        "heading": "What a detail will not fix",
+        "paragraphs": [
+          "A torn wiper blade will haze a clean windshield on the next drive. Replace the blade. Pitting in the glass from sand stays. We do not replace windshields. A yellow headlight is a different problem, covered in [hazy headlights](/blog/hazy-headlights-san-antonio).",
+          "If the paint on the hood is filmed the same way, it is one exterior visit, not a glass-only stop."
+        ]
+      },
+      {
+        "heading": "Book",
+        "paragraphs": [
+          "Call (210) 201-4847. Studio at 11692 Bricken Circle. Drivers from [Universal City](/universal-city) notice the haze on the evening commute. Deposit is 20% of the quoted total."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do you clean the inside of the glass?",
+        "a": "Yes, on an interior or full detail. An exterior visit cleans the outside."
+      },
+      {
+        "q": "Will spots in the glass disappear?",
+        "a": "Mineral film often does. Pits in the glass do not."
+      },
+      {
+        "q": "Should I replace the wipers first?",
+        "a": "If the blade is torn, yes. A new blade on a dirty windshield still smears until the glass is cleaned."
+      }
+    ],
+    "related": [
+      {
+        "to": "/exterior-detailing",
+        "label": "Exterior detailing"
+      },
+      {
+        "to": "/interior-detailing",
+        "label": "Interior detailing"
+      },
+      {
+        "to": "/blog/hard-water-spots-san-antonio",
+        "label": "Hard water spots"
+      },
+      {
+        "to": "/universal-city",
+        "label": "Universal City"
+      },
+      {
+        "to": "/blog/hazy-headlights-san-antonio",
+        "label": "Hazy headlights"
+      }
+    ]
+  },
+  {
+    "path": "/blog/how-long-a-detail-takes",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "How Long a Detail Takes in San Antonio",
+    "description": "How long an in-shop detail takes at Southern Auto Detailers depends on the vehicle and the condition, not a menu timer. Call (210) 201-4847.",
+    "eyebrow": "Notes from the studio",
+    "h1": "How long a detail takes",
+    "lede": "There is no honest one-hour full detail for a neglected truck. Time follows size, dirt, and whether the paint needs more than a wash.",
+    "image": {
+      "src": "/images/how-long-a-detail-takes.webp",
+      "alt": "White SUV covered in foam during an in-shop wash"
+    },
+    "sections": [
+      {
+        "heading": "What adds hours",
+        "paragraphs": [
+          "A [full detail](/full-detailing) on a crew cab with pet hair takes longer than an [exterior detail](/exterior-detailing) on a garaged sedan. [Paint correction](/paint-correction) is its own day, not a step you hide inside a wash. [Ceramic coating](/ceramic-coating) adds prep and cure, which the [process page](/ceramic-coating/process) explains.",
+          "We would rather tell you the visit needs most of a day than rush the jambs and the carpets. [Trucks and SUVs](/blog/detailing-trucks-and-suvs-san-antonio) are the usual reason a guess from a sedan price is wrong."
+        ]
+      },
+      {
+        "heading": "What does not speed it up",
+        "paragraphs": [
+          "A deposit does not make the work faster. It holds the slot. The request form does not start the clock. Read [how to prepare](/blog/how-to-prepare-for-a-detail) so we are not moving your belongings before we can clean.",
+          "The [pricing page](/pricing) is about what changes the quote. It is not a clock."
+        ]
+      },
+      {
+        "heading": "When to call",
+        "paragraphs": [
+          "Call (210) 201-4847 with the vehicle and the condition. Tuesday through Sunday, 7:00 AM to 11:00 PM. Monday is closed. The studio is 11692 Bricken Circle in [78233](/san-antonio-78233). Twenty percent of the quoted total is the non-refundable deposit."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is there a standard detail time?",
+        "a": "No. A light exterior is shorter than a correction or a filthy three-row interior. We estimate from the vehicle."
+      },
+      {
+        "q": "Does the deposit buy a faster job?",
+        "a": "No. It holds the appointment."
+      },
+      {
+        "q": "Are you open Monday?",
+        "a": "No. Tuesday through Sunday, 7:00 AM to 11:00 PM."
+      }
+    ],
+    "related": [
+      {
+        "to": "/full-detailing",
+        "label": "Full detailing"
+      },
+      {
+        "to": "/pricing",
+        "label": "Pricing"
+      },
+      {
+        "to": "/contact",
+        "label": "Contact"
+      },
+      {
+        "to": "/blog/how-to-prepare-for-a-detail",
+        "label": "Prepare for a detail"
+      },
+      {
+        "to": "/san-antonio-78233",
+        "label": "78233"
+      }
+    ]
+  },
+  {
+    "path": "/blog/leather-conditioning-san-antonio",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Leather Conditioning in San Antonio Heat",
+    "description": "How San Antonio heat dries leather, and what interior detailing actually does about it. Studio at 11692 Bricken Circle. Call (210) 201-4847.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Leather conditioning in San Antonio heat",
+    "lede": "A parked cabin in this heat cooks leather. Conditioning is the last step of a clean, not a wipe that hides dirt.",
+    "image": {
+      "src": "/images/leather-conditioning-san-antonio.webp",
+      "alt": "Conditioned tan leather seats in a San Antonio detailing studio"
+    },
+    "sections": [
+      {
+        "heading": "Heat is the problem",
+        "paragraphs": [
+          "Leather that lives in a [Live Oak](/live-oak) or [Windcrest](/windcrest) driveway dries out. It creaks, it lightens on the cushion, and it grabs dye from jeans. A greasy dressing on top of dust makes it worse. [Interior detailing](/interior-detailing) cleans the grain first, then conditions what the material can take.",
+          "Vinyl is not leather. A coated leather is not an open hide. We use a light conditioner when the surface wants it and we skip the shine if the leather is already coated. Tell us if a previous detail left the seats slippery."
+        ]
+      },
+      {
+        "heading": "What a clean has to include",
+        "paragraphs": [
+          "Seams, bolsters, and the crease where you sit hold the grit that scratches the finish. Conditioning over that grit rubs it in. The same visit covers carpets and door panels, because a shiny seat next to a dirty carpet is not a finished cabin.",
+          "If the paint is also tired, a [full detail](/full-detailing) is the combined appointment. Conditioning does not fix a tear, a burn, or dye that has already transferred. We say that before the slot is held."
+        ]
+      },
+      {
+        "heading": "How often",
+        "paragraphs": [
+          "Twice a year is enough for a garaged car. A vehicle parked in the sun may want a lighter cabin visit sooner. Read [how often to detail](/blog/how-often-to-detail-san-antonio) if you are picking a cadence. The studio is at 11692 Bricken Circle in [78233](/san-antonio-78233).",
+          "Call (210) 201-4847. Tuesday through Sunday, 7:00 AM to 11:00 PM. A 20% non-refundable deposit of the quoted total holds the time."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do you condition every seat?",
+        "a": "Only when the material can take it. Coated leather and vinyl get a different product, or none."
+      },
+      {
+        "q": "Will conditioner remove dye transfer?",
+        "a": "No. Cleaning may improve it. A stain that has dyed the hide may remain."
+      },
+      {
+        "q": "Where is the work done?",
+        "a": "At the studio, 11692 Bricken Circle, San Antonio, TX 78233."
+      }
+    ],
+    "related": [
+      {
+        "to": "/interior-detailing",
+        "label": "Interior detailing"
+      },
+      {
+        "to": "/full-detailing",
+        "label": "Full detailing"
+      },
+      {
+        "to": "/live-oak",
+        "label": "Live Oak"
+      },
+      {
+        "to": "/san-antonio-78233",
+        "label": "78233"
+      },
+      {
+        "to": "/blog/pet-hair-interior-detailing",
+        "label": "Pet hair"
+      }
+    ]
+  },
+  {
+    "path": "/blog/swirl-marks-from-car-washes",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Swirl Marks from Car Washes in San Antonio",
+    "description": "Tunnel brushes and dry towels leave swirl marks on San Antonio paint. What an exterior wash should do, and when paint correction is the real fix.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Swirl marks from car washes",
+    "lede": "Most cobwebs in dark paint come from brushes and dry towels, not from the highway. A wash does not remove them. Polish does.",
+    "image": {
+      "src": "/images/swirl-marks-from-car-washes.webp",
+      "alt": "Swirl marks in dark paint under studio light"
+    },
+    "sections": [
+      {
+        "heading": "Where the cobwebs come from",
+        "paragraphs": [
+          "A tunnel brush, a dusty wash mitt, and a dry towel across a dirty panel all cut the clear coat in circles. You see it in the sun on black, dark gray, and some reds. [Converse](/converse) and [Universal City](/universal-city) drivers who use the same tunnel every week see it sooner.",
+          "An [exterior detail](/exterior-detailing) washes without adding a new set of marks. It does not erase the old ones. If the panel already looks cobwebbed, that is [paint correction](/paint-correction)."
+        ]
+      },
+      {
+        "heading": "What not to do next",
+        "paragraphs": [
+          "Do not wax over the swirls and call it fixed. Wax makes a shiny copy of the defect. Do not coat them either. A [ceramic coating](/ceramic-coating) locks in whatever is underneath. Read [correction before coating](/blog/paint-correction-before-ceramic-coating) before you book protection.",
+          "A single careful wash after the correction keeps the new finish. Going straight back to a brush tunnel puts the cobwebs back."
+        ]
+      },
+      {
+        "heading": "How we look at it",
+        "paragraphs": [
+          "Bring the vehicle to the studio at 11692 Bricken Circle in [78233](/san-antonio-78233). We look at the paint in the light, not from a photo taken in a garage. If the clear is thin, we will not chase a show finish. Call (210) 201-4847. The 20% deposit of the quoted total holds the slot."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can a hand wash remove swirls?",
+        "a": "No. A safe wash stops new ones. Removing the old ones is paint correction."
+      },
+      {
+        "q": "Will wax hide them?",
+        "a": "It can make them shinier. It does not remove them."
+      },
+      {
+        "q": "Do you come to the house?",
+        "a": "No. The work is at 11692 Bricken Circle, San Antonio, TX 78233."
+      }
+    ],
+    "related": [
+      {
+        "to": "/paint-correction",
+        "label": "Paint correction"
+      },
+      {
+        "to": "/exterior-detailing",
+        "label": "Exterior detailing"
+      },
+      {
+        "to": "/ceramic-coating",
+        "label": "Ceramic coating"
+      },
+      {
+        "to": "/converse",
+        "label": "Converse"
+      },
+      {
+        "to": "/blog/paint-correction-before-ceramic-coating",
+        "label": "Correction before coating"
+      }
+    ]
+  },
+  {
+    "path": "/blog/detailing-trucks-and-suvs-san-antonio",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Detailing Trucks and SUVs in San Antonio",
+    "description": "Trucks and three-row SUVs take more time than a sedan. How a full detail is scoped at the San Antonio studio. Call (210) 201-4847.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Detailing trucks and SUVs",
+    "lede": "A crew-cab truck is not a sedan with a longer hood. More carpet, more glass, more wheel, and usually more work dirt. The quote follows the vehicle.",
+    "image": {
+      "src": "/images/detailing-trucks-and-suvs-san-antonio.webp",
+      "alt": "Pickup truck inside the San Antonio detailing studio"
+    },
+    "sections": [
+      {
+        "heading": "What changes the time",
+        "paragraphs": [
+          "A three-row SUV has two extra mats, a third row that holds crumbs, and more door panels. A work truck adds dust in the bed edges we can reach, mud in the sills, and brake dust on larger wheels. [Full detailing](/full-detailing) covers the cabin and the outside in one visit. If only the cab is the complaint, book [interior detailing](/interior-detailing).",
+          "[Schertz](/schertz) and [Fort Sam Houston](/fort-sam-houston) trucks that commute I-35 pick up film on the nose. That is an [exterior](/exterior-detailing) problem first. It is not automatically a polish."
+        ]
+      },
+      {
+        "heading": "What we need to know",
+        "paragraphs": [
+          "Tell us the cab style, whether a bed cap is on, and if kids or a dog ride in the back. Pet hair on a crew-cab carpet is its own job. See [pet hair](/blog/pet-hair-interior-detailing). Remove toolboxes contents you do not want handled, car seats, and loose gear before drop-off.",
+          "We do not publish one truck price. The [pricing page](/pricing) lists what moves the number. A 20% non-refundable deposit of that quoted total holds the day."
+        ]
+      },
+      {
+        "heading": "Where it happens",
+        "paragraphs": [
+          "At the studio, 11692 Bricken Circle, San Antonio, TX 78233. Not in a driveway. Hours are Tuesday through Sunday, 7:00 AM to 11:00 PM. Call (210) 201-4847."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do you detail trucks?",
+        "a": "Yes. Crew cabs, SUVs, and other eligible vehicles. The time follows the size and the condition."
+      },
+      {
+        "q": "Is a truck the same price as a car?",
+        "a": "No. More surface and a dirtier cabin take longer. You get a quote for that vehicle."
+      },
+      {
+        "q": "Where do I bring it?",
+        "a": "11692 Bricken Circle, San Antonio, TX 78233."
+      }
+    ],
+    "related": [
+      {
+        "to": "/full-detailing",
+        "label": "Full detailing"
+      },
+      {
+        "to": "/interior-detailing",
+        "label": "Interior detailing"
+      },
+      {
+        "to": "/schertz",
+        "label": "Schertz"
+      },
+      {
+        "to": "/fort-sam-houston",
+        "label": "Fort Sam Houston"
+      },
+      {
+        "to": "/pricing",
+        "label": "Pricing"
+      }
+    ]
+  },
+  {
+    "path": "/blog/oak-pollen-san-antonio-paint",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Oak Pollen on San Antonio Paint",
+    "description": "Oak pollen in northeast San Antonio sticks to paint and glass. How to wash it off, and when an exterior detail is the better reset.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Oak pollen on San Antonio paint",
+    "lede": "Yellow dust on the hood in spring is mostly oak pollen. It is not harmless if you wipe it dry. It is also not a reason to polish the car every April.",
+    "image": {
+      "src": "/images/oak-pollen-san-antonio-paint.webp",
+      "alt": "Oak pollen dust on a dark car hood in San Antonio"
+    },
+    "sections": [
+      {
+        "heading": "Why it sticks",
+        "paragraphs": [
+          "Pollen lands, dew wets it, and the sun bakes a film. [Live Oak](/live-oak) and the streets around [Rolling Oaks Mall](/rolling-oaks) get a heavy coat. A dry towel turns that dust into fine scratches. Rinse first. A two-bucket wash is enough for a fresh layer.",
+          "If the film has been there through a few rains, an [exterior detail](/exterior-detailing) lifts what a driveway rinse leaves in the edges, the mirrors, and the lower panels."
+        ]
+      },
+      {
+        "heading": "What it is not",
+        "paragraphs": [
+          "Pollen is not etched water spots and it is not swirl marks. Do not book [paint correction](/paint-correction) just because the hood looks dusty. If the paint was already cobwebbed, the pollen only made it easier to see. Those are separate problems.",
+          "A coated car still collects pollen. The coating makes the wash easier. It does not cancel spring. Read [how long a coating lasts](/blog/how-long-does-ceramic-coating-last)."
+        ]
+      },
+      {
+        "heading": "After the bloom",
+        "paragraphs": [
+          "Wash when the dust is thick, not every morning. A maintenance visit after the worst of the bloom is enough for most drivers. The studio is in [78233](/san-antonio-78233). Call (210) 201-4847. Twenty percent of the quoted total holds the slot."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Should I wipe pollen off dry?",
+        "a": "No. Rinse it. A dry towel scratches the clear coat."
+      },
+      {
+        "q": "Does pollen require paint correction?",
+        "a": "Not by itself. Correction is for defects already in the clear coat."
+      },
+      {
+        "q": "Where do I book?",
+        "a": "11692 Bricken Circle, San Antonio, TX 78233."
+      }
+    ],
+    "related": [
+      {
+        "to": "/exterior-detailing",
+        "label": "Exterior detailing"
+      },
+      {
+        "to": "/live-oak",
+        "label": "Live Oak"
+      },
+      {
+        "to": "/rolling-oaks",
+        "label": "Rolling Oaks"
+      },
+      {
+        "to": "/san-antonio-78233",
+        "label": "78233"
+      },
+      {
+        "to": "/blog/hard-water-spots-san-antonio",
+        "label": "Hard water spots"
+      }
+    ]
+  },
+  {
+    "path": "/blog/how-to-prepare-for-a-detail",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "How to Prepare for an In-Shop Detail",
+    "description": "What to remove from the vehicle before an appointment at Southern Auto Detailers in San Antonio, and how the 20% deposit works.",
+    "eyebrow": "Notes from the studio",
+    "h1": "How to prepare for an in-shop detail",
+    "lede": "The appointment goes faster when the cabin is empty of the things we should not handle. The slot is held by a deposit, not by a form.",
+    "image": {
+      "src": "/images/prepare-for-in-shop-detail.webp",
+      "alt": "Sedan waiting inside the San Antonio detailing studio"
+    },
+    "sections": [
+      {
+        "heading": "What to take out",
+        "paragraphs": [
+          "Remove valuables, documents, charging cables you still want, child seats if you can, garage remotes, and anything in the console you do not want moved. A [full detail](/full-detailing) and an [interior detail](/interior-detailing) both need access to the carpet and the seat rails. Loose trash is fine to leave. A laptop is not.",
+          "If a dog rides in the back, shake the mats at home first. Tell us about pet hair when you book. That note is on the [pet hair](/blog/pet-hair-interior-detailing) page."
+        ]
+      },
+      {
+        "heading": "How the slot is held",
+        "paragraphs": [
+          "The request form does not reserve the day. We quote the vehicle, then a 20% non-refundable deposit of that total holds the time. The balance is due when the work is finished. Read the [refund policy](/refund-policy) before you send the deposit. Monday is closed. Tuesday through Sunday the studio is open 7:00 AM to 11:00 PM.",
+          "The address is 11692 Bricken Circle, San Antonio, TX 78233. Drivers from [Royal Ridge](/royal-ridge) and the rest of [78233](/san-antonio-78233) are a short trip. Use the [contact page](/contact) or call (210) 201-4847."
+        ]
+      },
+      {
+        "heading": "What to tell us",
+        "paragraphs": [
+          "Year, make, model, and the one thing that bothers you. Stains, swirls, pet hair, or a coating question. Photos in daylight help. We will not invent a package that ignores the condition."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does the form hold my time?",
+        "a": "No. The slot is held when the 20% deposit of the quoted total is received."
+      },
+      {
+        "q": "Should I leave the car seat in?",
+        "a": "Take it out if you can. The rails and the carpet under it are part of the interior."
+      },
+      {
+        "q": "Where is drop-off?",
+        "a": "11692 Bricken Circle, San Antonio, TX 78233."
+      }
+    ],
+    "related": [
+      {
+        "to": "/contact",
+        "label": "Contact"
+      },
+      {
+        "to": "/full-detailing",
+        "label": "Full detailing"
+      },
+      {
+        "to": "/refund-policy",
+        "label": "Refund policy"
+      },
+      {
+        "to": "/san-antonio-78233",
+        "label": "78233"
+      },
+      {
+        "to": "/royal-ridge",
+        "label": "Royal Ridge"
+      }
+    ]
+  },
+  {
+    "path": "/blog/wheel-detailing-san-antonio",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Wheel Detailing in San Antonio",
+    "description": "Brake dust and road film on San Antonio wheels. What exterior detailing does with the barrels and the tires, at the studio in 78233.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Wheel detailing in San Antonio",
+    "lede": "Wheels collect brake dust faster than the paint collects pollen. A rinse does not clear the barrel. An exterior detail does.",
+    "image": {
+      "src": "/images/wheel-detailing-san-antonio.webp",
+      "alt": "Clean alloy wheel after detailing in San Antonio"
+    },
+    "sections": [
+      {
+        "heading": "What sticks to a wheel",
+        "paragraphs": [
+          "Brake dust bakes on. Highway film from I-35 sticks to the tire shine people wipe on and never wash off. [Exterior detailing](/exterior-detailing) cleans the face, the barrel we can reach, and the tire. It is part of the outside visit, not a separate drive-through add-on.",
+          "Larger truck wheels take longer. Say so when you book a [truck or SUV](/blog/detailing-trucks-and-suvs-san-antonio)."
+        ]
+      },
+      {
+        "heading": "What we will not do",
+        "paragraphs": [
+          "We do not grind the face of a coated wheel with a harsh acid and hope. If a wheel is already pitted or the clear on the face is peeling, cleaning will not make it new. We will tell you. Dressing on the tire is light, so it does not sling onto the paint you just cleaned.",
+          "If the paint around the wheel is swirled, that is [paint correction](/paint-correction), not a wheel job."
+        ]
+      },
+      {
+        "heading": "Where",
+        "paragraphs": [
+          "At 11692 Bricken Circle. [Converse](/converse) and [Universal City](/universal-city) commuters see the same brake dust. Call (210) 201-4847. The deposit is 20% of the quoted total."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Are wheels included in an exterior detail?",
+        "a": "Yes. Face, reachable barrel, and tire. A peeling wheel face will not look new."
+      },
+      {
+        "q": "Do you remove brake dust?",
+        "a": "The dust that is on the surface, yes. Pitting underneath it stays."
+      },
+      {
+        "q": "Is this done at my house?",
+        "a": "No. The studio is 11692 Bricken Circle, San Antonio, TX 78233."
+      }
+    ],
+    "related": [
+      {
+        "to": "/exterior-detailing",
+        "label": "Exterior detailing"
+      },
+      {
+        "to": "/full-detailing",
+        "label": "Full detailing"
+      },
+      {
+        "to": "/converse",
+        "label": "Converse"
+      },
+      {
+        "to": "/universal-city",
+        "label": "Universal City"
+      },
+      {
+        "to": "/blog/detailing-trucks-and-suvs-san-antonio",
+        "label": "Trucks and SUVs"
+      }
+    ]
+  },
+  {
+    "path": "/blog/washing-a-ceramic-coated-car",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Washing a Ceramic Coated Car in San Antonio",
+    "description": "A ceramic coating still needs washing in San Antonio. How to wash it without undoing the install, and when to come back to the studio.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Washing a ceramic coated car",
+    "lede": "Coating makes dirt release. It does not make dirt optional. A coated car in this sun still needs a real wash.",
+    "image": {
+      "src": "/images/washing-a-ceramic-coated-car.webp",
+      "alt": "Water beading on ceramic-coated paint in the studio"
+    },
+    "sections": [
+      {
+        "heading": "What the coating changed",
+        "paragraphs": [
+          "After a proper [ceramic coating](/ceramic-coating) install, water sheets or beads and road film lets go with less scrubbing. That only stays true if you wash the car. A coated, never-washed vehicle in a [Windcrest](/windcrest) driveway will still look brown by August.",
+          "Use a clean mitt and dry with a clean towel. Automatic brushes put swirls into coated paint the same way they put swirls into bare clear coat. See [swirl marks](/blog/swirl-marks-from-car-washes)."
+        ]
+      },
+      {
+        "heading": "What to skip",
+        "paragraphs": [
+          "Skip the dish soap, the random wax, and the spray someone handed you at a parts counter until you ask what was installed. Some toppers are fine. Some just make the next wash annoying. The [process page](/ceramic-coating/process) is the order we used. The cure window we give you is the one to follow.",
+          "Hard water still spots a coated car if it dries on the panel. Dry it. The [water spots](/blog/hard-water-spots-san-antonio) note is the longer version."
+        ]
+      },
+      {
+        "heading": "When to come back",
+        "paragraphs": [
+          "A lighter maintenance visit is for film that washing is no longer clearing, not for a second correction. Read [how long a coating lasts](/blog/how-long-does-ceramic-coating-last). The studio is in [78233](/san-antonio-78233). Call (210) 201-4847."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does coating replace washing?",
+        "a": "No. It makes washing easier. You still have to wash the car."
+      },
+      {
+        "q": "Can I use a tunnel wash?",
+        "a": "Brush tunnels put swirls back in the clear coat. Hand wash it."
+      },
+      {
+        "q": "Where was it installed?",
+        "a": "At 11692 Bricken Circle, San Antonio, TX 78233, not in a driveway."
+      }
+    ],
+    "related": [
+      {
+        "to": "/ceramic-coating",
+        "label": "Ceramic coating"
+      },
+      {
+        "to": "/ceramic-coating/process",
+        "label": "Coating process"
+      },
+      {
+        "to": "/windcrest",
+        "label": "Windcrest"
+      },
+      {
+        "to": "/blog/how-long-does-ceramic-coating-last",
+        "label": "How long a coating lasts"
+      },
+      {
+        "to": "/san-antonio-78233",
+        "label": "78233"
+      }
+    ]
+  },
+  {
+    "path": "/blog/car-seat-interior-detailing",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Car Seats and Interior Detailing",
+    "description": "Crumbs and dust under a child seat are part of an interior detail. What to remove before you come to the San Antonio studio.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Car seats and interior detailing",
+    "lede": "The dirtiest carpet in a family SUV is usually under the seat you never unbolt. An interior detail can only clean what we can reach.",
+    "image": {
+      "src": "/images/car-seat-interior-detailing.webp",
+      "alt": "Dust and crumbs in SUV seat rails before an interior detail"
+    },
+    "sections": [
+      {
+        "heading": "What collects under the seat",
+        "paragraphs": [
+          "Crumbs, sand, and a layer of dust weld themselves to the carpet under a seat that stays latched for a year. [Interior detailing](/interior-detailing) vacuums and cleans those rails when the seat is out. With the seat in, we clean around it and we say so.",
+          "[Universal City](/universal-city) and [Live Oak](/live-oak) family vehicles show the same pattern. If the rest of the cabin and the paint are both due, book a [full detail](/full-detailing)."
+        ]
+      },
+      {
+        "heading": "What to do before drop-off",
+        "paragraphs": [
+          "Unbolt the seat at home if you are comfortable doing it, and take the snacks out of the pockets. Leave the seat if you are not comfortable reinstalling it. We would rather clean around a correctly installed seat than move a restraint we are not going to reinstall.",
+          "Tell us about stains on the seat itself. Cloth can improve. A dye stain may not leave. We will not promise a new seat."
+        ]
+      },
+      {
+        "heading": "After",
+        "paragraphs": [
+          "Shake the mats and do not let the next cup live in the rail. The next visit can be lighter. Read [how often to detail](/blog/how-often-to-detail-san-antonio). Studio: 11692 Bricken Circle, [78233](/san-antonio-78233). Call (210) 201-4847. Deposit is 20% of the quoted total."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do you remove car seats?",
+        "a": "We prefer you remove them. We clean around a seat that stays installed."
+      },
+      {
+        "q": "Will crumbs in the rails come out?",
+        "a": "Yes, when the seat is out and we can reach the carpet."
+      },
+      {
+        "q": "Where is the studio?",
+        "a": "11692 Bricken Circle, San Antonio, TX 78233."
+      }
+    ],
+    "related": [
+      {
+        "to": "/interior-detailing",
+        "label": "Interior detailing"
+      },
+      {
+        "to": "/full-detailing",
+        "label": "Full detailing"
+      },
+      {
+        "to": "/universal-city",
+        "label": "Universal City"
+      },
+      {
+        "to": "/live-oak",
+        "label": "Live Oak"
+      },
+      {
+        "to": "/blog/how-often-to-detail-san-antonio",
+        "label": "How often to detail"
+      }
+    ]
+  },
+  {
+    "path": "/blog/hazy-headlights-san-antonio",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Hazy Headlights in the San Antonio Sun",
+    "description": "Sun and water film cloud headlights in San Antonio. What a wash can clear, and what an oxidized lens will not give back.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Hazy headlights in the San Antonio sun",
+    "lede": "A yellow lens is usually oxidized plastic, not dirt. Washing removes film. It does not make a burned lens clear again.",
+    "image": {
+      "src": "/images/hazy-headlights-san-antonio.webp",
+      "alt": "Cloudy headlight lens in San Antonio daylight"
+    },
+    "sections": [
+      {
+        "heading": "Film versus oxidation",
+        "paragraphs": [
+          "Road film and hard water on the lens come off during an [exterior detail](/exterior-detailing). The plastic underneath, if it has turned yellow from years of sun on a [Schertz](/schertz) or [78233](/san-antonio-78233) driveway, does not. We will not call a wash a headlight restoration.",
+          "If the lens is only spotted, the same visit that handles [water spots](/blog/hard-water-spots-san-antonio) on the paint handles the lamp. If the plastic is rough to the touch, that is beyond a detail."
+        ]
+      },
+      {
+        "heading": "What we will say",
+        "paragraphs": [
+          "Look at the lamp in daylight before you book a correction on the paint and assume the lights are included. Paint correction polishes clear coat. It is not a sanding job on a headlight. If you need the lens restored, that is a different trade. We would rather tell you than polish a panel and leave you expecting new lamps.",
+          "The rest of the nose — bumper, glass, and hood — is still part of the exterior visit."
+        ]
+      },
+      {
+        "heading": "Book the part we do",
+        "paragraphs": [
+          "Call (210) 201-4847 and describe the lens: spotted, or yellow and rough. The studio is 11692 Bricken Circle. Tuesday through Sunday, 7:00 AM to 11:00 PM. The deposit is 20% of the quoted total for the work we actually do."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do you restore yellow headlights?",
+        "a": "No. We clean film and water spots. Oxidized plastic needs a different service than a detail."
+      },
+      {
+        "q": "Will an exterior detail clean the lens?",
+        "a": "It removes dirt and mineral film. It does not sand the plastic clear."
+      },
+      {
+        "q": "Where?",
+        "a": "11692 Bricken Circle, San Antonio, TX 78233."
+      }
+    ],
+    "related": [
+      {
+        "to": "/exterior-detailing",
+        "label": "Exterior detailing"
+      },
+      {
+        "to": "/blog/hard-water-spots-san-antonio",
+        "label": "Hard water spots"
+      },
+      {
+        "to": "/schertz",
+        "label": "Schertz"
+      },
+      {
+        "to": "/san-antonio-78233",
+        "label": "78233"
+      },
+      {
+        "to": "/paint-correction",
+        "label": "Paint correction"
+      }
+    ]
+  },
+  {
+    "path": "/blog/questions-before-ceramic-coating",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Questions to Ask Before a Ceramic Coating",
+    "description": "What to ask before you book ceramic coating in San Antonio: prep, paint condition, wash habits, and where the work is done.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Questions to ask before a ceramic coating",
+    "lede": "The useful questions are about the paint and the prep, not about a year-count on a bottle. Ask those before you send a deposit.",
+    "image": {
+      "src": "/images/questions-before-ceramic-coating.webp",
+      "alt": "Black sedan paint after a careful wash in the studio"
+    },
+    "sections": [
+      {
+        "heading": "Ask about the paint first",
+        "paragraphs": [
+          "Is the clear coat ready, or does it need [paint correction](/paint-correction) first? A coating copies what is there. If you have not read [correction before coating](/blog/paint-correction-before-ceramic-coating), start there. Ask what a test spot showed. Ask whether the clear is too thin to chase.",
+          "Ask what the [process](/ceramic-coating/process) is in this studio: wash, decontamination, correction if needed, then the coating. A spray rinse is not that process."
+        ]
+      },
+      {
+        "heading": "Ask about the after",
+        "paragraphs": [
+          "Who washes it, how, and what you should not put on it. [Washing a coated car](/blog/washing-a-ceramic-coated-car) is the short version. Ask how long the install needs to cure before the first wash. Ask what a maintenance visit looks like later. The [cost page](/ceramic-coating/cost) explains why the number is mostly prep. We do not print a single price that ignores the vehicle."
+        ]
+      },
+      {
+        "heading": "Ask where",
+        "paragraphs": [
+          "The install is at 11692 Bricken Circle, San Antonio, TX 78233. Not in a parking lot. [Oak Meadow](/oak-meadow) is across the city. [Royal Ridge](/royal-ridge) is close. Either way the car comes here. Call (210) 201-4847. Twenty percent of the quoted total holds the day and is not refunded."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the one question that matters?",
+        "a": "Does this paint need correction before it is coated?"
+      },
+      {
+        "q": "Do you coat at my house?",
+        "a": "No. The install is at the studio on Bricken Circle."
+      },
+      {
+        "q": "Is the price the same for every car?",
+        "a": "No. Prep and paint condition change the quote."
+      }
+    ],
+    "related": [
+      {
+        "to": "/ceramic-coating",
+        "label": "Ceramic coating"
+      },
+      {
+        "to": "/ceramic-coating/cost",
+        "label": "Coating cost"
+      },
+      {
+        "to": "/ceramic-coating/process",
+        "label": "Coating process"
+      },
+      {
+        "to": "/paint-correction",
+        "label": "Paint correction"
+      },
+      {
+        "to": "/blog/paint-correction-before-ceramic-coating",
+        "label": "Correction before coating"
+      }
+    ]
+  },
+  {
+    "path": "/blog/what-a-full-detail-includes",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "What a Full Detail Includes | San Antonio Studio",
+    "description": "What a full auto detail includes at the Southern Auto Detailers studio in San Antonio: interior, exterior, and what it does not promise. Call (210) 201-4847.",
+    "eyebrow": "Notes from the studio",
+    "h1": "What a full detail includes",
+    "lede": "A full detail at this studio is one appointment for the cabin and the paint, done at 11692 Bricken Circle. It is not a tunnel wash with a longer name.",
+    "image": {
+      "src": "/images/full-detail-studio-san-antonio.webp",
+      "alt": "Full interior and exterior detail on a sedan inside the San Antonio studio"
+    },
+    "sections": [
+      {
+        "heading": "The interior half",
+        "paragraphs": [
+          "The cabin is where a full detail earns the word full. Carpets and mats are cleaned, not just vacuumed in a straight line down the middle. Seats, consoles, door panels, and the glass you actually look through get time. Leather is conditioned when the material can take it. Cloth is not promised to look new if a stain has lived there for a year. If the complaint is pet hair, say so. A [interior detailing](/interior-detailing) visit can stand alone, but a full detail is the better buy when the outside is just as tired.",
+          "Family trucks and three-row SUVs take longer because there is more carpet and more console. That is a time fact, not a surprise fee invented at the door. We quote from the vehicle, then hold the slot with a 20% non-refundable deposit of that total."
+        ]
+      },
+      {
+        "heading": "The exterior half",
+        "paragraphs": [
+          "The paint is washed by hand, wheels are cleaned, and bonded film is removed when the panels need it. A full detail improves gloss. It does not remove deep swirls. That job is [paint correction](/paint-correction). If you only need the outside, start with [exterior detailing](/exterior-detailing) instead of paying for a cabin reset you do not want.",
+          "Work happens in the studio, not in a parking lot. Drivers from [78233](/san-antonio-78233), [Live Oak](/live-oak), and [Royal Ridge](/royal-ridge) bring the vehicle to Bricken Circle."
+        ]
+      },
+      {
+        "heading": "What it is not",
+        "paragraphs": [
+          "A full detail does not repaint a car, fill a rock chip, or guarantee every odor is gone. If the clear coat is thin, we say so before anyone polishes. If you want protection after the reset, read [ceramic coating](/ceramic-coating) only after the paint is actually ready. The [pricing page](/pricing) explains what moves the quote. It does not list a fake sedan price.",
+          "Call (210) 201-4847 with the year, make, and model. Tuesday through Sunday, 7:00 AM to 11:00 PM. Monday is closed. Ten percent of the sale goes to Junior Achievement of South Texas."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a full detail interior and exterior?",
+        "a": "Yes. One appointment covers the cabin and the outside. Correction and coating are separate if the paint needs them."
+      },
+      {
+        "q": "Where is it done?",
+        "a": "At 11692 Bricken Circle, San Antonio, TX 78233. You bring the vehicle."
+      },
+      {
+        "q": "What holds the time?",
+        "a": "A 20% non-refundable deposit of the quoted total."
+      }
+    ],
+    "related": [
+      {
+        "to": "/full-detailing",
+        "label": "Full detailing"
+      },
+      {
+        "to": "/interior-detailing",
+        "label": "Interior detailing"
+      },
+      {
+        "to": "/exterior-detailing",
+        "label": "Exterior detailing"
+      },
+      {
+        "to": "/san-antonio-78233",
+        "label": "78233 studio"
+      },
+      {
+        "to": "/pricing",
+        "label": "Pricing"
+      }
+    ]
+  },
+  {
+    "path": "/blog/pet-hair-interior-detailing",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Pet Hair Interior Detailing in San Antonio",
+    "description": "How interior detailing deals with pet hair in San Antonio heat, and when a full detail is the better visit. Studio at 11692 Bricken Circle. Call (210) 201-4847.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Pet hair and interior detailing",
+    "lede": "Pet hair in a San Antonio cabin is not a vacuum pass. Heat bakes it into cloth and leather, and a real interior detail has to lift it instead of pushing it around.",
+    "image": {
+      "src": "/images/pet-hair-interior-detailing-san-antonio.webp",
+      "alt": "Pet hair on a leather seat during an interior detail in San Antonio"
+    },
+    "sections": [
+      {
+        "heading": "Why a quick vacuum fails",
+        "paragraphs": [
+          "Short hair weaves into carpet fibers. Long hair wraps seat bolsters and sticks to the headliner edge. A shop-vac down the center of the floor leaves the edges, the seat rails, and the mat backing. [Interior detailing](/interior-detailing) is the service that spends time on those edges. Tell us whether the hair is from a dog that rides daily or a one-time trip. The quote changes with that, not with a coupon.",
+          "Texas heat makes the cabin a closed box. Hair plus spilled drinks plus pollen is a different job from hair alone. If the paint is also dull, a [full detail](/full-detailing) covers both in one visit."
+        ]
+      },
+      {
+        "heading": "What we will not promise",
+        "paragraphs": [
+          "Embedded hair can be reduced a great deal. A white carpet that has been a kennel for two summers may still show a shadow. We say that before the appointment, not after you have paid. Odors are the same story: we clean the source we can reach. We do not sell a miracle if the smell is in the foam under the carpet.",
+          "The studio is in [78233](/san-antonio-78233). [Live Oak](/live-oak) and [Universal City](/universal-city) drivers bring the vehicle in. Remove crates, leashes, and loose toys before you arrive so we are not detailing around them."
+        ]
+      },
+      {
+        "heading": "After the reset",
+        "paragraphs": [
+          "A clean cabin stays cleaner if the dog rides on a cover and you shake the mats. The next visit can be lighter. It should not be booked as if the first visit never happened. Read [how often to detail](/blog/how-often-to-detail-san-antonio) if you want a cadence instead of a rescue.",
+          "Call (210) 201-4847. The 20% deposit of the quoted total holds the slot and is not refunded if you cancel. Hours are Tuesday through Sunday, 7:00 AM to 11:00 PM."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can you get all the pet hair out?",
+        "a": "Most of the loose and woven hair, yes. A carpet that has been a daily dog bed may still show some shadow. We will say so before we start."
+      },
+      {
+        "q": "Do I need a full detail?",
+        "a": "If the outside is fine, book interior detailing. If both are tired, book the full detail."
+      },
+      {
+        "q": "Where do I take the vehicle?",
+        "a": "11692 Bricken Circle, San Antonio, TX 78233."
+      }
+    ],
+    "related": [
+      {
+        "to": "/interior-detailing",
+        "label": "Interior detailing"
+      },
+      {
+        "to": "/full-detailing",
+        "label": "Full detailing"
+      },
+      {
+        "to": "/live-oak",
+        "label": "Live Oak"
+      },
+      {
+        "to": "/blog/how-often-to-detail-san-antonio",
+        "label": "How often to detail"
+      },
+      {
+        "to": "/contact",
+        "label": "Book"
+      }
+    ]
+  },
+  {
+    "path": "/blog/hard-water-spots-san-antonio",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Hard Water Spots on San Antonio Paint",
+    "description": "Hard water spots on San Antonio paint come from sprinklers and sun. What an exterior detail can lift, and when paint correction is the next step.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Hard water spots on San Antonio paint",
+    "lede": "Sprinklers and afternoon sun etch mineral spots into clear coat on the northeast side. A tunnel wash smears them. An exterior detail is how they actually come off.",
+    "image": {
+      "src": "/images/hard-water-spots-san-antonio-paint.webp",
+      "alt": "Mineral water spots on dark paint in San Antonio sunlight"
+    },
+    "sections": [
+      {
+        "heading": "Where the spots come from",
+        "paragraphs": [
+          "San Antonio water leaves minerals. On a cool morning those minerals sit in droplets. By midafternoon the droplet is gone and the mineral is bonded. Cars parked outside in [Windcrest](/windcrest), [Converse](/converse), and along the [78233](/san-antonio-78233) streets show it first on the hood, the roof, and the glass. Dark paint makes the spots obvious. Silver paint hides them until you stand at the right angle.",
+          "A dry towel makes it worse. You are grinding the mineral and adding swirls. That is how a water-spot complaint becomes a [paint correction](/paint-correction) complaint."
+        ]
+      },
+      {
+        "heading": "What an exterior detail can do",
+        "paragraphs": [
+          "[Exterior detailing](/exterior-detailing) washes the panel, then uses the right chemical dwell for bonded minerals, then clays what is still stuck, then protects the clean paint. Fresh spots often release. Spots that have etched into the clear coat do not. Those need polish, and polish is a different service. We will not call a wash a correction.",
+          "If the cabin is also due, the [full detail](/full-detailing) is the combined visit. Coating comes later, after the spots are gone. Coating over etched spots locks them in. Read [correction before coating](/blog/paint-correction-before-ceramic-coating) before you book protection."
+        ]
+      },
+      {
+        "heading": "How to slow the next set",
+        "paragraphs": [
+          "Dry the vehicle after sprinklers hit it, or park out of the spray. A coated car still spots if hard water dries on it. The coating makes the wash easier. It does not cancel the sun. Drivers near [Rolling Oaks Mall](/rolling-oaks) who leave a car in an open apartment lot see the same pattern.",
+          "Call (210) 201-4847 and describe the color and whether the spots have been there all summer. The quote follows that. Twenty percent of the total holds the studio slot."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Will a wash remove etched spots?",
+        "a": "A careful exterior detail removes fresh mineral deposits. Etched spots need paint correction."
+      },
+      {
+        "q": "Should I coat the car first?",
+        "a": "No. Clean and, if needed, correct the paint first. Coating over spots locks them in."
+      },
+      {
+        "q": "Do you come to the driveway?",
+        "a": "No. The work is at 11692 Bricken Circle, San Antonio, TX 78233."
+      }
+    ],
+    "related": [
+      {
+        "to": "/exterior-detailing",
+        "label": "Exterior detailing"
+      },
+      {
+        "to": "/paint-correction",
+        "label": "Paint correction"
+      },
+      {
+        "to": "/windcrest",
+        "label": "Windcrest"
+      },
+      {
+        "to": "/converse",
+        "label": "Converse"
+      },
+      {
+        "to": "/blog/paint-correction-before-ceramic-coating",
+        "label": "Correction before coating"
+      }
+    ]
+  },
+  {
+    "path": "/blog/paint-correction-before-ceramic-coating",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "Paint Correction Before Ceramic Coating | San Antonio",
+    "description": "Why paint correction comes before ceramic coating at Southern Auto Detailers in San Antonio, and what the studio actually does in that order.",
+    "eyebrow": "Notes from the studio",
+    "h1": "Paint correction before ceramic coating",
+    "lede": "A ceramic coating copies the paint underneath it. If the clear coat is swirled, the coating makes a durable copy of the swirls. Correction is the step that decides whether that copy is worth making.",
+    "image": {
+      "src": "/images/paint-correction-before-ceramic-coating.webp",
+      "alt": "Paint correction on a dark hood before ceramic coating in the San Antonio studio"
+    },
+    "sections": [
+      {
+        "heading": "What the coating cannot hide",
+        "paragraphs": [
+          "[Ceramic coating](/ceramic-coating) is protection after the panel is clean and stable. It is not a filler and it is not a polish. Wash, decontamination, and then a decision: is the paint acceptable, or does it need [paint correction](/paint-correction)? A test spot answers that. One pass on a soft clear coat is different from a neglected black truck that was dry-wiped for three summers.",
+          "The [process page](/ceramic-coating/process) is the order. The [cost page](/ceramic-coating/cost) is why the number moves with prep. We do not publish a single coating price that ignores the paint."
+        ]
+      },
+      {
+        "heading": "When you can skip correction",
+        "paragraphs": [
+          "A newer car with light haze may only need a wash, a clay, and a light polish, or sometimes no polish. We will say if the clear is already thin. Skipping correction to save a day is honest only when the paint is already what you want to look at for the next few years. If you hate the cobwebs in the sun, do the correction first.",
+          "Both steps happen at the studio in [78233](/san-antonio-78233). [Schertz](/schertz) and [Fort Sam Houston](/fort-sam-houston) customers drive in. We do not coat in a driveway."
+        ]
+      },
+      {
+        "heading": "After the install",
+        "paragraphs": [
+          "Follow the cure window we give you. Wash the car. Do not stack a random wax on top without asking. A maintenance visit later is cheaper than pretending the coating made the climate optional. If you are still comparing wax, the [coating versus wax](/blog/ceramic-coating-vs-wax) note is the short version.",
+          "Call (210) 201-4847 with the color and a photo in direct sun if you have one. The 20% non-refundable deposit of the quoted total holds the day. Balance when the work is finished."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do new cars need correction before coating?",
+        "a": "Often a light polish, yes. Factory paint still has transport marks. We decide from a test spot, not a package name."
+      },
+      {
+        "q": "Can you coat without correcting?",
+        "a": "Yes, if you accept the defects that are already there. We will not pretend the coating removed them."
+      },
+      {
+        "q": "Where is the install?",
+        "a": "11692 Bricken Circle, San Antonio, TX 78233."
+      }
+    ],
+    "related": [
+      {
+        "to": "/paint-correction",
+        "label": "Paint correction"
+      },
+      {
+        "to": "/ceramic-coating",
+        "label": "Ceramic coating"
+      },
+      {
+        "to": "/ceramic-coating/process",
+        "label": "Coating process"
+      },
+      {
+        "to": "/ceramic-coating/cost",
+        "label": "Coating cost"
+      },
+      {
+        "to": "/san-antonio-78233",
+        "label": "78233"
+      }
+    ]
+  },
+  {
+    "path": "/blog/how-often-to-detail-san-antonio",
+    "kind": "article",
+    "published": "2026-10-06",
+    "title": "How Often to Detail a Car in San Antonio",
+    "description": "How often San Antonio drivers should book an in-shop detail, based on parking, pets, and highway miles. Studio in 78233. Call (210) 201-4847.",
+    "eyebrow": "Notes from the studio",
+    "h1": "How often to detail a car in San Antonio",
+    "lede": "Many San Antonio vehicles do well every three to six months. Cars that live in the sun, haul kids, or carry a dog need a shorter gap. The interval is about how the vehicle is used, not a calendar sticker.",
+    "image": {
+      "src": "/images/how-often-to-detail-san-antonio.webp",
+      "alt": "Freshly detailed crossover in a sunny San Antonio driveway"
+    },
+    "sections": [
+      {
+        "heading": "What shortens the gap",
+        "paragraphs": [
+          "Open parking along Loop 1604, pollen, sprinklers, and a dog in the back seat all pull the next visit closer. A garaged car that is washed can wait longer. [Royal Ridge](/royal-ridge) and [Live Oak](/live-oak) driveways see the same sun. The cabin and the paint do not age on the same clock. Hair and crumbs are an [interior](/interior-detailing) problem. Mineral spots are an [exterior](/exterior-detailing) problem. When both slip, book a [full detail](/full-detailing).",
+          "Highway film on the nose of a [Schertz](/schertz) commuter is normal. It is not a reason to polish the whole car every season. Wash and decontamination come first. Correction is for defects you can see, not for a schedule."
+        ]
+      },
+      {
+        "heading": "After a coating",
+        "paragraphs": [
+          "A coated car still needs washing. Plan a lighter maintenance detail when the film returns, not when the paint looks neglected again. That visit is not the same scope as the first correction. The [coating lifespan](/blog/how-long-does-ceramic-coating-last) note explains why parking and washing decide more than the bottle.",
+          "We quote the vehicle in front of the conversation. There is no subscription price on this site. The [pricing page](/pricing) lists what changes the number."
+        ]
+      },
+      {
+        "heading": "How to book the next one",
+        "paragraphs": [
+          "Call (210) 201-4847 or use the [contact form](/contact). Say when the last detail was and what bothers you now. The studio is 11692 Bricken Circle, San Antonio, TX 78233. Tuesday through Sunday, 7:00 AM to 11:00 PM. Monday is closed. A 20% non-refundable deposit of the quoted total holds the slot.",
+          "Ten percent of every sale goes to Junior Achievement of South Texas. That does not change the interval. It is how the business is run."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is every three months required?",
+        "a": "No. Three to six months fits many drivers. Sun, pets, kids, and highway miles can make it sooner."
+      },
+      {
+        "q": "Does ceramic coating mean I can skip details?",
+        "a": "No. You still wash it, and a lighter maintenance detail is how the film stays off."
+      },
+      {
+        "q": "Where do I book?",
+        "a": "The studio at 11692 Bricken Circle, San Antonio, TX 78233. Call (210) 201-4847."
+      }
+    ],
+    "related": [
+      {
+        "to": "/full-detailing",
+        "label": "Full detailing"
+      },
+      {
+        "to": "/pricing",
+        "label": "Pricing"
+      },
+      {
+        "to": "/royal-ridge",
+        "label": "Royal Ridge"
+      },
+      {
+        "to": "/schertz",
+        "label": "Schertz"
+      },
+      {
+        "to": "/blog/pet-hair-interior-detailing",
+        "label": "Pet hair interiors"
       }
     ]
   },
@@ -1591,8 +3511,8 @@ export const contentPages: ContentPage[] =
     "h1": "How long does ceramic coating last?",
     "lede": "How long ceramic coating lasts in San Antonio is a range, not a badge. Prep, where you park, and whether you wash decide more than the number printed on a box.",
     "image": {
-      "src": "/images/ceramic-coating-san-antonio-tx-southern-auto-detailers.webp",
-      "alt": "Ceramic coated paint in San Antonio"
+      "src": "/images/ceramic-coating-lifespan-green-coupe.webp",
+      "alt": "Water beading on a dark green coated coupe at dusk"
     },
     "sections": [
       {
@@ -1782,8 +3702,8 @@ export const contentPages: ContentPage[] =
     "h1": "How to choose a detailer in Northeast San Antonio",
     "lede": "“Best auto detailer” lists rarely mention 78233, Bricken Circle, or what happens when you cancel. Here is a better way to choose on the northeast side.",
     "image": {
-      "src": "/images/auto-detailing-san-antonio-tx-southern-auto-detailers.webp",
-      "alt": "Auto detailing in San Antonio, TX"
+      "src": "/images/northeast-san-antonio-burgundy-sedan.webp",
+      "alt": "Detailed burgundy sedan on a northeast San Antonio street"
     },
     "sections": [
       {
