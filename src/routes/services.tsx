@@ -121,9 +121,11 @@ function ServicesPage() {
             ["/blog/what-a-full-detail-includes", "Full detail: what is included"],
             ["/blog/detailing-trucks-and-suvs-san-antonio", "Full detail: trucks and SUVs"],
             ["/blog/swirl-marks-from-car-washes", "Paint correction: swirl marks"],
-            ["/blog/what-is-paint-correction", "Paint correction: what it is"],
-            ["/blog/questions-before-ceramic-coating", "Ceramic coating: questions to ask"],
-            ["/blog/ceramic-coating-vs-wax", "Ceramic coating versus wax"],
+            ["/blog/ceramic-coating-vs-wax", "Compare ceramic coating and wax"],
+            ["/blog/how-to-wash-ceramic-coated-car", "How to wash a ceramic-coated car"],
+            ["/blog/new-car-paint-correction-before-ceramic-coating", "Preparing a new vehicle for coating"],
+            ["/blog/water-spots-on-car-paint", "Water spots and paint etching"],
+            ["/blog/what-is-paint-correction", "Understand how paint correction works"],
           ].map(([to, label]) => (
             <li key={to}>
               <Link to={to as never} className="font-semibold text-primary">

@@ -26,21 +26,21 @@ const SERVICE_PAGES = [
     name: "Exterior Detailing",
     serviceType: "Exterior Auto Detailing",
     description:
-      "Professional in-shop exterior auto detailing at Southern Auto Detailers in San Antonio, Texas.",
+      "Safe washing, decontamination, wheel cleaning, gloss enhancement, and protection at the San Antonio studio.",
   },
   {
     path: "/ceramic-coating",
     name: "Ceramic Coating",
     serviceType: "Ceramic Coating",
     description:
-      "Professional ceramic coating service performed at the Southern Auto Detailers shop in San Antonio, Texas.",
+      "Durable paint protection and easier maintenance for a longer-lasting shine. Installed in the San Antonio studio after prep.",
   },
   {
     path: "/paint-correction",
     name: "Paint Correction",
     serviceType: "Paint Correction",
     description:
-      "Professional in-shop paint correction and polishing service for vehicles in San Antonio, Texas.",
+      "Improve paint clarity by reducing light swirls, haze, and surface imperfections. In-shop only, in San Antonio.",
   },
 ] as const;
 
@@ -252,6 +252,17 @@ function pageTypeFor(path: string): PageKind {
   return "WebPage";
 }
 
+const ARTICLE_ABOUT: Record<string, string> = {
+  "/blog/ceramic-coating-vs-wax": "/ceramic-coating",
+  "/blog/how-to-wash-ceramic-coated-car": "/ceramic-coating",
+  "/blog/washing-a-ceramic-coated-car": "/ceramic-coating",
+  "/blog/what-is-paint-correction": "/paint-correction",
+  "/blog/new-car-paint-correction-before-ceramic-coating": "/paint-correction",
+  "/blog/paint-correction-before-ceramic-coating": "/paint-correction",
+  "/blog/water-spots-on-car-paint": "/exterior-detailing",
+  "/blog/hard-water-spots-san-antonio": "/exterior-detailing",
+};
+
 export function webPageJsonLd(
   path: string,
   name: string,
@@ -268,6 +279,13 @@ export function webPageJsonLd(
       ? `${absoluteUrl("/ceramic-coating")}#service`
       : businessId();
 
+  const articleService = ARTICLE_ABOUT[path];
+  const aboutId = ceramicChild
+    ? `${absoluteUrl("/ceramic-coating")}#service`
+    : articleService
+      ? `${absoluteUrl(articleService)}#service`
+      : businessId();
+
   return {
     "@context": "https://schema.org",
     "@type": pageTypeFor(path),
@@ -276,7 +294,7 @@ export function webPageJsonLd(
     name,
     description,
     isPartOf: { "@id": websiteId() },
-    about: { "@id": ceramicChild ? `${absoluteUrl("/ceramic-coating")}#service` : businessId() },
+    about: { "@id": aboutId },
     mainEntity: { "@id": mainEntity },
     ...(place ? { spatialCoverage: place.spatial } : {}),
     ...(image

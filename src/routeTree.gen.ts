@@ -56,8 +56,10 @@ import { Route as BlogHowLongADetailTakesRouteImport } from './routes/blog.how-l
 import { Route as BlogHowLongDoesCeramicCoatingLastRouteImport } from './routes/blog.how-long-does-ceramic-coating-last'
 import { Route as BlogHowOftenToDetailSanAntonioRouteImport } from './routes/blog.how-often-to-detail-san-antonio'
 import { Route as BlogHowToPrepareForADetailRouteImport } from './routes/blog.how-to-prepare-for-a-detail'
+import { Route as BlogHowToWashCeramicCoatedCarRouteImport } from './routes/blog.how-to-wash-ceramic-coated-car'
 import { Route as BlogIsCeramicCoatingWorthItRouteImport } from './routes/blog.is-ceramic-coating-worth-it'
 import { Route as BlogLeatherConditioningSanAntonioRouteImport } from './routes/blog.leather-conditioning-san-antonio'
+import { Route as BlogNewCarPaintCorrectionBeforeCeramicCoatingRouteImport } from './routes/blog.new-car-paint-correction-before-ceramic-coating'
 import { Route as BlogOakPollenSanAntonioPaintRouteImport } from './routes/blog.oak-pollen-san-antonio-paint'
 import { Route as BlogPaintCorrectionBeforeCeramicCoatingRouteImport } from './routes/blog.paint-correction-before-ceramic-coating'
 import { Route as BlogPetHairInteriorDetailingRouteImport } from './routes/blog.pet-hair-interior-detailing'
@@ -67,6 +69,7 @@ import { Route as BlogSunDamagedDashboardRouteImport } from './routes/blog.sun-d
 import { Route as BlogSwirlMarksFromCarWashesRouteImport } from './routes/blog.swirl-marks-from-car-washes'
 import { Route as BlogTreeSapOnPaintRouteImport } from './routes/blog.tree-sap-on-paint'
 import { Route as BlogWashingACeramicCoatedCarRouteImport } from './routes/blog.washing-a-ceramic-coated-car'
+import { Route as BlogWaterSpotsOnCarPaintRouteImport } from './routes/blog.water-spots-on-car-paint'
 import { Route as BlogWhatAFullDetailIncludesRouteImport } from './routes/blog.what-a-full-detail-includes'
 import { Route as BlogWhatClayBarDoesRouteImport } from './routes/blog.what-clay-bar-does'
 import { Route as BlogWhatIsPaintCorrectionRouteImport } from './routes/blog.what-is-paint-correction'
@@ -325,6 +328,12 @@ const BlogHowToPrepareForADetailRoute =
     path: '/how-to-prepare-for-a-detail',
     getParentRoute: () => BlogRoute,
   } as any)
+const BlogHowToWashCeramicCoatedCarRoute =
+  BlogHowToWashCeramicCoatedCarRouteImport.update({
+    id: '/how-to-wash-ceramic-coated-car',
+    path: '/how-to-wash-ceramic-coated-car',
+    getParentRoute: () => BlogRoute,
+  } as any)
 const BlogIsCeramicCoatingWorthItRoute =
   BlogIsCeramicCoatingWorthItRouteImport.update({
     id: '/is-ceramic-coating-worth-it',
@@ -335,6 +344,12 @@ const BlogLeatherConditioningSanAntonioRoute =
   BlogLeatherConditioningSanAntonioRouteImport.update({
     id: '/leather-conditioning-san-antonio',
     path: '/leather-conditioning-san-antonio',
+    getParentRoute: () => BlogRoute,
+  } as any)
+const BlogNewCarPaintCorrectionBeforeCeramicCoatingRoute =
+  BlogNewCarPaintCorrectionBeforeCeramicCoatingRouteImport.update({
+    id: '/new-car-paint-correction-before-ceramic-coating',
+    path: '/new-car-paint-correction-before-ceramic-coating',
     getParentRoute: () => BlogRoute,
   } as any)
 const BlogOakPollenSanAntonioPaintRoute =
@@ -387,6 +402,12 @@ const BlogWashingACeramicCoatedCarRoute =
   BlogWashingACeramicCoatedCarRouteImport.update({
     id: '/washing-a-ceramic-coated-car',
     path: '/washing-a-ceramic-coated-car',
+    getParentRoute: () => BlogRoute,
+  } as any)
+const BlogWaterSpotsOnCarPaintRoute =
+  BlogWaterSpotsOnCarPaintRouteImport.update({
+    id: '/water-spots-on-car-paint',
+    path: '/water-spots-on-car-paint',
     getParentRoute: () => BlogRoute,
   } as any)
 const BlogWhatAFullDetailIncludesRoute =
@@ -481,8 +502,10 @@ export interface FileRoutesByFullPath {
   '/blog/how-long-does-ceramic-coating-last': typeof BlogHowLongDoesCeramicCoatingLastRoute
   '/blog/how-often-to-detail-san-antonio': typeof BlogHowOftenToDetailSanAntonioRoute
   '/blog/how-to-prepare-for-a-detail': typeof BlogHowToPrepareForADetailRoute
+  '/blog/how-to-wash-ceramic-coated-car': typeof BlogHowToWashCeramicCoatedCarRoute
   '/blog/is-ceramic-coating-worth-it': typeof BlogIsCeramicCoatingWorthItRoute
   '/blog/leather-conditioning-san-antonio': typeof BlogLeatherConditioningSanAntonioRoute
+  '/blog/new-car-paint-correction-before-ceramic-coating': typeof BlogNewCarPaintCorrectionBeforeCeramicCoatingRoute
   '/blog/oak-pollen-san-antonio-paint': typeof BlogOakPollenSanAntonioPaintRoute
   '/blog/paint-correction-before-ceramic-coating': typeof BlogPaintCorrectionBeforeCeramicCoatingRoute
   '/blog/pet-hair-interior-detailing': typeof BlogPetHairInteriorDetailingRoute
@@ -492,6 +515,7 @@ export interface FileRoutesByFullPath {
   '/blog/swirl-marks-from-car-washes': typeof BlogSwirlMarksFromCarWashesRoute
   '/blog/tree-sap-on-paint': typeof BlogTreeSapOnPaintRoute
   '/blog/washing-a-ceramic-coated-car': typeof BlogWashingACeramicCoatedCarRoute
+  '/blog/water-spots-on-car-paint': typeof BlogWaterSpotsOnCarPaintRoute
   '/blog/what-a-full-detail-includes': typeof BlogWhatAFullDetailIncludesRoute
   '/blog/what-clay-bar-does': typeof BlogWhatClayBarDoesRoute
   '/blog/what-is-paint-correction': typeof BlogWhatIsPaintCorrectionRoute
@@ -547,8 +571,10 @@ export interface FileRoutesByTo {
   '/blog/how-long-does-ceramic-coating-last': typeof BlogHowLongDoesCeramicCoatingLastRoute
   '/blog/how-often-to-detail-san-antonio': typeof BlogHowOftenToDetailSanAntonioRoute
   '/blog/how-to-prepare-for-a-detail': typeof BlogHowToPrepareForADetailRoute
+  '/blog/how-to-wash-ceramic-coated-car': typeof BlogHowToWashCeramicCoatedCarRoute
   '/blog/is-ceramic-coating-worth-it': typeof BlogIsCeramicCoatingWorthItRoute
   '/blog/leather-conditioning-san-antonio': typeof BlogLeatherConditioningSanAntonioRoute
+  '/blog/new-car-paint-correction-before-ceramic-coating': typeof BlogNewCarPaintCorrectionBeforeCeramicCoatingRoute
   '/blog/oak-pollen-san-antonio-paint': typeof BlogOakPollenSanAntonioPaintRoute
   '/blog/paint-correction-before-ceramic-coating': typeof BlogPaintCorrectionBeforeCeramicCoatingRoute
   '/blog/pet-hair-interior-detailing': typeof BlogPetHairInteriorDetailingRoute
@@ -558,6 +584,7 @@ export interface FileRoutesByTo {
   '/blog/swirl-marks-from-car-washes': typeof BlogSwirlMarksFromCarWashesRoute
   '/blog/tree-sap-on-paint': typeof BlogTreeSapOnPaintRoute
   '/blog/washing-a-ceramic-coated-car': typeof BlogWashingACeramicCoatedCarRoute
+  '/blog/water-spots-on-car-paint': typeof BlogWaterSpotsOnCarPaintRoute
   '/blog/what-a-full-detail-includes': typeof BlogWhatAFullDetailIncludesRoute
   '/blog/what-clay-bar-does': typeof BlogWhatClayBarDoesRoute
   '/blog/what-is-paint-correction': typeof BlogWhatIsPaintCorrectionRoute
@@ -616,8 +643,10 @@ export interface FileRoutesById {
   '/blog/how-long-does-ceramic-coating-last': typeof BlogHowLongDoesCeramicCoatingLastRoute
   '/blog/how-often-to-detail-san-antonio': typeof BlogHowOftenToDetailSanAntonioRoute
   '/blog/how-to-prepare-for-a-detail': typeof BlogHowToPrepareForADetailRoute
+  '/blog/how-to-wash-ceramic-coated-car': typeof BlogHowToWashCeramicCoatedCarRoute
   '/blog/is-ceramic-coating-worth-it': typeof BlogIsCeramicCoatingWorthItRoute
   '/blog/leather-conditioning-san-antonio': typeof BlogLeatherConditioningSanAntonioRoute
+  '/blog/new-car-paint-correction-before-ceramic-coating': typeof BlogNewCarPaintCorrectionBeforeCeramicCoatingRoute
   '/blog/oak-pollen-san-antonio-paint': typeof BlogOakPollenSanAntonioPaintRoute
   '/blog/paint-correction-before-ceramic-coating': typeof BlogPaintCorrectionBeforeCeramicCoatingRoute
   '/blog/pet-hair-interior-detailing': typeof BlogPetHairInteriorDetailingRoute
@@ -627,6 +656,7 @@ export interface FileRoutesById {
   '/blog/swirl-marks-from-car-washes': typeof BlogSwirlMarksFromCarWashesRoute
   '/blog/tree-sap-on-paint': typeof BlogTreeSapOnPaintRoute
   '/blog/washing-a-ceramic-coated-car': typeof BlogWashingACeramicCoatedCarRoute
+  '/blog/water-spots-on-car-paint': typeof BlogWaterSpotsOnCarPaintRoute
   '/blog/what-a-full-detail-includes': typeof BlogWhatAFullDetailIncludesRoute
   '/blog/what-clay-bar-does': typeof BlogWhatClayBarDoesRoute
   '/blog/what-is-paint-correction': typeof BlogWhatIsPaintCorrectionRoute
@@ -686,8 +716,10 @@ export interface FileRouteTypes {
     | '/blog/how-long-does-ceramic-coating-last'
     | '/blog/how-often-to-detail-san-antonio'
     | '/blog/how-to-prepare-for-a-detail'
+    | '/blog/how-to-wash-ceramic-coated-car'
     | '/blog/is-ceramic-coating-worth-it'
     | '/blog/leather-conditioning-san-antonio'
+    | '/blog/new-car-paint-correction-before-ceramic-coating'
     | '/blog/oak-pollen-san-antonio-paint'
     | '/blog/paint-correction-before-ceramic-coating'
     | '/blog/pet-hair-interior-detailing'
@@ -697,6 +729,7 @@ export interface FileRouteTypes {
     | '/blog/swirl-marks-from-car-washes'
     | '/blog/tree-sap-on-paint'
     | '/blog/washing-a-ceramic-coated-car'
+    | '/blog/water-spots-on-car-paint'
     | '/blog/what-a-full-detail-includes'
     | '/blog/what-clay-bar-does'
     | '/blog/what-is-paint-correction'
@@ -752,8 +785,10 @@ export interface FileRouteTypes {
     | '/blog/how-long-does-ceramic-coating-last'
     | '/blog/how-often-to-detail-san-antonio'
     | '/blog/how-to-prepare-for-a-detail'
+    | '/blog/how-to-wash-ceramic-coated-car'
     | '/blog/is-ceramic-coating-worth-it'
     | '/blog/leather-conditioning-san-antonio'
+    | '/blog/new-car-paint-correction-before-ceramic-coating'
     | '/blog/oak-pollen-san-antonio-paint'
     | '/blog/paint-correction-before-ceramic-coating'
     | '/blog/pet-hair-interior-detailing'
@@ -763,6 +798,7 @@ export interface FileRouteTypes {
     | '/blog/swirl-marks-from-car-washes'
     | '/blog/tree-sap-on-paint'
     | '/blog/washing-a-ceramic-coated-car'
+    | '/blog/water-spots-on-car-paint'
     | '/blog/what-a-full-detail-includes'
     | '/blog/what-clay-bar-does'
     | '/blog/what-is-paint-correction'
@@ -820,8 +856,10 @@ export interface FileRouteTypes {
     | '/blog/how-long-does-ceramic-coating-last'
     | '/blog/how-often-to-detail-san-antonio'
     | '/blog/how-to-prepare-for-a-detail'
+    | '/blog/how-to-wash-ceramic-coated-car'
     | '/blog/is-ceramic-coating-worth-it'
     | '/blog/leather-conditioning-san-antonio'
+    | '/blog/new-car-paint-correction-before-ceramic-coating'
     | '/blog/oak-pollen-san-antonio-paint'
     | '/blog/paint-correction-before-ceramic-coating'
     | '/blog/pet-hair-interior-detailing'
@@ -831,6 +869,7 @@ export interface FileRouteTypes {
     | '/blog/swirl-marks-from-car-washes'
     | '/blog/tree-sap-on-paint'
     | '/blog/washing-a-ceramic-coated-car'
+    | '/blog/water-spots-on-car-paint'
     | '/blog/what-a-full-detail-includes'
     | '/blog/what-clay-bar-does'
     | '/blog/what-is-paint-correction'
@@ -1202,6 +1241,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogHowToPrepareForADetailRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/blog/how-to-wash-ceramic-coated-car': {
+      id: '/blog/how-to-wash-ceramic-coated-car'
+      path: '/how-to-wash-ceramic-coated-car'
+      fullPath: '/blog/how-to-wash-ceramic-coated-car'
+      preLoaderRoute: typeof BlogHowToWashCeramicCoatedCarRouteImport
+      parentRoute: typeof BlogRoute
+    }
     '/blog/is-ceramic-coating-worth-it': {
       id: '/blog/is-ceramic-coating-worth-it'
       path: '/is-ceramic-coating-worth-it'
@@ -1214,6 +1260,13 @@ declare module '@tanstack/react-router' {
       path: '/leather-conditioning-san-antonio'
       fullPath: '/blog/leather-conditioning-san-antonio'
       preLoaderRoute: typeof BlogLeatherConditioningSanAntonioRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/new-car-paint-correction-before-ceramic-coating': {
+      id: '/blog/new-car-paint-correction-before-ceramic-coating'
+      path: '/new-car-paint-correction-before-ceramic-coating'
+      fullPath: '/blog/new-car-paint-correction-before-ceramic-coating'
+      preLoaderRoute: typeof BlogNewCarPaintCorrectionBeforeCeramicCoatingRouteImport
       parentRoute: typeof BlogRoute
     }
     '/blog/oak-pollen-san-antonio-paint': {
@@ -1277,6 +1330,13 @@ declare module '@tanstack/react-router' {
       path: '/washing-a-ceramic-coated-car'
       fullPath: '/blog/washing-a-ceramic-coated-car'
       preLoaderRoute: typeof BlogWashingACeramicCoatedCarRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/water-spots-on-car-paint': {
+      id: '/blog/water-spots-on-car-paint'
+      path: '/water-spots-on-car-paint'
+      fullPath: '/blog/water-spots-on-car-paint'
+      preLoaderRoute: typeof BlogWaterSpotsOnCarPaintRouteImport
       parentRoute: typeof BlogRoute
     }
     '/blog/what-a-full-detail-includes': {
@@ -1359,8 +1419,10 @@ interface BlogRouteChildren {
   BlogHowLongDoesCeramicCoatingLastRoute: typeof BlogHowLongDoesCeramicCoatingLastRoute
   BlogHowOftenToDetailSanAntonioRoute: typeof BlogHowOftenToDetailSanAntonioRoute
   BlogHowToPrepareForADetailRoute: typeof BlogHowToPrepareForADetailRoute
+  BlogHowToWashCeramicCoatedCarRoute: typeof BlogHowToWashCeramicCoatedCarRoute
   BlogIsCeramicCoatingWorthItRoute: typeof BlogIsCeramicCoatingWorthItRoute
   BlogLeatherConditioningSanAntonioRoute: typeof BlogLeatherConditioningSanAntonioRoute
+  BlogNewCarPaintCorrectionBeforeCeramicCoatingRoute: typeof BlogNewCarPaintCorrectionBeforeCeramicCoatingRoute
   BlogOakPollenSanAntonioPaintRoute: typeof BlogOakPollenSanAntonioPaintRoute
   BlogPaintCorrectionBeforeCeramicCoatingRoute: typeof BlogPaintCorrectionBeforeCeramicCoatingRoute
   BlogPetHairInteriorDetailingRoute: typeof BlogPetHairInteriorDetailingRoute
@@ -1370,6 +1432,7 @@ interface BlogRouteChildren {
   BlogSwirlMarksFromCarWashesRoute: typeof BlogSwirlMarksFromCarWashesRoute
   BlogTreeSapOnPaintRoute: typeof BlogTreeSapOnPaintRoute
   BlogWashingACeramicCoatedCarRoute: typeof BlogWashingACeramicCoatedCarRoute
+  BlogWaterSpotsOnCarPaintRoute: typeof BlogWaterSpotsOnCarPaintRoute
   BlogWhatAFullDetailIncludesRoute: typeof BlogWhatAFullDetailIncludesRoute
   BlogWhatClayBarDoesRoute: typeof BlogWhatClayBarDoesRoute
   BlogWhatIsPaintCorrectionRoute: typeof BlogWhatIsPaintCorrectionRoute
@@ -1405,9 +1468,12 @@ const BlogRouteChildren: BlogRouteChildren = {
     BlogHowLongDoesCeramicCoatingLastRoute,
   BlogHowOftenToDetailSanAntonioRoute: BlogHowOftenToDetailSanAntonioRoute,
   BlogHowToPrepareForADetailRoute: BlogHowToPrepareForADetailRoute,
+  BlogHowToWashCeramicCoatedCarRoute: BlogHowToWashCeramicCoatedCarRoute,
   BlogIsCeramicCoatingWorthItRoute: BlogIsCeramicCoatingWorthItRoute,
   BlogLeatherConditioningSanAntonioRoute:
     BlogLeatherConditioningSanAntonioRoute,
+  BlogNewCarPaintCorrectionBeforeCeramicCoatingRoute:
+    BlogNewCarPaintCorrectionBeforeCeramicCoatingRoute,
   BlogOakPollenSanAntonioPaintRoute: BlogOakPollenSanAntonioPaintRoute,
   BlogPaintCorrectionBeforeCeramicCoatingRoute:
     BlogPaintCorrectionBeforeCeramicCoatingRoute,
@@ -1420,6 +1486,7 @@ const BlogRouteChildren: BlogRouteChildren = {
   BlogSwirlMarksFromCarWashesRoute: BlogSwirlMarksFromCarWashesRoute,
   BlogTreeSapOnPaintRoute: BlogTreeSapOnPaintRoute,
   BlogWashingACeramicCoatedCarRoute: BlogWashingACeramicCoatedCarRoute,
+  BlogWaterSpotsOnCarPaintRoute: BlogWaterSpotsOnCarPaintRoute,
   BlogWhatAFullDetailIncludesRoute: BlogWhatAFullDetailIncludesRoute,
   BlogWhatClayBarDoesRoute: BlogWhatClayBarDoesRoute,
   BlogWhatIsPaintCorrectionRoute: BlogWhatIsPaintCorrectionRoute,
