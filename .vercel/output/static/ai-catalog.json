@@ -1,0 +1,68 @@
+{
+  "entries": [
+    {
+      "identifier": "urn:air:southernautodetailers.com:doc:llms",
+      "displayName": "Southern Auto Detailers site guide",
+      "type": "text/markdown",
+      "url": "https://southernautodetailers.com/llms.txt",
+      "description": "Concise guide to the San Antonio in-shop detailing studio: services, hours, address, deposit, and what the business does not offer.",
+      "capabilities": ["SiteGuide", "ServiceList", "Hours", "Location"],
+      "representativeQueries": [
+        "Where is Southern Auto Detailers and what are the hours?",
+        "What detailing services are offered in San Antonio?",
+        "Does Southern Auto Detailers come to my house?"
+      ],
+      "tags": ["auto detailing", "San Antonio", "78233"],
+      "version": "1",
+      "updatedAt": "2026-10-09T08:19:00Z",
+      "trustManifest": {
+        "identity": "https://southernautodetailers.com",
+        "identityType": "https"
+      }
+    },
+    {
+      "identifier": "urn:air:southernautodetailers.com:tool:request-appointment",
+      "displayName": "Request a detailing appointment",
+      "type": "text/html",
+      "url": "https://southernautodetailers.com/contact",
+      "description": "Web form that sends an in-shop appointment request. It does not reserve the time. A 20% non-refundable deposit of the quoted total holds the slot. Closed Monday. No mobile detailing.",
+      "capabilities": ["RequestAppointment"],
+      "representativeQueries": [
+        "Request a ceramic coating appointment in San Antonio",
+        "Book an in-shop full detail at Southern Auto Detailers",
+        "How do I hold a detailing appointment?"
+      ],
+      "tags": ["booking", "appointment", "deposit"],
+      "version": "1",
+      "updatedAt": "2026-10-09T08:19:00Z",
+      "metadata": {
+        "webmcpTool": "request_appointment",
+        "depositPercent": 20,
+        "mobileService": false
+      },
+      "trustManifest": {
+        "identity": "https://southernautodetailers.com",
+        "identityType": "https"
+      }
+    },
+    {
+      "identifier": "urn:air:southernautodetailers.com:doc:sitemap",
+      "displayName": "Southern Auto Detailers sitemap",
+      "type": "application/xml",
+      "url": "https://southernautodetailers.com/sitemap.xml",
+      "description": "Index of public pages: services, northeast San Antonio areas, guides, and policies.",
+      "capabilities": ["Sitemap"],
+      "representativeQueries": [
+        "List the public pages on southernautodetailers.com",
+        "Find the paint correction and ceramic coating pages"
+      ],
+      "tags": ["sitemap"],
+      "version": "1",
+      "updatedAt": "2026-10-09T08:19:00Z",
+      "trustManifest": {
+        "identity": "https://southernautodetailers.com",
+        "identityType": "https"
+      }
+    }
+  ]
+}

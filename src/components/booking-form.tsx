@@ -122,6 +122,8 @@ export function BookingForm({ className }: { className?: string }) {
       onSubmit={onSubmit}
       className={cn("rounded-3xl border border-border bg-surface p-5 shadow-card md:p-7", className)}
       noValidate
+      toolname="request_appointment"
+      tooldescription="Request an in-shop detailing appointment at Southern Auto Detailers, 11692 Bricken Circle, San Antonio, TX 78233. This sends a request only. The time is not held until a 20% non-refundable deposit of the quoted total is received. The studio is closed Monday and does not offer mobile detailing."
     >
       <div className="mb-6">
         <p className="text-xs font-semibold tracking-[0.2em] text-primary uppercase">Book a detail</p>
@@ -134,23 +136,26 @@ export function BookingForm({ className }: { className?: string }) {
       <div className="grid gap-4 sm:grid-cols-2">
         <div className={field}>
           <Label htmlFor="name">Name</Label>
-          <Input id="name" autoComplete="name" value={form.name} onChange={(e) => update("name", e.target.value)} />
+          <Input id="name" name="name" autoComplete="name" required toolparamdescription="Customer full name." value={form.name} onChange={(e) => update("name", e.target.value)} />
           {errors.name ? <p className="text-xs text-danger">{errors.name}</p> : null}
         </div>
         <div className={field}>
           <Label htmlFor="phone">Phone</Label>
-          <Input id="phone" type="tel" autoComplete="tel" inputMode="tel" value={form.phone} onChange={(e) => update("phone", e.target.value)} />
+          <Input id="phone" name="phone" type="tel" autoComplete="tel" inputMode="tel" required toolparamdescription="10-digit phone number Southern Auto Detailers should call to confirm the request." value={form.phone} onChange={(e) => update("phone", e.target.value)} />
           {errors.phone ? <p className="text-xs text-danger">{errors.phone}</p> : null}
         </div>
         <div className={cn(field, "sm:col-span-2")}>
           <Label htmlFor="email">Email</Label>
-          <Input id="email" type="email" autoComplete="email" value={form.email} onChange={(e) => update("email", e.target.value)} />
+          <Input id="email" name="email" type="email" autoComplete="email" required toolparamdescription="Email address for the appointment request." value={form.email} onChange={(e) => update("email", e.target.value)} />
           {errors.email ? <p className="text-xs text-danger">{errors.email}</p> : null}
         </div>
         <div className={cn(field, "sm:col-span-2")}>
           <Label htmlFor="vehicle">Vehicle year / make / model</Label>
           <Input
             id="vehicle"
+            name="vehicle"
+            required
+            toolparamdescription="Vehicle year, make, and model. Example: 2019 Toyota Tundra."
             placeholder="2019 Toyota Tundra"
             value={form.vehicle}
             onChange={(e) => update("vehicle", e.target.value)}
@@ -161,6 +166,9 @@ export function BookingForm({ className }: { className?: string }) {
           <Label htmlFor="service">Requested service</Label>
           <select
             id="service"
+            name="service"
+            required
+            toolparamdescription="In-shop service to request: interior, exterior, full detail, paint correction, ceramic coating, maintenance, or a recommendation."
             className={selectClass}
             value={form.service}
             onChange={(e) => update("service", e.target.value)}
@@ -178,7 +186,10 @@ export function BookingForm({ className }: { className?: string }) {
           <Label htmlFor="date">Preferred date</Label>
           <Input
             id="date"
+            name="date"
             type="date"
+            required
+            toolparamdescription="Preferred appointment date. Tuesday through Sunday only. The studio is closed Monday."
             min={minDate}
             value={form.date}
             onChange={(e) => update("date", e.target.value)}
@@ -189,6 +200,8 @@ export function BookingForm({ className }: { className?: string }) {
           <Label htmlFor="notes">Anything we should know? (optional)</Label>
           <Textarea
             id="notes"
+            name="notes"
+            toolparamdescription="Optional notes about condition, such as pet hair, stains, a work truck, or ceramic coating interest."
             placeholder="Pet hair, stains, work truck, ceramic interest…"
             value={form.notes}
             onChange={(e) => update("notes", e.target.value)}
@@ -197,6 +210,10 @@ export function BookingForm({ className }: { className?: string }) {
         <label className="mt-4 flex items-start gap-3 text-sm text-muted sm:col-span-2">
           <input
             type="checkbox"
+            name="deposit"
+            value="acknowledged"
+            required
+            toolparamdescription="Must be acknowledged. A 20% non-refundable deposit of the quoted total is required to hold the appointment. The form request alone does not hold the slot."
             className="mt-1 size-4 accent-primary"
             checked={form.deposit}
             onChange={(e) => update("deposit", e.target.checked)}

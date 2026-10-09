@@ -53,21 +53,26 @@ export const JUNIOR_ACHIEVEMENT = {
 
 export const SITE_ORIGIN: string = "https://southernautodetailers.com";
 
-export const NAV = [
+export const HEADER_NAV = [
+  { to: "/ceramic-coating", label: "Ceramic Coating" },
+  { to: "/paint-correction", label: "Paint Correction" },
   { to: "/services", label: "Services" },
-  { to: "/pricing", label: "Pricing" },
   { to: "/service-areas", label: "Service Areas" },
+] as const;
+
+export const NAV = [
+  { to: "/pricing", label: "Pricing" },
   { to: "/blog", label: "Blog" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
 export const SERVICE_NAV = [
-  { to: "/interior-detailing", label: "Interior Detailing" },
-  { to: "/exterior-detailing", label: "Exterior Detailing" },
-  { to: "/full-detailing", label: "Full Detailing" },
-  { to: "/paint-correction", label: "Paint Correction" },
   { to: "/ceramic-coating", label: "Ceramic Coating" },
+  { to: "/paint-correction", label: "Paint Correction" },
+  { to: "/full-detailing", label: "Full Detailing" },
+  { to: "/exterior-detailing", label: "Exterior Detailing" },
+  { to: "/interior-detailing", label: "Interior Detailing" },
 ] as const;
 
 export const LEGAL_NAV = [
@@ -173,56 +178,79 @@ export const SERVICES = [
 export const AREAS = [
   {
     name: "San Antonio",
+    to: "/services",
+    linkLabel: "Auto detailing services in San Antonio",
     blurb:
       "South Texas heat, UV, oak pollen, and caliche dust wear on paint and interiors year-round. Professional auto detailing in San Antonio, TX covers daily drivers, work trucks, family SUVs, and enthusiast cars — matched to condition, not a rushed wash.",
   },
   {
     name: "Northeast San Antonio",
+    to: "/san-antonio-78233",
+    linkLabel: "Auto detailing in 78233",
     blurb:
       "Drivers along I-35 and Loop 1604 pick up film from commute miles, construction dust, and summer storms. Northeast San Antonio auto detailing is a core focus — including the 78233 ZIP, ceramic coating in Northeast San Antonio, and interiors that actually get reset.",
   },
   {
     name: "Live Oak",
+    to: "/live-oak",
+    linkLabel: "Auto detailing in Live Oak",
     blurb:
       "Looking for auto detailing near Live Oak TX? Neighborhood pollen, parking-lot dust, and highway film collect fast. We recommend interior, exterior, or full details based on how the cabin is used — kids, pets, and work gear included.",
   },
   {
     name: "Universal City",
+    to: "/universal-city",
+    linkLabel: "Auto detailing in Universal City",
     blurb:
       "Auto detailing near Universal City TX and the Randolph area puts real hours on cars and trucks. We tailor exterior decontamination and interior deep cleans for vehicles that sit outside or log frequent short trips.",
   },
   {
     name: "Converse",
+    to: "/converse",
+    linkLabel: "Auto detailing in Converse",
     blurb:
       "Auto detailing near Converse TX is a fit for dust, water spots, and a tired cabin. Book a focused interior, a careful exterior, or a full package. Call and describe the vehicle — we will recommend the right amount of work.",
   },
   {
     name: "Schertz",
+    to: "/schertz",
+    linkLabel: "Auto detailing in Schertz",
     blurb:
       "Car detailing near Schertz TX sits in the same hard-water and pollen pattern as the rest of the northeast metro. Regular maintenance details keep swirl-prone paint from looking dull between deeper correction or coating work.",
   },
   {
     name: "Cibolo",
+    to: "",
+    linkLabel: "",
     blurb:
       "Cibolo vehicles that live in driveways and garages still collect Texas film. Southern Auto Detailers services eligible cars, trucks, and SUVs by appointment so the job gets the time it needs.",
   },
   {
     name: "Windcrest",
+    to: "/windcrest",
+    linkLabel: "Auto detailing in Windcrest",
     blurb:
       "Looking for car detailing near Windcrest TX? You are next door to Northeast San Antonio and the 78233 ZIP. Call to confirm appointment timing for interior, exterior, full, paint correction, or ceramic coating work.",
   },
 ] as const;
 
 export const PLACE_LINKS = [
-  { to: "/san-antonio-78233", label: "78233 / Northeast SA" },
-  { to: "/royal-ridge", label: "Royal Ridge" },
-  { to: "/rolling-oaks", label: "Rolling Oaks Mall" },
-  { to: "/fort-sam-houston", label: "Fort Sam Houston" },
-  { to: "/live-oak", label: "Live Oak" },
-  { to: "/universal-city", label: "Universal City" },
-  { to: "/converse", label: "Converse" },
-  { to: "/windcrest", label: "Windcrest" },
-  { to: "/schertz", label: "Schertz" },
+  { to: "/san-antonio-78233", label: "Auto detailing in 78233" },
+  { to: "/royal-ridge", label: "Royal Ridge auto detailing" },
+  { to: "/rolling-oaks", label: "Detailing near Rolling Oaks" },
+  { to: "/fort-sam-houston", label: "Detailing near Fort Sam Houston" },
+  { to: "/oak-meadow", label: "Oak Meadow auto detailing" },
+  { to: "/live-oak", label: "Auto detailing in Live Oak" },
+  { to: "/universal-city", label: "Auto detailing in Universal City" },
+  { to: "/converse", label: "Auto detailing in Converse" },
+  { to: "/windcrest", label: "Auto detailing in Windcrest" },
+  { to: "/schertz", label: "Auto detailing in Schertz" },
+] as const;
+
+/** Sitewide links stay short so the homepage and service pages keep more weight. */
+export const FOOTER_AREAS = [
+  { to: "/service-areas", label: "Auto detailing service areas" },
+  { to: "/san-antonio-78233", label: "Auto detailing in 78233" },
 ] as const;
 
 export const FAQS = [

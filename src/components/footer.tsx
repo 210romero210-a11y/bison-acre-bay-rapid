@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/logo";
-import { BUSINESS, JUNIOR_ACHIEVEMENT, LEGAL_NAV, NAV, PLACE_LINKS, SERVICE_NAV } from "@/lib/site";
+import { BUSINESS, FOOTER_AREAS, JUNIOR_ACHIEVEMENT, LEGAL_NAV, NAV, SERVICE_NAV } from "@/lib/site";
 
 function FooterLabel({ children }: { children: string }) {
   return <p className="text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">{children}</p>;
@@ -83,7 +83,7 @@ export function Footer() {
           <nav aria-label="Service areas" className="sm:col-span-2 lg:col-span-1">
             <FooterLabel>Service areas</FooterLabel>
             <ul className="mt-4 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-1">
-              {PLACE_LINKS.map((area) => (
+              {FOOTER_AREAS.map((area) => (
                 <li key={area.to}>
                   <FooterLink to={area.to}>{area.label}</FooterLink>
                 </li>
@@ -94,7 +94,7 @@ export function Footer() {
           <nav aria-label="Company">
             <FooterLabel>Company</FooterLabel>
             <ul className="mt-4 grid gap-2.5">
-              {NAV.filter((item) => item.to !== "/services").map((item) => (
+              {NAV.map((item) => (
                 <li key={item.to}>
                   <FooterLink to={item.to}>{item.label}</FooterLink>
                 </li>
@@ -105,7 +105,7 @@ export function Footer() {
               className="mt-4 inline-block text-sm text-muted hover:text-primary"
               rel="noopener noreferrer"
             >
-              Google listing
+              Southern Auto Detailers on Google
             </a>
           </nav>
         </div>

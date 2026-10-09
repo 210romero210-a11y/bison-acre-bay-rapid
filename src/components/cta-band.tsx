@@ -6,9 +6,11 @@ import { BUSINESS } from "@/lib/site";
 export function CtaBand({
   title = "Book auto detailing in San Antonio",
   body = `Call ${BUSINESS.phoneDisplay} or email ${BUSINESS.email}. San Antonio studio at ${BUSINESS.street}. ${BUSINESS.hoursSummary}.`,
+  contactLabel = "Request a detailing appointment",
 }: {
   title?: string;
   body?: string;
+  contactLabel?: string;
 }) {
   return (
     <section className="px-4 py-16 md:px-6 md:py-20">
@@ -25,7 +27,7 @@ export function CtaBand({
             </a>
           </Button>
           <Button asChild size="lg" variant="outline">
-            <Link to="/contact">Request a Detail</Link>
+            <Link to="/contact">{contactLabel}</Link>
           </Button>
         </div>
       </div>

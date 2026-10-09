@@ -127,7 +127,22 @@ export function Longform({ page }: { page: ContentPage }) {
           <FaqList items={page.faqs} />
         </div>
       </Section>
-      <CtaBand />
+      <CtaBand
+        title={
+          page.path.includes("ceramic-coating")
+            ? "Schedule ceramic coating"
+            : page.path.includes("paint-correction")
+              ? "Schedule paint correction"
+              : "Book auto detailing in San Antonio"
+        }
+        contactLabel={
+          page.path.includes("ceramic-coating")
+            ? "Schedule a ceramic coating appointment"
+            : page.path.includes("paint-correction")
+              ? "Schedule paint correction"
+              : "Request a detailing appointment"
+        }
+      />
     </main>
   );
 }

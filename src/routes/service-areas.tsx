@@ -39,7 +39,7 @@ function AreasPage() {
     <main>
       <Section>
         <Breadcrumbs items={crumbsFor("/service-areas")} className="mb-6" />
-        <Eyebrow>San Antonio-area geographic keywords</Eyebrow>
+        <Eyebrow>Northeast San Antonio</Eyebrow>
         <h1 className="max-w-3xl font-display text-4xl md:text-5xl">
           Auto detailing near San Antonio, TX
         </h1>
@@ -72,6 +72,11 @@ function AreasPage() {
             <article key={area.name} className="rounded-3xl border border-border bg-bg p-6 md:p-8">
               <h2 className="font-display text-2xl">{area.name}</h2>
               <p className="mt-3 text-sm leading-relaxed text-muted">{area.blurb}</p>
+              {area.to ? (
+                <Link to={area.to} className="mt-4 inline-block text-sm font-semibold text-primary">
+                  {area.linkLabel}
+                </Link>
+              ) : null}
             </article>
           ))}
         </div>

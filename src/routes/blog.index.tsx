@@ -1,11 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { blogPosts } from "@/lib/content/pages";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { Section, Eyebrow } from "@/components/section";
 import { crumbsFor, pageHead, absoluteUrl } from "@/lib/seo";
 
 export const Route = createFileRoute("/blog/")({
-  head: () =>
+  loader: () => import("@/lib/content/pages").then((mod) => mod.blogPosts),
+  head: ({ loaderData }) =>
     pageHead(
       "Auto Detailing Blog | San Antonio TX",
       "Guides from Southern Auto Detailers on ceramic coating, paint correction, and in-shop detailing in San Antonio.",
@@ -15,7 +15,7 @@ export const Route = createFileRoute("/blog/")({
           "@context": "https://schema.org",
           "@type": "ItemList",
           name: "Southern Auto Detailers articles",
-          itemListElement: blogPosts.map((post, index) => ({
+          itemListElement: loaderData!.map((post, index) => ({
             "@type": "ListItem",
             position: index + 1,
             name: post.h1,
@@ -29,6 +29,7 @@ export const Route = createFileRoute("/blog/")({
 });
 
 function BlogIndex() {
+  const blogPosts = Route.useLoaderData();
   return (
     <main>
       <Section>

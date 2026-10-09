@@ -1,0 +1,10 @@
+import { _ as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[...].mjs";
+import { b as Route$18 } from "./router-BSqutAy7.mjs";
+import { t as Longform } from "./longform-Cg3pLcck.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/blog.how-often-to-detail-san-antonio-ro2th4Yt.js
+var import_jsx_runtime = require_jsx_runtime();
+var SplitComponent = function Page() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Longform, { page: Route$18.useLoaderData() });
+};
+//#endregion
+export { SplitComponent as component };

@@ -1,0 +1,2 @@
+import{o as e}from"./useSelector-B_P3tCcN.js";import{d as t}from"./index-BroofvKr.js";import{t as n}from"./longform-BoI3yprd.js";var r=e(),i=function(){return(0,r.jsx)(n,{page:t.useLoaderData()})};export{i as component};
+//# sourceMappingURL=blog.swirl-marks-from-car-washes-DdpWpd5i.js.map

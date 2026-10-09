@@ -413,6 +413,7 @@ export function pageHead(
       { title },
       { name: "description", content: description },
     ],
+    links: [{ rel: "canonical", href: absoluteUrl(path) }],
     scripts: blocksFor(path, pageName || title, description, extras, image).map(script),
   };
 }

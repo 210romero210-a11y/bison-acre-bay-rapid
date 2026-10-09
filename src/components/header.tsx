@@ -4,7 +4,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { Clock, Mail, MapPin, Menu, Phone, X } from "lucide-react";
 import { Logo } from "@/components/logo";
 import { Button } from "@/components/ui/button";
-import { BUSINESS, NAV, SERVICE_NAV } from "@/lib/site";
+import { BUSINESS, HEADER_NAV, SERVICE_NAV } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 const linkClass =
@@ -39,7 +39,7 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 md:h-[4.5rem] md:px-6">
         <Logo />
         <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
-          {NAV.map((item) => (
+          {HEADER_NAV.map((item) => (
             <Link key={item.to} to={item.to} className={linkClass} activeProps={{ className: "text-primary" }}>
               {item.label}
             </Link>
@@ -53,7 +53,7 @@ export function Header() {
             </a>
           </Button>
           <Button asChild size="sm" variant="outline" className="hidden md:inline-flex">
-            <Link to="/contact">Book Now</Link>
+            <Link to="/contact">Request a Detail</Link>
           </Button>
           <Button asChild size="icon" className="sm:hidden" aria-label={`Call ${BUSINESS.phoneDisplay}`}>
             <a href={BUSINESS.phoneTel}>
@@ -84,7 +84,7 @@ export function Header() {
                   <Link to="/" className={cn(linkClass, "py-3 text-base")} onClick={() => setOpen(false)}>
                     Home
                   </Link>
-                  {NAV.map((item) => (
+                  {HEADER_NAV.map((item) => (
                     <Link
                       key={item.to}
                       to={item.to}
@@ -97,7 +97,9 @@ export function Header() {
                   <p className="mt-4 text-xs font-semibold tracking-[0.18em] text-muted uppercase">
                     Services
                   </p>
-                  {SERVICE_NAV.map((item) => (
+                  {SERVICE_NAV.filter(
+                    (item) => item.to !== "/ceramic-coating" && item.to !== "/paint-correction",
+                  ).map((item) => (
                     <Link
                       key={item.to}
                       to={item.to}

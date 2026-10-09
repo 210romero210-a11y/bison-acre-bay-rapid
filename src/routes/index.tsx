@@ -105,9 +105,16 @@ function Home() {
             Auto detailing services in San Antonio, TX
           </h2>
           <Link to="/services" className="text-sm font-semibold text-primary">
-            View all services
+            Auto detailing services
           </Link>
         </div>
+        <p className="mt-4 max-w-2xl text-muted">
+          The shop does the prep and the protection in one studio. Read about{" "}
+          <Link to="/ceramic-coating" className="font-semibold text-primary">
+            professional ceramic coating
+          </Link>{" "}
+          when the clear coat is ready to be protected, not before.
+        </p>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((service) => (
             <ServiceCard key={service.slug} {...service} />
@@ -116,6 +123,31 @@ function Home() {
       </Section>
 
       <Section tone="surface">
+        <Eyebrow>Related work</Eyebrow>
+        <h2 className="max-w-2xl font-display text-3xl md:text-4xl">
+          Paint, coatings, and the 78233 studio
+        </h2>
+        <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+          {[
+            ["/ceramic-coating", "Ceramic coating in San Antonio"],
+            ["/ceramic-coating/cost", "Ceramic coating cost"],
+            ["/ceramic-coating/process", "Ceramic coating process"],
+            ["/paint-correction", "Paint correction in San Antonio"],
+            ["/interior-detailing", "Interior detailing in San Antonio"],
+            ["/full-detailing", "Full auto detailing"],
+            ["/pricing", "Auto detailing prices"],
+            ["/san-antonio-78233", "Auto detailing in 78233"],
+          ].map(([to, label]) => (
+            <li key={to}>
+              <Link to={to as "/services"} className="font-semibold text-primary">
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </Section>
+
+      <Section>
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <Photo
             src={IMAGES.suvInterior.src}
@@ -134,11 +166,11 @@ function Home() {
             </p>
             <p className="mt-4 text-muted">
               Visit the studio at {BUSINESS.addressLine}. Hours: {BUSINESS.hoursSummary}.
-              Drivers in{" "}
+              Start with{" "}
               <Link to="/san-antonio-78233" className="font-semibold text-primary">
-                78233 and Northeast San Antonio
+                auto detailing in 78233
               </Link>{" "}
-              can start with a call to {BUSINESS.phoneDisplay}.
+              or call {BUSINESS.phoneDisplay}.
             </p>
           </div>
         </div>

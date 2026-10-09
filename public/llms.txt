@@ -1,0 +1,62 @@
+# Southern Auto Detailers
+
+> In-shop auto detailing studio in San Antonio, Texas. Interior detailing, exterior detailing, full detailing, paint correction, and ceramic coating by appointment at 11692 Bricken Circle, San Antonio, TX 78233. No mobile service.
+
+Southern Auto Detailers is owned by Robert Romero Jr., an Alamo Heights graduate and IDA-certified detailer. The studio opened October 5, 2026. Work is done one vehicle at a time at the shop. The business does not travel to homes or parking lots.
+
+- Phone: (210) 201-4847
+- Email: contact@southernautodetailers.com
+- Hours: Tuesday through Sunday, 7:00 AM–11:00 PM. Closed Monday.
+- A request on the website does not hold a time. A 20% non-refundable deposit of the quoted total holds the slot.
+- Prices are quoted per vehicle. The site does not publish a package menu.
+- Ten percent of every sale goes to Junior Achievement of South Texas.
+- Photographs on the site illustrate the work. They are not a gallery of finished customer cars.
+
+## Services
+
+- [Services](https://southernautodetailers.com/services): All in-shop services
+- [Interior detailing](https://southernautodetailers.com/interior-detailing): Carpets, leather, and cabins
+- [Exterior detailing](https://southernautodetailers.com/exterior-detailing): Hand wash, clay, wheels, and paint-safe cleaning
+- [Full detailing](https://southernautodetailers.com/full-detailing): Interior and exterior in one visit
+- [Paint correction](https://southernautodetailers.com/paint-correction): Swirl and scratch reduction when the clear coat allows it
+- [Ceramic coating](https://southernautodetailers.com/ceramic-coating): In-shop coating after the paint is ready
+- [Ceramic coating cost](https://southernautodetailers.com/ceramic-coating/cost): What changes the quote. No single published price
+- [Ceramic coating process](https://southernautodetailers.com/ceramic-coating/process): Wash, decontamination, correction if needed, then coating
+- [Pricing](https://southernautodetailers.com/pricing): How quotes are built
+
+## Service areas
+
+The studio is in ZIP 78233. Customers bring the vehicle to Bricken Circle. These pages describe nearby areas. They are not separate shops.
+
+- [Service areas](https://southernautodetailers.com/service-areas)
+- [San Antonio 78233](https://southernautodetailers.com/san-antonio-78233)
+- [Royal Ridge](https://southernautodetailers.com/royal-ridge)
+- [Rolling Oaks](https://southernautodetailers.com/rolling-oaks)
+- [Oak Meadow](https://southernautodetailers.com/oak-meadow)
+- [Fort Sam Houston](https://southernautodetailers.com/fort-sam-houston)
+- [Universal City](https://southernautodetailers.com/universal-city)
+- [Live Oak](https://southernautodetailers.com/live-oak)
+- [Converse](https://southernautodetailers.com/converse)
+- [Windcrest](https://southernautodetailers.com/windcrest)
+- [Schertz](https://southernautodetailers.com/schertz)
+
+## Booking and policies
+
+- [Contact](https://southernautodetailers.com/contact): Appointment request form. Tool name `request_appointment`
+- [About](https://southernautodetailers.com/about): Studio and founder
+- [Privacy](https://southernautodetailers.com/privacy)
+- [Terms](https://southernautodetailers.com/terms)
+- [Refund policy](https://southernautodetailers.com/refund-policy): 20% deposit rules, without sample prices
+- [Google listing](https://maps.app.goo.gl/vEsJcW9x4PHftyKBA)
+
+## Guides
+
+- [Blog](https://southernautodetailers.com/blog): Notes on San Antonio paint, interiors, coatings, and prep
+- [Sitemap](https://southernautodetailers.com/sitemap.xml)
+
+## Optional
+
+- [What a full detail includes](https://southernautodetailers.com/blog/what-a-full-detail-includes)
+- [How to prepare for a detail](https://southernautodetailers.com/blog/how-to-prepare-for-a-detail)
+- [Questions before ceramic coating](https://southernautodetailers.com/blog/questions-before-ceramic-coating)
+- [Agent catalog](https://southernautodetailers.com/.well-known/ard.json): Discovery manifest

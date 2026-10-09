@@ -1,13 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Longform } from "@/components/longform";
 import { contentHead } from "@/lib/seo";
-import { pageByPath } from "@/lib/content/pages";
-
-const page = pageByPath("/universal-city");
 
 export const Route = createFileRoute("/universal-city")({
-  head: () => contentHead(page),
+  loader: () => import("@/lib/content/pages").then((mod) => mod.pageByPath("/universal-city")),
+  head: ({ loaderData }) => contentHead(loaderData!),
   component: function Page() {
-    return <Longform page={page} />;
+    return <Longform page={Route.useLoaderData()} />;
   },
 });

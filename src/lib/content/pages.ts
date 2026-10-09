@@ -195,7 +195,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/pricing",
-        "label": "Pricing"
+        "label": "Auto detailing prices"
       }
     ]
   },
@@ -318,7 +318,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "The process",
         "paragraphs": [
-          "Correction starts where an exterior detail starts: wash, wheels, and chemical or mechanical decontamination so we are not polishing dirt. Then a test spot. The test spot decides whether the vehicle needs a lighter polish or a heavier cut, and whether some panels should be left alone. Paint polishing in San Antonio sun also means we watch panel temperature. Hot hoods do not get rushed. After correction, the paint needs protection or the swirls you just removed are easy to put back with the next dry wipe. That protection might be a sealant or a ceramic coating. Coating on uncorrected paint locks the swirls in place under a shiny layer. We will not pretend otherwise."
+          "Correction starts where an exterior detail starts: wash, wheels, and chemical or mechanical decontamination so we are not polishing dirt. Then a test spot. The test spot decides whether the vehicle needs a lighter polish or a heavier cut, and whether some panels should be left alone. Paint polishing in San Antonio sun also means we watch panel temperature. Hot hoods do not get rushed. Once paint defect removal is complete, the clear coat is exposed. [Protecting corrected paint with ceramic coating](/ceramic-coating) is how we lock in that gloss. A sealant is the shorter step. Coating on uncorrected paint locks the swirls in place. We will not pretend otherwise."
         ],
         "bullets": [
           "Wash and decontamination before any pad touches paint",
@@ -380,7 +380,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/ceramic-coating/process",
-        "label": "Coating process"
+        "label": "Ceramic coating process"
       },
       {
         "to": "/exterior-detailing",
@@ -388,7 +388,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/pricing",
-        "label": "Pricing"
+        "label": "Auto detailing prices"
       }
     ]
   },
@@ -415,7 +415,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "Cars, trucks, and where we work",
         "paragraphs": [
-          "Ceramic coating for cars and trucks in San Antonio is scheduled by the vehicle. A single-cab commuter and a crew-cab that lives on a site do not share a time slot. We coat after we can stand behind the prep. If you want pricing logic, read the ceramic coating cost page. If you want the steps, read the process page. Every install is at the studio in 78233 at Bricken Circle. Dust, direct afternoon sun, and a windy driveway are how installs fail, so the work stays indoors at the studio."
+          "Ceramic coating for cars and trucks in San Antonio is scheduled by the vehicle. A single-cab commuter and a crew-cab that lives on a site do not share a time slot. We coat after we can stand behind the prep. If you want pricing logic, read [ceramic coating cost](/ceramic-coating/cost). If you want the steps, read the [ceramic coating process](/ceramic-coating/process). Every install is at the studio in 78233 at Bricken Circle. Dust, direct afternoon sun, and a windy driveway are how installs fail, so the work stays indoors at the studio."
         ]
       },
       {
@@ -426,9 +426,16 @@ export const contentPages: ContentPage[] =
         ]
       },
       {
+        "heading": "Learn more about ceramic coatings",
+        "paragraphs": [
+          "If you are deciding whether the install is worth it, read [is ceramic coating worth it](/blog/is-ceramic-coating-worth-it). Washing after the install is [how to wash a coated car](/blog/washing-a-ceramic-coated-car). If someone is selling you film instead, read [ceramic coating versus paint protection film](/blog/ceramic-coating-vs-ppf). This studio installs coating. It does not install film.",
+          "To hold a day, [schedule your shop ceramic coating consultation](/contact). The form is a request. A 20% non-refundable deposit of the quoted total holds the slot."
+        ]
+      },
+      {
         "heading": "Maintenance after the install",
         "paragraphs": [
-          "A coated vehicle in San Antonio still meets pollen, bugs, and hard water. The coating makes the wash easier. It does not cancel the wash. The owners who are happiest treat the coating as a surface they maintain, not a trophy they ignore until it looks like an uncoated, dirty car. We send you out with that expectation in plain language. Bird droppings and bug acids still need to come off promptly. Shade still beats a west-facing driveway. None of that is a failure of the install. It is the climate. If you want the longer version of lifespan, the blog post on how long ceramic coating lasts is the companion to this service page.",
+          "A coated vehicle in San Antonio still meets pollen, bugs, and hard water. The coating makes the wash easier. It does not cancel the wash. The owners who are happiest treat the coating as a surface they maintain, not a trophy they ignore until it looks like an uncoated, dirty car. We send you out with that expectation in plain language. Bird droppings and bug acids still need to come off promptly. Shade still beats a west-facing driveway. None of that is a failure of the install. It is the climate. The wash routine is [how to maintain a ceramic coating](/blog/washing-a-ceramic-coated-car). If you want the longer version of lifespan, read [how long ceramic coating lasts](/blog/how-long-does-ceramic-coating-last). Neglected paint should be handled with [paint correction](/paint-correction) before the coating goes on.",
           "If you are comparing installers, ask who does the prep and whether the same person will still be there at panel three. This studio is Robert Romero Jr. One vehicle. No handoff to a rotating crew you did not meet. That is the point of an appointment-based shop in 78233, and it is also why the calendar needs a deposit to stay intact. Ten percent of the coating sale, like every other sale, goes to Junior Achievement of South Texas. You are paying for the vehicle. The donation is how the business is built, not a line item we surprise you with."
         ]
       }
@@ -470,11 +477,15 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/ceramic-coating/process",
-        "label": "Coating process"
+        "label": "Ceramic coating process"
       },
       {
         "to": "/paint-correction",
         "label": "Paint correction"
+      },
+      {
+        "to": "/blog/washing-a-ceramic-coated-car",
+        "label": "How to maintain a ceramic coating"
       },
       {
         "to": "/blog/ceramic-coating-vs-wax",
@@ -560,11 +571,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/ceramic-coating/process",
-        "label": "Install process"
+        "label": "Ceramic coating process"
       },
       {
         "to": "/pricing",
-        "label": "Detailing prices"
+        "label": "Auto detailing prices"
       },
       {
         "to": "/paint-correction",
@@ -857,6 +868,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "Services people from this area book",
         "paragraphs": [
+          "People from this area book [interior detailing](/interior-detailing), [exterior detailing](/exterior-detailing), a [full detail](/full-detailing), [paint correction in northeast San Antonio](/paint-correction), or [ceramic coating in 78233](/ceramic-coating). The vehicle comes to the studio.",
           "The services that match this ZIP are the same craft as the rest of the site, with less travel friction: interior auto detailing, exterior hand wash and clay, full detailing, paint correction, and ceramic coating. Trucks and SUVs are normal here, not an exception. If you searched auto detailing Northeast San Antonio because a citywide brand never called back, this is the smaller operation. You get a direct phone number, (210) 201-4847, and an email, contact@southernautodetailers.com.",
           "A 20% non-refundable deposit of the quoted total secures the slot. The balance is due at completion. Ten percent of the sale goes to Junior Achievement of South Texas. That is true for a 78233 neighbor the same as it is for someone driving in from Schertz. Southern Auto Detailers is San Antonio based at 11692 Bricken Circle, San Antonio, TX 78233. Owner Robert Romero Jr., an Alamo Heights graduate and IDA-certified detailer works by appointment, Tuesday through Sunday from 7:00 AM to 11:00 PM, and is closed Monday. Call (210) 201-4847 or email contact@southernautodetailers.com. A 20% non-refundable deposit — 20% of the quoted total — is required to secure the booking slot. The remaining balance is due when the work is finished. Ten percent of every sale goes to Junior Achievement of South Texas."
         ]
@@ -897,19 +909,19 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/royal-ridge",
-        "label": "Royal Ridge"
+        "label": "Royal Ridge auto detailing"
       },
       {
         "to": "/rolling-oaks",
-        "label": "Rolling Oaks Mall"
+        "label": "Detailing near Rolling Oaks"
       },
       {
         "to": "/fort-sam-houston",
-        "label": "Fort Sam Houston"
+        "label": "Detailing near Fort Sam Houston"
       },
       {
         "to": "/pricing",
-        "label": "Pricing"
+        "label": "Auto detailing prices"
       }
     ]
   },
@@ -979,15 +991,23 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/windcrest",
-        "label": "Windcrest"
+        "label": "Auto detailing in Windcrest"
       },
       {
         "to": "/pricing",
-        "label": "Pricing"
+        "label": "Auto detailing prices"
+      },
+      {
+        "to": "/paint-correction",
+        "label": "Paint correction for Royal Ridge"
+      },
+      {
+        "to": "/ceramic-coating",
+        "label": "Ceramic coating for Royal Ridge"
       },
       {
         "to": "/contact",
-        "label": "Book"
+        "label": "Request a detailing appointment"
       }
     ]
   },
@@ -1050,7 +1070,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/san-antonio-78233",
-        "label": "78233 studio"
+        "label": "The 78233 detailing studio"
       },
       {
         "to": "/ceramic-coating",
@@ -1061,8 +1081,12 @@ export const contentPages: ContentPage[] =
         "label": "Exterior detailing"
       },
       {
+        "to": "/paint-correction",
+        "label": "Paint correction near Rolling Oaks"
+      },
+      {
         "to": "/contact",
-        "label": "Book"
+        "label": "Request a detailing appointment"
       }
     ]
   },
@@ -1117,7 +1141,7 @@ export const contentPages: ContentPage[] =
     "related": [
       {
         "to": "/san-antonio-78233",
-        "label": "78233 studio"
+        "label": "The 78233 detailing studio"
       },
       {
         "to": "/full-detailing",
@@ -1125,11 +1149,19 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/pricing",
-        "label": "Pricing"
+        "label": "Auto detailing prices"
+      },
+      {
+        "to": "/paint-correction",
+        "label": "Paint correction near Fort Sam Houston"
+      },
+      {
+        "to": "/ceramic-coating",
+        "label": "Ceramic coating near Fort Sam Houston"
       },
       {
         "to": "/contact",
-        "label": "Book"
+        "label": "Request a detailing appointment"
       }
     ]
   },
@@ -1187,11 +1219,19 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/royal-ridge",
-        "label": "Royal Ridge"
+        "label": "Royal Ridge auto detailing"
       },
       {
         "to": "/rolling-oaks",
-        "label": "Rolling Oaks Mall"
+        "label": "Detailing near Rolling Oaks"
+      },
+      {
+        "to": "/paint-correction",
+        "label": "Paint correction for Oak Meadow drivers"
+      },
+      {
+        "to": "/ceramic-coating",
+        "label": "Ceramic coating for Oak Meadow drivers"
       },
       {
         "to": "/contact",
@@ -1235,8 +1275,9 @@ export const contentPages: ContentPage[] =
       {
         "heading": "Services people from this area book",
         "paragraphs": [
+          "People from this area book [interior detailing](/interior-detailing), [exterior detailing](/exterior-detailing), a [full detail](/full-detailing), [paint correction for Universal City](/paint-correction), or [ceramic coating for Universal City](/ceramic-coating). The vehicle comes to the studio.",
           "Interiors are the sleeper request: commuters who live in the car, car seats, and gym bags. Exteriors matter because of uncovered parking. Full details are the reset. Paint correction is the step when dark paint has been wiped down in a hurry between shifts.",
-          "Call (210) 201-4847 with the vehicle. Hours are Tuesday through Sunday, 7 AM to 11 PM. A 20% non-refundable deposit of the quoted total holds the slot whether you come to Bricken Circle or we come to you."
+          "Call (210) 201-4847 with the vehicle. Hours are Tuesday through Sunday, 7 AM to 11 PM. A 20% non-refundable deposit of the quoted total holds the slot at the studio. We do not come to you."
         ]
       },
       {
@@ -1274,15 +1315,15 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/san-antonio-78233",
-        "label": "78233 studio"
+        "label": "The 78233 detailing studio"
       },
       {
         "to": "/live-oak",
-        "label": "Live Oak"
+        "label": "Auto detailing in Live Oak"
       },
       {
         "to": "/contact",
-        "label": "Book"
+        "label": "Request a detailing appointment"
       }
     ]
   },
@@ -1322,6 +1363,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "Services people from this area book",
         "paragraphs": [
+          "People from this area book [interior detailing](/interior-detailing), [exterior detailing](/exterior-detailing), a [full detail](/full-detailing), [paint correction for Live Oak](/paint-correction), or [ceramic coating for Live Oak](/ceramic-coating). The vehicle comes to the studio.",
           "Book interior detailing if the cabin is the complaint, exterior detailing if water spots and dust are the complaint, and a full detail if both have been waiting since last summer. Paint correction and ceramic coating are quoted separately so the price matches the prep.",
           "Hours: Tuesday–Sunday, 7:00 AM–11:00 PM. Monday closed. Phone (210) 201-4847. Email contact@southernautodetailers.com. The 20% non-refundable deposit secures the slot. Ten percent of the sale supports Junior Achievement of South Texas."
         ]
@@ -1373,11 +1415,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/universal-city",
-        "label": "Universal City"
+        "label": "Auto detailing in Universal City"
       },
       {
         "to": "/san-antonio-78233",
-        "label": "78233"
+        "label": "Auto detailing in 78233"
       }
     ]
   },
@@ -1417,6 +1459,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "Services people from this area book",
         "paragraphs": [
+          "People from this area book [interior detailing](/interior-detailing), [exterior detailing](/exterior-detailing), a [full detail](/full-detailing), [paint correction for Converse](/paint-correction), or [ceramic coating for Converse](/ceramic-coating). The vehicle comes to the studio.",
           "Full detailing is the frequent request after a season of postponing both the cabin and the paint. Exterior-only is the request when the interior is already under control and the clear coat looks chalky in the sun. Correction comes up on dark colors that have been dried with whatever towel was in the trunk.",
           "Secure the time with a 20% non-refundable deposit of the quoted total. Hours are Tuesday through Sunday, 7 AM to 11 PM, Monday closed. Call (210) 201-4847."
         ]
@@ -1468,7 +1511,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/universal-city",
-        "label": "Universal City"
+        "label": "Auto detailing in Universal City"
       }
     ]
   },
@@ -1508,6 +1551,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "Services people from this area book",
         "paragraphs": [
+          "People from this area book [interior detailing](/interior-detailing), [exterior detailing](/exterior-detailing), a [full detail](/full-detailing), [paint correction for Windcrest](/paint-correction), or [ceramic coating for Windcrest](/ceramic-coating). The vehicle comes to the studio.",
           "Start with the page that matches the complaint. Interior detailing for the cabin. Exterior detailing for the film and the wheels. Full detailing when both have slipped. Paint correction when swirls show in the sun on Walzem at 4 p.m. Ceramic coating when the paint is ready to be protected for the long run.",
           "Owner Robert Romero Jr. is San Antonio based and from Alamo Heights, where he graduated. The business donates 10% of every sale to Junior Achievement of South Texas. Your slot is held with a 20% non-refundable deposit of the quoted total."
         ]
@@ -1551,7 +1595,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/san-antonio-78233",
-        "label": "78233 studio"
+        "label": "The 78233 detailing studio"
       },
       {
         "to": "/paint-correction",
@@ -1559,11 +1603,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/contact",
-        "label": "Contact"
+        "label": "Contact the studio"
       },
       {
         "to": "/pricing",
-        "label": "Pricing"
+        "label": "Auto detailing prices"
       }
     ]
   },
@@ -1602,6 +1646,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "Services people from this area book",
         "paragraphs": [
+          "People from this area book [interior detailing](/interior-detailing), [exterior detailing](/exterior-detailing), a [full detail](/full-detailing), [paint correction for Schertz](/paint-correction), or [ceramic coating for Schertz](/ceramic-coating). The vehicle comes to the studio.",
           "Commuter sedans often need an exterior decontamination more than they need a new wax story. Family vehicles need the interior. Trucks need both and more time on the wheels. Ceramic coating is available after the paint is ready, with cost explained on its own page so Schertz drivers can compare prep, not slogans.",
           "Hours run Tuesday through Sunday, 7:00 AM to 11:00 PM, Monday closed. Call (210) 201-4847. A 20% non-refundable deposit of the quoted total secures the booking slot. Ten percent of every sale goes to Junior Achievement of South Texas."
         ]
@@ -1649,11 +1694,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/ceramic-coating/cost",
-        "label": "Coating cost"
+        "label": "Ceramic coating cost"
       },
       {
         "to": "/live-oak",
-        "label": "Live Oak"
+        "label": "Auto detailing in Live Oak"
       }
     ]
   },
@@ -1717,11 +1762,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/live-oak",
-        "label": "Live Oak"
+        "label": "Auto detailing in Live Oak"
       },
       {
         "to": "/san-antonio-78233",
-        "label": "78233"
+        "label": "Auto detailing in 78233"
       },
       {
         "to": "/blog/hard-water-spots-san-antonio",
@@ -1789,11 +1834,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/schertz",
-        "label": "Schertz"
+        "label": "Auto detailing in Schertz"
       },
       {
         "to": "/fort-sam-houston",
-        "label": "Fort Sam Houston"
+        "label": "Detailing near Fort Sam Houston"
       },
       {
         "to": "/blog/swirl-marks-from-car-washes",
@@ -1861,7 +1906,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/universal-city",
-        "label": "Universal City"
+        "label": "Auto detailing in Universal City"
       },
       {
         "to": "/blog/pet-hair-interior-detailing",
@@ -1929,11 +1974,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/windcrest",
-        "label": "Windcrest"
+        "label": "Auto detailing in Windcrest"
       },
       {
         "to": "/royal-ridge",
-        "label": "Royal Ridge"
+        "label": "Royal Ridge auto detailing"
       },
       {
         "to": "/blog/leather-conditioning-san-antonio",
@@ -2001,7 +2046,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/ceramic-coating/process",
-        "label": "Coating process"
+        "label": "Ceramic coating process"
       },
       {
         "to": "/paint-correction",
@@ -2009,7 +2054,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/converse",
-        "label": "Converse"
+        "label": "Auto detailing in Converse"
       },
       {
         "to": "/blog/bugs-and-tar-on-paint",
@@ -2077,11 +2122,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/san-antonio-78233",
-        "label": "78233"
+        "label": "Auto detailing in 78233"
       },
       {
         "to": "/converse",
-        "label": "Converse"
+        "label": "Auto detailing in Converse"
       },
       {
         "to": "/blog/oak-pollen-san-antonio-paint",
@@ -2149,11 +2194,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/rolling-oaks",
-        "label": "Rolling Oaks"
+        "label": "Detailing near Rolling Oaks"
       },
       {
         "to": "/live-oak",
-        "label": "Live Oak"
+        "label": "Auto detailing in Live Oak"
       },
       {
         "to": "/blog/bird-droppings-on-car-paint",
@@ -2228,7 +2273,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/san-antonio-78233",
-        "label": "78233"
+        "label": "Auto detailing in 78233"
       }
     ]
   },
@@ -2296,7 +2341,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/universal-city",
-        "label": "Universal City"
+        "label": "Auto detailing in Universal City"
       },
       {
         "to": "/blog/hazy-headlights-san-antonio",
@@ -2360,11 +2405,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/pricing",
-        "label": "Pricing"
+        "label": "Auto detailing prices"
       },
       {
         "to": "/contact",
-        "label": "Contact"
+        "label": "Contact the studio"
       },
       {
         "to": "/blog/how-to-prepare-for-a-detail",
@@ -2372,7 +2417,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/san-antonio-78233",
-        "label": "78233"
+        "label": "Auto detailing in 78233"
       }
     ]
   },
@@ -2437,11 +2482,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/live-oak",
-        "label": "Live Oak"
+        "label": "Auto detailing in Live Oak"
       },
       {
         "to": "/san-antonio-78233",
-        "label": "78233"
+        "label": "Auto detailing in 78233"
       },
       {
         "to": "/blog/pet-hair-interior-detailing",
@@ -2513,7 +2558,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/converse",
-        "label": "Converse"
+        "label": "Auto detailing in Converse"
       },
       {
         "to": "/blog/paint-correction-before-ceramic-coating",
@@ -2581,15 +2626,15 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/schertz",
-        "label": "Schertz"
+        "label": "Auto detailing in Schertz"
       },
       {
         "to": "/fort-sam-houston",
-        "label": "Fort Sam Houston"
+        "label": "Detailing near Fort Sam Houston"
       },
       {
         "to": "/pricing",
-        "label": "Pricing"
+        "label": "Auto detailing prices"
       }
     ]
   },
@@ -2649,15 +2694,15 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/live-oak",
-        "label": "Live Oak"
+        "label": "Auto detailing in Live Oak"
       },
       {
         "to": "/rolling-oaks",
-        "label": "Rolling Oaks"
+        "label": "Detailing near Rolling Oaks"
       },
       {
         "to": "/san-antonio-78233",
-        "label": "78233"
+        "label": "Auto detailing in 78233"
       },
       {
         "to": "/blog/hard-water-spots-san-antonio",
@@ -2717,7 +2762,7 @@ export const contentPages: ContentPage[] =
     "related": [
       {
         "to": "/contact",
-        "label": "Contact"
+        "label": "Contact the studio"
       },
       {
         "to": "/full-detailing",
@@ -2729,11 +2774,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/san-antonio-78233",
-        "label": "78233"
+        "label": "Auto detailing in 78233"
       },
       {
         "to": "/royal-ridge",
-        "label": "Royal Ridge"
+        "label": "Royal Ridge auto detailing"
       }
     ]
   },
@@ -2797,11 +2842,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/converse",
-        "label": "Converse"
+        "label": "Auto detailing in Converse"
       },
       {
         "to": "/universal-city",
-        "label": "Universal City"
+        "label": "Auto detailing in Universal City"
       },
       {
         "to": "/blog/detailing-trucks-and-suvs-san-antonio",
@@ -2826,7 +2871,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What the coating changed",
         "paragraphs": [
-          "After a proper [ceramic coating](/ceramic-coating) install, water sheets or beads and road film lets go with less scrubbing. That only stays true if you wash the car. A coated, never-washed vehicle in a [Windcrest](/windcrest) driveway will still look brown by August.",
+          "After a proper install, water sheets or beads and road film lets go with less scrubbing. That only stays true if you wash the car. Proper hand washing keeps swirls out of the clear and maintains the hydrophobic behavior of your [ceramic coating maintenance services](/ceramic-coating). A coated, never-washed vehicle in a [Windcrest](/windcrest) driveway will still look brown by August.",
           "Use a clean mitt and dry with a clean towel. Automatic brushes put swirls into coated paint the same way they put swirls into bare clear coat. See [swirl marks](/blog/swirl-marks-from-car-washes)."
         ]
       },
@@ -2840,7 +2885,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "When to come back",
         "paragraphs": [
-          "A lighter maintenance visit is for film that washing is no longer clearing, not for a second correction. Read [how long a coating lasts](/blog/how-long-does-ceramic-coating-last). The studio is in [78233](/san-antonio-78233). Call (210) 201-4847."
+          "A lighter maintenance visit is for film that washing is no longer clearing, not for a second correction. Read [how long a coating lasts](/blog/how-long-does-ceramic-coating-last). The installed service is [ceramic coating services](/ceramic-coating) at the studio in [78233](/san-antonio-78233). Call (210) 201-4847."
         ]
       }
     ],
@@ -2865,11 +2910,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/ceramic-coating/process",
-        "label": "Coating process"
+        "label": "Ceramic coating process"
       },
       {
         "to": "/windcrest",
-        "label": "Windcrest"
+        "label": "Auto detailing in Windcrest"
       },
       {
         "to": "/blog/how-long-does-ceramic-coating-last",
@@ -2877,7 +2922,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/san-antonio-78233",
-        "label": "78233"
+        "label": "Auto detailing in 78233"
       }
     ]
   },
@@ -2941,11 +2986,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/universal-city",
-        "label": "Universal City"
+        "label": "Auto detailing in Universal City"
       },
       {
         "to": "/live-oak",
-        "label": "Live Oak"
+        "label": "Auto detailing in Live Oak"
       },
       {
         "to": "/blog/how-often-to-detail-san-antonio",
@@ -3013,11 +3058,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/schertz",
-        "label": "Schertz"
+        "label": "Auto detailing in Schertz"
       },
       {
         "to": "/san-antonio-78233",
-        "label": "78233"
+        "label": "Auto detailing in 78233"
       },
       {
         "to": "/paint-correction",
@@ -3080,11 +3125,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/ceramic-coating/cost",
-        "label": "Coating cost"
+        "label": "Ceramic coating cost"
       },
       {
         "to": "/ceramic-coating/process",
-        "label": "Coating process"
+        "label": "Ceramic coating process"
       },
       {
         "to": "/paint-correction",
@@ -3161,11 +3206,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/san-antonio-78233",
-        "label": "78233 studio"
+        "label": "The 78233 detailing studio"
       },
       {
         "to": "/pricing",
-        "label": "Pricing"
+        "label": "Auto detailing prices"
       }
     ]
   },
@@ -3230,7 +3275,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/live-oak",
-        "label": "Live Oak"
+        "label": "Auto detailing in Live Oak"
       },
       {
         "to": "/blog/how-often-to-detail-san-antonio",
@@ -3238,7 +3283,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/contact",
-        "label": "Book"
+        "label": "Request a detailing appointment"
       }
     ]
   },
@@ -3303,11 +3348,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/windcrest",
-        "label": "Windcrest"
+        "label": "Auto detailing in Windcrest"
       },
       {
         "to": "/converse",
-        "label": "Converse"
+        "label": "Auto detailing in Converse"
       },
       {
         "to": "/blog/paint-correction-before-ceramic-coating",
@@ -3332,7 +3377,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What the coating cannot hide",
         "paragraphs": [
-          "[Ceramic coating](/ceramic-coating) is protection after the panel is clean and stable. It is not a filler and it is not a polish. Wash, decontamination, and then a decision: is the paint acceptable, or does it need [paint correction](/paint-correction)? A test spot answers that. One pass on a soft clear coat is different from a neglected black truck that was dry-wiped for three summers.",
+          "[Professional ceramic coating prep](/ceramic-coating) is protection after the panel is clean and stable. It is not a filler and it is not a polish. Wash, decontamination, and then a decision: is the paint acceptable, or does it need [paint correction and prep work](/paint-correction)? A test spot answers that. One pass on a soft clear coat is different from a neglected black truck that was dry-wiped for three summers.",
           "The [process page](/ceramic-coating/process) is the order. The [cost page](/ceramic-coating/cost) is why the number moves with prep. We do not publish a single coating price that ignores the paint."
         ]
       },
@@ -3376,15 +3421,15 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/ceramic-coating/process",
-        "label": "Coating process"
+        "label": "Ceramic coating process"
       },
       {
         "to": "/ceramic-coating/cost",
-        "label": "Coating cost"
+        "label": "Ceramic coating cost"
       },
       {
         "to": "/san-antonio-78233",
-        "label": "78233"
+        "label": "Auto detailing in 78233"
       }
     ]
   },
@@ -3445,15 +3490,15 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/pricing",
-        "label": "Pricing"
+        "label": "Auto detailing prices"
       },
       {
         "to": "/royal-ridge",
-        "label": "Royal Ridge"
+        "label": "Royal Ridge auto detailing"
       },
       {
         "to": "/schertz",
-        "label": "Schertz"
+        "label": "Auto detailing in Schertz"
       },
       {
         "to": "/blog/pet-hair-interior-detailing",
@@ -3477,13 +3522,13 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What wax is doing",
         "paragraphs": [
-          "Wax and sealant sit on the paint and sacrifice themselves. They add gloss, they slow some staining, and they wear off. In this climate they wear off faster than a mild-climate ad admits, especially on a vehicle parked in the sun off Nacogdoches or in a Live Oak driveway. That is not a scandal. It is a maintenance item you can reapply or have reapplied. Wax does not remove swirls. If the paint looks cobwebbed in the sun, wax makes a shiny cobweb. People get angry at wax for failing a job it was never assigned. If that is the paint you have, read the paint correction page before you pick a protection product."
+          "Wax and sealant sit on the paint and sacrifice themselves. They add gloss, they slow some staining, and they wear off. In this climate they wear off faster than a mild-climate ad admits, especially on a vehicle parked in the sun off Nacogdoches or in a Live Oak driveway. That is not a scandal. It is a maintenance item you can reapply or have reapplied. Wax does not remove swirls. If the paint looks cobwebbed in the sun, wax makes a shiny cobweb. People get angry at wax for failing a job it was never assigned. If that is the paint you have, read [paint correction](/paint-correction) before you pick a protection product."
         ]
       },
       {
         "heading": "What a coating is doing",
         "paragraphs": [
-          "A professionally installed ceramic coating bonds after prep. It lasts longer than a weekend wax, sheds dirt more easily when you actually wash it, and asks more of the paint underneath because you should not lock defects under it. The cost page explains why the price is mostly prep. The process page explains the order: wash, decontamination, correction if needed, then coating. A spray ceramic from a tunnel is a different product with a similar word on the menu board. If you want the installed version, you want the prep conversation, the deposit, and the cure instructions. If you want something you refresh every couple of months, wax or a sealant may be the honest buy."
+          "A professionally installed ceramic coating bonds after prep. It lasts longer than a weekend wax, sheds dirt more easily when you actually wash it, and asks more of the paint underneath because you should not lock defects under it. [Ceramic coating cost](/ceramic-coating/cost) explains why the price is mostly prep. The [ceramic coating process](/ceramic-coating/process) explains the order: wash, decontamination, correction if needed, then coating. The installed service is [ceramic paint protection](/ceramic-coating). A spray ceramic from a tunnel is a different product with a similar word on the menu board. If you want the installed version, you want the prep conversation, the deposit, and the cure instructions. If you want something you refresh every couple of months, wax or a sealant may be the honest buy."
         ]
       },
       {
@@ -3510,11 +3555,11 @@ export const contentPages: ContentPage[] =
     "related": [
       {
         "to": "/ceramic-coating",
-        "label": "Ceramic coating"
+        "label": "long-term ceramic paint protection"
       },
       {
         "to": "/ceramic-coating/cost",
-        "label": "Coating cost"
+        "label": "Ceramic coating cost"
       },
       {
         "to": "/paint-correction",
@@ -3522,7 +3567,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/pricing",
-        "label": "Pricing"
+        "label": "Auto detailing prices"
       }
     ]
   },
@@ -3554,7 +3599,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What you can do",
         "paragraphs": [
-          "Follow the cure window. Wash sooner than you think during pollen season. Come back for a maintenance detail when the film returns instead of waiting until the coating looks like bare, neglected paint. Maintenance is cheaper than pretending the install made the climate optional. The install is at the studio. The quote’s 20% non-refundable deposit holds that day. Call (210) 201-4847. Southern Auto Detailers is San Antonio based at 11692 Bricken Circle, San Antonio, TX 78233. Owner Robert Romero Jr., an Alamo Heights graduate and IDA-certified detailer works by appointment, Tuesday through Sunday from 7:00 AM to 11:00 PM, and is closed Monday. Call (210) 201-4847 or email contact@southernautodetailers.com. A 20% non-refundable deposit — 20% of the quoted total — is required to secure the booking slot. The remaining balance is due when the work is finished. Ten percent of every sale goes to Junior Achievement of South Texas."
+          "Follow the cure window. Wash sooner than you think during pollen season. Come back for a maintenance detail when the film returns instead of waiting until the coating looks like bare, neglected paint. Maintenance is cheaper than pretending the install made the climate optional. The install is [ceramic coating services](/ceramic-coating) at the studio. The quote’s 20% non-refundable deposit holds that day. Call (210) 201-4847. Southern Auto Detailers is San Antonio based at 11692 Bricken Circle, San Antonio, TX 78233. Owner Robert Romero Jr., an Alamo Heights graduate and IDA-certified detailer works by appointment, Tuesday through Sunday from 7:00 AM to 11:00 PM, and is closed Monday. Call (210) 201-4847 or email contact@southernautodetailers.com. A 20% non-refundable deposit — 20% of the quoted total — is required to secure the booking slot. The remaining balance is due when the work is finished. Ten percent of every sale goes to Junior Achievement of South Texas."
         ]
       }
     ],
@@ -3579,11 +3624,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/ceramic-coating/process",
-        "label": "Install process"
+        "label": "Ceramic coating process"
       },
       {
         "to": "/ceramic-coating/cost",
-        "label": "Cost"
+        "label": "Ceramic coating cost"
       },
       {
         "to": "/blog/ceramic-coating-vs-wax",
@@ -3591,7 +3636,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/contact",
-        "label": "Book"
+        "label": "Request a detailing appointment"
       }
     ]
   },
@@ -3611,13 +3656,13 @@ export const contentPages: ContentPage[] =
       {
         "heading": "The plain definition",
         "paragraphs": [
-          "Clear coat is a layer. Wash scratches and buffer trails live in it. Polishing levels that layer just enough to make the defects harder to see. That is swirl mark removal. If the defect is through the clear, polishing cannot invent new clear. This is the whole idea, and every honest paint correction page in San Antonio should be willing to say it before the appointment. A test spot is how we prove the idea on your panel instead of on a brochure. You should see the spot in the sun. You should hear whether the rest of the vehicle will respond the same way. Dark colors show more. Repainted fenders behave differently. We stop when the clear says stop."
+          "Clear coat is a layer. Wash scratches and buffer trails live in it. Polishing levels that layer just enough to make the defects harder to see. That is [paint swirl removal](/paint-correction). If the defect is through the clear, polishing cannot invent new clear. This is the whole idea, and every honest paint correction page in San Antonio should be willing to say it before the appointment. A test spot is how we prove the idea on your panel instead of on a brochure. You should see the spot in the sun. You should hear whether the rest of the vehicle will respond the same way. Dark colors show more. Repainted fenders behave differently. We stop when the clear says stop."
         ]
       },
       {
         "heading": "Where it sits among other services",
         "paragraphs": [
-          "An exterior detail washes and decontaminates. Correction polishes. A coating or sealant protects whatever finish you have after those steps. Stacking them blindly is how people pay for coating over swirls. The service pages split them on purpose so you can buy the one you need. If your fingernail catches a scratch, expect improvement at best, not erasure. If the whole vehicle looks hazy but the scratches are light, correction is often worth it, especially before a coating. If the paint is already thin from a previous aggressive detail, the kind choice is to wash it and protect it, not to chase a photo."
+          "An exterior detail washes and decontaminates. Correction polishes. A coating or sealant protects whatever finish you have after those steps. Stacking them blindly is how people pay for coating over swirls. The service pages split them on purpose so you can buy the one you need. If your fingernail catches a scratch, expect improvement at best, not erasure. If the whole vehicle looks hazy but the scratches are light, [multi-stage paint correction](/paint-correction) is often worth it, especially before [ceramic coating in San Antonio](/ceramic-coating). If the paint is already thin from a previous aggressive detail, the kind choice is to wash it and protect it, not to chase a photo."
         ]
       },
       {
@@ -3709,15 +3754,15 @@ export const contentPages: ContentPage[] =
     "related": [
       {
         "to": "/pricing",
-        "label": "Pricing"
+        "label": "Auto detailing prices"
       },
       {
         "to": "/services",
-        "label": "Services"
+        "label": "Auto detailing services"
       },
       {
         "to": "/san-antonio-78233",
-        "label": "78233"
+        "label": "Auto detailing in 78233"
       },
       {
         "to": "/full-detailing",
@@ -3786,7 +3831,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/san-antonio-78233",
-        "label": "78233"
+        "label": "Auto detailing in 78233"
       },
       {
         "to": "/refund-policy",
@@ -3794,7 +3839,7 @@ export const contentPages: ContentPage[] =
       },
       {
         "to": "/contact",
-        "label": "Contact"
+        "label": "Contact the studio"
       },
       {
         "to": "/full-detailing",
@@ -3810,6 +3855,356 @@ export const contentPages: ContentPage[] =
       }
     ]
   }
+  ,
+  {
+    "path": "/blog/decontamination-before-ceramic-coating",
+    "kind": "article",
+    "published": "2026-10-09",
+    "title": "Decontamination Before Ceramic Coating | San Antonio",
+    "description": "Clay and decontamination prepare clear coat for ceramic coating at Southern Auto Detailers in San Antonio. In-shop only. Call (210) 201-4847.",
+    "eyebrow": "Prep before coating",
+    "h1": "Decontamination before ceramic coating",
+    "lede": "A coating bonds to whatever is on the panel. Bonded film, rail dust, and old wax have to come off before that bond is worth making.",
+    "image": {
+      "src": "/images/decontamination-before-ceramic-coating.webp",
+      "alt": "Clay bar decontamination on a dark blue hood before ceramic coating"
+    },
+    "sections": [
+      {
+        "heading": "What decontamination is",
+        "paragraphs": [
+          "A wash removes loose dirt. It does not remove the grit you still feel after the panel is clean. That grit is bonded contamination. Clay, with enough lubricant, shears it off. Chemical decontamination does the same job on iron fallout when the panel needs it. Dry clay, or a bar dragged across a dirty panel, adds the scratches you were trying to avoid.",
+          "The studio order is wash, then decontamination, then a decision about polish. [What clay does](/blog/what-clay-bar-does) is the short version of the bar itself. The full order is on the [ceramic coating process](/ceramic-coating/process)."
+        ]
+      },
+      {
+        "heading": "Why it comes before coating",
+        "paragraphs": [
+          "Coating over contamination gives you a layer that fails early and a panel that still feels rough. [Paint surface preparation](/ceramic-coating) is the install this studio actually sells: the panel is washed, decontaminated, and corrected when the clear needs it, then coated indoors at 11692 Bricken Circle.",
+          "If the clear is swirled, clay is not the last step. Read [why correction comes first](/blog/paint-correction-before-ceramic-coating). Clay does not remove swirls."
+        ]
+      },
+      {
+        "heading": "Where it happens",
+        "paragraphs": [
+          "This is in-shop work. A windy driveway loads the lubricant with dust and then you drag that dust. The studio is in 78233. Hours are Tuesday through Sunday, 7:00 AM to 11:00 PM. Monday is closed.",
+          "Call (210) 201-4847 or [schedule your shop ceramic coating consultation](/contact). The form does not hold the day. A 20% non-refundable deposit of the quoted total does."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is clay required before every coating?",
+        "a": "If the panel feels rough after the wash, yes. If it is already smooth, we say so and we do not clay for show."
+      },
+      {
+        "q": "Can I clay the car at home the day before?",
+        "a": "You can. Most people are happier letting the same person who coats the car do the prep, so the panel is not recontaminated in between."
+      },
+      {
+        "q": "Do you come to the driveway to clay it?",
+        "a": "No. The vehicle comes to the studio."
+      }
+    ],
+    "related": [
+      { "to": "/ceramic-coating", "label": "Paint surface preparation" },
+      { "to": "/ceramic-coating/process", "label": "Ceramic coating process" },
+      { "to": "/blog/what-clay-bar-does", "label": "What clay does" },
+      { "to": "/blog/paint-correction-before-ceramic-coating", "label": "Correction before coating" },
+      { "to": "/contact", "label": "Schedule a coating consultation" }
+    ]
+  },
+  {
+    "path": "/blog/how-ceramic-coating-works",
+    "kind": "article",
+    "published": "2026-10-09",
+    "title": "How Ceramic Coating Works on Paint | San Antonio",
+    "description": "How a nano ceramic coating behaves on automotive clear coat, and what it does not do. In-shop install in San Antonio. Call (210) 201-4847.",
+    "eyebrow": "How the layer behaves",
+    "h1": "How ceramic coating works on paint",
+    "lede": "A ceramic coating is a thin bonded layer on clear coat. It changes how water and dirt sit on the paint. It does not add thickness you can feel with a fingernail.",
+    "image": {
+      "src": "/images/how-ceramic-coating-works.webp",
+      "alt": "Water beading tightly on black clear coat after ceramic coating"
+    },
+    "sections": [
+      {
+        "heading": "What the layer does",
+        "paragraphs": [
+          "After the panel is clean and stable, the coating is applied and leveled, then left to cure. Water beads or sheets instead of sheeting into a film that dries as spots. Road dirt releases with less scrubbing when you actually wash it. UV and chemicals have a harder time living on the surface. That is the practical version of nano ceramic behavior. It is not a force field and it is not a respray.",
+          "[Nano ceramic paint protection](/ceramic-coating) at this studio means that installed layer, done indoors, after prep. A spray bottle with the word ceramic on it is a different product."
+        ]
+      },
+      {
+        "heading": "What it does not do",
+        "paragraphs": [
+          "It does not fill rock chips. It does not hide swirls. It does not stop a dry towel from scratching the clear. If the paint is neglected, [paint correction](/paint-correction) comes first. Coating copies the surface underneath it.",
+          "It also does not cancel washing. San Antonio pollen, bugs, and hard water still land on a coated car. The [lifespan note](/blog/how-long-does-ceramic-coating-last) is why parking and washing decide more than a number on a box."
+        ]
+      },
+      {
+        "heading": "The shop, not a driveway",
+        "paragraphs": [
+          "Dust and direct sun are how an install fails. The work stays at 11692 Bricken Circle, San Antonio, TX 78233. Robert Romero Jr. does the work. One vehicle at a time.",
+          "[Schedule your shop ceramic coating consultation](/contact) or call (210) 201-4847. Twenty percent of the quoted total is the non-refundable deposit that holds the slot."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is nano ceramic a different service?",
+        "a": "On this site it means the installed coating, not a spray wiped on at a wash. We will tell you what is going on the paint before you leave a deposit."
+      },
+      {
+        "q": "Will I feel a thick layer?",
+        "a": "No. If someone describes a coating you can feel like tape, they are describing film, not this install."
+      },
+      {
+        "q": "Does it work on a truck?",
+        "a": "Yes, when the paint is ready. A larger vehicle takes more time. The quote follows the vehicle."
+      }
+    ],
+    "related": [
+      { "to": "/ceramic-coating", "label": "Nano ceramic paint protection" },
+      { "to": "/paint-correction", "label": "Paint correction" },
+      { "to": "/blog/how-long-does-ceramic-coating-last", "label": "How long a coating lasts" },
+      { "to": "/ceramic-coating/process", "label": "Ceramic coating process" },
+      { "to": "/contact", "label": "Schedule a coating consultation" }
+    ]
+  },
+  {
+    "path": "/blog/is-ceramic-coating-worth-it",
+    "kind": "article",
+    "published": "2026-10-09",
+    "title": "Is Ceramic Coating Worth It in San Antonio?",
+    "description": "When a ceramic coating is worth the prep in San Antonio, and when a sealant is the honest buy. In-shop only. Call (210) 201-4847.",
+    "eyebrow": "A straight answer",
+    "h1": "Is ceramic coating worth it?",
+    "lede": "It is worth it when the paint is ready, you will wash the vehicle, and you want protection that outlasts a weekend wax. It is not worth it as a substitute for correction or washing.",
+    "image": {
+      "src": "/images/is-ceramic-coating-worth-it.webp",
+      "alt": "Detailer inspecting high-gloss clear coat on a silver sedan in the studio"
+    },
+    "sections": [
+      {
+        "heading": "When the answer is yes",
+        "paragraphs": [
+          "You park outside, you are tired of rewaxing, and the clear coat is either already clean or you are willing to correct it first. In that case [professional ceramic coating installation](/ceramic-coating) is the job: prep, then the layer, then a wash habit. The cost is mostly the prep. The [cost page](/ceramic-coating/cost) says why we do not print one number.",
+          "Ten percent of the sale goes to Junior Achievement of South Texas. That does not change the scope of the install."
+        ]
+      },
+      {
+        "heading": "When the answer is no",
+        "paragraphs": [
+          "If you will not wash the car, the coating will still get dirty and you will be unhappy. If you want swirls gone and you do not want them polished first, coating will not hide them. If you want something you can redo every couple of months, wax or a sealant is the smaller commitment. The comparison is [ceramic coating versus wax](/blog/ceramic-coating-vs-wax).",
+          "If the clear is already thin, we will say so. More product is not a favor."
+        ]
+      },
+      {
+        "heading": "How to decide with us",
+        "paragraphs": [
+          "Bring the vehicle, or at least a sun photo and the color. We will tell you whether correction is part of the quote. The studio is appointment-only, Tuesday through Sunday, 7:00 AM to 11:00 PM.",
+          "[Schedule your shop ceramic coating consultation](/contact) or call (210) 201-4847. The deposit is 20% of the quoted total and it is non-refundable once it holds the slot."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is it worth it on a daily driver?",
+        "a": "Often, if you wash it. A daily driver in the sun is the vehicle that makes wax feel temporary."
+      },
+      {
+        "q": "Is it worth it on a car I am selling next month?",
+        "a": "Usually no. A wash and a sealant is the honest scope if the car will not stay with you."
+      },
+      {
+        "q": "Do you guarantee a year count?",
+        "a": "No. Prep, parking, and washing decide the life. We do not sell a year badge."
+      }
+    ],
+    "related": [
+      { "to": "/ceramic-coating", "label": "Professional ceramic coating installation" },
+      { "to": "/ceramic-coating/cost", "label": "Ceramic coating cost" },
+      { "to": "/blog/ceramic-coating-vs-wax", "label": "Coating versus wax" },
+      { "to": "/blog/ceramic-coating-warranties-explained", "label": "Longevity, not a warranty badge" },
+      { "to": "/contact", "label": "Schedule a coating consultation" }
+    ]
+  },
+  {
+    "path": "/blog/ceramic-coating-warranties-explained",
+    "kind": "article",
+    "published": "2026-10-09",
+    "title": "Ceramic Coating Longevity in San Antonio | No Year Badge",
+    "description": "Southern Auto Detailers does not sell a multi-year ceramic coating warranty. What actually decides how long a coating lasts in San Antonio.",
+    "eyebrow": "Longevity, not a badge",
+    "h1": "Ceramic coating longevity, without a fake warranty",
+    "lede": "This studio does not publish a five-year or nine-year coating warranty. Longevity is prep, where you park, and whether you wash the vehicle.",
+    "image": {
+      "src": "/images/ceramic-coating-warranties-explained.webp",
+      "alt": "Coated coupe in shade beside a sunny San Antonio driveway"
+    },
+    "sections": [
+      {
+        "heading": "What we will not print",
+        "paragraphs": [
+          "A year count on a brochure is marketing if nobody asks how the car is washed. We will not put a warranty term on this page that the business does not offer. If a product maker has its own registration program, we will tell you that in person when it applies to the product on your vehicle. We will not imply a shop warranty we do not stand behind.",
+          "What we do stand behind is the prep we quoted and a straight answer if the panel is a bad candidate. The deposit rules are on the [refund policy](/refund-policy)."
+        ]
+      },
+      {
+        "heading": "What actually lasts",
+        "paragraphs": [
+          "A coating on clean, stable paint that gets washed will outlast the same product wiped over contamination and then ignored. A [Windcrest](/windcrest) driveway in July is harder than a garage. Bug guts and droppings that bake on the panel age any protection. [Long-term ceramic coating options](/ceramic-coating) here means choosing the install and then keeping it, not picking a year from a menu.",
+          "Read [how long a coating lasts](/blog/how-long-does-ceramic-coating-last) for the variables. Read [how to wash it](/blog/washing-a-ceramic-coated-car) so the first month does not undo the day."
+        ]
+      },
+      {
+        "heading": "If you want it in writing",
+        "paragraphs": [
+          "Ask, before the deposit, what happens if you are unhappy with the prep. Ask what you must do during the cure window. Those answers are the agreement. A slogan is not.",
+          "Call (210) 201-4847 or [schedule your shop ceramic coating consultation](/contact). The studio is 11692 Bricken Circle, San Antonio, TX 78233."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do you offer a lifetime coating warranty?",
+        "a": "No. We do not sell lifetime, five-year, or nine-year warranties on this site."
+      },
+      {
+        "q": "What if the coating looks dirty after a month?",
+        "a": "That is usually washing and parking, not a failed bond. Call and describe what you see before you buy another product."
+      },
+      {
+        "q": "Is the deposit the warranty?",
+        "a": "No. The deposit holds the appointment. It is non-refundable if you cancel. It is not a product warranty."
+      }
+    ],
+    "related": [
+      { "to": "/ceramic-coating", "label": "Long-term ceramic coating options" },
+      { "to": "/blog/how-long-does-ceramic-coating-last", "label": "How long a coating lasts" },
+      { "to": "/blog/is-ceramic-coating-worth-it", "label": "Is coating worth it" },
+      { "to": "/refund-policy", "label": "Refund policy" },
+      { "to": "/contact", "label": "Schedule a coating consultation" }
+    ]
+  },
+  {
+    "path": "/blog/products-to-avoid-on-ceramic-coating",
+    "kind": "article",
+    "published": "2026-10-09",
+    "title": "Products to Avoid on Ceramic Coating | San Antonio",
+    "description": "Dish soap, stiff brushes, and random waxes can undo a ceramic coating. What to skip after an in-shop install in San Antonio.",
+    "eyebrow": "Aftercare",
+    "h1": "Products to avoid on a ceramic coating",
+    "lede": "The coating is durable. It is not immune to the wrong chemical or a dry brush. A short avoid-list protects the install better than another bottle.",
+    "image": {
+      "src": "/images/products-to-avoid-on-ceramic-coating.webp",
+      "alt": "Dish soap and a stiff brush kept away from a clean coated paint panel"
+    },
+    "sections": [
+      {
+        "heading": "What to leave in the cabinet",
+        "paragraphs": [
+          "Dish soap is built to strip oils. Used often, it is a harsh way to wash a coated car. A stiff brush, a dry towel, and an automatic tunnel do the mechanical damage. A random wax or a spray from a parts counter can sit on top of the coating and make the next wash annoying, or it can be pointless. Ask what was installed before you add a topper.",
+          "The wash that does belong is on [washing a coated car](/blog/washing-a-ceramic-coated-car): a clean mitt, a proper car shampoo, and a clean drying towel."
+        ]
+      },
+      {
+        "heading": "Why this matters to the install",
+        "paragraphs": [
+          "[Durable ceramic paint coating](/ceramic-coating) still fails the eye test if you scrub grit across it. The layer does not make the clear coat thicker. Swirls you add after the install are in the clear, and correcting them later is another appointment.",
+          "Hard water is not a product, but letting it dry is the same category of mistake. Dry the panel. The [water-spot note](/blog/hard-water-spots-san-antonio) explains the mineral, not a miracle remover."
+        ]
+      },
+      {
+        "heading": "If you already used the wrong thing",
+        "paragraphs": [
+          "Stop and call. Do not stack a second product to cancel the first. Tell us what you used and what the panel looks like in the sun. Sometimes it is a wash. Sometimes it is a conversation about correction.",
+          "[Schedule your shop ceramic coating consultation](/contact) if you are still before the install, or call (210) 201-4847 if the car is already coated. The studio does not travel."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I use a spray ceramic on top?",
+        "a": "Ask first. Some toppers are compatible. A random one is not an upgrade."
+      },
+      {
+        "q": "Is a touchless tunnel safe?",
+        "a": "The chemicals vary, and the dryers and brushes at the next bay are the usual problem. Hand washing is the recommendation."
+      },
+      {
+        "q": "Will dish soap strip the coating in one wash?",
+        "a": "One wash is unlikely to erase an install. Making it the habit is the problem. Use a car shampoo."
+      }
+    ],
+    "related": [
+      { "to": "/ceramic-coating", "label": "Durable ceramic paint coating" },
+      { "to": "/blog/washing-a-ceramic-coated-car", "label": "How to wash a coated car" },
+      { "to": "/blog/hard-water-spots-san-antonio", "label": "Hard water spots" },
+      { "to": "/paint-correction", "label": "Paint correction" },
+      { "to": "/contact", "label": "Schedule a coating consultation" }
+    ]
+  },
+  {
+    "path": "/blog/ceramic-coating-vs-ppf",
+    "kind": "article",
+    "published": "2026-10-09",
+    "title": "Ceramic Coating vs PPF | San Antonio Studio",
+    "description": "Ceramic coating is not paint protection film. Southern Auto Detailers installs coating in the shop and does not install PPF. Call (210) 201-4847.",
+    "eyebrow": "Coating is not film",
+    "h1": "Ceramic coating versus paint protection film",
+    "lede": "Paint protection film is a clear physical layer that takes rock chips. A ceramic coating is a thin bonded layer that changes how dirt and water sit on the paint. This studio installs coating. It does not install film.",
+    "image": {
+      "src": "/images/ceramic-coating-vs-ppf.webp",
+      "alt": "Clear paint protection film lifted beside water-beading coated paint"
+    },
+    "sections": [
+      {
+        "heading": "Two different jobs",
+        "paragraphs": [
+          "Film has thickness. You can sometimes see an edge. It is there to absorb impacts that would chip paint. Coating does not do that. If your complaint is highway chips on the front clip, film is the category that addresses it, and you need a shop that installs film. We are not that shop.",
+          "If your complaint is swirls, water spots, and a finish that is hard to wash, that is coating after prep. [Shop-applied ceramic coating](/ceramic-coating) is the service on this site."
+        ]
+      },
+      {
+        "heading": "Prep still matters",
+        "paragraphs": [
+          "Film and coating both look better on paint that has been corrected first. Locking swirls under either one is a poor use of the money. [Multi-stage paint correction](/blog/paint-correction-before-ceramic-coating) is the note on doing that before a coating. The correction service itself is [paint correction in San Antonio](/paint-correction).",
+          "We will not quote a film package, a film warranty, or a combined film-and-coating menu. Asking us for film will get a no, and a suggestion to keep the coating conversation separate."
+        ]
+      },
+      {
+        "heading": "What to book here",
+        "paragraphs": [
+          "Book correction if the clear coat bothers you in the sun. Book coating if the paint is ready and you will wash it. Book both when the test spot says the polish is worth it. Neither appointment happens in a driveway.",
+          "[Schedule your shop ceramic coating consultation](/contact) or call (210) 201-4847. A 20% non-refundable deposit of the quoted total holds the slot."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do you install paint protection film?",
+        "a": "No. The studio installs ceramic coating, paint correction, and details. It does not install PPF."
+      },
+      {
+        "q": "Can a coating replace film on the front bumper?",
+        "a": "No. Coating will not stop a rock chip."
+      },
+      {
+        "q": "Can film go over a coating?",
+        "a": "That is a film installer's question. We do not install the film, so we will not design that stack for you."
+      }
+    ],
+    "related": [
+      { "to": "/ceramic-coating", "label": "Shop-applied ceramic coating" },
+      { "to": "/blog/paint-correction-before-ceramic-coating", "label": "Multi-stage paint correction" },
+      { "to": "/paint-correction", "label": "Paint correction" },
+      { "to": "/blog/is-ceramic-coating-worth-it", "label": "Is coating worth it" },
+      { "to": "/contact", "label": "Schedule a coating consultation" }
+    ]
+  }
+
 ]
 ;
 
