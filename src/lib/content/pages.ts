@@ -1,4 +1,5 @@
 import type { ContentPage } from "@/lib/content/types";
+import { batchArticles } from "@/lib/content/batch-articles";
 
 export const contentPages: ContentPage[] = 
 [
@@ -19,7 +20,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What interior detailing actually covers",
         "paragraphs": [
-          "Interior car cleaning at our studio starts with everything you touch and everything you stopped noticing. Carpets and floor mats are vacuumed and, when soil is ground in, extracted. Seats are cleaned for the material that is actually there: cloth gets agitation and extraction, leather is cleaned and then conditioned so San Antonio heat does not leave it thirsty, and vinyl is treated without the greasy film that attracts dust the next day. Consoles, cup holders, door panels, vents, seat rails, and interior glass are part of the same visit. A cabin that only looks good in a photo from the driver’s door is not finished. Tell us about pet hair, food stains, sand, or a smell when you book so the appointment is long enough. If the paint is due in the same visit, the upgraded appointment is [full auto detailing](/full-detailing).",
+          "Interior car cleaning at our studio starts with everything you touch and everything you stopped noticing. Carpets and floor mats are vacuumed and, when soil is ground in, extracted. Seats are cleaned for the material that is actually there: cloth gets agitation and extraction, leather is cleaned and then conditioned so San Antonio heat does not leave it thirsty, and vinyl is treated without the greasy film that attracts dust the next day. Consoles, cup holders, door panels, vents, seat rails, and interior glass are part of the same visit. Glossy trim and screens need a lighter hand than the seats. See [screens and glossy trim](/blog/car-screens-buttons-and-glossy-trim). A cabin that only looks good in a photo from the driver’s door is not finished. Tell us about pet hair, food stains, sand, or a smell when you book so the appointment is long enough. If the paint is due in the same visit, the upgraded appointment is [full auto detailing](/full-detailing).",
           "Steam cleaning is used where heat and moisture help release soil that a towel will only smear — usually around plastic trim, cup holders, and some fabric. It is a tool, not a promise that every stain from 2019 will vanish. If a dye transfer or a set-in spill is likely to remain, we say that before we start."
         ],
         "bullets": [
@@ -119,7 +120,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What an exterior detail includes",
         "paragraphs": [
-          "An exterior car wash here starts with a rinse and a foam wash so grit is not dragged across the clear coat. Wheels and tires are cleaned as their own step, because brake dust and road film do not belong in the same bucket as the paint. Door jambs, fuel door, and glass are included when you book an exterior detail rather than a rinse-and-go. Clay bar treatment comes next when the paint feels rough after the wash. San Antonio water spots and industrial fallout bond to the surface. Clay removes that bonded contamination so the paint can actually be protected. We do not clay a filthy panel and we do not skip it when the paint is grabbing.",
+          "An exterior car wash here starts with a rinse and a foam wash so grit is not dragged across the clear coat. Wheels and tires are cleaned as their own step, because brake dust and road film do not belong in the same bucket as the paint. Orange specks that survive a wash are often [iron fallout on paint](/blog/iron-fallout-on-car-paint), not ordinary dirt. Door jambs, fuel door, and glass are included when you book an exterior detail rather than a rinse-and-go. Clay bar treatment comes next when the paint feels rough after the wash. San Antonio water spots and industrial fallout bond to the surface. Clay removes that bonded contamination so the paint can actually be protected. We do not clay a filthy panel and we do not skip it when the paint is grabbing.",
           "After decontamination we dry, dress tires appropriately, and apply a sealant or wax suited to how the vehicle is parked. If the finish is already dull with swirls, a sealant will not make the paint look corrected. That is a [paint correction](/paint-correction) conversation, and we will say so. Between visits, [how to wash a ceramic-coated car](/blog/how-to-wash-ceramic-coated-car) is the lower-risk routine. Rings that remain after a gentle wash are [water spots on car paint](/blog/water-spots-on-car-paint)."
         ],
         "bullets": [
@@ -216,7 +217,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What a full detail includes",
         "paragraphs": [
-          "A complete car detail pairs the interior process — carpets, seats, leather conditioning when appropriate, consoles, glass — with the exterior process — hand wash, wheels, clay when the paint needs it, and protection. It is the right request when both the cabin and the paint have been ignored, which is most vehicles that have gone a season in Northeast San Antonio without a proper detail. Full service detailing is not a coupon wash plus a vacuum. The time is blocked for one vehicle. If [paint correction](/paint-correction) or [ceramic coating](/ceramic-coating) belongs in the same visit, we quote those as their own scope so you are not surprised by a longer day. Cabin-only work is [interior detailing](/interior-detailing). Paint-only work is [exterior detailing](/exterior-detailing)."
+          "A complete car detail pairs the interior process — carpets, seats, leather conditioning when appropriate, consoles, glass — with the exterior process — hand wash, wheels, clay when the paint needs it, and protection. It is the right request when both the cabin and the paint have been ignored, which is most vehicles that have gone a season in Northeast San Antonio without a proper detail. Full service detailing is not a coupon wash plus a vacuum. The time is blocked for one vehicle. If you are not sure which job you are asking for, read [what to tell the studio before you book](/blog/what-to-tell-a-detailer-before-you-book). If [paint correction](/paint-correction) or [ceramic coating](/ceramic-coating) belongs in the same visit, we quote those as their own scope so you are not surprised by a longer day. Cabin-only work is [interior detailing](/interior-detailing). Paint-only work is [exterior detailing](/exterior-detailing)."
         ],
         "bullets": [
           "Interior deep clean matched to soil and materials",
@@ -312,7 +313,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What paint correction is, and is not",
         "paragraphs": [
-          "Swirl mark removal is machine polishing. Wash scratches, buffer trails from a tunnel, and the haze you see in sunlight on dark paint live in the clear coat. Polishing levels that layer enough to make the defects less visible. It is not a respray, and it cannot fill a chip down to metal or a crease through the clear. Scratch removal auto work is judged one panel at a time. A light, isolated mark may improve. A key scratch that has caught a fingernail may only soften. We inspect and tell you the likely result before we commit the time. If the clear is already thin, we stop. Cutting through clear to chase a photo is how paint gets ruined."
+          "Swirl mark removal is machine polishing. Wash scratches, buffer trails from a tunnel, and the haze you see in sunlight on dark paint live in the clear coat. Polishing levels that layer enough to make the defects less visible. It is not a respray, and it cannot fill a chip down to metal or a crease through the clear. If the mark is already through the clear coat, read [when a scratch is too deep to polish](/blog/when-a-scratch-is-too-deep-to-polish). Scratch removal auto work is judged one panel at a time. A light, isolated mark may improve. A key scratch that has caught a fingernail may only soften. We inspect and tell you the likely result before we commit the time. If the clear is already thin, we stop. Cutting through clear to chase a photo is how paint gets ruined."
         ]
       },
       {
@@ -421,7 +422,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "Expectations we will put in plain language",
         "paragraphs": [
-          "Coating does not stop rock chips. It does not make neglected paint look corrected. It does not remove the need to wash the vehicle. It does give a careful owner an easier maintenance routine and a finish that holds up better between details in South Texas heat. The slot is reserved with a 20% non-refundable deposit of the quoted total. Ten percent of the sale still goes to Junior Achievement of South Texas.",
+          "Coating does not stop rock chips. It does not make neglected paint look corrected. The longer version of that limit is [a ceramic coating does not hide swirls](/blog/ceramic-coating-does-not-hide-swirls). It does not remove the need to wash the vehicle. It does give a careful owner an easier maintenance routine and a finish that holds up better between details in South Texas heat. The slot is reserved with a 20% non-refundable deposit of the quoted total. Ten percent of the sale still goes to Junior Achievement of South Texas.",
           "Southern Auto Detailers is San Antonio based at 11692 Bricken Circle, San Antonio, TX 78233. Owner Robert Romero Jr., an Alamo Heights graduate and IDA-certified detailer works by appointment, Tuesday through Sunday from 7:00 AM to 11:00 PM, and is closed Monday. Call (210) 201-4847 or email contact@southernautodetailers.com. A 20% non-refundable deposit — 20% of the quoted total — is required to secure the booking slot. The remaining balance is due when the work is finished. Ten percent of every sale goes to Junior Achievement of South Texas."
         ]
       },
@@ -856,7 +857,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "Getting to the studio",
         "paragraphs": [
-          "The studio address is 11692 Bricken Circle, San Antonio, TX 78233. Use that full address in your maps app. Do not guess from a nearby shopping center. We confirm the appointment before you come, because the calendar is one vehicle at a time. Hours are Tuesday through Sunday, 7:00 AM to 11:00 PM. Monday is closed. If you are coming from the Nacogdoches or Perrin Beitel side of 78233, you are already in the service area — call and we will confirm the slot rather than making you decode a route from a blog.",
+          "The studio address is 11692 Bricken Circle, San Antonio, TX 78233. Use that full address in your maps app. Do not guess from a nearby shopping center. Before you drive over, [what to send before you book](/blog/what-to-tell-a-detailer-before-you-book) is the short list. We confirm the appointment before you come, because the calendar is one vehicle at a time. Hours are Tuesday through Sunday, 7:00 AM to 11:00 PM. Monday is closed. If you are coming from the Nacogdoches or Perrin Beitel side of 78233, you are already in the service area — call and we will confirm the slot rather than making you decode a route from a blog.",
           "Nearby drivers often mention Rolling Oaks, the Thousand Oaks commercial strip, or the neighborhoods between 1604 and I-35 when they describe where they park. Those are useful landmarks for us because they tell us how the vehicle lives: uncovered, sprinkled, or garaged. They are not a promise that we detail inside a mall parking lot."
         ],
         "bullets": [
@@ -3588,6 +3589,7 @@ export const contentPages: ContentPage[] =
   {
     "path": "/blog/how-long-does-ceramic-coating-last",
     "kind": "article",
+    "published": "2026-10-06",
     "title": "How Long Does Ceramic Coating Last in San Antonio?",
     "description": "How long ceramic coating lasts in San Antonio depends on prep, parking, and washing — not a slogan on the bottle. Call (210) 201-4847.",
     "eyebrow": "Notes from the studio",
@@ -3731,6 +3733,7 @@ export const contentPages: ContentPage[] =
   {
     "path": "/blog/auto-detailing-san-antonio-tx-guide",
     "kind": "article",
+    "published": "2026-10-06",
     "title": "Auto Detailing San Antonio TX | A Practical Guide",
     "description": "A practical guide to auto detailing in San Antonio, TX — services, 78233, deposits, and how to choose a visit. Call (210) 201-4847.",
     "eyebrow": "Notes from the studio",
@@ -3804,6 +3807,7 @@ export const contentPages: ContentPage[] =
   {
     "path": "/blog/best-auto-detailer-northeast-san-antonio",
     "kind": "article",
+    "published": "2026-10-06",
     "title": "Choosing a Detailer in Northeast San Antonio",
     "description": "How to choose an auto detailer in Northeast San Antonio and 78233 without falling for a coupon. Studio at 11692 Bricken Circle. Call (210) 201-4847.",
     "eyebrow": "Notes from the studio",
@@ -4406,7 +4410,8 @@ export const contentPages: ContentPage[] =
       { "to": "/blog/paint-correction-before-ceramic-coating", "label": "Correction before coating" },
       { "to": "/contact", "label": "Book a new-vehicle inspection" }
     ]
-  }
+  },
+  ...batchArticles,
 ]
 ;
 

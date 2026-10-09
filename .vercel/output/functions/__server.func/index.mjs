@@ -28,7 +28,7 @@ function contentSecurityPolicy(nonce) {
 		"base-uri 'none'",
 		"frame-ancestors 'none'",
 		"require-trusted-types-for 'script'",
-		"trusted-types default"
+		"trusted-types default goog#html goog#safe ContributorServingResponseClientJs#html 'allow-duplicates'"
 	].join("; ");
 }
 function applySecurityHeaders(headers, nonce) {

@@ -1,0 +1,94 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://southernautodetailers.com/blog/ceramic-coating-does-not-hide-swirls#webpage",
+      "url": "https://southernautodetailers.com/blog/ceramic-coating-does-not-hide-swirls",
+      "name": "Does Ceramic Coating Hide Swirls? | Southern Auto Detailers",
+      "description": "A ceramic coating does not fill swirl marks. Learn why correction is a separate step, and what to ask before an in-shop coating appointment.",
+      "isPartOf": {
+        "@id": "https://southernautodetailers.com/#website"
+      },
+      "about": {
+        "@id": "https://southernautodetailers.com/ceramic-coating#service"
+      },
+      "breadcrumb": {
+        "@id": "https://southernautodetailers.com/blog/ceramic-coating-does-not-hide-swirls#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://southernautodetailers.com/blog/ceramic-coating-does-not-hide-swirls#image-hero"
+      },
+      "image": {
+        "@id": "https://southernautodetailers.com/blog/ceramic-coating-does-not-hide-swirls#image-support"
+      },
+      "mainEntity": {
+        "@id": "https://southernautodetailers.com/blog/ceramic-coating-does-not-hide-swirls#article"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://southernautodetailers.com/blog/ceramic-coating-does-not-hide-swirls#article",
+      "headline": "A ceramic coating does not hide swirls",
+      "description": "A ceramic coating does not fill swirl marks. Learn why correction is a separate step, and what to ask before an in-shop coating appointment.",
+      "articleSection": "Ceramic coating",
+      "mainEntityOfPage": {
+        "@id": "https://southernautodetailers.com/blog/ceramic-coating-does-not-hide-swirls#webpage"
+      },
+      "publisher": {
+        "@id": "https://southernautodetailers.com/#business"
+      },
+      "image": [
+        {
+          "@id": "https://southernautodetailers.com/blog/ceramic-coating-does-not-hide-swirls#image-hero"
+        },
+        {
+          "@id": "https://southernautodetailers.com/blog/ceramic-coating-does-not-hide-swirls#image-support"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://southernautodetailers.com/blog/ceramic-coating-does-not-hide-swirls#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://southernautodetailers.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://southernautodetailers.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "A ceramic coating does not hide swirls"
+        }
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://southernautodetailers.com/blog/ceramic-coating-does-not-hide-swirls#image-hero",
+      "name": "Dark paint under an inspection light, with circular swirl marks still visible and an unlabeled bottle in the background",
+      "description": "AI-generated illustration of swirls remaining visible under a light. Not a customer vehicle and not a completed Southern Auto Detailers coating.",
+      "caption": "AI-generated illustration of swirls remaining visible under a light. Not a customer vehicle and not a completed Southern Auto Detailers coating.",
+      "width": 1600,
+      "height": 900,
+      "encodingFormat": "image/webp"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://southernautodetailers.com/blog/ceramic-coating-does-not-hide-swirls#image-support",
+      "name": "Simplified cutaway of a thin clear film following a dip in the layer beneath it, rather than sitting flat across the low spot",
+      "description": "AI-generated illustration of a thin clear film following a low spot. Exaggerated, not a measured coating thickness, and not a shop project.",
+      "caption": "AI-generated illustration of a thin clear film following a low spot. Exaggerated, not a measured coating thickness, and not a shop project.",
+      "width": 1600,
+      "height": 1067,
+      "encodingFormat": "image/webp"
+    }
+  ]
+}

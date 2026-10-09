@@ -1,0 +1,94 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://southernautodetailers.com/blog/iron-fallout-on-car-paint#webpage",
+      "url": "https://southernautodetailers.com/blog/iron-fallout-on-car-paint",
+      "name": "Iron Fallout on Car Paint | Southern Auto Detailers",
+      "description": "Orange specks near the wheels are often iron fallout, not ordinary dirt. Learn why scrubbing can scratch paint, and when an in-shop exterior detail is the right ask.",
+      "isPartOf": {
+        "@id": "https://southernautodetailers.com/#website"
+      },
+      "about": {
+        "@id": "https://southernautodetailers.com/exterior-detailing#service"
+      },
+      "breadcrumb": {
+        "@id": "https://southernautodetailers.com/blog/iron-fallout-on-car-paint#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://southernautodetailers.com/blog/iron-fallout-on-car-paint#image-hero"
+      },
+      "image": {
+        "@id": "https://southernautodetailers.com/blog/iron-fallout-on-car-paint#image-support"
+      },
+      "mainEntity": {
+        "@id": "https://southernautodetailers.com/blog/iron-fallout-on-car-paint#article"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://southernautodetailers.com/blog/iron-fallout-on-car-paint#article",
+      "headline": "Those orange specks on the paint are often iron, not dirt",
+      "description": "Orange specks near the wheels are often iron fallout, not ordinary dirt. Learn why scrubbing can scratch paint, and when an in-shop exterior detail is the right ask.",
+      "articleSection": "Exterior detailing",
+      "mainEntityOfPage": {
+        "@id": "https://southernautodetailers.com/blog/iron-fallout-on-car-paint#webpage"
+      },
+      "publisher": {
+        "@id": "https://southernautodetailers.com/#business"
+      },
+      "image": [
+        {
+          "@id": "https://southernautodetailers.com/blog/iron-fallout-on-car-paint#image-hero"
+        },
+        {
+          "@id": "https://southernautodetailers.com/blog/iron-fallout-on-car-paint#image-support"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://southernautodetailers.com/blog/iron-fallout-on-car-paint#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://southernautodetailers.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://southernautodetailers.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Those orange specks on the paint are often iron, not dirt"
+        }
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://southernautodetailers.com/blog/iron-fallout-on-car-paint#image-hero",
+      "name": "Silver rear quarter panel with small orange-brown specks above an unbranded wheel",
+      "description": "AI-generated illustration of orange-brown specks on paint near a wheel. Not a customer car and not a completed decontamination.",
+      "caption": "AI-generated illustration of orange-brown specks on paint near a wheel. Not a customer car and not a completed decontamination.",
+      "width": 1600,
+      "height": 900,
+      "encodingFormat": "image/webp"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://southernautodetailers.com/blog/iron-fallout-on-car-paint#image-support",
+      "name": "Illustration of a jagged rust-colored particle sitting in a valley of a wavy gray surface, next to a smooth tan sphere on a hill",
+      "description": "AI-generated illustration comparing a jagged particle with a smooth grain. Not a micrograph and not shop evidence.",
+      "caption": "AI-generated illustration comparing a jagged particle with a smooth grain. Not a micrograph and not shop evidence.",
+      "width": 1600,
+      "height": 1067,
+      "encodingFormat": "image/webp"
+    }
+  ]
+}

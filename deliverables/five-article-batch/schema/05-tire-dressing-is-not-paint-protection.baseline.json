@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://southernautodetailers.com/blog/tire-dressing-is-not-paint-protection#webpage",
+      "url": "https://southernautodetailers.com/blog/tire-dressing-is-not-paint-protection",
+      "name": "Tire Dressing Is Not Paint Protection",
+      "description": "Tire dressing darkens rubber. It does not protect paint, replace a wax, or replace a ceramic coating.",
+      "isPartOf": {
+        "@id": "https://southernautodetailers.com/#website"
+      },
+      "inLanguage": "en",
+      "about": {
+        "@id": "https://southernautodetailers.com/exterior-detailing#service"
+      },
+      "breadcrumb": {
+        "@id": "https://southernautodetailers.com/blog/tire-dressing-is-not-paint-protection#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://southernautodetailers.com/blog/tire-dressing-is-not-paint-protection#article"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://southernautodetailers.com/blog/tire-dressing-is-not-paint-protection#article",
+      "headline": "Tire dressing is not paint protection",
+      "description": "Tire dressing darkens rubber. It does not protect paint, replace a wax, or replace a ceramic coating.",
+      "mainEntityOfPage": {
+        "@id": "https://southernautodetailers.com/blog/tire-dressing-is-not-paint-protection#webpage"
+      },
+      "publisher": {
+        "@id": "https://southernautodetailers.com/#business"
+      },
+      "inLanguage": "en",
+      "about": {
+        "@id": "https://southernautodetailers.com/exterior-detailing#service"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://southernautodetailers.com/blog/tire-dressing-is-not-paint-protection#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://southernautodetailers.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://southernautodetailers.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tire dressing is not paint protection",
+          "item": "https://southernautodetailers.com/blog/tire-dressing-is-not-paint-protection"
+        }
+      ]
+    }
+  ]
+}

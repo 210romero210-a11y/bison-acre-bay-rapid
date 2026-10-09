@@ -1,0 +1,94 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://southernautodetailers.com/blog/car-screens-buttons-and-glossy-trim#webpage",
+      "url": "https://southernautodetailers.com/blog/car-screens-buttons-and-glossy-trim",
+      "name": "Cleaning Car Screens and Glossy Trim | Southern Auto Detailers",
+      "description": "Glossy interior trim and touchscreens mark easily. Learn what to avoid, and what to mention when you book an in-shop interior detail.",
+      "isPartOf": {
+        "@id": "https://southernautodetailers.com/#website"
+      },
+      "about": {
+        "@id": "https://southernautodetailers.com/interior-detailing#service"
+      },
+      "breadcrumb": {
+        "@id": "https://southernautodetailers.com/blog/car-screens-buttons-and-glossy-trim#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://southernautodetailers.com/blog/car-screens-buttons-and-glossy-trim#image-hero"
+      },
+      "image": {
+        "@id": "https://southernautodetailers.com/blog/car-screens-buttons-and-glossy-trim#image-support"
+      },
+      "mainEntity": {
+        "@id": "https://southernautodetailers.com/blog/car-screens-buttons-and-glossy-trim#article"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://southernautodetailers.com/blog/car-screens-buttons-and-glossy-trim#article",
+      "headline": "Screens, buttons, and glossy trim need a lighter hand",
+      "description": "Glossy interior trim and touchscreens mark easily. Learn what to avoid, and what to mention when you book an in-shop interior detail.",
+      "articleSection": "Interior detailing",
+      "mainEntityOfPage": {
+        "@id": "https://southernautodetailers.com/blog/car-screens-buttons-and-glossy-trim#webpage"
+      },
+      "publisher": {
+        "@id": "https://southernautodetailers.com/#business"
+      },
+      "image": [
+        {
+          "@id": "https://southernautodetailers.com/blog/car-screens-buttons-and-glossy-trim#image-hero"
+        },
+        {
+          "@id": "https://southernautodetailers.com/blog/car-screens-buttons-and-glossy-trim#image-support"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://southernautodetailers.com/blog/car-screens-buttons-and-glossy-trim#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://southernautodetailers.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://southernautodetailers.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Screens, buttons, and glossy trim need a lighter hand"
+        }
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://southernautodetailers.com/blog/car-screens-buttons-and-glossy-trim#image-hero",
+      "name": "Car center console with a blank touchscreen, fine marks in the glossy black trim, and a folded gray microfiber",
+      "description": "AI-generated illustration of glossy trim and a blank screen with a dry cloth nearby. Not a customer cabin and not a finished interior detail.",
+      "caption": "AI-generated illustration of glossy trim and a blank screen with a dry cloth nearby. Not a customer cabin and not a finished interior detail.",
+      "width": 1600,
+      "height": 900,
+      "encodingFormat": "image/webp"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://southernautodetailers.com/blog/car-screens-buttons-and-glossy-trim#image-support",
+      "name": "Hands spraying an unlabeled bottle onto a microfiber towel, held away from steering-wheel buttons",
+      "description": "AI-generated illustration of spraying cleaner onto a towel instead of onto buttons. Not a product recommendation and not a shop procedure photo.",
+      "caption": "AI-generated illustration of spraying cleaner onto a towel instead of onto buttons. Not a product recommendation and not a shop procedure photo.",
+      "width": 1600,
+      "height": 1067,
+      "encodingFormat": "image/webp"
+    }
+  ]
+}

@@ -40,7 +40,9 @@ import { Route as BlogAutoDetailingSanAntonioTxGuideRouteImport } from './routes
 import { Route as BlogBestAutoDetailerNortheastSanAntonioRouteImport } from './routes/blog.best-auto-detailer-northeast-san-antonio'
 import { Route as BlogBirdDroppingsOnCarPaintRouteImport } from './routes/blog.bird-droppings-on-car-paint'
 import { Route as BlogBugsAndTarOnPaintRouteImport } from './routes/blog.bugs-and-tar-on-paint'
+import { Route as BlogCarScreensButtonsAndGlossyTrimRouteImport } from './routes/blog.car-screens-buttons-and-glossy-trim'
 import { Route as BlogCarSeatInteriorDetailingRouteImport } from './routes/blog.car-seat-interior-detailing'
+import { Route as BlogCeramicCoatingDoesNotHideSwirlsRouteImport } from './routes/blog.ceramic-coating-does-not-hide-swirls'
 import { Route as BlogCeramicCoatingVsPpfRouteImport } from './routes/blog.ceramic-coating-vs-ppf'
 import { Route as BlogCeramicCoatingVsWaxRouteImport } from './routes/blog.ceramic-coating-vs-wax'
 import { Route as BlogCeramicCoatingWarrantiesExplainedRouteImport } from './routes/blog.ceramic-coating-warranties-explained'
@@ -57,6 +59,7 @@ import { Route as BlogHowLongDoesCeramicCoatingLastRouteImport } from './routes/
 import { Route as BlogHowOftenToDetailSanAntonioRouteImport } from './routes/blog.how-often-to-detail-san-antonio'
 import { Route as BlogHowToPrepareForADetailRouteImport } from './routes/blog.how-to-prepare-for-a-detail'
 import { Route as BlogHowToWashCeramicCoatedCarRouteImport } from './routes/blog.how-to-wash-ceramic-coated-car'
+import { Route as BlogIronFalloutOnCarPaintRouteImport } from './routes/blog.iron-fallout-on-car-paint'
 import { Route as BlogIsCeramicCoatingWorthItRouteImport } from './routes/blog.is-ceramic-coating-worth-it'
 import { Route as BlogLeatherConditioningSanAntonioRouteImport } from './routes/blog.leather-conditioning-san-antonio'
 import { Route as BlogNewCarPaintCorrectionBeforeCeramicCoatingRouteImport } from './routes/blog.new-car-paint-correction-before-ceramic-coating'
@@ -73,7 +76,9 @@ import { Route as BlogWaterSpotsOnCarPaintRouteImport } from './routes/blog.wate
 import { Route as BlogWhatAFullDetailIncludesRouteImport } from './routes/blog.what-a-full-detail-includes'
 import { Route as BlogWhatClayBarDoesRouteImport } from './routes/blog.what-clay-bar-does'
 import { Route as BlogWhatIsPaintCorrectionRouteImport } from './routes/blog.what-is-paint-correction'
+import { Route as BlogWhatToTellADetailerBeforeYouBookRouteImport } from './routes/blog.what-to-tell-a-detailer-before-you-book'
 import { Route as BlogWheelDetailingSanAntonioRouteImport } from './routes/blog.wheel-detailing-san-antonio'
+import { Route as BlogWhenAScratchIsTooDeepToPolishRouteImport } from './routes/blog.when-a-scratch-is-too-deep-to-polish'
 import { Route as BlogWindshieldFilmSanAntonioRouteImport } from './routes/blog.windshield-film-san-antonio'
 import { Route as CeramicCoatingIndexRouteImport } from './routes/ceramic-coating.index'
 import { Route as CeramicCoatingCostRouteImport } from './routes/ceramic-coating.cost'
@@ -237,10 +242,22 @@ const BlogBugsAndTarOnPaintRoute = BlogBugsAndTarOnPaintRouteImport.update({
   path: '/bugs-and-tar-on-paint',
   getParentRoute: () => BlogRoute,
 } as any)
+const BlogCarScreensButtonsAndGlossyTrimRoute =
+  BlogCarScreensButtonsAndGlossyTrimRouteImport.update({
+    id: '/car-screens-buttons-and-glossy-trim',
+    path: '/car-screens-buttons-and-glossy-trim',
+    getParentRoute: () => BlogRoute,
+  } as any)
 const BlogCarSeatInteriorDetailingRoute =
   BlogCarSeatInteriorDetailingRouteImport.update({
     id: '/car-seat-interior-detailing',
     path: '/car-seat-interior-detailing',
+    getParentRoute: () => BlogRoute,
+  } as any)
+const BlogCeramicCoatingDoesNotHideSwirlsRoute =
+  BlogCeramicCoatingDoesNotHideSwirlsRouteImport.update({
+    id: '/ceramic-coating-does-not-hide-swirls',
+    path: '/ceramic-coating-does-not-hide-swirls',
     getParentRoute: () => BlogRoute,
   } as any)
 const BlogCeramicCoatingVsPpfRoute = BlogCeramicCoatingVsPpfRouteImport.update({
@@ -332,6 +349,12 @@ const BlogHowToWashCeramicCoatedCarRoute =
   BlogHowToWashCeramicCoatedCarRouteImport.update({
     id: '/how-to-wash-ceramic-coated-car',
     path: '/how-to-wash-ceramic-coated-car',
+    getParentRoute: () => BlogRoute,
+  } as any)
+const BlogIronFalloutOnCarPaintRoute =
+  BlogIronFalloutOnCarPaintRouteImport.update({
+    id: '/iron-fallout-on-car-paint',
+    path: '/iron-fallout-on-car-paint',
     getParentRoute: () => BlogRoute,
   } as any)
 const BlogIsCeramicCoatingWorthItRoute =
@@ -427,10 +450,22 @@ const BlogWhatIsPaintCorrectionRoute =
     path: '/what-is-paint-correction',
     getParentRoute: () => BlogRoute,
   } as any)
+const BlogWhatToTellADetailerBeforeYouBookRoute =
+  BlogWhatToTellADetailerBeforeYouBookRouteImport.update({
+    id: '/what-to-tell-a-detailer-before-you-book',
+    path: '/what-to-tell-a-detailer-before-you-book',
+    getParentRoute: () => BlogRoute,
+  } as any)
 const BlogWheelDetailingSanAntonioRoute =
   BlogWheelDetailingSanAntonioRouteImport.update({
     id: '/wheel-detailing-san-antonio',
     path: '/wheel-detailing-san-antonio',
+    getParentRoute: () => BlogRoute,
+  } as any)
+const BlogWhenAScratchIsTooDeepToPolishRoute =
+  BlogWhenAScratchIsTooDeepToPolishRouteImport.update({
+    id: '/when-a-scratch-is-too-deep-to-polish',
+    path: '/when-a-scratch-is-too-deep-to-polish',
     getParentRoute: () => BlogRoute,
   } as any)
 const BlogWindshieldFilmSanAntonioRoute =
@@ -486,7 +521,9 @@ export interface FileRoutesByFullPath {
   '/blog/best-auto-detailer-northeast-san-antonio': typeof BlogBestAutoDetailerNortheastSanAntonioRoute
   '/blog/bird-droppings-on-car-paint': typeof BlogBirdDroppingsOnCarPaintRoute
   '/blog/bugs-and-tar-on-paint': typeof BlogBugsAndTarOnPaintRoute
+  '/blog/car-screens-buttons-and-glossy-trim': typeof BlogCarScreensButtonsAndGlossyTrimRoute
   '/blog/car-seat-interior-detailing': typeof BlogCarSeatInteriorDetailingRoute
+  '/blog/ceramic-coating-does-not-hide-swirls': typeof BlogCeramicCoatingDoesNotHideSwirlsRoute
   '/blog/ceramic-coating-vs-ppf': typeof BlogCeramicCoatingVsPpfRoute
   '/blog/ceramic-coating-vs-wax': typeof BlogCeramicCoatingVsWaxRoute
   '/blog/ceramic-coating-warranties-explained': typeof BlogCeramicCoatingWarrantiesExplainedRoute
@@ -503,6 +540,7 @@ export interface FileRoutesByFullPath {
   '/blog/how-often-to-detail-san-antonio': typeof BlogHowOftenToDetailSanAntonioRoute
   '/blog/how-to-prepare-for-a-detail': typeof BlogHowToPrepareForADetailRoute
   '/blog/how-to-wash-ceramic-coated-car': typeof BlogHowToWashCeramicCoatedCarRoute
+  '/blog/iron-fallout-on-car-paint': typeof BlogIronFalloutOnCarPaintRoute
   '/blog/is-ceramic-coating-worth-it': typeof BlogIsCeramicCoatingWorthItRoute
   '/blog/leather-conditioning-san-antonio': typeof BlogLeatherConditioningSanAntonioRoute
   '/blog/new-car-paint-correction-before-ceramic-coating': typeof BlogNewCarPaintCorrectionBeforeCeramicCoatingRoute
@@ -519,7 +557,9 @@ export interface FileRoutesByFullPath {
   '/blog/what-a-full-detail-includes': typeof BlogWhatAFullDetailIncludesRoute
   '/blog/what-clay-bar-does': typeof BlogWhatClayBarDoesRoute
   '/blog/what-is-paint-correction': typeof BlogWhatIsPaintCorrectionRoute
+  '/blog/what-to-tell-a-detailer-before-you-book': typeof BlogWhatToTellADetailerBeforeYouBookRoute
   '/blog/wheel-detailing-san-antonio': typeof BlogWheelDetailingSanAntonioRoute
+  '/blog/when-a-scratch-is-too-deep-to-polish': typeof BlogWhenAScratchIsTooDeepToPolishRoute
   '/blog/windshield-film-san-antonio': typeof BlogWindshieldFilmSanAntonioRoute
   '/ceramic-coating/cost': typeof CeramicCoatingCostRoute
   '/ceramic-coating/process': typeof CeramicCoatingProcessRoute
@@ -555,7 +595,9 @@ export interface FileRoutesByTo {
   '/blog/best-auto-detailer-northeast-san-antonio': typeof BlogBestAutoDetailerNortheastSanAntonioRoute
   '/blog/bird-droppings-on-car-paint': typeof BlogBirdDroppingsOnCarPaintRoute
   '/blog/bugs-and-tar-on-paint': typeof BlogBugsAndTarOnPaintRoute
+  '/blog/car-screens-buttons-and-glossy-trim': typeof BlogCarScreensButtonsAndGlossyTrimRoute
   '/blog/car-seat-interior-detailing': typeof BlogCarSeatInteriorDetailingRoute
+  '/blog/ceramic-coating-does-not-hide-swirls': typeof BlogCeramicCoatingDoesNotHideSwirlsRoute
   '/blog/ceramic-coating-vs-ppf': typeof BlogCeramicCoatingVsPpfRoute
   '/blog/ceramic-coating-vs-wax': typeof BlogCeramicCoatingVsWaxRoute
   '/blog/ceramic-coating-warranties-explained': typeof BlogCeramicCoatingWarrantiesExplainedRoute
@@ -572,6 +614,7 @@ export interface FileRoutesByTo {
   '/blog/how-often-to-detail-san-antonio': typeof BlogHowOftenToDetailSanAntonioRoute
   '/blog/how-to-prepare-for-a-detail': typeof BlogHowToPrepareForADetailRoute
   '/blog/how-to-wash-ceramic-coated-car': typeof BlogHowToWashCeramicCoatedCarRoute
+  '/blog/iron-fallout-on-car-paint': typeof BlogIronFalloutOnCarPaintRoute
   '/blog/is-ceramic-coating-worth-it': typeof BlogIsCeramicCoatingWorthItRoute
   '/blog/leather-conditioning-san-antonio': typeof BlogLeatherConditioningSanAntonioRoute
   '/blog/new-car-paint-correction-before-ceramic-coating': typeof BlogNewCarPaintCorrectionBeforeCeramicCoatingRoute
@@ -588,7 +631,9 @@ export interface FileRoutesByTo {
   '/blog/what-a-full-detail-includes': typeof BlogWhatAFullDetailIncludesRoute
   '/blog/what-clay-bar-does': typeof BlogWhatClayBarDoesRoute
   '/blog/what-is-paint-correction': typeof BlogWhatIsPaintCorrectionRoute
+  '/blog/what-to-tell-a-detailer-before-you-book': typeof BlogWhatToTellADetailerBeforeYouBookRoute
   '/blog/wheel-detailing-san-antonio': typeof BlogWheelDetailingSanAntonioRoute
+  '/blog/when-a-scratch-is-too-deep-to-polish': typeof BlogWhenAScratchIsTooDeepToPolishRoute
   '/blog/windshield-film-san-antonio': typeof BlogWindshieldFilmSanAntonioRoute
   '/ceramic-coating/cost': typeof CeramicCoatingCostRoute
   '/ceramic-coating/process': typeof CeramicCoatingProcessRoute
@@ -627,7 +672,9 @@ export interface FileRoutesById {
   '/blog/best-auto-detailer-northeast-san-antonio': typeof BlogBestAutoDetailerNortheastSanAntonioRoute
   '/blog/bird-droppings-on-car-paint': typeof BlogBirdDroppingsOnCarPaintRoute
   '/blog/bugs-and-tar-on-paint': typeof BlogBugsAndTarOnPaintRoute
+  '/blog/car-screens-buttons-and-glossy-trim': typeof BlogCarScreensButtonsAndGlossyTrimRoute
   '/blog/car-seat-interior-detailing': typeof BlogCarSeatInteriorDetailingRoute
+  '/blog/ceramic-coating-does-not-hide-swirls': typeof BlogCeramicCoatingDoesNotHideSwirlsRoute
   '/blog/ceramic-coating-vs-ppf': typeof BlogCeramicCoatingVsPpfRoute
   '/blog/ceramic-coating-vs-wax': typeof BlogCeramicCoatingVsWaxRoute
   '/blog/ceramic-coating-warranties-explained': typeof BlogCeramicCoatingWarrantiesExplainedRoute
@@ -644,6 +691,7 @@ export interface FileRoutesById {
   '/blog/how-often-to-detail-san-antonio': typeof BlogHowOftenToDetailSanAntonioRoute
   '/blog/how-to-prepare-for-a-detail': typeof BlogHowToPrepareForADetailRoute
   '/blog/how-to-wash-ceramic-coated-car': typeof BlogHowToWashCeramicCoatedCarRoute
+  '/blog/iron-fallout-on-car-paint': typeof BlogIronFalloutOnCarPaintRoute
   '/blog/is-ceramic-coating-worth-it': typeof BlogIsCeramicCoatingWorthItRoute
   '/blog/leather-conditioning-san-antonio': typeof BlogLeatherConditioningSanAntonioRoute
   '/blog/new-car-paint-correction-before-ceramic-coating': typeof BlogNewCarPaintCorrectionBeforeCeramicCoatingRoute
@@ -660,7 +708,9 @@ export interface FileRoutesById {
   '/blog/what-a-full-detail-includes': typeof BlogWhatAFullDetailIncludesRoute
   '/blog/what-clay-bar-does': typeof BlogWhatClayBarDoesRoute
   '/blog/what-is-paint-correction': typeof BlogWhatIsPaintCorrectionRoute
+  '/blog/what-to-tell-a-detailer-before-you-book': typeof BlogWhatToTellADetailerBeforeYouBookRoute
   '/blog/wheel-detailing-san-antonio': typeof BlogWheelDetailingSanAntonioRoute
+  '/blog/when-a-scratch-is-too-deep-to-polish': typeof BlogWhenAScratchIsTooDeepToPolishRoute
   '/blog/windshield-film-san-antonio': typeof BlogWindshieldFilmSanAntonioRoute
   '/ceramic-coating/cost': typeof CeramicCoatingCostRoute
   '/ceramic-coating/process': typeof CeramicCoatingProcessRoute
@@ -700,7 +750,9 @@ export interface FileRouteTypes {
     | '/blog/best-auto-detailer-northeast-san-antonio'
     | '/blog/bird-droppings-on-car-paint'
     | '/blog/bugs-and-tar-on-paint'
+    | '/blog/car-screens-buttons-and-glossy-trim'
     | '/blog/car-seat-interior-detailing'
+    | '/blog/ceramic-coating-does-not-hide-swirls'
     | '/blog/ceramic-coating-vs-ppf'
     | '/blog/ceramic-coating-vs-wax'
     | '/blog/ceramic-coating-warranties-explained'
@@ -717,6 +769,7 @@ export interface FileRouteTypes {
     | '/blog/how-often-to-detail-san-antonio'
     | '/blog/how-to-prepare-for-a-detail'
     | '/blog/how-to-wash-ceramic-coated-car'
+    | '/blog/iron-fallout-on-car-paint'
     | '/blog/is-ceramic-coating-worth-it'
     | '/blog/leather-conditioning-san-antonio'
     | '/blog/new-car-paint-correction-before-ceramic-coating'
@@ -733,7 +786,9 @@ export interface FileRouteTypes {
     | '/blog/what-a-full-detail-includes'
     | '/blog/what-clay-bar-does'
     | '/blog/what-is-paint-correction'
+    | '/blog/what-to-tell-a-detailer-before-you-book'
     | '/blog/wheel-detailing-san-antonio'
+    | '/blog/when-a-scratch-is-too-deep-to-polish'
     | '/blog/windshield-film-san-antonio'
     | '/ceramic-coating/cost'
     | '/ceramic-coating/process'
@@ -769,7 +824,9 @@ export interface FileRouteTypes {
     | '/blog/best-auto-detailer-northeast-san-antonio'
     | '/blog/bird-droppings-on-car-paint'
     | '/blog/bugs-and-tar-on-paint'
+    | '/blog/car-screens-buttons-and-glossy-trim'
     | '/blog/car-seat-interior-detailing'
+    | '/blog/ceramic-coating-does-not-hide-swirls'
     | '/blog/ceramic-coating-vs-ppf'
     | '/blog/ceramic-coating-vs-wax'
     | '/blog/ceramic-coating-warranties-explained'
@@ -786,6 +843,7 @@ export interface FileRouteTypes {
     | '/blog/how-often-to-detail-san-antonio'
     | '/blog/how-to-prepare-for-a-detail'
     | '/blog/how-to-wash-ceramic-coated-car'
+    | '/blog/iron-fallout-on-car-paint'
     | '/blog/is-ceramic-coating-worth-it'
     | '/blog/leather-conditioning-san-antonio'
     | '/blog/new-car-paint-correction-before-ceramic-coating'
@@ -802,7 +860,9 @@ export interface FileRouteTypes {
     | '/blog/what-a-full-detail-includes'
     | '/blog/what-clay-bar-does'
     | '/blog/what-is-paint-correction'
+    | '/blog/what-to-tell-a-detailer-before-you-book'
     | '/blog/wheel-detailing-san-antonio'
+    | '/blog/when-a-scratch-is-too-deep-to-polish'
     | '/blog/windshield-film-san-antonio'
     | '/ceramic-coating/cost'
     | '/ceramic-coating/process'
@@ -840,7 +900,9 @@ export interface FileRouteTypes {
     | '/blog/best-auto-detailer-northeast-san-antonio'
     | '/blog/bird-droppings-on-car-paint'
     | '/blog/bugs-and-tar-on-paint'
+    | '/blog/car-screens-buttons-and-glossy-trim'
     | '/blog/car-seat-interior-detailing'
+    | '/blog/ceramic-coating-does-not-hide-swirls'
     | '/blog/ceramic-coating-vs-ppf'
     | '/blog/ceramic-coating-vs-wax'
     | '/blog/ceramic-coating-warranties-explained'
@@ -857,6 +919,7 @@ export interface FileRouteTypes {
     | '/blog/how-often-to-detail-san-antonio'
     | '/blog/how-to-prepare-for-a-detail'
     | '/blog/how-to-wash-ceramic-coated-car'
+    | '/blog/iron-fallout-on-car-paint'
     | '/blog/is-ceramic-coating-worth-it'
     | '/blog/leather-conditioning-san-antonio'
     | '/blog/new-car-paint-correction-before-ceramic-coating'
@@ -873,7 +936,9 @@ export interface FileRouteTypes {
     | '/blog/what-a-full-detail-includes'
     | '/blog/what-clay-bar-does'
     | '/blog/what-is-paint-correction'
+    | '/blog/what-to-tell-a-detailer-before-you-book'
     | '/blog/wheel-detailing-san-antonio'
+    | '/blog/when-a-scratch-is-too-deep-to-polish'
     | '/blog/windshield-film-san-antonio'
     | '/ceramic-coating/cost'
     | '/ceramic-coating/process'
@@ -1129,11 +1194,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogBugsAndTarOnPaintRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/blog/car-screens-buttons-and-glossy-trim': {
+      id: '/blog/car-screens-buttons-and-glossy-trim'
+      path: '/car-screens-buttons-and-glossy-trim'
+      fullPath: '/blog/car-screens-buttons-and-glossy-trim'
+      preLoaderRoute: typeof BlogCarScreensButtonsAndGlossyTrimRouteImport
+      parentRoute: typeof BlogRoute
+    }
     '/blog/car-seat-interior-detailing': {
       id: '/blog/car-seat-interior-detailing'
       path: '/car-seat-interior-detailing'
       fullPath: '/blog/car-seat-interior-detailing'
       preLoaderRoute: typeof BlogCarSeatInteriorDetailingRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/ceramic-coating-does-not-hide-swirls': {
+      id: '/blog/ceramic-coating-does-not-hide-swirls'
+      path: '/ceramic-coating-does-not-hide-swirls'
+      fullPath: '/blog/ceramic-coating-does-not-hide-swirls'
+      preLoaderRoute: typeof BlogCeramicCoatingDoesNotHideSwirlsRouteImport
       parentRoute: typeof BlogRoute
     }
     '/blog/ceramic-coating-vs-ppf': {
@@ -1248,6 +1327,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogHowToWashCeramicCoatedCarRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/blog/iron-fallout-on-car-paint': {
+      id: '/blog/iron-fallout-on-car-paint'
+      path: '/iron-fallout-on-car-paint'
+      fullPath: '/blog/iron-fallout-on-car-paint'
+      preLoaderRoute: typeof BlogIronFalloutOnCarPaintRouteImport
+      parentRoute: typeof BlogRoute
+    }
     '/blog/is-ceramic-coating-worth-it': {
       id: '/blog/is-ceramic-coating-worth-it'
       path: '/is-ceramic-coating-worth-it'
@@ -1360,11 +1446,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogWhatIsPaintCorrectionRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/blog/what-to-tell-a-detailer-before-you-book': {
+      id: '/blog/what-to-tell-a-detailer-before-you-book'
+      path: '/what-to-tell-a-detailer-before-you-book'
+      fullPath: '/blog/what-to-tell-a-detailer-before-you-book'
+      preLoaderRoute: typeof BlogWhatToTellADetailerBeforeYouBookRouteImport
+      parentRoute: typeof BlogRoute
+    }
     '/blog/wheel-detailing-san-antonio': {
       id: '/blog/wheel-detailing-san-antonio'
       path: '/wheel-detailing-san-antonio'
       fullPath: '/blog/wheel-detailing-san-antonio'
       preLoaderRoute: typeof BlogWheelDetailingSanAntonioRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/when-a-scratch-is-too-deep-to-polish': {
+      id: '/blog/when-a-scratch-is-too-deep-to-polish'
+      path: '/when-a-scratch-is-too-deep-to-polish'
+      fullPath: '/blog/when-a-scratch-is-too-deep-to-polish'
+      preLoaderRoute: typeof BlogWhenAScratchIsTooDeepToPolishRouteImport
       parentRoute: typeof BlogRoute
     }
     '/blog/windshield-film-san-antonio': {
@@ -1403,7 +1503,9 @@ interface BlogRouteChildren {
   BlogBestAutoDetailerNortheastSanAntonioRoute: typeof BlogBestAutoDetailerNortheastSanAntonioRoute
   BlogBirdDroppingsOnCarPaintRoute: typeof BlogBirdDroppingsOnCarPaintRoute
   BlogBugsAndTarOnPaintRoute: typeof BlogBugsAndTarOnPaintRoute
+  BlogCarScreensButtonsAndGlossyTrimRoute: typeof BlogCarScreensButtonsAndGlossyTrimRoute
   BlogCarSeatInteriorDetailingRoute: typeof BlogCarSeatInteriorDetailingRoute
+  BlogCeramicCoatingDoesNotHideSwirlsRoute: typeof BlogCeramicCoatingDoesNotHideSwirlsRoute
   BlogCeramicCoatingVsPpfRoute: typeof BlogCeramicCoatingVsPpfRoute
   BlogCeramicCoatingVsWaxRoute: typeof BlogCeramicCoatingVsWaxRoute
   BlogCeramicCoatingWarrantiesExplainedRoute: typeof BlogCeramicCoatingWarrantiesExplainedRoute
@@ -1420,6 +1522,7 @@ interface BlogRouteChildren {
   BlogHowOftenToDetailSanAntonioRoute: typeof BlogHowOftenToDetailSanAntonioRoute
   BlogHowToPrepareForADetailRoute: typeof BlogHowToPrepareForADetailRoute
   BlogHowToWashCeramicCoatedCarRoute: typeof BlogHowToWashCeramicCoatedCarRoute
+  BlogIronFalloutOnCarPaintRoute: typeof BlogIronFalloutOnCarPaintRoute
   BlogIsCeramicCoatingWorthItRoute: typeof BlogIsCeramicCoatingWorthItRoute
   BlogLeatherConditioningSanAntonioRoute: typeof BlogLeatherConditioningSanAntonioRoute
   BlogNewCarPaintCorrectionBeforeCeramicCoatingRoute: typeof BlogNewCarPaintCorrectionBeforeCeramicCoatingRoute
@@ -1436,7 +1539,9 @@ interface BlogRouteChildren {
   BlogWhatAFullDetailIncludesRoute: typeof BlogWhatAFullDetailIncludesRoute
   BlogWhatClayBarDoesRoute: typeof BlogWhatClayBarDoesRoute
   BlogWhatIsPaintCorrectionRoute: typeof BlogWhatIsPaintCorrectionRoute
+  BlogWhatToTellADetailerBeforeYouBookRoute: typeof BlogWhatToTellADetailerBeforeYouBookRoute
   BlogWheelDetailingSanAntonioRoute: typeof BlogWheelDetailingSanAntonioRoute
+  BlogWhenAScratchIsTooDeepToPolishRoute: typeof BlogWhenAScratchIsTooDeepToPolishRoute
   BlogWindshieldFilmSanAntonioRoute: typeof BlogWindshieldFilmSanAntonioRoute
   BlogIndexRoute: typeof BlogIndexRoute
 }
@@ -1448,7 +1553,11 @@ const BlogRouteChildren: BlogRouteChildren = {
     BlogBestAutoDetailerNortheastSanAntonioRoute,
   BlogBirdDroppingsOnCarPaintRoute: BlogBirdDroppingsOnCarPaintRoute,
   BlogBugsAndTarOnPaintRoute: BlogBugsAndTarOnPaintRoute,
+  BlogCarScreensButtonsAndGlossyTrimRoute:
+    BlogCarScreensButtonsAndGlossyTrimRoute,
   BlogCarSeatInteriorDetailingRoute: BlogCarSeatInteriorDetailingRoute,
+  BlogCeramicCoatingDoesNotHideSwirlsRoute:
+    BlogCeramicCoatingDoesNotHideSwirlsRoute,
   BlogCeramicCoatingVsPpfRoute: BlogCeramicCoatingVsPpfRoute,
   BlogCeramicCoatingVsWaxRoute: BlogCeramicCoatingVsWaxRoute,
   BlogCeramicCoatingWarrantiesExplainedRoute:
@@ -1469,6 +1578,7 @@ const BlogRouteChildren: BlogRouteChildren = {
   BlogHowOftenToDetailSanAntonioRoute: BlogHowOftenToDetailSanAntonioRoute,
   BlogHowToPrepareForADetailRoute: BlogHowToPrepareForADetailRoute,
   BlogHowToWashCeramicCoatedCarRoute: BlogHowToWashCeramicCoatedCarRoute,
+  BlogIronFalloutOnCarPaintRoute: BlogIronFalloutOnCarPaintRoute,
   BlogIsCeramicCoatingWorthItRoute: BlogIsCeramicCoatingWorthItRoute,
   BlogLeatherConditioningSanAntonioRoute:
     BlogLeatherConditioningSanAntonioRoute,
@@ -1490,7 +1600,11 @@ const BlogRouteChildren: BlogRouteChildren = {
   BlogWhatAFullDetailIncludesRoute: BlogWhatAFullDetailIncludesRoute,
   BlogWhatClayBarDoesRoute: BlogWhatClayBarDoesRoute,
   BlogWhatIsPaintCorrectionRoute: BlogWhatIsPaintCorrectionRoute,
+  BlogWhatToTellADetailerBeforeYouBookRoute:
+    BlogWhatToTellADetailerBeforeYouBookRoute,
   BlogWheelDetailingSanAntonioRoute: BlogWheelDetailingSanAntonioRoute,
+  BlogWhenAScratchIsTooDeepToPolishRoute:
+    BlogWhenAScratchIsTooDeepToPolishRoute,
   BlogWindshieldFilmSanAntonioRoute: BlogWindshieldFilmSanAntonioRoute,
   BlogIndexRoute: BlogIndexRoute,
 }

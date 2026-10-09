@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://southernautodetailers.com/blog/interior-exterior-or-full-detail#webpage",
+      "url": "https://southernautodetailers.com/blog/interior-exterior-or-full-detail",
+      "name": "Interior, Exterior, or Full Detail: How to Choose",
+      "description": "Choose an interior detail, an exterior detail, or a full detail based on what is actually dirty. Correction and coating are separate questions.",
+      "isPartOf": {
+        "@id": "https://southernautodetailers.com/#website"
+      },
+      "inLanguage": "en",
+      "about": {
+        "@id": "https://southernautodetailers.com/full-detailing#service"
+      },
+      "breadcrumb": {
+        "@id": "https://southernautodetailers.com/blog/interior-exterior-or-full-detail#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://southernautodetailers.com/blog/interior-exterior-or-full-detail#article"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://southernautodetailers.com/blog/interior-exterior-or-full-detail#article",
+      "headline": "Interior, exterior, or a full detail",
+      "description": "Choose an interior detail, an exterior detail, or a full detail based on what is actually dirty. Correction and coating are separate questions.",
+      "mainEntityOfPage": {
+        "@id": "https://southernautodetailers.com/blog/interior-exterior-or-full-detail#webpage"
+      },
+      "publisher": {
+        "@id": "https://southernautodetailers.com/#business"
+      },
+      "inLanguage": "en",
+      "about": {
+        "@id": "https://southernautodetailers.com/full-detailing#service"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://southernautodetailers.com/blog/interior-exterior-or-full-detail#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://southernautodetailers.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://southernautodetailers.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Interior, exterior, or a full detail",
+          "item": "https://southernautodetailers.com/blog/interior-exterior-or-full-detail"
+        }
+      ]
+    }
+  ]
+}

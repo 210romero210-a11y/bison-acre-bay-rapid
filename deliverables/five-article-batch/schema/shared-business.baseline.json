@@ -1,0 +1,30 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://southernautodetailers.com/#website",
+      "url": "https://southernautodetailers.com/",
+      "name": "Southern Auto Detailers",
+      "publisher": {
+        "@id": "https://southernautodetailers.com/#business"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "AutomotiveBusiness",
+      "@id": "https://southernautodetailers.com/#business",
+      "name": "Southern Auto Detailers",
+      "url": "https://southernautodetailers.com/",
+      "telephone": "+1-210-201-4847",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "11692 Bricken Circle",
+        "addressLocality": "San Antonio",
+        "addressRegion": "TX",
+        "postalCode": "78233",
+        "addressCountry": "US"
+      }
+    }
+  ]
+}

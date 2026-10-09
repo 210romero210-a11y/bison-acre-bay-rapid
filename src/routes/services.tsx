@@ -126,6 +126,11 @@ function ServicesPage() {
             ["/blog/new-car-paint-correction-before-ceramic-coating", "Preparing a new vehicle for coating"],
             ["/blog/water-spots-on-car-paint", "Water spots and paint etching"],
             ["/blog/what-is-paint-correction", "Understand how paint correction works"],
+            ["/blog/ceramic-coating-does-not-hide-swirls", "A coating does not hide swirls"],
+            ["/blog/when-a-scratch-is-too-deep-to-polish", "When a scratch is too deep to polish"],
+            ["/blog/iron-fallout-on-car-paint", "Iron fallout on paint"],
+            ["/blog/car-screens-buttons-and-glossy-trim", "Screens and glossy trim"],
+            ["/blog/what-to-tell-a-detailer-before-you-book", "What to tell the studio before you book"],
           ].map(([to, label]) => (
             <li key={to}>
               <Link to={to as never} className="font-semibold text-primary">

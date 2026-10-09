@@ -1,0 +1,42 @@
+{
+  "url": "http://127.0.0.1:8081/blog/what-to-tell-a-detailer-before-you-book",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "What to Tell a Detailer Before You Book | Southern Auto Detailers",
+      "hasCanvas": false,
+      "bodyTextLen": 9525,
+      "bodyTextHash": "dc5d885acc09e3c14b0507c062457d5309319278b831df2e3ee8aaafd9fc19aa",
+      "bodyTextPrefix": "Skip to content Tue–Sun 7 AM–11 PM · Monday closed 11692 Bricken",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/article-booking-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "What to Tell a Detailer Before You Book | Southern Auto Detailers",
+      "hasCanvas": false,
+      "bodyTextLen": 9347,
+      "bodyTextHash": "d5ba7fffa1b04d88c029798430e3af7a5724955a3b411e95ae98afc60c1ca590",
+      "bodyTextPrefix": "Skip to content SOUTHERN Auto Detailers Home / Blog / What to te",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/article-booking-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/article-booking-built.json",
+  "divergesFromBaseline": true,
+  "baselineReasons": [
+    "desktop: title changed (\"Does Ceramic Coating Hide Swirls? | Southern Auto Detailers\" -> \"What to Tell a Detailer Before You Book | Southern Auto Detailers\")",
+    "mobile: title changed (\"Does Ceramic Coating Hide Swirls? | Southern Auto Detailers\" -> \"What to Tell a Detailer Before You Book | Southern Auto Detailers\")",
+    "mobile: body text replaced (similar length, page start changed)"
+  ]
+}

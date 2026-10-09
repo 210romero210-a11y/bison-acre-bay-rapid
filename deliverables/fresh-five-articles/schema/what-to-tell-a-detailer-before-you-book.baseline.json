@@ -1,0 +1,94 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://southernautodetailers.com/blog/what-to-tell-a-detailer-before-you-book#webpage",
+      "url": "https://southernautodetailers.com/blog/what-to-tell-a-detailer-before-you-book",
+      "name": "What to Tell a Detailer Before You Book | Southern Auto Detailers",
+      "description": "A clear booking note separates a wash, an interior, a full detail, paint correction, and ceramic coating. See what to send before you request a studio appointment.",
+      "isPartOf": {
+        "@id": "https://southernautodetailers.com/#website"
+      },
+      "about": {
+        "@id": "https://southernautodetailers.com/full-detailing#service"
+      },
+      "breadcrumb": {
+        "@id": "https://southernautodetailers.com/blog/what-to-tell-a-detailer-before-you-book#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://southernautodetailers.com/blog/what-to-tell-a-detailer-before-you-book#image-hero"
+      },
+      "image": {
+        "@id": "https://southernautodetailers.com/blog/what-to-tell-a-detailer-before-you-book#image-support"
+      },
+      "mainEntity": {
+        "@id": "https://southernautodetailers.com/blog/what-to-tell-a-detailer-before-you-book#article"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://southernautodetailers.com/blog/what-to-tell-a-detailer-before-you-book#article",
+      "headline": "What to tell the studio before you book a detail",
+      "description": "A clear booking note separates a wash, an interior, a full detail, paint correction, and ceramic coating. See what to send before you request a studio appointment.",
+      "articleSection": "Full detailing",
+      "mainEntityOfPage": {
+        "@id": "https://southernautodetailers.com/blog/what-to-tell-a-detailer-before-you-book#webpage"
+      },
+      "publisher": {
+        "@id": "https://southernautodetailers.com/#business"
+      },
+      "image": [
+        {
+          "@id": "https://southernautodetailers.com/blog/what-to-tell-a-detailer-before-you-book#image-hero"
+        },
+        {
+          "@id": "https://southernautodetailers.com/blog/what-to-tell-a-detailer-before-you-book#image-support"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://southernautodetailers.com/blog/what-to-tell-a-detailer-before-you-book#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://southernautodetailers.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://southernautodetailers.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "What to tell the studio before you book a detail"
+        }
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://southernautodetailers.com/blog/what-to-tell-a-detailer-before-you-book#image-hero",
+      "name": "Car keys, a phone with a blank screen, and a blank lined card on a wooden table",
+      "description": "AI-generated illustration of gathering notes before an appointment. Not the studio form and not a customer intake on file.",
+      "caption": "AI-generated illustration of gathering notes before an appointment. Not the studio form and not a customer intake on file.",
+      "width": 1600,
+      "height": 900,
+      "encodingFormat": "image/webp"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://southernautodetailers.com/blog/what-to-tell-a-detailer-before-you-book#image-support",
+      "name": "A wash mitt, a vacuum crevice tool, and a foam polishing pad spaced apart on a gray bench",
+      "description": "AI-generated still life of three different tools. Not a photo of the studio and not a complete list of appointment steps.",
+      "caption": "AI-generated still life of three different tools. Not a photo of the studio and not a complete list of appointment steps.",
+      "width": 1600,
+      "height": 1067,
+      "encodingFormat": "image/webp"
+    }
+  ]
+}

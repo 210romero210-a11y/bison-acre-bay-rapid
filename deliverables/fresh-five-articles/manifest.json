@@ -1,0 +1,137 @@
+{
+  "batch": "fresh-five-articles",
+  "published": false,
+  "imageHosting": "local deliverable only",
+  "articles": [
+    {
+      "file": "articles/01-ceramic-coating-does-not-hide-swirls.md",
+      "bodyWords": 1525
+    },
+    {
+      "file": "articles/02-when-a-scratch-is-too-deep-to-polish.md",
+      "bodyWords": 1530
+    },
+    {
+      "file": "articles/03-iron-fallout-on-car-paint.md",
+      "bodyWords": 1541
+    },
+    {
+      "file": "articles/04-car-screens-buttons-and-glossy-trim.md",
+      "bodyWords": 1528
+    },
+    {
+      "file": "articles/05-what-to-tell-a-detailer-before-you-book.md",
+      "bodyWords": 1505
+    }
+  ],
+  "images": [
+    {
+      "file": "images/coating-does-not-hide-swirls-hero-1600w.webp",
+      "bytes": 39760,
+      "publicUrl": null
+    },
+    {
+      "file": "images/coating-does-not-hide-swirls-hero-800w.webp",
+      "bytes": 13714,
+      "publicUrl": null
+    },
+    {
+      "file": "images/coating-follows-low-spot-1600w.webp",
+      "bytes": 101170,
+      "publicUrl": null
+    },
+    {
+      "file": "images/coating-follows-low-spot-800w.webp",
+      "bytes": 26902,
+      "publicUrl": null
+    },
+    {
+      "file": "images/glossy-trim-blank-screen-1600w.webp",
+      "bytes": 96942,
+      "publicUrl": null
+    },
+    {
+      "file": "images/glossy-trim-blank-screen-800w.webp",
+      "bytes": 30706,
+      "publicUrl": null
+    },
+    {
+      "file": "images/iron-fallout-quarter-panel-1600w.webp",
+      "bytes": 75928,
+      "publicUrl": null
+    },
+    {
+      "file": "images/iron-fallout-quarter-panel-800w.webp",
+      "bytes": 20502,
+      "publicUrl": null
+    },
+    {
+      "file": "images/jagged-particle-versus-smooth-grain-1600w.webp",
+      "bytes": 109636,
+      "publicUrl": null
+    },
+    {
+      "file": "images/jagged-particle-versus-smooth-grain-800w.webp",
+      "bytes": 30588,
+      "publicUrl": null
+    },
+    {
+      "file": "images/notes-before-detail-appointment-1600w.webp",
+      "bytes": 161240,
+      "publicUrl": null
+    },
+    {
+      "file": "images/notes-before-detail-appointment-800w.webp",
+      "bytes": 48498,
+      "publicUrl": null
+    },
+    {
+      "file": "images/paint-defect-depth-diagram-1600w.webp",
+      "bytes": 80756,
+      "publicUrl": null
+    },
+    {
+      "file": "images/paint-defect-depth-diagram-800w.webp",
+      "bytes": 19210,
+      "publicUrl": null
+    },
+    {
+      "file": "images/scratch-too-deep-hero-1600w.webp",
+      "bytes": 61138,
+      "publicUrl": null
+    },
+    {
+      "file": "images/scratch-too-deep-hero-800w.webp",
+      "bytes": 18346,
+      "publicUrl": null
+    },
+    {
+      "file": "images/spray-cleaner-onto-towel-1600w.webp",
+      "bytes": 98488,
+      "publicUrl": null
+    },
+    {
+      "file": "images/spray-cleaner-onto-towel-800w.webp",
+      "bytes": 37130,
+      "publicUrl": null
+    },
+    {
+      "file": "images/wash-vacuum-polish-tools-1600w.webp",
+      "bytes": 90482,
+      "publicUrl": null
+    },
+    {
+      "file": "images/wash-vacuum-polish-tools-800w.webp",
+      "bytes": 20944,
+      "publicUrl": null
+    }
+  ],
+  "schema": [
+    "schema/car-screens-buttons-and-glossy-trim.baseline.json",
+    "schema/ceramic-coating-does-not-hide-swirls.baseline.json",
+    "schema/iron-fallout-on-car-paint.baseline.json",
+    "schema/shared-business.baseline.json",
+    "schema/what-to-tell-a-detailer-before-you-book.baseline.json",
+    "schema/when-a-scratch-is-too-deep-to-polish.baseline.json"
+  ]
+}

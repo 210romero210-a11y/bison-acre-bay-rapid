@@ -1,0 +1,94 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://southernautodetailers.com/blog/when-a-scratch-is-too-deep-to-polish#webpage",
+      "url": "https://southernautodetailers.com/blog/when-a-scratch-is-too-deep-to-polish",
+      "name": "When a Scratch Is Too Deep to Polish | Southern Auto Detailers",
+      "description": "Polishing can only level defects that are still in the clear coat. Learn how to tell a deep chip from a wash mark before you book paint correction.",
+      "isPartOf": {
+        "@id": "https://southernautodetailers.com/#website"
+      },
+      "about": {
+        "@id": "https://southernautodetailers.com/paint-correction#service"
+      },
+      "breadcrumb": {
+        "@id": "https://southernautodetailers.com/blog/when-a-scratch-is-too-deep-to-polish#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://southernautodetailers.com/blog/when-a-scratch-is-too-deep-to-polish#image-hero"
+      },
+      "image": {
+        "@id": "https://southernautodetailers.com/blog/when-a-scratch-is-too-deep-to-polish#image-support"
+      },
+      "mainEntity": {
+        "@id": "https://southernautodetailers.com/blog/when-a-scratch-is-too-deep-to-polish#article"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://southernautodetailers.com/blog/when-a-scratch-is-too-deep-to-polish#article",
+      "headline": "When a scratch is too deep to polish",
+      "description": "Polishing can only level defects that are still in the clear coat. Learn how to tell a deep chip from a wash mark before you book paint correction.",
+      "articleSection": "Paint correction",
+      "mainEntityOfPage": {
+        "@id": "https://southernautodetailers.com/blog/when-a-scratch-is-too-deep-to-polish#webpage"
+      },
+      "publisher": {
+        "@id": "https://southernautodetailers.com/#business"
+      },
+      "image": [
+        {
+          "@id": "https://southernautodetailers.com/blog/when-a-scratch-is-too-deep-to-polish#image-hero"
+        },
+        {
+          "@id": "https://southernautodetailers.com/blog/when-a-scratch-is-too-deep-to-polish#image-support"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://southernautodetailers.com/blog/when-a-scratch-is-too-deep-to-polish#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://southernautodetailers.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://southernautodetailers.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "When a scratch is too deep to polish"
+        }
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://southernautodetailers.com/blog/when-a-scratch-is-too-deep-to-polish#image-hero",
+      "name": "Close view of an open chip in dark blue paint with a lighter center, and a fingernail beside the chip",
+      "description": "AI-generated illustration of a chip that has opened the finish, shown next to a fingernail. Not a customer vehicle and not a paint-correction result.",
+      "caption": "AI-generated illustration of a chip that has opened the finish, shown next to a fingernail. Not a customer vehicle and not a paint-correction result.",
+      "width": 1600,
+      "height": 900,
+      "encodingFormat": "image/webp"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://southernautodetailers.com/blog/when-a-scratch-is-too-deep-to-polish#image-support",
+      "name": "Cutaway model with a clear top layer, a blue middle layer, and a beige bottom layer, showing two open defects that both pass the clear layer",
+      "description": "AI-generated diagram of two defects that have already passed the clear layer. Not to scale and not a shop inspection.",
+      "caption": "AI-generated diagram of two defects that have already passed the clear layer. Not to scale and not a shop inspection.",
+      "width": 1600,
+      "height": 1067,
+      "encodingFormat": "image/webp"
+    }
+  ]
+}

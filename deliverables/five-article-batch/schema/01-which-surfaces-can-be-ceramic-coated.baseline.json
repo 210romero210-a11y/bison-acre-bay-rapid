@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://southernautodetailers.com/blog/which-surfaces-can-be-ceramic-coated#webpage",
+      "url": "https://southernautodetailers.com/blog/which-surfaces-can-be-ceramic-coated",
+      "name": "Which Surfaces Can Be Ceramic Coated?",
+      "description": "Paint, glass, wheels, and trim do not share one ceramic coating. Learn what to ask before an in-shop appointment in San Antonio.",
+      "isPartOf": {
+        "@id": "https://southernautodetailers.com/#website"
+      },
+      "inLanguage": "en",
+      "about": {
+        "@id": "https://southernautodetailers.com/ceramic-coating#service"
+      },
+      "breadcrumb": {
+        "@id": "https://southernautodetailers.com/blog/which-surfaces-can-be-ceramic-coated#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://southernautodetailers.com/blog/which-surfaces-can-be-ceramic-coated#article"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://southernautodetailers.com/blog/which-surfaces-can-be-ceramic-coated#article",
+      "headline": "Which surfaces can be ceramic coated?",
+      "description": "Paint, glass, wheels, and trim do not share one ceramic coating. Learn what to ask before an in-shop appointment in San Antonio.",
+      "mainEntityOfPage": {
+        "@id": "https://southernautodetailers.com/blog/which-surfaces-can-be-ceramic-coated#webpage"
+      },
+      "publisher": {
+        "@id": "https://southernautodetailers.com/#business"
+      },
+      "inLanguage": "en",
+      "about": {
+        "@id": "https://southernautodetailers.com/ceramic-coating#service"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://southernautodetailers.com/blog/which-surfaces-can-be-ceramic-coated#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://southernautodetailers.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://southernautodetailers.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Which surfaces can be ceramic coated?",
+          "item": "https://southernautodetailers.com/blog/which-surfaces-can-be-ceramic-coated"
+        }
+      ]
+    }
+  ]
+}

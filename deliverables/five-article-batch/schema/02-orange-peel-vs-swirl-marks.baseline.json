@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://southernautodetailers.com/blog/orange-peel-vs-swirl-marks#webpage",
+      "url": "https://southernautodetailers.com/blog/orange-peel-vs-swirl-marks",
+      "name": "Orange Peel vs Swirl Marks on Car Paint",
+      "description": "Orange peel is paint texture. Swirl marks are fine scratches. Learn why they are not the same problem before you book paint correction in San Antonio.",
+      "isPartOf": {
+        "@id": "https://southernautodetailers.com/#website"
+      },
+      "inLanguage": "en",
+      "about": {
+        "@id": "https://southernautodetailers.com/paint-correction#service"
+      },
+      "breadcrumb": {
+        "@id": "https://southernautodetailers.com/blog/orange-peel-vs-swirl-marks#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://southernautodetailers.com/blog/orange-peel-vs-swirl-marks#article"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://southernautodetailers.com/blog/orange-peel-vs-swirl-marks#article",
+      "headline": "Orange peel versus swirl marks",
+      "description": "Orange peel is paint texture. Swirl marks are fine scratches. Learn why they are not the same problem before you book paint correction in San Antonio.",
+      "mainEntityOfPage": {
+        "@id": "https://southernautodetailers.com/blog/orange-peel-vs-swirl-marks#webpage"
+      },
+      "publisher": {
+        "@id": "https://southernautodetailers.com/#business"
+      },
+      "inLanguage": "en",
+      "about": {
+        "@id": "https://southernautodetailers.com/paint-correction#service"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://southernautodetailers.com/blog/orange-peel-vs-swirl-marks#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://southernautodetailers.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://southernautodetailers.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Orange peel versus swirl marks",
+          "item": "https://southernautodetailers.com/blog/orange-peel-vs-swirl-marks"
+        }
+      ]
+    }
+  ]
+}

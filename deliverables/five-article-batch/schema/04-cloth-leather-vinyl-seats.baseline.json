@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://southernautodetailers.com/blog/cloth-leather-vinyl-seats#webpage",
+      "url": "https://southernautodetailers.com/blog/cloth-leather-vinyl-seats",
+      "name": "Cloth, Leather, or Vinyl Seats Before a Detail",
+      "description": "Tell the shop whether your seats are cloth, leather, or vinyl. The material changes what a careful interior visit should and should not do.",
+      "isPartOf": {
+        "@id": "https://southernautodetailers.com/#website"
+      },
+      "inLanguage": "en",
+      "about": {
+        "@id": "https://southernautodetailers.com/interior-detailing#service"
+      },
+      "breadcrumb": {
+        "@id": "https://southernautodetailers.com/blog/cloth-leather-vinyl-seats#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://southernautodetailers.com/blog/cloth-leather-vinyl-seats#article"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://southernautodetailers.com/blog/cloth-leather-vinyl-seats#article",
+      "headline": "Cloth, leather, or vinyl seats",
+      "description": "Tell the shop whether your seats are cloth, leather, or vinyl. The material changes what a careful interior visit should and should not do.",
+      "mainEntityOfPage": {
+        "@id": "https://southernautodetailers.com/blog/cloth-leather-vinyl-seats#webpage"
+      },
+      "publisher": {
+        "@id": "https://southernautodetailers.com/#business"
+      },
+      "inLanguage": "en",
+      "about": {
+        "@id": "https://southernautodetailers.com/interior-detailing#service"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://southernautodetailers.com/blog/cloth-leather-vinyl-seats#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://southernautodetailers.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://southernautodetailers.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cloth, leather, or vinyl seats",
+          "item": "https://southernautodetailers.com/blog/cloth-leather-vinyl-seats"
+        }
+      ]
+    }
+  ]
+}

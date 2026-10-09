@@ -1,2 +1,0 @@
-import{o as e}from"./useSelector-B_P3tCcN.js";import{v as t}from"./site-BEg1ow4K.js";var n=e();function r({src:e,alt:r,className:i,imgClassName:a,priority:o=!1,width:s,height:c}){return(0,n.jsx)(`div`,{className:t(`overflow-hidden bg-surface-2`,i),children:(0,n.jsx)(`img`,{src:e,alt:r,width:s,height:c,className:t(`size-full object-cover`,a),loading:o?`eager`:`lazy`,decoding:`async`,fetchPriority:o?`high`:`auto`})})}export{r as t};
-//# sourceMappingURL=photo-C9XSFXOg.js.map

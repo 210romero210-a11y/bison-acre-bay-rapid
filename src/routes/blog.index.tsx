@@ -36,6 +36,14 @@ const CLUSTER = [
   "/blog/how-to-wash-ceramic-coated-car",
 ] as const;
 
+const BATCH = [
+  "/blog/ceramic-coating-does-not-hide-swirls",
+  "/blog/when-a-scratch-is-too-deep-to-polish",
+  "/blog/iron-fallout-on-car-paint",
+  "/blog/car-screens-buttons-and-glossy-trim",
+  "/blog/what-to-tell-a-detailer-before-you-book",
+] as const;
+
 function PostList({ posts }: { posts: { path: string; h1: string; description: string; image: { src: string; alt: string } }[] }) {
   return (
     <ul className="mt-8 grid gap-4">
@@ -68,7 +76,11 @@ function BlogIndex() {
   const cluster = CLUSTER.map((path) => blogPosts.find((post) => post.path === path)).filter(
     (post): post is (typeof blogPosts)[number] => Boolean(post),
   );
-  const rest = blogPosts.filter((post) => !CLUSTER.includes(post.path as (typeof CLUSTER)[number]));
+  const batch = BATCH.map((path) => blogPosts.find((post) => post.path === path)).filter(
+    (post): post is (typeof blogPosts)[number] => Boolean(post),
+  );
+  const featured = new Set<string>([...CLUSTER, ...BATCH]);
+  const rest = blogPosts.filter((post) => !featured.has(post.path));
   return (
     <main>
       <Section>
@@ -88,6 +100,13 @@ function BlogIndex() {
           in-shop service.
         </p>
         <PostList posts={cluster} />
+        <h2 className="mt-14 font-display text-3xl">Five notes, published together</h2>
+        <p className="mt-3 max-w-2xl text-muted">
+          A coating does not hide swirls. A deep scratch is not a polish job. Orange
+          specks are often iron. Glossy trim is not the same as a seat. And a full
+          detail is not those other jobs unless you say so.
+        </p>
+        <PostList posts={batch} />
         <h2 className="mt-14 font-display text-3xl">More from the studio</h2>
         <PostList posts={rest} />
       </Section>

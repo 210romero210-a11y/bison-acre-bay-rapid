@@ -1,7 +1,7 @@
-import { n as BUSINESS, o as HOURS, s as IMAGES } from "./site-DZY_i1CI.mjs";
+import { c as HOURS, l as IMAGES, n as BUSINESS } from "./site-DvUmtfM3.mjs";
 import { n as clsx } from "../_libs/class-variance-authority+clsx.mjs";
 import { t as twMerge } from "../_libs/tailwind-merge.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/seo-DfNIBBMq.js
+//#region node_modules/.nitro/vite/services/ssr/assets/seo-Bux-wB28.js
 var ORIGIN = "https://southernautodetailers.com".replace(/\/$/, "");
 var SERVICE_PAGES = [
 	{
@@ -20,19 +20,19 @@ var SERVICE_PAGES = [
 		path: "/exterior-detailing",
 		name: "Exterior Detailing",
 		serviceType: "Exterior Auto Detailing",
-		description: "Professional in-shop exterior auto detailing at Southern Auto Detailers in San Antonio, Texas."
+		description: "Safe washing, decontamination, wheel cleaning, gloss enhancement, and protection at the San Antonio studio."
 	},
 	{
 		path: "/ceramic-coating",
 		name: "Ceramic Coating",
 		serviceType: "Ceramic Coating",
-		description: "Professional ceramic coating service performed at the Southern Auto Detailers shop in San Antonio, Texas."
+		description: "Durable paint protection and easier maintenance for a longer-lasting shine. Installed in the San Antonio studio after prep."
 	},
 	{
 		path: "/paint-correction",
 		name: "Paint Correction",
 		serviceType: "Paint Correction",
-		description: "Professional in-shop paint correction and polishing service for vehicles in San Antonio, Texas."
+		description: "Improve paint clarity by reducing light swirls, haze, and surface imperfections. In-shop only, in San Antonio."
 	}
 ];
 var SIMPLE = {
@@ -147,6 +147,36 @@ function postalAddress() {
 		addressCountry: BUSINESS.country
 	};
 }
+function authorId() {
+	return `${ORIGIN}/#robert-romero-jr`;
+}
+function authorPerson() {
+	return {
+		"@type": "Person",
+		"@id": authorId(),
+		name: BUSINESS.founder,
+		url: absoluteUrl("/about")
+	};
+}
+function mediaObject(image) {
+	const fileUrl = absoluteUrl(image.src);
+	const name = decodeURIComponent(fileUrl.split("/").pop() || image.alt);
+	const encodingFormat = image.src.endsWith(".png") ? "image/png" : image.src.endsWith(".jpg") || image.src.endsWith(".jpeg") ? "image/jpeg" : "image/webp";
+	return {
+		"@type": "ImageObject",
+		"@id": `${fileUrl}#image`,
+		name,
+		encodingFormat,
+		description: image.caption || image.alt,
+		caption: image.caption || image.alt,
+		contentUrl: fileUrl,
+		url: fileUrl,
+		...image.width && image.height ? {
+			width: image.width,
+			height: image.height
+		} : {}
+	};
+}
 function script(data) {
 	return {
 		type: "application/ld+json",
@@ -183,15 +213,20 @@ function photoUrls() {
 }
 /** Shop entity. Hours, email, logo, photos, map, and coordinates are the confirmed studio facts. */
 function siteGraphJsonLd() {
-	const logo = absoluteUrl("/logo.png");
 	const photos = photoUrls();
 	const placeFacts = {
 		name: BUSINESS.name,
 		url: `${ORIGIN}/`,
 		telephone: BUSINESS.phoneE164,
 		email: BUSINESS.email,
-		logo,
-		image: photos,
+		logo: mediaObject({
+			src: "/logo.png",
+			alt: `${BUSINESS.name} logo`
+		}),
+		image: photos.map((src) => mediaObject({
+			src: src.replace(ORIGIN, ""),
+			alt: BUSINESS.name
+		})),
 		address: postalAddress(),
 		hasMap: BUSINESS.mapsUrl,
 		sameAs: [BUSINESS.googleBusinessUrl],
@@ -205,28 +240,33 @@ function siteGraphJsonLd() {
 	};
 	return {
 		"@context": "https://schema.org",
-		"@graph": [{
-			"@type": "AutoWash",
-			"@id": businessId(),
-			description: "Southern Auto Detailers provides professional in-shop auto detailing, ceramic coating, paint correction, interior detailing, exterior detailing, and full detailing services in San Antonio, Texas.",
-			...placeFacts,
-			hasOfferCatalog: {
-				"@type": "OfferCatalog",
-				name: "In-Shop Auto Detailing Services",
-				itemListElement: SERVICE_PAGES.map((service) => ({
-					"@type": "Offer",
-					itemOffered: {
-						"@type": "Service",
-						"@id": `${absoluteUrl(service.path)}#service`,
-						name: service.name
-					}
-				}))
-			}
-		}, {
-			"@type": "Organization",
-			"@id": organizationId(),
-			...placeFacts
-		}]
+		"@graph": [
+			{
+				"@type": "AutoWash",
+				"@id": businessId(),
+				description: "Southern Auto Detailers provides professional in-shop auto detailing, ceramic coating, paint correction, interior detailing, exterior detailing, and full detailing services in San Antonio, Texas.",
+				...placeFacts,
+				hasOfferCatalog: {
+					"@type": "OfferCatalog",
+					name: "In-Shop Auto Detailing Services",
+					itemListElement: SERVICE_PAGES.map((service) => ({
+						"@type": "Offer",
+						itemOffered: {
+							"@type": "Service",
+							"@id": `${absoluteUrl(service.path)}#service`,
+							name: service.name
+						}
+					}))
+				}
+			},
+			{
+				"@type": "Organization",
+				"@id": organizationId(),
+				...placeFacts,
+				founder: { "@id": authorId() }
+			},
+			authorPerson()
+		]
 	};
 }
 function websiteJsonLd() {
@@ -312,12 +352,30 @@ function pageTypeFor(path) {
 	if (path === "/services" || path === "/blog" || path === "/service-areas") return "CollectionPage";
 	return "WebPage";
 }
+var ARTICLE_ABOUT = {
+	"/blog/ceramic-coating-vs-wax": "/ceramic-coating",
+	"/blog/how-to-wash-ceramic-coated-car": "/ceramic-coating",
+	"/blog/washing-a-ceramic-coated-car": "/ceramic-coating",
+	"/blog/what-is-paint-correction": "/paint-correction",
+	"/blog/new-car-paint-correction-before-ceramic-coating": "/paint-correction",
+	"/blog/paint-correction-before-ceramic-coating": "/paint-correction",
+	"/blog/water-spots-on-car-paint": "/exterior-detailing",
+	"/blog/hard-water-spots-san-antonio": "/exterior-detailing",
+	"/blog/ceramic-coating-does-not-hide-swirls": "/ceramic-coating",
+	"/blog/when-a-scratch-is-too-deep-to-polish": "/paint-correction",
+	"/blog/iron-fallout-on-car-paint": "/exterior-detailing",
+	"/blog/car-screens-buttons-and-glossy-trim": "/interior-detailing",
+	"/blog/what-to-tell-a-detailer-before-you-book": "/full-detailing"
+};
 function webPageJsonLd(path, name, description, image) {
 	const url = absoluteUrl(path);
 	const service = SERVICE_PAGES.find((item) => item.path === path);
 	const place = PLACES[path];
 	const ceramicChild = path === "/ceramic-coating/cost" || path === "/ceramic-coating/process";
-	const mainEntity = service ? `${url}#service` : ceramicChild ? `${absoluteUrl("/ceramic-coating")}#service` : businessId();
+	const articleService = ARTICLE_ABOUT[path];
+	const aboutId = ceramicChild ? `${absoluteUrl("/ceramic-coating")}#service` : articleService ? `${absoluteUrl(articleService)}#service` : businessId();
+	const isArticle = path.startsWith("/blog/") && path !== "/blog";
+	const mainEntity = service ? `${url}#service` : ceramicChild ? `${absoluteUrl("/ceramic-coating")}#service` : isArticle ? `${url}#article` : businessId();
 	return {
 		"@context": "https://schema.org",
 		"@type": pageTypeFor(path),
@@ -326,14 +384,10 @@ function webPageJsonLd(path, name, description, image) {
 		name,
 		description,
 		isPartOf: { "@id": websiteId() },
-		about: { "@id": ceramicChild ? `${absoluteUrl("/ceramic-coating")}#service` : businessId() },
+		about: { "@id": aboutId },
 		mainEntity: { "@id": mainEntity },
 		...place ? { spatialCoverage: place.spatial } : {},
-		...image ? { primaryImageOfPage: {
-			"@type": "ImageObject",
-			contentUrl: absoluteUrl(image.src),
-			caption: image.alt
-		} } : {},
+		...image ? { primaryImageOfPage: mediaObject(image) } : {},
 		inLanguage: "en-US"
 	};
 }
@@ -373,11 +427,7 @@ function serviceJsonLd(path, image) {
 			"@type": "ServiceChannel",
 			serviceLocation: { "@id": businessId() }
 		},
-		...image ? { image: {
-			"@type": "ImageObject",
-			contentUrl: absoluteUrl(image.src),
-			caption: image.alt
-		} } : {}
+		...image ? { image: mediaObject(image) } : {}
 	};
 }
 function faqJsonLd(path, items) {
@@ -396,8 +446,9 @@ function faqJsonLd(path, items) {
 		}))
 	};
 }
-function articleJsonLd(path, headline, description, image, published) {
+function articleJsonLd(path, headline, description, images = [], published) {
 	const url = absoluteUrl(path);
+	const unique = images.filter((image, index) => images.findIndex((item) => item.src === image.src) === index);
 	return {
 		"@context": "https://schema.org",
 		"@type": "BlogPosting",
@@ -412,17 +463,8 @@ function articleJsonLd(path, headline, description, image, published) {
 			datePublished: published,
 			dateModified: published
 		} : {},
-		...image ? { image: [{
-			"@type": "ImageObject",
-			"@id": `${absoluteUrl(image.src)}#image`,
-			contentUrl: absoluteUrl(image.src),
-			url: absoluteUrl(image.src),
-			caption: image.alt
-		}] } : {},
-		author: {
-			"@type": "Organization",
-			"@id": organizationId()
-		},
+		...unique.length ? { image: unique.map((image) => mediaObject(image)) } : {},
+		author: authorPerson(),
 		publisher: { "@id": organizationId() },
 		inLanguage: "en-US"
 	};
@@ -441,13 +483,18 @@ function pageHead(title, description, path, extras = [], pageName, image) {
 			name: "description",
 			content: description
 		}],
+		links: [{
+			rel: "canonical",
+			href: absoluteUrl(path)
+		}],
 		scripts: blocksFor(path, pageName || title, description, extras, image).map(script)
 	};
 }
 function contentHead(page) {
+	const images = [page.image, ...page.sections.flatMap((section) => section.figure ? [section.figure] : [])];
 	const extras = [faqJsonLd(page.path, page.faqs)];
 	if (page.kind === "service") extras.unshift(serviceJsonLd(page.path, page.image));
-	if (page.kind === "article") extras.unshift(articleJsonLd(page.path, page.h1, page.description, page.image, page.published));
+	if (page.kind === "article") extras.unshift(articleJsonLd(page.path, page.h1, page.description, images, page.published));
 	return pageHead(page.title, page.description, page.path, extras, page.h1, page.image);
 }
 //#endregion

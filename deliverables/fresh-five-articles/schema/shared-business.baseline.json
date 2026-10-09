@@ -1,0 +1,113 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://southernautodetailers.com/#website",
+      "url": "https://southernautodetailers.com",
+      "name": "Southern Auto Detailers",
+      "publisher": {
+        "@id": "https://southernautodetailers.com/#business"
+      }
+    },
+    {
+      "@type": "AutomotiveBusiness",
+      "@id": "https://southernautodetailers.com/#business",
+      "name": "Southern Auto Detailers",
+      "url": "https://southernautodetailers.com",
+      "telephone": "+1-210-201-4847",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "11692 Bricken Circle",
+        "addressLocality": "San Antonio",
+        "addressRegion": "TX",
+        "postalCode": "78233",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "San Antonio"
+        },
+        {
+          "@type": "City",
+          "name": "Converse"
+        },
+        {
+          "@type": "City",
+          "name": "Schertz"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://southernautodetailers.com/ceramic-coating#service",
+      "name": "Ceramic coating",
+      "description": "In-shop ceramic coating after the paint is cleaned and, when agreed, corrected. The film does not hide swirls.",
+      "url": "https://southernautodetailers.com/ceramic-coating",
+      "provider": {
+        "@id": "https://southernautodetailers.com/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "San Antonio"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://southernautodetailers.com/paint-correction#service",
+      "name": "Paint correction",
+      "description": "In-shop refinement of clear coat. It does not rebuild paint that is already missing.",
+      "url": "https://southernautodetailers.com/paint-correction",
+      "provider": {
+        "@id": "https://southernautodetailers.com/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "San Antonio"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://southernautodetailers.com/exterior-detailing#service",
+      "name": "Exterior detailing",
+      "description": "In-shop exterior cleaning, including decontamination when the paint needs it. Not paint correction and not a coating.",
+      "url": "https://southernautodetailers.com/exterior-detailing",
+      "provider": {
+        "@id": "https://southernautodetailers.com/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "San Antonio"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://southernautodetailers.com/interior-detailing#service",
+      "name": "Interior detailing",
+      "description": "In-shop cabin cleaning matched to the materials present. Not a promise of extraction, steam, or odor removal on every vehicle.",
+      "url": "https://southernautodetailers.com/interior-detailing",
+      "provider": {
+        "@id": "https://southernautodetailers.com/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "San Antonio"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://southernautodetailers.com/full-detailing#service",
+      "name": "Full detailing",
+      "description": "In-shop interior cleaning plus an exterior detail in one appointment. Paint correction and ceramic coating are separate.",
+      "url": "https://southernautodetailers.com/full-detailing",
+      "provider": {
+        "@id": "https://southernautodetailers.com/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "San Antonio"
+      }
+    }
+  ]
+}

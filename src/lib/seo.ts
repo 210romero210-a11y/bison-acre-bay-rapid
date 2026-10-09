@@ -1,3 +1,4 @@
+import type { ContentImage, ContentPage } from "@/lib/content/types";
 import { BUSINESS, HOURS, IMAGES, SITE_ORIGIN } from "@/lib/site";
 
 const ORIGIN = (SITE_ORIGIN || "https://southernautodetailers.com").replace(/\/$/, "");
@@ -115,6 +116,40 @@ function postalAddress() {
   };
 }
 
+function authorId() {
+  return `${ORIGIN}/#robert-romero-jr`;
+}
+
+function authorPerson() {
+  return {
+    "@type": "Person" as const,
+    "@id": authorId(),
+    name: BUSINESS.founder,
+    url: absoluteUrl("/about"),
+  };
+}
+
+function mediaObject(image: ContentImage) {
+  const fileUrl = absoluteUrl(image.src);
+  const name = decodeURIComponent(fileUrl.split("/").pop() || image.alt);
+  const encodingFormat = image.src.endsWith(".png")
+    ? "image/png"
+    : image.src.endsWith(".jpg") || image.src.endsWith(".jpeg")
+      ? "image/jpeg"
+      : "image/webp";
+  return {
+    "@type": "ImageObject" as const,
+    "@id": `${fileUrl}#image`,
+    name,
+    encodingFormat,
+    description: image.caption || image.alt,
+    caption: image.caption || image.alt,
+    contentUrl: fileUrl,
+    url: fileUrl,
+    ...(image.width && image.height ? { width: image.width, height: image.height } : {}),
+  };
+}
+
 function script(data: object) {
   return { type: "application/ld+json", children: JSON.stringify(data) };
 }
@@ -154,15 +189,14 @@ function photoUrls() {
 
 /** Shop entity. Hours, email, logo, photos, map, and coordinates are the confirmed studio facts. */
 export function siteGraphJsonLd() {
-  const logo = absoluteUrl("/logo.png");
   const photos = photoUrls();
   const placeFacts = {
     name: BUSINESS.name,
     url: `${ORIGIN}/`,
     telephone: BUSINESS.phoneE164,
     email: BUSINESS.email,
-    logo,
-    image: photos,
+    logo: mediaObject({ src: "/logo.png", alt: `${BUSINESS.name} logo` }),
+    image: photos.map((src) => mediaObject({ src: src.replace(ORIGIN, ""), alt: BUSINESS.name })),
     address: postalAddress(),
     hasMap: BUSINESS.mapsUrl,
     sameAs: [BUSINESS.googleBusinessUrl],
@@ -201,7 +235,9 @@ export function siteGraphJsonLd() {
         "@type": "Organization",
         "@id": organizationId(),
         ...placeFacts,
+        founder: { "@id": authorId() },
       },
+      authorPerson(),
     ],
   };
 }
@@ -261,30 +297,37 @@ const ARTICLE_ABOUT: Record<string, string> = {
   "/blog/paint-correction-before-ceramic-coating": "/paint-correction",
   "/blog/water-spots-on-car-paint": "/exterior-detailing",
   "/blog/hard-water-spots-san-antonio": "/exterior-detailing",
+  "/blog/ceramic-coating-does-not-hide-swirls": "/ceramic-coating",
+  "/blog/when-a-scratch-is-too-deep-to-polish": "/paint-correction",
+  "/blog/iron-fallout-on-car-paint": "/exterior-detailing",
+  "/blog/car-screens-buttons-and-glossy-trim": "/interior-detailing",
+  "/blog/what-to-tell-a-detailer-before-you-book": "/full-detailing",
 };
 
 export function webPageJsonLd(
   path: string,
   name: string,
   description: string,
-  image?: { src: string; alt: string },
+  image?: ContentImage,
 ) {
   const url = absoluteUrl(path);
   const service = SERVICE_PAGES.find((item) => item.path === path);
   const place = PLACES[path];
   const ceramicChild = path === "/ceramic-coating/cost" || path === "/ceramic-coating/process";
-  const mainEntity = service
-    ? `${url}#service`
-    : ceramicChild
-      ? `${absoluteUrl("/ceramic-coating")}#service`
-      : businessId();
-
   const articleService = ARTICLE_ABOUT[path];
   const aboutId = ceramicChild
     ? `${absoluteUrl("/ceramic-coating")}#service`
     : articleService
       ? `${absoluteUrl(articleService)}#service`
       : businessId();
+  const isArticle = path.startsWith("/blog/") && path !== "/blog";
+  const mainEntity = service
+    ? `${url}#service`
+    : ceramicChild
+      ? `${absoluteUrl("/ceramic-coating")}#service`
+      : isArticle
+        ? `${url}#article`
+        : businessId();
 
   return {
     "@context": "https://schema.org",
@@ -299,11 +342,7 @@ export function webPageJsonLd(
     ...(place ? { spatialCoverage: place.spatial } : {}),
     ...(image
       ? {
-          primaryImageOfPage: {
-            "@type": "ImageObject",
-            contentUrl: absoluteUrl(image.src),
-            caption: image.alt,
-          },
+          primaryImageOfPage: mediaObject(image),
         }
       : {}),
     inLanguage: "en-US",
@@ -344,15 +383,7 @@ export function serviceJsonLd(path: string, image?: { src: string; alt: string }
       "@type": "ServiceChannel",
       serviceLocation: { "@id": businessId() },
     },
-    ...(image
-      ? {
-          image: {
-            "@type": "ImageObject",
-            contentUrl: absoluteUrl(image.src),
-            caption: image.alt,
-          },
-        }
-      : {}),
+    ...(image ? { image: mediaObject(image) } : {}),
   };
 }
 
@@ -374,10 +405,13 @@ export function articleJsonLd(
   path: string,
   headline: string,
   description: string,
-  image?: { src: string; alt: string },
+  images: ContentImage[] = [],
   published?: string,
 ) {
   const url = absoluteUrl(path);
+  const unique = images.filter(
+    (image, index) => images.findIndex((item) => item.src === image.src) === index,
+  );
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -386,20 +420,8 @@ export function articleJsonLd(
     headline,
     description,
     ...(published ? { datePublished: published, dateModified: published } : {}),
-    ...(image
-      ? {
-          image: [
-            {
-              "@type": "ImageObject",
-              "@id": `${absoluteUrl(image.src)}#image`,
-              contentUrl: absoluteUrl(image.src),
-              url: absoluteUrl(image.src),
-              caption: image.alt,
-            },
-          ],
-        }
-      : {}),
-    author: { "@type": "Organization", "@id": organizationId() },
+    ...(unique.length ? { image: unique.map((image) => mediaObject(image)) } : {}),
+    author: authorPerson(),
     publisher: { "@id": organizationId() },
     inLanguage: "en-US",
   };
@@ -436,20 +458,15 @@ export function pageHead(
   };
 }
 
-export function contentHead(page: {
-  title: string;
-  description: string;
-  path: string;
-  h1: string;
-  kind: "service" | "place" | "article" | "page";
-  faqs: readonly { q: string; a: string }[];
-  image?: { src: string; alt: string };
-  published?: string;
-}) {
+export function contentHead(page: ContentPage) {
+  const images: ContentImage[] = [
+    page.image,
+    ...page.sections.flatMap((section) => (section.figure ? [section.figure] : [])),
+  ];
   const extras: Array<object | null> = [faqJsonLd(page.path, page.faqs)];
   if (page.kind === "service") extras.unshift(serviceJsonLd(page.path, page.image));
   if (page.kind === "article") {
-    extras.unshift(articleJsonLd(page.path, page.h1, page.description, page.image, page.published));
+    extras.unshift(articleJsonLd(page.path, page.h1, page.description, images, page.published));
   }
   return pageHead(page.title, page.description, page.path, extras, page.h1, page.image);
 }

@@ -1,0 +1,2 @@
+import{o as e}from"./useSelector-B_P3tCcN.js";import{k as t}from"./index-Cuh-oFAd.js";import{t as n}from"./longform-Dv7nB-KI.js";var r=e(),i=function(){return(0,r.jsx)(n,{page:t.useLoaderData()})};export{i as component};
+//# sourceMappingURL=blog.how-long-a-detail-takes-CanLggiz.js.map
