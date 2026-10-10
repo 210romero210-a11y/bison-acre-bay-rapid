@@ -109,7 +109,7 @@ export const batchArticles: ContentPage[] = [
           "Check the hood, behind the door handles, and the rear quarter.",
           "Take one photo in that light. A straight-on photo often hides the marks.",
           "Write down whether you want the marks addressed or the paint protected as it sits.",
-          "If a line catches your fingernail, read [when a scratch is too deep to polish](/blog/when-a-scratch-is-too-deep-to-polish) before you assume correction will erase it. That link is part of this same staged batch and is not live until the batch is published together."
+          "If a line catches your fingernail, read [when a scratch is too deep to polish](/blog/when-a-scratch-is-too-deep-to-polish) before you assume correction will erase it."
         ]
       },
       {
@@ -260,7 +260,7 @@ export const batchArticles: ContentPage[] = [
         "bullets": [
           "Fine circular trails. Your nail does not catch. That is a correction conversation. The outcome still depends on the clear coat.",
           "A line where your nail catches. It might improve, or a trace might remain. Inspect it. Do not promise it will vanish.",
-          "A chip with a pale dot that is not the door color. Polishing will not manufacture paint, and a coating will not hide it. [A ceramic coating does not hide swirls](/blog/ceramic-coating-does-not-hide-swirls). That companion article is staged with this one."
+          "A chip with a pale dot that is not the door color. Polishing will not manufacture paint, and [a ceramic coating does not hide swirls](/blog/ceramic-coating-does-not-hide-swirls)."
         ]
       },
       {
@@ -300,7 +300,7 @@ export const batchArticles: ContentPage[] = [
       },
       {
         "q": "Will a ceramic coating make a deep scratch harder to see?",
-        "a": "No. The film follows the surface. It does not fill a chip. See the companion article linked above once that page is published."
+        "a": "No. The film follows the surface. It does not fill a chip. [A ceramic coating does not hide swirls](/blog/ceramic-coating-does-not-hide-swirls)."
       },
       {
         "q": "Is wet sanding safer for a deep scratch?",
@@ -721,8 +721,7 @@ export const batchArticles: ContentPage[] = [
       {
         "heading": "A note that gets a clearer quote",
         "paragraphs": [
-          "You do not need a detailing vocabulary. You need the facts that change time.",
-          "The four links in that list are staged with this article. Until the batch is published together, use the service pages and the contact form instead of those blog URLs.",
+          "You do not need a detailing vocabulary. You need the facts that change time. For a cabin, that includes stains, pet hair, a wet carpet, smoke, and damage that is already there. [Interior detailing](/interior-detailing) is the appointment when the outside is not the complaint.",
           "The overhead photo is only the idea of “keys, a phone, a blank card.” It is not a form the studio uses, and the paper is intentionally blank. Take the photos on your phone. Write the note in whatever you already use."
         ],
         "bullets": [

@@ -45,4 +45,9 @@ export type ContentPage = {
   serviceName?: string;
   published?: string;
   compare?: ContentCompare;
+  cta?: {
+    title?: string;
+    body?: string;
+    contactLabel?: string;
+  };
 };

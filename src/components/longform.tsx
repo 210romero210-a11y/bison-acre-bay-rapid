@@ -151,7 +151,11 @@ export function Longform({ page }: { page: ContentPage }) {
           </div>
         </Section>
       ) : null}
-      <CtaBand />
+      <CtaBand
+        title={page.cta?.title}
+        body={page.cta?.body}
+        contactLabel={page.cta?.contactLabel}
+      />
     </main>
   );
 }

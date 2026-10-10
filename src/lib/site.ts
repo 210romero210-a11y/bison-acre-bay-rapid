@@ -58,6 +58,8 @@ export const HEADER_NAV = [
   { to: "/paint-correction", label: "Paint Correction" },
   { to: "/services", label: "Services" },
   { to: "/service-areas", label: "Service Areas" },
+  { to: "/blog", label: "Blog" },
+  { to: "/about", label: "About" },
 ] as const;
 
 export const NAV = [

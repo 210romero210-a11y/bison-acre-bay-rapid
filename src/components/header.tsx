@@ -38,7 +38,7 @@ export function Header() {
       </div>
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 md:h-[4.5rem] md:px-6">
         <Logo />
-        <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-3 xl:gap-5 lg:flex" aria-label="Primary">
           {HEADER_NAV.map((item) => (
             <Link key={item.to} to={item.to} className={linkClass} activeProps={{ className: "text-primary" }}>
               {item.label}
@@ -52,7 +52,7 @@ export function Header() {
               {BUSINESS.phoneDisplay}
             </a>
           </Button>
-          <Button asChild size="sm" variant="outline" className="hidden md:inline-flex">
+          <Button asChild size="sm" variant="outline" className="hidden xl:inline-flex">
             <Link to="/contact">Request a Detail</Link>
           </Button>
           <Button asChild size="icon" className="sm:hidden" aria-label={`Call ${BUSINESS.phoneDisplay}`}>

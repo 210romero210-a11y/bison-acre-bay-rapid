@@ -293,6 +293,7 @@ const ARTICLE_ABOUT: Record<string, string> = {
   "/blog/how-to-wash-ceramic-coated-car": "/ceramic-coating",
   "/blog/washing-a-ceramic-coated-car": "/ceramic-coating",
   "/blog/what-is-paint-correction": "/paint-correction",
+  "/blog/swirl-marks-from-car-washes": "/paint-correction",
   "/blog/new-car-paint-correction-before-ceramic-coating": "/paint-correction",
   "/blog/paint-correction-before-ceramic-coating": "/paint-correction",
   "/blog/water-spots-on-car-paint": "/exterior-detailing",
@@ -301,7 +302,18 @@ const ARTICLE_ABOUT: Record<string, string> = {
   "/blog/when-a-scratch-is-too-deep-to-polish": "/paint-correction",
   "/blog/iron-fallout-on-car-paint": "/exterior-detailing",
   "/blog/car-screens-buttons-and-glossy-trim": "/interior-detailing",
+  "/blog/floor-mats-and-carpets": "/interior-detailing",
+  "/blog/pet-hair-interior-detailing": "/interior-detailing",
+  "/blog/leather-conditioning-san-antonio": "/interior-detailing",
+  "/blog/sun-damaged-dashboard": "/interior-detailing",
+  "/blog/car-seat-interior-detailing": "/interior-detailing",
+  "/blog/what-a-full-detail-includes": "/full-detailing",
   "/blog/what-to-tell-a-detailer-before-you-book": "/full-detailing",
+  "/blog/what-changes-a-paint-correction-quote": "/paint-correction",
+  "/blog/polishing-vs-waxing": "/paint-correction",
+  "/blog/how-long-does-paint-correction-take": "/paint-correction",
+  "/blog/how-to-choose-a-paint-correction-detailer": "/paint-correction",
+  "/blog/paint-correction-aftercare": "/paint-correction",
 };
 
 export function webPageJsonLd(

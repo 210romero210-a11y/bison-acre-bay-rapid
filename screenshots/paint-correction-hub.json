@@ -1,0 +1,40 @@
+{
+  "url": "http://127.0.0.1:8080/paint-correction",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Paint Correction San Antonio TX | Southern Auto Detailers",
+      "hasCanvas": false,
+      "bodyTextLen": 7883,
+      "bodyTextHash": "0c4e1594990ba52a0b8c0de7095882fba6de4e77561cc074bdd5528fa083c130",
+      "bodyTextPrefix": "Skip to content Tue–Sun 7 AM–11 PM · Monday closed 11692 Bricken",
+      "horizontalOverflow": false,
+      "consoleErrors": [
+        "A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.\n- Date formatting in a user's locale which doesn't match the server.\n- External changing data without sending a snapshot of it along with the HTML.\n- Invalid HTML tag nesting.\n\nIt can also happen if the client has a browser extension installed which messes with the HTML before React loaded.\n\n%s%s https://react.dev/link/hydration-mismatch \n\n  ...\n    <RouterContextProvider router={{...}}>\n      <Matches>\n        <Transitioner>\n        <MatchesInner>\n          <CatchBoundary getResetKey={function getResetKey} onCatch={function}>\n            <MatchImpl routeId=\"__root__\">\n              <MatchView router={{...}} match={{id:\"__root__/\", ...}}>\n                <CatchBoundary getResetKey={function getResetKey} errorComponent={function AppErrorComponent} ...>\n                  <CatchNotFound fallback={function fallback}>\n                    <CatchBoundary getResetKey={function getResetKey} onCatch={function onCatch} ...>\n                      <MatchInnerImpl match={{id:\"__root__/\", ...}}>\n                        <RootDocument>\n                          <html lang=\"en\" className=\"dark antia...\" suppressHydrationWarning={true}>\n                            <head>\n                              <script\n                                dangerouslySetInnerHTML={{\n+                                 __html: \"if(window.trustedTypes&&!trustedTypes.defaultPolicy){trustedTypes.createPol...\"\n-                                 __html: \"\"\n                                }}\n-                               src=\"https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202610060101/sho...\"\n-                               fetchpriority=\"high\"\n                              >\n                              <script\n                                dangerouslySetInnerHTML={{\n+                                 __html: \"window.addEventListener(\\\"load\\\",function(){(function(w,d,s,l,i){w[l]=w[l]|...\"\n-                                 __html: \"if(window.trustedTypes&&!trustedTypes.defaultPolicy){trustedTypes.createPol...\"\n                                }}\n                              >\n                              ...\n                            ...\n"
+      ],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/paint-correction-hub.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Paint Correction San Antonio TX | Southern Auto Detailers",
+      "hasCanvas": false,
+      "bodyTextLen": 7694,
+      "bodyTextHash": "548bd0ea3e84d41b718425ee6d6227d90115a6f171cd93427fc9156c440f0d67",
+      "bodyTextPrefix": "Skip to content SOUTHERN Auto Detailers Home / Services / Paint ",
+      "horizontalOverflow": false,
+      "consoleErrors": [
+        "A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.\n- Date formatting in a user's locale which doesn't match the server.\n- External changing data without sending a snapshot of it along with the HTML.\n- Invalid HTML tag nesting.\n\nIt can also happen if the client has a browser extension installed which messes with the HTML before React loaded.\n\n%s%s https://react.dev/link/hydration-mismatch \n\n  ...\n    <RouterContextProvider router={{...}}>\n      <Matches>\n        <Transitioner>\n        <MatchesInner>\n          <CatchBoundary getResetKey={function getResetKey} onCatch={function}>\n            <MatchImpl routeId=\"__root__\">\n              <MatchView router={{...}} match={{id:\"__root__/\", ...}}>\n                <CatchBoundary getResetKey={function getResetKey} errorComponent={function AppErrorComponent} ...>\n                  <CatchNotFound fallback={function fallback}>\n                    <CatchBoundary getResetKey={function getResetKey} onCatch={function onCatch} ...>\n                      <MatchInnerImpl match={{id:\"__root__/\", ...}}>\n                        <RootDocument>\n                          <html lang=\"en\" className=\"dark antia...\" suppressHydrationWarning={true}>\n                            <head>\n                              <script\n                                dangerouslySetInnerHTML={{\n+                                 __html: \"if(window.trustedTypes&&!trustedTypes.defaultPolicy){trustedTypes.createPol...\"\n-                                 __html: \"\"\n                                }}\n-                               src=\"https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202610050101/sho...\"\n-                               fetchpriority=\"high\"\n                              >\n                              <script\n                                dangerouslySetInnerHTML={{\n+                                 __html: \"window.addEventListener(\\\"load\\\",function(){(function(w,d,s,l,i){w[l]=w[l]|...\"\n-                                 __html: \"if(window.trustedTypes&&!trustedTypes.defaultPolicy){trustedTypes.createPol...\"\n                                }}\n                              >\n                              ...\n                            ...\n"
+      ],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/paint-correction-hub-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/paint-correction-hub.json"
+}

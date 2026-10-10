@@ -1,5 +1,6 @@
 import type { ContentPage } from "@/lib/content/types";
 import { batchArticles } from "@/lib/content/batch-articles";
+import { correctionNotes } from "@/lib/content/correction-notes";
 
 export const contentPages: ContentPage[] = 
 [
@@ -7,54 +8,74 @@ export const contentPages: ContentPage[] =
     "path": "/interior-detailing",
     "kind": "service",
     "serviceName": "Interior auto detailing in San Antonio",
-    "title": "Interior Detailing San Antonio | Deep Cabin Cleaning",
-    "description": "Deep interior auto detailing in San Antonio. Leather conditioning, steam cleaning, carpet extraction, and stain removal at the studio. Call (210) 201-4847.",
+    "title": "Interior Detailing San Antonio TX | Southern Auto Detailers",
+    "description": "Interior detailing in San Antonio for carpets, seats, consoles, and glass. Extraction and steam where they help. Stains and odors are not guaranteed. Call (210) 201-4847.",
     "eyebrow": "Interior car cleaning San Antonio",
-    "h1": "Deep interior detailing and cabin care",
-    "lede": "Interior auto detailing in San Antonio is a reset for cabins that have collected commute miles, kids, pets, pollen, and Texas heat — not a five-minute vacuum at a wash tunnel.",
+    "h1": "Interior auto detailing in San Antonio",
+    "lede": "Interior detailing in San Antonio is a reset for cabins that have collected commute miles, kids, pets, pollen, and Texas heat. It is not a five-minute vacuum at a wash tunnel. The vehicle comes to the studio.",
     "image": {
       "src": "/images/interior-car-detailing-san-antonio-tx-southern-auto-detailers.webp",
       "alt": "Interior car detailing in San Antonio, TX — conditioned leather and a deep-cleaned cabin"
     },
     "sections": [
       {
-        "heading": "What interior detailing actually covers",
+        "heading": "What the appointment includes",
         "paragraphs": [
-          "Interior car cleaning at our studio starts with everything you touch and everything you stopped noticing. Carpets and floor mats are vacuumed and, when soil is ground in, extracted. Seats are cleaned for the material that is actually there: cloth gets agitation and extraction, leather is cleaned and then conditioned so San Antonio heat does not leave it thirsty, and vinyl is treated without the greasy film that attracts dust the next day. Consoles, cup holders, door panels, vents, seat rails, and interior glass are part of the same visit. Glossy trim and screens need a lighter hand than the seats. See [screens and glossy trim](/blog/car-screens-buttons-and-glossy-trim). A cabin that only looks good in a photo from the driver’s door is not finished. Tell us about pet hair, food stains, sand, or a smell when you book so the appointment is long enough. If the paint is due in the same visit, the upgraded appointment is [full auto detailing](/full-detailing).",
-          "Steam cleaning is used where heat and moisture help release soil that a towel will only smear — usually around plastic trim, cup holders, and some fabric. It is a tool, not a promise that every stain from 2019 will vanish. If a dye transfer or a set-in spill is likely to remain, we say that before we start."
+          "Interior car cleaning at the studio starts with everything you touch and everything you stopped noticing. [Request an in-shop interior-detailing quote](/contact) when you know the vehicle and the mess. Call (210) 201-4847 if you would rather talk it through first.",
+          "Carpets and floor mats are vacuumed and, when soil is ground in, extracted. Seats are cleaned for the material that is actually there: cloth gets agitation and extraction, leather is cleaned and then conditioned so San Antonio heat does not leave it thirsty, and vinyl is treated without the greasy film that attracts dust the next day. Consoles, cup holders, door panels, vents, seat rails, and interior glass are part of the same visit. Glossy trim and screens need a lighter hand than the seats. See [screens and glossy trim](/blog/car-screens-buttons-and-glossy-trim). A cabin that only looks good in a photo from the driver’s door is not finished.",
+          "Steam is used where heat and moisture help release soil that a towel will only smear, usually around plastic trim, cup holders, and some fabric. It is a tool, not a promise that every stain will vanish. If a dye transfer or a set-in spill is likely to remain, we say that before we start."
         ],
-        "bullets": [
-          "Vacuum and extraction on carpets and mats",
-          "Cloth, leather, or vinyl seats cleaned for the material",
-          "Leather conditioning after cleaning when the hide can take it",
-          "Consoles, vents, door panels, and interior glass",
-          "Pet hair and odor notes handled in the time estimate"
+        "compare": {
+          "caption": "What an interior appointment covers, and what it does not promise",
+          "headers": ["Cabin area", "Work we do", "Limit"],
+          "rows": [
+            ["Carpets and mats", "Vacuum. Extraction when soil is ground in.", "A dyed-in stain may remain."],
+            ["Seats", "Cleaned for cloth, leather, or vinyl.", "Cleaning does not repair a split, a burn, or dye that has already transferred."],
+            ["Consoles, vents, door panels", "Surface cleaning. Screens and glossy trim get a lighter hand.", "Fragile or aftermarket plastic is tested in a small area. This is not electronics repair."],
+            ["Interior glass", "Cleaned.", "Chips and cracks are not repaired."],
+            ["Pet hair and odors", "Named when we quote, then cleaned as far as we can reach.", "Complete removal is not promised. A smell in the padding may remain."]
+          ]
+        }
+      },
+      {
+        "heading": "Cabins we see on the northeast side",
+        "paragraphs": [
+          "The usual vehicles are work trucks with caliche on the sills, family SUVs with child seats and crumbs, and daily drivers that park outside along the Nacogdoches and Thousand Oaks corridors in 78233. People also book before a sale, after a road trip, or when leather has gone dull from a summer of closed windows. We are a one-vehicle studio. A landscaping truck and a weekend coupe are not the same appointment. Robert schedules the time the cabin actually needs instead of stacking cars in a bay."
         ]
       },
       {
-        "heading": "Who books an interior in Northeast San Antonio",
+        "heading": "Materials, smells, and heat",
         "paragraphs": [
-          "The usual vehicles are work trucks with caliche on the sills, family SUVs with child seats and crumbs, and daily drivers that park outside along the Nacogdoches and Thousand Oaks corridors in 78233. Interior auto detailing in San Antonio is also what people ask for before selling a car, after a road trip, or when leather has gone dull from a summer of closed windows. We are a one-vehicle studio. A landscaping truck and a weekend coupe are not the same appointment. Robert schedules the time the cabin actually needs instead of stacking cars in a bay."
+          "Cloth holds drinks. Leather holds body oil and sunscreen. Rubber floor mats hide grit that looks like a clean cabin until you lift them. The chemical that is safe on one surface is not automatically right for a coated cloth seat or a plastic that hazes if you get aggressive. We test a small area when a surface looks fragile, aftermarket, or already damaged. [Leather care in this heat](/blog/leather-conditioning-san-antonio) is conditioning after a clean. It does not rebuild cracked leather. A dusty, cracked dash is [sun-damaged dashboard](/blog/sun-damaged-dashboard) territory: we clean the film, and we do not heal the crack.",
+          "Odor is the other half of the conversation. A smell from a spilled milk jug is different from a wet carpet that never dried, which is different from smoke. We do not sell a one-spray miracle, and we do not claim to sanitize, disinfect, or remove mold. We remove the source we can reach, extract what we can, and tell you if the vehicle needs a second visit or if the smell is in the padding, where a detail should not promise a result. [Pet hair](/blog/pet-hair-interior-detailing) is its own time factor. Tell us when you book."
         ]
       },
       {
-        "heading": "How an interior appointment runs",
+        "heading": "Interior only, or the whole vehicle",
         "paragraphs": [
-          "You call or send a request with year, make, model, and the mess that matters. We recommend interior-only, or a full detail if the paint is as tired as the cabin. After the quote, a 20% non-refundable deposit of that total secures the slot. The rest is due when you pick up. On the day, personal items come out first. We work top to bottom so dust we loosen does not land in a panel we already wiped. Leather is conditioned only after it is clean. You get a straight recap of anything that did not fully release.",
+          "Book this page when the cabin is the complaint. If the paint is due in the same visit, the appointment is [interior and exterior full detailing](/full-detailing). Interior work does not fix swirls. That is [paint correction](/paint-correction), quoted on its own. A coating is a third decision, after the paint is ready.",
+          "We recommend interior-only, or a full detail, after you describe the vehicle. The smaller job that matches the complaint is the one to buy."
+        ]
+      },
+      {
+        "heading": "What changes the quote",
+        "paragraphs": [
+          "Interior detailing prices move with vehicle size, how much pet hair is woven into the carpet, whether seats are cloth or leather, and whether you need extraction or a maintenance wipe-down. A compact car with light dust is not priced like a three-row SUV that hauled gear all spring. We quote after we understand the vehicle. We do not publish a package price. The factors for any visit, and the deposit, are on the [pricing page](/pricing).",
+          "You call or send a request with year, make, model, and the mess that matters. After the quote, a 20% non-refundable deposit of that total secures the slot. The rest is due when you pick up. On the day, personal items come out first. We work top to bottom so dust we loosen does not land in a panel we already wiped. Leather is conditioned only after it is clean. You get a straight recap of anything that did not fully release. There is no published hour count. [How long a detail takes](/blog/how-long-a-detail-takes) is why.",
           "Southern Auto Detailers is San Antonio based at 11692 Bricken Circle, San Antonio, TX 78233. Owner Robert Romero Jr., an Alamo Heights graduate and IDA-certified detailer works by appointment, Tuesday through Sunday from 7:00 AM to 11:00 PM, and is closed Monday. Call (210) 201-4847 or email contact@southernautodetailers.com. A 20% non-refundable deposit — 20% of the quoted total — is required to secure the booking slot. The remaining balance is due when the work is finished. Ten percent of every sale goes to Junior Achievement of South Texas."
         ]
       },
       {
-        "heading": "Interior detailing prices in San Antonio",
+        "heading": "What to take out before drop-off",
         "paragraphs": [
-          "Interior detailing prices move with vehicle size, how much pet hair is woven into the carpet, whether seats are cloth or leather, and whether you need extraction or a maintenance wipe-down. A compact car with light dust is not priced like a three-row SUV that hauled soccer gear all spring. We quote after we understand the vehicle. We do not publish a fake starting price that ignores the prep. If you want the whole vehicle done, compare this page with full auto detailing in San Antonio. If the paint is swirled, interior work does not fix that — paint correction is a separate decision."
+          "Child seats, toolboxes, and pet covers should come out before the appointment if you can remove them. We can work around what stays installed, and the result is better when it does not. We do not unbolt, clean, or reinstall a child restraint. The article on crumbs under a seat is about the cabin around it: [car seats and the carpet under them](/blog/car-seat-interior-detailing). The general list of what to remove is [how to prepare for an in-shop detail](/blog/how-to-prepare-for-a-detail).",
+          "Tell us about pet hair, food stains, sand, a wet carpet, smoke, or damage that is already there. That note is [what to tell the studio before you book](/blog/what-to-tell-a-detailer-before-you-book). It changes the time more than the color of the vehicle."
         ]
       },
       {
-        "heading": "Materials, smells, and Texas heat",
+        "heading": "Interior-care guides",
         "paragraphs": [
-          "Cloth holds drinks. Leather holds body oil and sunscreen. Rubber floor mats hide grit that looks like a clean cabin until you lift them. Interior auto detailing in San Antonio has to name the material, because the chemical that is safe on leather dye is not automatically the right choice for a coated cloth seat or a plastic that hazes if you get aggressive. We test a small area when a surface looks fragile, aftermarket, or already damaged. Odor is the other half of the conversation. A smell from a spilled milk jug is different from a wet carpet that never dried, which is different from smoke. We do not sell a one-spray miracle. We remove the source we can reach, extract what we can, and tell you if the vehicle needs a second visit or if the smell is in the padding where a detailer should not promise a miracle.",
-          "Heat is why leather conditioning is not a luxury add-on in this city. A closed cabin in July bakes the interior. Conditioning after a clean helps the surface stay supple. It does not rebuild cracked leather. If your seats are already split, we will clean around the damage and we will not pretend a bottle repairs it. Child seats, toolboxes, and pet covers should come out before the appointment if you can remove them. We can work around what is bolted in, but the result is better when the hardware is not in the way. Tell us on the phone. That single detail changes the time estimate more than the color of the vehicle."
+          "These notes explain a piece of the cabin. They are not separate service packages. [Carpets and mats](/blog/floor-mats-and-carpets). [Pet hair](/blog/pet-hair-interior-detailing). [Leather care](/blog/leather-conditioning-san-antonio). [Screens and glossy trim](/blog/car-screens-buttons-and-glossy-trim). [Dashboard damage](/blog/sun-damaged-dashboard). The studio page for the address is [auto detailing in 78233](/san-antonio-78233)."
         ]
       }
     ],
@@ -69,7 +90,11 @@ export const contentPages: ContentPage[] =
       },
       {
         "q": "Can you remove every stain and odor?",
-        "a": "No. We will tell you when a stain is set or an odor needs more than one visit. Extraction and steam help. They are not a reupholstery shop."
+        "a": "No. We will tell you when a stain is set or an odor needs more than one visit. Extraction and steam help. They are not a reupholstery shop, and they are not a promise that a smell in the padding will leave."
+      },
+      {
+        "q": "When is a full detail the better appointment?",
+        "a": "When the cabin and the paint are both the complaint. Interior detailing does not include the outside. Correction and coating are still separate if you want those."
       },
       {
         "q": "Is a deposit required?",
@@ -90,8 +115,24 @@ export const contentPages: ContentPage[] =
         "label": "Pet hair interiors"
       },
       {
+        "to": "/blog/car-screens-buttons-and-glossy-trim",
+        "label": "Screens and glossy trim"
+      },
+      {
+        "to": "/blog/sun-damaged-dashboard",
+        "label": "Dashboard damage"
+      },
+      {
+        "to": "/blog/car-seat-interior-detailing",
+        "label": "Car seats and the carpet under them"
+      },
+      {
+        "to": "/blog/how-to-prepare-for-a-detail",
+        "label": "How to prepare for drop-off"
+      },
+      {
         "to": "/full-detailing",
-        "label": "Full auto detailing"
+        "label": "Interior and exterior full detailing"
       },
       {
         "to": "/pricing",
@@ -101,7 +142,12 @@ export const contentPages: ContentPage[] =
         "to": "/san-antonio-78233",
         "label": "Detailing in 78233"
       }
-    ]
+    ],
+    "cta": {
+      "title": "Request an in-shop interior-detailing quote",
+      "body": "Bring the vehicle to 11692 Bricken Circle, San Antonio, TX 78233. Call (210) 201-4847. Tell us the size, the seat material, and the mess that matters. No published package price.",
+      "contactLabel": "Request an in-shop interior-detailing quote"
+    }
   },
   {
     "path": "/exterior-detailing",
@@ -300,10 +346,10 @@ export const contentPages: ContentPage[] =
     "path": "/paint-correction",
     "kind": "service",
     "serviceName": "Paint correction in San Antonio",
-    "title": "Paint Correction San Antonio | Swirl and Scratch Removal",
-    "description": "Professional paint correction and polishing in San Antonio. Reduce swirl marks, haze, and clear-coat defects safely. Request an in-shop inspection. Call (210) 201-4847.",
+    "title": "Paint Correction San Antonio TX | Southern Auto Detailers",
+    "description": "Paint correction in San Antonio for swirls, haze, and light scratches, only within clear-coat limits. Request an in-shop paint assessment. Call (210) 201-4847.",
     "eyebrow": "Swirl mark removal and polishing",
-    "h1": "Paint correction and swirl mark removal",
+    "h1": "Paint correction in San Antonio",
     "lede": "Paint correction in San Antonio is polishing work that reduces swirls, haze, and light scratches in the clear coat — after a real wash and decontamination, and only as far as the paint can safely go.",
     "image": {
       "src": "/images/paint-correction-san-antonio-tx-southern-auto-detailers.webp",
@@ -340,7 +386,17 @@ export const contentPages: ContentPage[] =
         "heading": "Clear coat, color, and sunlight",
         "paragraphs": [
           "Dark colors show swirls because they show everything. Silver hides more than black and still holograms if the polish and the light are wrong. Paint correction in San Antonio is judged outside, in the sun, not under a single shop bulb that flatters the hood. If you can only see the problem at 2 p.m. on the driver’s door, that is the panel the test spot should respect. Repaints and blended panels are common on vehicles that have lived in this city for a decade. Body shop clear does not always polish like factory clear. We treat those panels carefully and we will skip a panel rather than burn an edge. If a previous detailer already cut the clear thin, more correction is not a favor.",
-          "Scratch removal has a physical limit. If your fingernail catches, the mark is likely deeper than a polish can erase. We can often soften the eye’s read of it. We cannot promise it will vanish. That sentence is part of the quote, not a footnote after you have paid. Protection after correction is not optional if you want the result to last the month. A dry towel from a gas station will put a portion of the swirls back. We will show you a wash approach that does not undo the day. If you want that protection to be a coating, we schedule it as its own scope with its own deposit calculation on the combined quote."
+          "Scratch removal has a physical limit. If your fingernail catches, the mark is likely deeper than a polish can erase. We can often soften the eye’s read of it. We cannot promise it will vanish. That sentence is part of the quote, not a footnote after you have paid. Protection after correction is not optional if you want the result to last the month. A dry towel from a gas station will put a portion of the swirls back. We will show you a wash approach that does not undo the day. The longer note is [caring for paint after correction](/blog/paint-correction-aftercare). If you want that protection to be a coating, we schedule it as its own scope with its own deposit calculation on the combined quote."
+        ]
+      },
+      {
+        "heading": "Understand your paint",
+        "paragraphs": [
+          "This page is the appointment. The notes below answer the questions that usually come before one. A full detail cleans. Correction polishes. A coating protects. They are not the same visit unless the quote says so.",
+          "[Understand how paint correction works](/blog/what-is-paint-correction). The usual cobweb pattern is [swirl marks from car washes](/blog/swirl-marks-from-car-washes). The stop-point is [when a scratch may be too deep to polish](/blog/when-a-scratch-is-too-deep-to-polish). Spots from dried water are a separate diagnosis: [water deposits versus etching](/blog/water-spots-on-car-paint). A wash may lift a deposit. Only an assessed etch belongs in a correction conversation.",
+          "[Whether a new car needs correction](/blog/new-car-paint-correction-before-ceramic-coating) is not an automatic yes. When both steps are in one visit, the order is [correction before ceramic coating](/blog/paint-correction-before-ceramic-coating). [A coating does not hide swirls](/blog/ceramic-coating-does-not-hide-swirls). Clay pulls bonded grit. It is not a polish: [what a clay bar does](/blog/what-clay-bar-does). A wash without machine polishing is [exterior detailing](/exterior-detailing). Cabin plus exterior, still without a polish unless it is quoted, is [full detailing](/full-detailing).",
+          "The quote is not a menu. [What changes a paint correction quote](/blog/what-changes-a-paint-correction-quote) is the factor list, with no dollar figure. [Polishing versus waxing](/blog/polishing-vs-waxing) is why a wax will not do this job. [How long paint correction takes](/blog/how-long-does-paint-correction-take) is why there is no clock time on the site. [How to choose a paint correction detailer](/blog/how-to-choose-a-paint-correction-detailer) is a question list, not a ranking. After the polish, [caring for corrected paint](/blog/paint-correction-aftercare) is how a dry towel puts marks back.",
+          "When you want the panels looked at in the studio, [request an in-shop paint assessment](/contact). Bring the vehicle to 11692 Bricken Circle, San Antonio, TX 78233. Call (210) 201-4847 if you would rather talk first. This studio does not install paint protection film."
         ]
       }
     ],
@@ -364,34 +420,55 @@ export const contentPages: ContentPage[] =
     ],
     "related": [
       {
-        "to": "/blog/tree-sap-on-paint",
-        "label": "Tree sap"
+        "to": "/blog/what-is-paint-correction",
+        "label": "Understand how paint correction works"
       },
       {
         "to": "/blog/swirl-marks-from-car-washes",
-        "label": "Swirls from washes"
+        "label": "Swirl marks from car washes"
+      },
+      {
+        "to": "/blog/when-a-scratch-is-too-deep-to-polish",
+        "label": "When a scratch may be too deep to polish"
+      },
+      {
+        "to": "/blog/water-spots-on-car-paint",
+        "label": "Water deposits versus etching"
+      },
+      {
+        "to": "/blog/new-car-paint-correction-before-ceramic-coating",
+        "label": "Whether a new car needs correction"
       },
       {
         "to": "/blog/paint-correction-before-ceramic-coating",
-        "label": "Correction before coating"
+        "label": "Correction before ceramic coating"
+      },
+      {
+        "to": "/blog/ceramic-coating-does-not-hide-swirls",
+        "label": "A coating does not hide swirls"
+      },
+      {
+        "to": "/blog/what-clay-bar-does",
+        "label": "What a clay bar does"
       },
       {
         "to": "/ceramic-coating",
         "label": "Ceramic coating"
       },
       {
-        "to": "/ceramic-coating/process",
-        "label": "Ceramic coating process"
-      },
-      {
         "to": "/exterior-detailing",
         "label": "Exterior detailing"
       },
       {
-        "to": "/pricing",
-        "label": "Auto detailing prices"
+        "to": "/full-detailing",
+        "label": "Full detailing"
       }
-    ]
+    ],
+    "cta": {
+      "title": "Request an in-shop paint assessment",
+      "body": "The vehicle comes to the studio at 11692 Bricken Circle, San Antonio, TX 78233. Call (210) 201-4847. A quote follows size, paint, and what the test spot supports. No published package price.",
+      "contactLabel": "Request an in-shop paint assessment"
+    }
   },
   {
     "path": "/ceramic-coating",
@@ -704,7 +781,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "Why we do not publish a fake menu",
         "paragraphs": [
-          "A price list that says every sedan is one fee teaches the wrong lesson. Interior soil, pet hair, wheel condition, and clear-coat defects change labor more than the badge on the grille. Publishing a “starting at” number that no real truck ever pays is how people show up angry. We would rather explain the factors and quote the vehicle. You can still compare services. An interior is not priced like a full detail. A full detail is not priced like paint correction. Ceramic coating cost sits on top of prep, which is why it has its own page. Maintenance after a reset is usually lighter than the first visit."
+          "A price list that says every sedan is one fee teaches the wrong lesson. Interior soil, pet hair, wheel condition, and clear-coat defects change labor more than the badge on the grille. Publishing a “starting at” number that no real truck ever pays is how people show up angry. We would rather explain the factors and quote the vehicle. You can still compare services. An interior is not priced like a full detail. A full detail is not priced like paint correction. The correction-specific factors, still with no dollar menu, are [what changes a paint correction quote](/blog/what-changes-a-paint-correction-quote). Ceramic coating cost sits on top of prep, which is why it has its own page. Maintenance after a reset is usually lighter than the first visit."
         ]
       },
       {
@@ -1865,7 +1942,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What is under the mat",
         "paragraphs": [
-          "Sand, caliche, and spilled drinks sit in the pad under a mat that has not moved in a year. [Interior detailing](/interior-detailing) removes the mats, cleans the carpet, and cleans the mat itself. Rubber mats can be washed. Carpet mats can be improved. A mat that is rotting stays rotting.",
+          "Sand, caliche, and spilled drinks sit in the pad under a mat that has not moved in a year. [In-shop interior detailing](/interior-detailing) removes the mats, cleans the carpet, and cleans the mat itself. Rubber mats can be washed. Carpet mats can be improved. A mat that is rotting stays rotting.",
           "[Universal City](/universal-city) and [Converse](/converse) cars that park on construction edges bring the dust in on shoes. That is a cabin problem, not a paint problem."
         ]
       },
@@ -1937,7 +2014,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What the sun does",
         "paragraphs": [
-          "The dash, the top of the rear deck, and the door caps bake. Dust bonds. Plastics fade. [Interior detailing](/interior-detailing) cleans those panels without soaking the electronics or leaving a greasy shine that glare-blinds you on I-35.",
+          "The dash, the top of the rear deck, and the door caps bake. Dust bonds. Plastics fade. [Interior detailing](/interior-detailing) cleans those panels without soaking the electronics or leaving a greasy shine that glare-blinds you on I-35. Glossy trim and screens are a lighter job than the dash pad: [screens and glossy trim](/blog/car-screens-buttons-and-glossy-trim).",
           "Cars parked outside in [Windcrest](/windcrest) and [Royal Ridge](/royal-ridge) show it first. A garage slows it. It does not reverse a crack that is already there."
         ]
       },
@@ -2368,7 +2445,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What adds hours",
         "paragraphs": [
-          "A [full detail](/full-detailing) on a crew cab with pet hair takes longer than an [exterior detail](/exterior-detailing) on a garaged sedan. [Paint correction](/paint-correction) is its own day, not a step you hide inside a wash. [Ceramic coating](/ceramic-coating) adds prep and cure, which the [process page](/ceramic-coating/process) explains.",
+          "A [full detail](/full-detailing) on a crew cab with pet hair takes longer than an [exterior detail](/exterior-detailing) on a garaged sedan. [Paint correction](/paint-correction) is its own day, not a step you hide inside a wash. [How long paint correction takes](/blog/how-long-does-paint-correction-take) is that day, without a fake timer. An interior is the same idea: soil and hair change the visit, and the site does not publish an hour. That appointment is [interior detailing](/interior-detailing). [Ceramic coating](/ceramic-coating) adds prep and cure, which the [process page](/ceramic-coating/process) explains.",
           "We would rather tell you the visit needs most of a day than rush the jambs and the carpets. [Trucks and SUVs](/blog/detailing-trucks-and-suvs-san-antonio) are the usual reason a guess from a sedan price is wrong."
         ]
       },
@@ -2440,7 +2517,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "Heat is the problem",
         "paragraphs": [
-          "Leather that lives in a [Live Oak](/live-oak) or [Windcrest](/windcrest) driveway dries out. It creaks, it lightens on the cushion, and it grabs dye from jeans. A greasy dressing on top of dust makes it worse. [Interior detailing](/interior-detailing) cleans the grain first, then conditions what the material can take.",
+          "Leather that lives in a [Live Oak](/live-oak) or [Windcrest](/windcrest) driveway dries out. It creaks, it lightens on the cushion, and it grabs dye from jeans. A greasy dressing on top of dust makes it worse. [Material-appropriate interior cleaning](/interior-detailing) cleans the grain first, then conditions what the material can take.",
           "Vinyl is not leather. A coated leather is not an open hide. We use a light conditioner when the surface wants it and we skip the shine if the leather is already coated. Tell us if a previous detail left the seats slippery."
         ]
       },
@@ -2514,13 +2591,13 @@ export const contentPages: ContentPage[] =
         "heading": "Where the cobwebs come from",
         "paragraphs": [
           "A tunnel brush, a dusty wash mitt, and a dry towel across a dirty panel all cut the clear coat in circles. You see it in the sun on black, dark gray, and some reds. [Converse](/converse) and [Universal City](/universal-city) drivers who use the same tunnel every week see it sooner.",
-          "An [exterior detail](/exterior-detailing) washes without adding a new set of marks. It does not erase the old ones. If the panel already looks cobwebbed, that is [paint correction](/paint-correction)."
+          "An [exterior detail](/exterior-detailing) washes without adding a new set of marks. It does not erase the old ones. If the panel already looks cobwebbed, that is [paint correction](/paint-correction). The definition, separate from the service page, is [what paint correction is](/blog/what-is-paint-correction)."
         ]
       },
       {
         "heading": "What not to do next",
         "paragraphs": [
-          "Do not wax over the swirls and call it fixed. Wax makes a shiny copy of the defect. Do not coat them either. A [ceramic coating](/ceramic-coating) locks in whatever is underneath. Read [correction before coating](/blog/paint-correction-before-ceramic-coating) before you book protection.",
+          "Do not wax over the swirls and call it fixed. The difference is [polishing versus waxing](/blog/polishing-vs-waxing). Wax makes a shiny copy of the defect. Do not coat them either. A [ceramic coating](/ceramic-coating) locks in whatever is underneath. Read [correction before coating](/blog/paint-correction-before-ceramic-coating) before you book protection.",
           "A single careful wash after the correction keeps the new finish. Going straight back to a brush tunnel puts the cobwebs back."
         ]
       },
@@ -2549,6 +2626,10 @@ export const contentPages: ContentPage[] =
       {
         "to": "/paint-correction",
         "label": "Paint correction"
+      },
+      {
+        "to": "/blog/what-is-paint-correction",
+        "label": "What paint correction is"
       },
       {
         "to": "/exterior-detailing",
@@ -2767,6 +2848,10 @@ export const contentPages: ContentPage[] =
         "label": "Contact the studio"
       },
       {
+        "to": "/interior-detailing",
+        "label": "Interior detailing"
+      },
+      {
         "to": "/full-detailing",
         "label": "Full detailing"
       },
@@ -2945,14 +3030,14 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What collects under the seat",
         "paragraphs": [
-          "Crumbs, sand, and a layer of dust weld themselves to the carpet under a seat that stays latched for a year. [Interior detailing](/interior-detailing) vacuums and cleans those rails when the seat is out. With the seat in, we clean around it and we say so.",
+          "Crumbs, sand, and a layer of dust weld themselves to the carpet under a seat that stays latched for a year. [Interior detailing](/interior-detailing) vacuums and cleans those rails when the seat is out. With the seat in, we clean around it and we say so. This is the cabin around a child seat. It is not a restraint cleaning, dismantling, or installation service.",
           "[Universal City](/universal-city) and [Live Oak](/live-oak) family vehicles show the same pattern. If the rest of the cabin and the paint are both due, book a [full detail](/full-detailing)."
         ]
       },
       {
         "heading": "What to do before drop-off",
         "paragraphs": [
-          "Unbolt the seat at home if you are comfortable doing it, and take the snacks out of the pockets. Leave the seat if you are not comfortable reinstalling it. We would rather clean around a correctly installed seat than move a restraint we are not going to reinstall.",
+          "Unbolt the seat at home if you are comfortable doing it, and take the snacks out of the pockets. Leave the seat if you are not comfortable reinstalling it. We would rather clean around a correctly installed seat than move a restraint we are not going to reinstall. The general drop-off list is [how to prepare for an in-shop detail](/blog/how-to-prepare-for-a-detail).",
           "Tell us about stains on the seat itself. Cloth can improve. A dye stain may not leave. We will not promise a new seat."
         ]
       },
@@ -3233,7 +3318,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "Why a quick vacuum fails",
         "paragraphs": [
-          "Short hair weaves into carpet fibers. Long hair wraps seat bolsters and sticks to the headliner edge. A shop-vac down the center of the floor leaves the edges, the seat rails, and the mat backing. [Interior detailing](/interior-detailing) is the service that spends time on those edges. Tell us whether the hair is from a dog that rides daily or a one-time trip. The quote changes with that, not with a coupon.",
+          "Short hair weaves into carpet fibers. Long hair wraps seat bolsters and sticks to the headliner edge. A shop-vac down the center of the floor leaves the edges, the seat rails, and the mat backing. [Interior detailing](/interior-detailing) is the service that spends time on those edges. Hair in the carpet is the same visit as [carpets and mats](/blog/floor-mats-and-carpets). Tell us whether the hair is from a dog that rides daily or a one-time trip. The quote changes with that, not with a coupon.",
           "Texas heat makes the cabin a closed box. Hair plus spilled drinks plus pollen is a different job from hair alone. If the paint is also dull, a [full detail](/full-detailing) covers both in one visit."
         ]
       },
@@ -3241,14 +3326,14 @@ export const contentPages: ContentPage[] =
         "heading": "What we will not promise",
         "paragraphs": [
           "Embedded hair can be reduced a great deal. A white carpet that has been a kennel for two summers may still show a shadow. We say that before the appointment, not after you have paid. Odors are the same story: we clean the source we can reach. We do not sell a miracle if the smell is in the foam under the carpet.",
-          "The studio is in [78233](/san-antonio-78233). [Live Oak](/live-oak) and [Universal City](/universal-city) drivers bring the vehicle in. Remove crates, leashes, and loose toys before you arrive so we are not detailing around them."
+          "The studio is in [78233](/san-antonio-78233). [Live Oak](/live-oak) and [Universal City](/universal-city) drivers bring the vehicle in. Remove crates, leashes, and loose toys before you arrive so we are not detailing around them. That list is [how to prepare for an in-shop detail](/blog/how-to-prepare-for-a-detail)."
         ]
       },
       {
         "heading": "After the reset",
         "paragraphs": [
           "A clean cabin stays cleaner if the dog rides on a cover and you shake the mats. The next visit can be lighter. It should not be booked as if the first visit never happened. Read [how often to detail](/blog/how-often-to-detail-san-antonio) if you want a cadence instead of a rescue.",
-          "Call (210) 201-4847. The 20% deposit of the quoted total holds the slot and is not refunded if you cancel. Hours are Tuesday through Sunday, 7:00 AM to 11:00 PM."
+          "Call (210) 201-4847. The 20% deposit of the quoted total holds the slot and is not refunded if you cancel. Hours are Tuesday through Sunday, 7:00 AM to 11:00 PM. When the hair is the reason you are calling, [request an interior-detailing quote](/contact)."
         ]
       }
     ],
@@ -3379,14 +3464,14 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What the coating cannot hide",
         "paragraphs": [
-          "[Professional ceramic coating prep](/ceramic-coating) is protection after the panel is clean and stable. It is not a filler and it is not a polish. Wash, decontamination, and then a decision: is the paint acceptable, or does it need [paint correction and prep work](/paint-correction)? A test spot answers that. One pass on a soft clear coat is different from a neglected black truck that was dry-wiped for three summers.",
+          "[Professional ceramic coating prep](/ceramic-coating) is protection after the panel is clean and stable. It is not a filler and it is not a polish. Wash, decontamination, and then a decision: is the paint acceptable, or does it need [paint correction and prep work](/paint-correction)? A test spot answers that. One pass on a soft clear coat is different from a neglected black truck that was dry-wiped for three summers. The film will not fill the marks you leave. That point is [a coating does not hide swirls](/blog/ceramic-coating-does-not-hide-swirls).",
           "The [process page](/ceramic-coating/process) is the order. The [cost page](/ceramic-coating/cost) is why the number moves with prep. We do not publish a single coating price that ignores the paint."
         ]
       },
       {
         "heading": "When you can skip correction",
         "paragraphs": [
-          "A newer car with light haze may only need a wash, a clay, and a light polish, or sometimes no polish. We will say if the clear is already thin. Skipping correction to save a day is honest only when the paint is already what you want to look at for the next few years. If you hate the cobwebs in the sun, do the correction first.",
+          "A newer car with light haze may only need a wash, a clay, and a light polish, or sometimes no polish. Whether that vehicle needs correction at all is [whether a new car needs correction](/blog/new-car-paint-correction-before-ceramic-coating). We will say if the clear is already thin. Skipping correction to save a day is honest only when the paint is already what you want to look at for the next few years. If you hate the cobwebs in the sun, do the correction first.",
           "Both steps happen at the studio in [78233](/san-antonio-78233). [Schertz](/schertz) and [Fort Sam Houston](/fort-sam-houston) customers drive in. We do not coat in a driveway."
         ]
       },
@@ -3432,6 +3517,14 @@ export const contentPages: ContentPage[] =
       {
         "to": "/san-antonio-78233",
         "label": "Auto detailing in 78233"
+      },
+      {
+        "to": "/blog/ceramic-coating-does-not-hide-swirls",
+        "label": "A coating does not hide swirls"
+      },
+      {
+        "to": "/blog/new-car-paint-correction-before-ceramic-coating",
+        "label": "Whether a new car needs correction"
       }
     ]
   },
@@ -3525,7 +3618,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What wax is doing",
         "paragraphs": [
-          "Wax and sealant sit on the paint and sacrifice themselves. They add gloss, they slow some staining, and they wear off. In this climate they wear off faster than a mild-climate ad admits, especially on a vehicle parked in the sun off Nacogdoches or in a Live Oak driveway. That is not a scandal. It is a maintenance item you can reapply or have reapplied. Wax does not remove swirls. If the paint looks cobwebbed in the sun, wax makes a shiny cobweb. People get angry at wax for failing a job it was never assigned. If that is the paint you have, read [paint correction](/paint-correction) before you pick a protection product."
+          "Wax and sealant sit on the paint and sacrifice themselves. They add gloss, they slow some staining, and they wear off. In this climate they wear off faster than a mild-climate ad admits, especially on a vehicle parked in the sun off Nacogdoches or in a Live Oak driveway. That is not a scandal. It is a maintenance item you can reapply or have reapplied. Wax does not remove swirls. That difference is [polishing versus waxing](/blog/polishing-vs-waxing). If the paint looks cobwebbed in the sun, wax makes a shiny cobweb. People get angry at wax for failing a job it was never assigned. If that is the paint you have, read [paint correction](/paint-correction) before you pick a protection product."
         ]
       },
       {
@@ -3673,19 +3766,19 @@ export const contentPages: ContentPage[] =
       {
         "heading": "The plain definition",
         "paragraphs": [
-          "Clear coat is a layer. Wash scratches and buffer trails live in it. Polishing levels that layer just enough to make the defects harder to see. That is [paint swirl removal](/paint-correction). If the defect is through the clear, polishing cannot invent new clear. This is the whole idea, and every honest paint correction page in San Antonio should be willing to say it before the appointment. A test spot is how we prove the idea on your panel instead of on a brochure. You should see the spot in the sun. You should hear whether the rest of the vehicle will respond the same way. Dark colors show more. Repainted fenders behave differently. We stop when the clear says stop."
+          "Clear coat is a layer. Wash scratches and buffer trails live in it. Polishing levels that layer just enough to make the defects harder to see. That is [paint swirl removal](/paint-correction). If the defect is through the clear, polishing cannot invent new clear. That limit is [when a scratch is too deep to polish](/blog/when-a-scratch-is-too-deep-to-polish). This is the whole idea, and every honest paint correction page in San Antonio should be willing to say it before the appointment. A test spot is how we prove the idea on your panel instead of on a brochure. You should see the spot in the sun. You should hear whether the rest of the vehicle will respond the same way. Dark colors show more. Repainted fenders behave differently. We stop when the clear says stop."
         ]
       },
       {
         "heading": "Where it sits among other services",
         "paragraphs": [
-          "An exterior detail washes and decontaminates. Correction polishes. A coating or sealant protects whatever finish you have after those steps. Stacking them blindly is how people pay for coating over swirls. The service pages split them on purpose so you can buy the one you need. If your fingernail catches a scratch, expect improvement at best, not erasure. If the whole vehicle looks hazy but the scratches are light, [multi-stage paint correction](/paint-correction) is often worth it, especially before [ceramic coating in San Antonio](/ceramic-coating). If the paint is already thin from a previous aggressive detail, the kind choice is to wash it and protect it, not to chase a photo."
+          "An exterior detail washes and decontaminates. Circular marks from a tunnel are the usual case in [swirl marks from car washes](/blog/swirl-marks-from-car-washes). Correction polishes. A coating or sealant protects whatever finish you have after those steps. Stacking them blindly is how people pay for coating over swirls. The service pages split them on purpose so you can buy the one you need. If your fingernail catches a scratch, expect improvement at best, not erasure. If the whole vehicle looks hazy but the scratches are light, [multi-stage paint correction](/paint-correction) is often worth it, especially before [ceramic coating in San Antonio](/ceramic-coating). If the paint is already thin from a previous aggressive detail, the kind choice is to wash it and protect it, not to chase a photo."
         ]
       },
       {
         "heading": "Booking it",
         "paragraphs": [
-          "Call (210) 201-4847 with the color and a sun photo if you have one. The quote depends on size and on how many polishing stages the test spot justifies. Twenty percent of that total is the non-refundable deposit that holds the day. The studio is 11692 Bricken Circle, San Antonio, TX 78233. A new vehicle is a separate question, covered in [preparing a new vehicle for coating](/blog/new-car-paint-correction-before-ceramic-coating). Protection after correction is [ceramic coating versus wax](/blog/ceramic-coating-vs-wax). Southern Auto Detailers is San Antonio based at 11692 Bricken Circle, San Antonio, TX 78233. Owner Robert Romero Jr., an Alamo Heights graduate and IDA-certified detailer works by appointment, Tuesday through Sunday from 7:00 AM to 11:00 PM, and is closed Monday. Call (210) 201-4847 or email contact@southernautodetailers.com. A 20% non-refundable deposit — 20% of the quoted total — is required to secure the booking slot. The remaining balance is due when the work is finished. Ten percent of every sale goes to Junior Achievement of South Texas."
+          "Call (210) 201-4847 with the color and a sun photo if you have one. The quote depends on size and on how many polishing stages the test spot justifies. The factor list, with no dollar menu, is [what changes a paint correction quote](/blog/what-changes-a-paint-correction-quote). Twenty percent of that total is the non-refundable deposit that holds the day. The studio is 11692 Bricken Circle, San Antonio, TX 78233. A new vehicle is a separate question, covered in [preparing a new vehicle for coating](/blog/new-car-paint-correction-before-ceramic-coating). Protection after correction is [ceramic coating versus wax](/blog/ceramic-coating-vs-wax). Southern Auto Detailers is San Antonio based at 11692 Bricken Circle, San Antonio, TX 78233. Owner Robert Romero Jr., an Alamo Heights graduate and IDA-certified detailer works by appointment, Tuesday through Sunday from 7:00 AM to 11:00 PM, and is closed Monday. Call (210) 201-4847 or email contact@southernautodetailers.com. A 20% non-refundable deposit — 20% of the quoted total — is required to secure the booking slot. The remaining balance is due when the work is finished. Ten percent of every sale goes to Junior Achievement of South Texas."
         ]
       }
     ],
@@ -3727,6 +3820,14 @@ export const contentPages: ContentPage[] =
       {
         "to": "/blog/auto-detailing-san-antonio-tx-guide",
         "label": "San Antonio detailing guide"
+      },
+      {
+        "to": "/blog/swirl-marks-from-car-washes",
+        "label": "Swirl marks from car washes"
+      },
+      {
+        "to": "/blog/when-a-scratch-is-too-deep-to-polish",
+        "label": "When a scratch is too deep to polish"
       }
     ]
   },
@@ -3827,7 +3928,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "Questions that sort shops quickly",
         "paragraphs": [
-          "Will you correct paint before coating, or coat over the swirls? What stain results will you not promise? Where do I park, and is the address a studio or a tent? What is the deposit, and is it refundable if I cancel? A shop that dislikes those questions is telling you something. Our answers live on the pricing page, the refund policy, and the service pages. Northeast San Antonio, Live Oak, Universal City, Converse, Windcrest, and Schertz are the map we actually claim. You drive to the studio."
+          "Will you correct paint before coating, or coat over the swirls? What stain results will you not promise? Where do I park, and is the address a studio or a tent? What is the deposit, and is it refundable if I cancel? A shop that dislikes those questions is telling you something. The correction-specific list is [how to choose a paint correction detailer](/blog/how-to-choose-a-paint-correction-detailer). Our answers live on the pricing page, the refund policy, and the service pages. Northeast San Antonio, Live Oak, Universal City, Converse, Windcrest, and Schertz are the map we actually claim. You drive to the studio."
         ]
       },
       {
@@ -4326,7 +4427,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "Cleaning is not correction",
         "paragraphs": [
-          "[Exterior detailing](/exterior-detailing) is the controlled wash and decontamination. [Paint correction](/paint-correction) is the conversation only after inspection shows a mark the clear coat can spare. Some etched spots should be left.",
+          "[Exterior detailing](/exterior-detailing) is the controlled wash and decontamination. [Paint correction](/paint-correction) is the conversation only after inspection shows a mark the clear coat can spare. Some etched spots should be left. The same limit is [when a scratch is too deep to polish](/blog/when-a-scratch-is-too-deep-to-polish).",
           "Do not coat etched paint to seal the spots in. Protection will not hide a crater. The comparison is [ceramic coating versus wax](/blog/ceramic-coating-vs-wax)."
         ]
       },
@@ -4349,6 +4450,7 @@ export const contentPages: ContentPage[] =
       { "to": "/paint-correction", "label": "Paint correction" },
       { "to": "/blog/how-to-wash-ceramic-coated-car", "label": "How to wash a coated car" },
       { "to": "/blog/what-is-paint-correction", "label": "What paint correction involves" },
+      { "to": "/blog/when-a-scratch-is-too-deep-to-polish", "label": "When a scratch is too deep to polish" },
       { "to": "/blog/hard-water-spots-san-antonio", "label": "Hard water spots in San Antonio" },
       { "to": "/contact", "label": "Request an assessment" }
     ]
@@ -4412,6 +4514,7 @@ export const contentPages: ContentPage[] =
     ]
   },
   ...batchArticles,
+  ...correctionNotes,
 ]
 ;
 
