@@ -1,0 +1,2 @@
+import{o as e}from"./useSelector-B_P3tCcN.js";import{r as t}from"./index-C8WWIPYr.js";import{t as n}from"./longform-D6PtC7iE.js";var r=e(),i=function(){return(0,r.jsx)(n,{page:t.useLoaderData()})};export{i as component};
+//# sourceMappingURL=ceramic-coating.index-Bh5lLCYw.js.map

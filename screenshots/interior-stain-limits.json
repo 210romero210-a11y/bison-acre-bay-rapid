@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/blog/interior-stain-limits",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Stains That May Remain After Interior Cleaning | San Antonio",
+      "hasCanvas": false,
+      "bodyTextLen": 7837,
+      "bodyTextHash": "ca3e9a8fac6ace29f9d6aa7e043f68eac2611a895601725df25265969951571e",
+      "bodyTextPrefix": "Skip to content Tue–Sun 7 AM–11 PM · Monday closed 11692 Bricken",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/interior-stain-limits.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Stains That May Remain After Interior Cleaning | San Antonio",
+      "hasCanvas": false,
+      "bodyTextLen": 7648,
+      "bodyTextHash": "94b97e04cf1cba02c49818145e58786a1d6f69150db4c307a50da5e86aafa857",
+      "bodyTextPrefix": "Skip to content SOUTHERN Auto Detailers Home / Blog / Stains tha",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/interior-stain-limits-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/interior-stain-limits.json"
+}

@@ -1,7 +1,7 @@
-import { c as HOURS, l as IMAGES, n as BUSINESS } from "./site-DvUmtfM3.mjs";
+import { c as HOURS, l as IMAGES, n as BUSINESS } from "./site-C-sVfkRh.mjs";
 import { n as clsx } from "../_libs/class-variance-authority+clsx.mjs";
 import { t as twMerge } from "../_libs/tailwind-merge.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/seo-Bux-wB28.js
+//#region node_modules/.nitro/vite/services/ssr/assets/seo-BhVmHqbz.js
 var ORIGIN = "https://southernautodetailers.com".replace(/\/$/, "");
 var SERVICE_PAGES = [
 	{
@@ -13,8 +13,8 @@ var SERVICE_PAGES = [
 	{
 		path: "/interior-detailing",
 		name: "Interior Detailing",
-		serviceType: "Interior Auto Detailing",
-		description: "Professional in-shop interior vehicle detailing at Southern Auto Detailers in San Antonio, Texas."
+		serviceType: "Interior auto detailing",
+		description: "In-shop interior detailing by appointment, including carpets and mats, material-appropriate seat cleaning, consoles, vents, door panels, and interior glass. Stains and odors are not guaranteed."
 	},
 	{
 		path: "/exterior-detailing",
@@ -357,6 +357,7 @@ var ARTICLE_ABOUT = {
 	"/blog/how-to-wash-ceramic-coated-car": "/ceramic-coating",
 	"/blog/washing-a-ceramic-coated-car": "/ceramic-coating",
 	"/blog/what-is-paint-correction": "/paint-correction",
+	"/blog/swirl-marks-from-car-washes": "/paint-correction",
 	"/blog/new-car-paint-correction-before-ceramic-coating": "/paint-correction",
 	"/blog/paint-correction-before-ceramic-coating": "/paint-correction",
 	"/blog/water-spots-on-car-paint": "/exterior-detailing",
@@ -365,7 +366,19 @@ var ARTICLE_ABOUT = {
 	"/blog/when-a-scratch-is-too-deep-to-polish": "/paint-correction",
 	"/blog/iron-fallout-on-car-paint": "/exterior-detailing",
 	"/blog/car-screens-buttons-and-glossy-trim": "/interior-detailing",
-	"/blog/what-to-tell-a-detailer-before-you-book": "/full-detailing"
+	"/blog/floor-mats-and-carpets": "/interior-detailing",
+	"/blog/pet-hair-interior-detailing": "/interior-detailing",
+	"/blog/leather-conditioning-san-antonio": "/interior-detailing",
+	"/blog/sun-damaged-dashboard": "/interior-detailing",
+	"/blog/car-seat-interior-detailing": "/interior-detailing",
+	"/blog/interior-stain-limits": "/interior-detailing",
+	"/blog/what-a-full-detail-includes": "/full-detailing",
+	"/blog/what-to-tell-a-detailer-before-you-book": "/full-detailing",
+	"/blog/what-changes-a-paint-correction-quote": "/paint-correction",
+	"/blog/polishing-vs-waxing": "/paint-correction",
+	"/blog/how-long-does-paint-correction-take": "/paint-correction",
+	"/blog/how-to-choose-a-paint-correction-detailer": "/paint-correction",
+	"/blog/paint-correction-aftercare": "/paint-correction"
 };
 function webPageJsonLd(path, name, description, image) {
 	const url = absoluteUrl(path);
@@ -376,6 +389,7 @@ function webPageJsonLd(path, name, description, image) {
 	const aboutId = ceramicChild ? `${absoluteUrl("/ceramic-coating")}#service` : articleService ? `${absoluteUrl(articleService)}#service` : businessId();
 	const isArticle = path.startsWith("/blog/") && path !== "/blog";
 	const mainEntity = service ? `${url}#service` : ceramicChild ? `${absoluteUrl("/ceramic-coating")}#service` : isArticle ? `${url}#article` : businessId();
+	const hasCrumb = crumbsFor(path, name).length >= 2;
 	return {
 		"@context": "https://schema.org",
 		"@type": pageTypeFor(path),
@@ -386,6 +400,8 @@ function webPageJsonLd(path, name, description, image) {
 		isPartOf: { "@id": websiteId() },
 		about: { "@id": aboutId },
 		mainEntity: { "@id": mainEntity },
+		publisher: { "@id": businessId() },
+		...hasCrumb ? { breadcrumb: { "@id": `${url}#breadcrumb` } } : {},
 		...place ? { spatialCoverage: place.spatial } : {},
 		...image ? { primaryImageOfPage: mediaObject(image) } : {},
 		inLanguage: "en-US"
@@ -418,6 +434,7 @@ function serviceJsonLd(path, image) {
 		description: service.description,
 		url,
 		provider: { "@id": businessId() },
+		mainEntityOfPage: { "@id": `${url}#webpage` },
 		serviceType: service.serviceType,
 		areaServed: {
 			"@type": "City",
@@ -477,7 +494,15 @@ function blocksFor(path, name, description, extras = [], image) {
 		...extras
 	].filter((block) => Boolean(block));
 }
-function pageHead(title, description, path, extras = [], pageName, image) {
+function pageHead(title, description, path, extras = [], pageName, image, options) {
+	const blocks = blocksFor(path, pageName || title, description, extras, image);
+	const scripts = options?.linkGraph ? [script({
+		"@context": "https://schema.org",
+		"@graph": blocks.map((block) => {
+			const { "@context": _context, ...node } = block;
+			return node;
+		})
+	})] : blocks.map(script);
 	return {
 		meta: [{ title }, {
 			name: "description",
@@ -487,15 +512,16 @@ function pageHead(title, description, path, extras = [], pageName, image) {
 			rel: "canonical",
 			href: absoluteUrl(path)
 		}],
-		scripts: blocksFor(path, pageName || title, description, extras, image).map(script)
+		scripts
 	};
 }
 function contentHead(page) {
 	const images = [page.image, ...page.sections.flatMap((section) => section.figure ? [section.figure] : [])];
-	const extras = [faqJsonLd(page.path, page.faqs)];
+	const linkGraph = page.path === "/interior-detailing";
+	const extras = linkGraph ? [] : [faqJsonLd(page.path, page.faqs)];
 	if (page.kind === "service") extras.unshift(serviceJsonLd(page.path, page.image));
 	if (page.kind === "article") extras.unshift(articleJsonLd(page.path, page.h1, page.description, images, page.published));
-	return pageHead(page.title, page.description, page.path, extras, page.h1, page.image);
+	return pageHead(page.title, page.description, page.path, extras, page.h1, page.image, { linkGraph });
 }
 //#endregion
 //#region node_modules/.nitro/vite/services/ssr/assets/utils-C_uf36nf.js

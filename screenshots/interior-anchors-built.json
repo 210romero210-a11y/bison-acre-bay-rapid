@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/interior-detailing",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Interior Detailing San Antonio TX | Southern Auto Detailers",
+      "hasCanvas": false,
+      "bodyTextLen": 9100,
+      "bodyTextHash": "31d691bf90e65477806d42fcb7e49bb970a1784ebc3ade021072b3f8261b3e13",
+      "bodyTextPrefix": "Skip to content Tue–Sun 7 AM–11 PM · Monday closed 11692 Bricken",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/interior-anchors-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Interior Detailing San Antonio TX | Southern Auto Detailers",
+      "hasCanvas": false,
+      "bodyTextLen": 8911,
+      "bodyTextHash": "90c8e95ed2d2a4476c6e256f5715e59af331ba7bef56c2c08bca13eb9386f87c",
+      "bodyTextPrefix": "Skip to content SOUTHERN Auto Detailers Home / Services / Interi",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/interior-anchors-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/interior-anchors-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

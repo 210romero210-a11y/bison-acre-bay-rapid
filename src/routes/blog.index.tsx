@@ -47,6 +47,7 @@ const DECISIONS = [
 
 const INTERIOR = [
   "/blog/floor-mats-and-carpets",
+  "/blog/interior-stain-limits",
   "/blog/pet-hair-interior-detailing",
   "/blog/leather-conditioning-san-antonio",
   "/blog/car-screens-buttons-and-glossy-trim",
@@ -142,7 +143,7 @@ function BlogIndex() {
         <PostList posts={decisions} />
         <h2 className="mt-14 font-display text-3xl">Interior detailing and cabin care</h2>
         <p className="mt-3 max-w-2xl text-muted">
-          Carpets, pet hair, leather, screens, a sun-baked dash, and the carpet under a
+          Carpets, which stains may remain, pet hair, leather, screens, a sun-baked dash, and the carpet under a
           child seat. The appointment is{" "}
           <Link to="/interior-detailing" className="font-semibold text-primary">
             interior detailing in San Antonio

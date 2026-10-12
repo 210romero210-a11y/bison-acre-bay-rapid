@@ -516,8 +516,8 @@ export const batchArticles: ContentPage[] = [
         "paragraphs": [
           "Piano-black and other high-gloss plastics mark the way dark paint marks. Dust on the cloth becomes a fine trail. A ring or a dry paper towel is enough. Once the trails are in the gloss, a cleaner does not fill them. At most it removes dirt that is making them look worse.",
           "The illustration shows a blank screen, hairline marks in the glossy surround, and a dry folded microfiber sitting on the console. There is no brand on the screen and no claim that the marks were removed. Hairline marks in a generated photo are a stand-in for the pattern owners notice in sunlight. They are not a documented repair.",
-          "If the marks already bother you, say so when you book an [interior detail](/interior-detailing). Some light haze is dirt. Some of it is abrasion in the gloss. Dirt can be cleaned. Abrasion may remain visible. The studio should tell you which it is looking at rather than imply that every shiny panel can be made new.",
-          "[Sun-damaged dashboards](/blog/sun-damaged-dashboard) are a different problem: faded, sometimes sticky vinyl from heat, not a hairline in piano black. Do not use that article’s material advice on a screen."
+          "If the marks already bother you, say so when you book [interior detailing at the studio](/interior-detailing). Some light haze is dirt. Some of it is abrasion in the gloss. Dirt can be cleaned. Abrasion may remain visible. The studio should tell you which it is looking at rather than imply that every shiny panel can be made new.",
+          "[Cleaning versus existing dashboard damage](/blog/sun-damaged-dashboard) is a different problem: faded, sometimes sticky vinyl from heat, not a hairline in piano black. Do not use that article’s material advice on a screen."
         ]
       },
       {
@@ -562,8 +562,8 @@ export const batchArticles: ContentPage[] = [
       {
         "heading": "What to point out before an interior appointment",
         "paragraphs": [
-          "An [interior detail](/interior-detailing) covers the cabin materials that are actually there, as the service page describes. Screens and piano black are easy to forget until a photo. A note that helps:",
-          "[How to prepare for a detail](/blog/how-to-prepare-for-a-detail) is about the day of the visit, including personal items. This article is about the surfaces. [What to tell the studio before you book](/blog/what-to-tell-a-detailer-before-you-book) is the intake note for the whole car, staged with this batch.",
+          "The studio’s interior service covers the cabin materials that are actually there. Screens and piano black are easy to forget until a photo. A note that helps:",
+          "[How to prepare for a detail](/blog/how-to-prepare-for-a-detail) is about the day of the visit, including personal items. This article is about the surfaces. [What to tell the studio before you book](/blog/what-to-tell-a-detailer-before-you-book) is the intake note for the whole car.",
           "The studio’s hours, as published on the site, are Tuesday through Sunday, 7:00 AM to 11:00 PM, Monday closed. The deposit that holds a slot is 20% of the quoted total and is non-refundable, which is also already published. Neither number is a price for interior work."
         ],
         "bullets": [
@@ -577,7 +577,7 @@ export const batchArticles: ContentPage[] = [
       {
         "heading": "Book the cabin, and mention the gloss",
         "paragraphs": [
-          "If the screen and the shiny trim are the parts you notice, say that when you request an [interior detail](/interior-detailing). Call (210) 201-4847 or use the [contact form](/contact). If the outside is just as tired, ask about a full detail instead of hoping one appointment title covers both. The car comes to 11692 Bricken Circle. Live Oak and the other nearby communities on the site are places customers drive from, not extra studios."
+          "If the screen and the shiny trim are the parts you notice, say that when you [request an interior-detailing quote](/contact). Call (210) 201-4847. If the outside is just as tired, ask about a [full interior-and-exterior detailing](/full-detailing) visit instead of hoping one appointment title covers both. The car comes to 11692 Bricken Circle. Live Oak and the other nearby communities on the site are places customers drive from, not extra studios."
         ]
       },
       {

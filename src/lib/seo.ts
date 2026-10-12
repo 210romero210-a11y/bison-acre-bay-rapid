@@ -18,9 +18,9 @@ const SERVICE_PAGES = [
   {
     path: "/interior-detailing",
     name: "Interior Detailing",
-    serviceType: "Interior Auto Detailing",
+    serviceType: "Interior auto detailing",
     description:
-      "Professional in-shop interior vehicle detailing at Southern Auto Detailers in San Antonio, Texas.",
+      "In-shop interior detailing by appointment, including carpets and mats, material-appropriate seat cleaning, consoles, vents, door panels, and interior glass. Stains and odors are not guaranteed.",
   },
   {
     path: "/exterior-detailing",
@@ -307,6 +307,7 @@ const ARTICLE_ABOUT: Record<string, string> = {
   "/blog/leather-conditioning-san-antonio": "/interior-detailing",
   "/blog/sun-damaged-dashboard": "/interior-detailing",
   "/blog/car-seat-interior-detailing": "/interior-detailing",
+  "/blog/interior-stain-limits": "/interior-detailing",
   "/blog/what-a-full-detail-includes": "/full-detailing",
   "/blog/what-to-tell-a-detailer-before-you-book": "/full-detailing",
   "/blog/what-changes-a-paint-correction-quote": "/paint-correction",
@@ -341,6 +342,8 @@ export function webPageJsonLd(
         ? `${url}#article`
         : businessId();
 
+  const hasCrumb = crumbsFor(path, name).length >= 2;
+
   return {
     "@context": "https://schema.org",
     "@type": pageTypeFor(path),
@@ -351,6 +354,8 @@ export function webPageJsonLd(
     isPartOf: { "@id": websiteId() },
     about: { "@id": aboutId },
     mainEntity: { "@id": mainEntity },
+    publisher: { "@id": businessId() },
+    ...(hasCrumb ? { breadcrumb: { "@id": `${url}#breadcrumb` } } : {}),
     ...(place ? { spatialCoverage: place.spatial } : {}),
     ...(image
       ? {
@@ -389,6 +394,7 @@ export function serviceJsonLd(path: string, image?: { src: string; alt: string }
     description: service.description,
     url,
     provider: { "@id": businessId() },
+    mainEntityOfPage: { "@id": `${url}#webpage` },
     serviceType: service.serviceType,
     areaServed: { "@type": "City", name: "San Antonio" },
     availableChannel: {
@@ -459,14 +465,27 @@ export function pageHead(
   extras: Array<object | null | undefined> = [],
   pageName?: string,
   image?: { src: string; alt: string },
+  options?: { linkGraph?: boolean },
 ) {
+  const blocks = blocksFor(path, pageName || title, description, extras, image);
+  const scripts = options?.linkGraph
+    ? [
+        script({
+          "@context": "https://schema.org",
+          "@graph": blocks.map((block) => {
+            const { "@context": _context, ...node } = block as { "@context"?: string };
+            return node;
+          }),
+        }),
+      ]
+    : blocks.map(script);
   return {
     meta: [
       { title },
       { name: "description", content: description },
     ],
     links: [{ rel: "canonical", href: absoluteUrl(path) }],
-    scripts: blocksFor(path, pageName || title, description, extras, image).map(script),
+    scripts,
   };
 }
 
@@ -475,10 +494,11 @@ export function contentHead(page: ContentPage) {
     page.image,
     ...page.sections.flatMap((section) => (section.figure ? [section.figure] : [])),
   ];
-  const extras: Array<object | null> = [faqJsonLd(page.path, page.faqs)];
+  const linkGraph = page.path === "/interior-detailing";
+  const extras: Array<object | null> = linkGraph ? [] : [faqJsonLd(page.path, page.faqs)];
   if (page.kind === "service") extras.unshift(serviceJsonLd(page.path, page.image));
   if (page.kind === "article") {
     extras.unshift(articleJsonLd(page.path, page.h1, page.description, images, page.published));
   }
-  return pageHead(page.title, page.description, page.path, extras, page.h1, page.image);
+  return pageHead(page.title, page.description, page.path, extras, page.h1, page.image, { linkGraph });
 }

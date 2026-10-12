@@ -61,6 +61,7 @@ import { Route as BlogHowOftenToDetailSanAntonioRouteImport } from './routes/blo
 import { Route as BlogHowToChooseAPaintCorrectionDetailerRouteImport } from './routes/blog.how-to-choose-a-paint-correction-detailer'
 import { Route as BlogHowToPrepareForADetailRouteImport } from './routes/blog.how-to-prepare-for-a-detail'
 import { Route as BlogHowToWashCeramicCoatedCarRouteImport } from './routes/blog.how-to-wash-ceramic-coated-car'
+import { Route as BlogInteriorStainLimitsRouteImport } from './routes/blog.interior-stain-limits'
 import { Route as BlogIronFalloutOnCarPaintRouteImport } from './routes/blog.iron-fallout-on-car-paint'
 import { Route as BlogIsCeramicCoatingWorthItRouteImport } from './routes/blog.is-ceramic-coating-worth-it'
 import { Route as BlogLeatherConditioningSanAntonioRouteImport } from './routes/blog.leather-conditioning-san-antonio'
@@ -368,6 +369,11 @@ const BlogHowToWashCeramicCoatedCarRoute =
     path: '/how-to-wash-ceramic-coated-car',
     getParentRoute: () => BlogRoute,
   } as any)
+const BlogInteriorStainLimitsRoute = BlogInteriorStainLimitsRouteImport.update({
+  id: '/interior-stain-limits',
+  path: '/interior-stain-limits',
+  getParentRoute: () => BlogRoute,
+} as any)
 const BlogIronFalloutOnCarPaintRoute =
   BlogIronFalloutOnCarPaintRouteImport.update({
     id: '/iron-fallout-on-car-paint',
@@ -576,6 +582,7 @@ export interface FileRoutesByFullPath {
   '/blog/how-to-choose-a-paint-correction-detailer': typeof BlogHowToChooseAPaintCorrectionDetailerRoute
   '/blog/how-to-prepare-for-a-detail': typeof BlogHowToPrepareForADetailRoute
   '/blog/how-to-wash-ceramic-coated-car': typeof BlogHowToWashCeramicCoatedCarRoute
+  '/blog/interior-stain-limits': typeof BlogInteriorStainLimitsRoute
   '/blog/iron-fallout-on-car-paint': typeof BlogIronFalloutOnCarPaintRoute
   '/blog/is-ceramic-coating-worth-it': typeof BlogIsCeramicCoatingWorthItRoute
   '/blog/leather-conditioning-san-antonio': typeof BlogLeatherConditioningSanAntonioRoute
@@ -655,6 +662,7 @@ export interface FileRoutesByTo {
   '/blog/how-to-choose-a-paint-correction-detailer': typeof BlogHowToChooseAPaintCorrectionDetailerRoute
   '/blog/how-to-prepare-for-a-detail': typeof BlogHowToPrepareForADetailRoute
   '/blog/how-to-wash-ceramic-coated-car': typeof BlogHowToWashCeramicCoatedCarRoute
+  '/blog/interior-stain-limits': typeof BlogInteriorStainLimitsRoute
   '/blog/iron-fallout-on-car-paint': typeof BlogIronFalloutOnCarPaintRoute
   '/blog/is-ceramic-coating-worth-it': typeof BlogIsCeramicCoatingWorthItRoute
   '/blog/leather-conditioning-san-antonio': typeof BlogLeatherConditioningSanAntonioRoute
@@ -737,6 +745,7 @@ export interface FileRoutesById {
   '/blog/how-to-choose-a-paint-correction-detailer': typeof BlogHowToChooseAPaintCorrectionDetailerRoute
   '/blog/how-to-prepare-for-a-detail': typeof BlogHowToPrepareForADetailRoute
   '/blog/how-to-wash-ceramic-coated-car': typeof BlogHowToWashCeramicCoatedCarRoute
+  '/blog/interior-stain-limits': typeof BlogInteriorStainLimitsRoute
   '/blog/iron-fallout-on-car-paint': typeof BlogIronFalloutOnCarPaintRoute
   '/blog/is-ceramic-coating-worth-it': typeof BlogIsCeramicCoatingWorthItRoute
   '/blog/leather-conditioning-san-antonio': typeof BlogLeatherConditioningSanAntonioRoute
@@ -820,6 +829,7 @@ export interface FileRouteTypes {
     | '/blog/how-to-choose-a-paint-correction-detailer'
     | '/blog/how-to-prepare-for-a-detail'
     | '/blog/how-to-wash-ceramic-coated-car'
+    | '/blog/interior-stain-limits'
     | '/blog/iron-fallout-on-car-paint'
     | '/blog/is-ceramic-coating-worth-it'
     | '/blog/leather-conditioning-san-antonio'
@@ -899,6 +909,7 @@ export interface FileRouteTypes {
     | '/blog/how-to-choose-a-paint-correction-detailer'
     | '/blog/how-to-prepare-for-a-detail'
     | '/blog/how-to-wash-ceramic-coated-car'
+    | '/blog/interior-stain-limits'
     | '/blog/iron-fallout-on-car-paint'
     | '/blog/is-ceramic-coating-worth-it'
     | '/blog/leather-conditioning-san-antonio'
@@ -980,6 +991,7 @@ export interface FileRouteTypes {
     | '/blog/how-to-choose-a-paint-correction-detailer'
     | '/blog/how-to-prepare-for-a-detail'
     | '/blog/how-to-wash-ceramic-coated-car'
+    | '/blog/interior-stain-limits'
     | '/blog/iron-fallout-on-car-paint'
     | '/blog/is-ceramic-coating-worth-it'
     | '/blog/leather-conditioning-san-antonio'
@@ -1405,6 +1417,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogHowToWashCeramicCoatedCarRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/blog/interior-stain-limits': {
+      id: '/blog/interior-stain-limits'
+      path: '/interior-stain-limits'
+      fullPath: '/blog/interior-stain-limits'
+      preLoaderRoute: typeof BlogInteriorStainLimitsRouteImport
+      parentRoute: typeof BlogRoute
+    }
     '/blog/iron-fallout-on-car-paint': {
       id: '/blog/iron-fallout-on-car-paint'
       path: '/iron-fallout-on-car-paint'
@@ -1623,6 +1642,7 @@ interface BlogRouteChildren {
   BlogHowToChooseAPaintCorrectionDetailerRoute: typeof BlogHowToChooseAPaintCorrectionDetailerRoute
   BlogHowToPrepareForADetailRoute: typeof BlogHowToPrepareForADetailRoute
   BlogHowToWashCeramicCoatedCarRoute: typeof BlogHowToWashCeramicCoatedCarRoute
+  BlogInteriorStainLimitsRoute: typeof BlogInteriorStainLimitsRoute
   BlogIronFalloutOnCarPaintRoute: typeof BlogIronFalloutOnCarPaintRoute
   BlogIsCeramicCoatingWorthItRoute: typeof BlogIsCeramicCoatingWorthItRoute
   BlogLeatherConditioningSanAntonioRoute: typeof BlogLeatherConditioningSanAntonioRoute
@@ -1686,6 +1706,7 @@ const BlogRouteChildren: BlogRouteChildren = {
     BlogHowToChooseAPaintCorrectionDetailerRoute,
   BlogHowToPrepareForADetailRoute: BlogHowToPrepareForADetailRoute,
   BlogHowToWashCeramicCoatedCarRoute: BlogHowToWashCeramicCoatedCarRoute,
+  BlogInteriorStainLimitsRoute: BlogInteriorStainLimitsRoute,
   BlogIronFalloutOnCarPaintRoute: BlogIronFalloutOnCarPaintRoute,
   BlogIsCeramicCoatingWorthItRoute: BlogIsCeramicCoatingWorthItRoute,
   BlogLeatherConditioningSanAntonioRoute:

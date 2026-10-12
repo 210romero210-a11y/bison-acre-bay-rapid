@@ -1,6 +1,7 @@
 import type { ContentPage } from "@/lib/content/types";
 import { batchArticles } from "@/lib/content/batch-articles";
 import { correctionNotes } from "@/lib/content/correction-notes";
+import { interiorNotes } from "@/lib/content/interior-notes";
 
 export const contentPages: ContentPage[] = 
 [
@@ -22,7 +23,7 @@ export const contentPages: ContentPage[] =
         "heading": "What the appointment includes",
         "paragraphs": [
           "Interior car cleaning at the studio starts with everything you touch and everything you stopped noticing. [Request an in-shop interior-detailing quote](/contact) when you know the vehicle and the mess. Call (210) 201-4847 if you would rather talk it through first.",
-          "Carpets and floor mats are vacuumed and, when soil is ground in, extracted. Seats are cleaned for the material that is actually there: cloth gets agitation and extraction, leather is cleaned and then conditioned so San Antonio heat does not leave it thirsty, and vinyl is treated without the greasy film that attracts dust the next day. Consoles, cup holders, door panels, vents, seat rails, and interior glass are part of the same visit. Glossy trim and screens need a lighter hand than the seats. See [screens and glossy trim](/blog/car-screens-buttons-and-glossy-trim). A cabin that only looks good in a photo from the driver’s door is not finished.",
+          "Carpets and floor mats are vacuumed and, when soil is ground in, extracted. [How carpets and floor mats are cleaned](/blog/floor-mats-and-carpets) is the longer note on what lifts and what stays. Seats are cleaned for the material that is actually there: cloth gets agitation and extraction, leather is cleaned and then conditioned so San Antonio heat does not leave it thirsty, and vinyl is treated without the greasy film that attracts dust the next day. Consoles, cup holders, door panels, vents, seat rails, and interior glass are part of the same visit. Glossy trim and screens need a lighter hand than the seats. [Care around screens and glossy trim](/blog/car-screens-buttons-and-glossy-trim). A cabin that only looks good in a photo from the driver’s door is not finished.",
           "Steam is used where heat and moisture help release soil that a towel will only smear, usually around plastic trim, cup holders, and some fabric. It is a tool, not a promise that every stain will vanish. If a dye transfer or a set-in spill is likely to remain, we say that before we start."
         ],
         "compare": {
@@ -46,8 +47,8 @@ export const contentPages: ContentPage[] =
       {
         "heading": "Materials, smells, and heat",
         "paragraphs": [
-          "Cloth holds drinks. Leather holds body oil and sunscreen. Rubber floor mats hide grit that looks like a clean cabin until you lift them. The chemical that is safe on one surface is not automatically right for a coated cloth seat or a plastic that hazes if you get aggressive. We test a small area when a surface looks fragile, aftermarket, or already damaged. [Leather care in this heat](/blog/leather-conditioning-san-antonio) is conditioning after a clean. It does not rebuild cracked leather. A dusty, cracked dash is [sun-damaged dashboard](/blog/sun-damaged-dashboard) territory: we clean the film, and we do not heal the crack.",
-          "Odor is the other half of the conversation. A smell from a spilled milk jug is different from a wet carpet that never dried, which is different from smoke. We do not sell a one-spray miracle, and we do not claim to sanitize, disinfect, or remove mold. We remove the source we can reach, extract what we can, and tell you if the vehicle needs a second visit or if the smell is in the padding, where a detail should not promise a result. [Pet hair](/blog/pet-hair-interior-detailing) is its own time factor. Tell us when you book."
+          "Cloth holds drinks. Leather holds body oil and sunscreen. Rubber floor mats hide grit that looks like a clean cabin until you lift them. The chemical that is safe on one surface is not automatically right for a coated cloth seat or a plastic that hazes if you get aggressive. We test a small area when a surface looks fragile, aftermarket, or already damaged. [Leather cleaning and conditioning considerations](/blog/leather-conditioning-san-antonio) come after a clean. They do not rebuild cracked leather. A dusty, cracked dash is [sun-damaged dashboard](/blog/sun-damaged-dashboard) territory: we clean the film, and we do not heal the crack.",
+          "Odor is the other half of the conversation. A smell from a spilled milk jug is different from a wet carpet that never dried, which is different from smoke. We do not sell a one-spray miracle, and we do not claim to sanitize, disinfect, or remove mold. We remove the source we can reach, extract what we can, and tell you if the vehicle needs a second visit or if the smell is in the padding, where a detail should not promise a result. [Why embedded pet hair affects the appointment](/blog/pet-hair-interior-detailing) is its own time factor. Tell us when you book."
         ]
       },
       {
@@ -68,14 +69,14 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What to take out before drop-off",
         "paragraphs": [
-          "Child seats, toolboxes, and pet covers should come out before the appointment if you can remove them. We can work around what stays installed, and the result is better when it does not. We do not unbolt, clean, or reinstall a child restraint. The article on crumbs under a seat is about the cabin around it: [car seats and the carpet under them](/blog/car-seat-interior-detailing). The general list of what to remove is [how to prepare for an in-shop detail](/blog/how-to-prepare-for-a-detail).",
+          "Child seats, toolboxes, and pet covers should come out before the appointment if you can remove them. We can work around what stays installed, and the result is better when it does not. We do not unbolt, clean, or reinstall a child restraint. The article on crumbs under a seat is about the cabin around it: [car seats and the carpet under them](/blog/car-seat-interior-detailing). The general list of what to remove is [prepare your vehicle for a studio appointment](/blog/how-to-prepare-for-a-detail).",
           "Tell us about pet hair, food stains, sand, a wet carpet, smoke, or damage that is already there. That note is [what to tell the studio before you book](/blog/what-to-tell-a-detailer-before-you-book). It changes the time more than the color of the vehicle."
         ]
       },
       {
         "heading": "Interior-care guides",
         "paragraphs": [
-          "These notes explain a piece of the cabin. They are not separate service packages. [Carpets and mats](/blog/floor-mats-and-carpets). [Pet hair](/blog/pet-hair-interior-detailing). [Leather care](/blog/leather-conditioning-san-antonio). [Screens and glossy trim](/blog/car-screens-buttons-and-glossy-trim). [Dashboard damage](/blog/sun-damaged-dashboard). The studio page for the address is [auto detailing in 78233](/san-antonio-78233)."
+          "These notes explain a piece of the cabin. They are not separate service packages. [Carpets and mats](/blog/floor-mats-and-carpets). [Pet hair](/blog/pet-hair-interior-detailing). [Leather care](/blog/leather-conditioning-san-antonio). [Screens and glossy trim](/blog/car-screens-buttons-and-glossy-trim). [Dashboard damage](/blog/sun-damaged-dashboard). Arrival and the address are on [our Northeast San Antonio studio](/san-antonio-78233)."
         ]
       }
     ],
@@ -1942,7 +1943,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What is under the mat",
         "paragraphs": [
-          "Sand, caliche, and spilled drinks sit in the pad under a mat that has not moved in a year. [In-shop interior detailing](/interior-detailing) removes the mats, cleans the carpet, and cleans the mat itself. Rubber mats can be washed. Carpet mats can be improved. A mat that is rotting stays rotting.",
+          "Sand, caliche, and spilled drinks sit in the pad under a mat that has not moved in a year. A vacuum pass down the middle leaves that grit packed in. [Professional interior detailing](/interior-detailing) removes the mats, cleans the carpet, and cleans the mat itself. Rubber mats can be washed. Carpet mats can be improved. A mat that is rotting stays rotting.",
           "[Universal City](/universal-city) and [Converse](/converse) cars that park on construction edges bring the dust in on shoes. That is a cabin problem, not a paint problem."
         ]
       },
@@ -2014,14 +2015,14 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What the sun does",
         "paragraphs": [
-          "The dash, the top of the rear deck, and the door caps bake. Dust bonds. Plastics fade. [Interior detailing](/interior-detailing) cleans those panels without soaking the electronics or leaving a greasy shine that glare-blinds you on I-35. Glossy trim and screens are a lighter job than the dash pad: [screens and glossy trim](/blog/car-screens-buttons-and-glossy-trim).",
+          "The dash, the top of the rear deck, and the door caps bake. Dust bonds. Plastics fade. Cleaning those panels should not soak the electronics or leave a greasy shine that glare-blinds you on I-35. Glossy trim and screens are a lighter job than the dash pad: [screens and glossy trim](/blog/car-screens-buttons-and-glossy-trim).",
           "Cars parked outside in [Windcrest](/windcrest) and [Royal Ridge](/royal-ridge) show it first. A garage slows it. It does not reverse a crack that is already there."
         ]
       },
       {
         "heading": "What we will not claim",
         "paragraphs": [
-          "Conditioner does not close a split in the dash. Dye does not make faded plastic a factory color. If the leather is the real complaint, read [leather conditioning](/blog/leather-conditioning-san-antonio). If the whole cabin is tired, that is still one interior visit, not a trim repair.",
+          "Conditioner does not close a split in the dash. Dye does not make faded plastic a factory color. [Interior cleaning and assessment](/interior-detailing) cleans the film and does not heal the crack. If the leather is the real complaint, read [leather conditioning](/blog/leather-conditioning-san-antonio). If the whole cabin is tired, that is still one interior visit, not a trim repair.",
           "We do not coat the dashboard and call it paint protection. [Ceramic coating](/ceramic-coating) on this site means the paint outside."
         ]
       },
@@ -2373,7 +2374,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What you are seeing",
         "paragraphs": [
-          "Highway film, sap mist, and the smear a dry blade leaves sit on the outside of the glass. [Exterior detailing](/exterior-detailing) cleans the glass, the cowl edge, and the grime under the blade. The inside of the glass, the haze you see when the defroster hits, is part of an [interior detail](/interior-detailing).",
+          "Highway film, sap mist, and the smear a dry blade leaves sit on the outside of the glass. [Exterior detailing](/exterior-detailing) cleans the glass, the cowl edge, and the grime under the blade. The inside of the glass, the haze you see when the defroster hits, is part of an [in-shop interior cleaning](/interior-detailing).",
           "Hard water spots on glass are the same minerals as [spots on the paint](/blog/hard-water-spots-san-antonio). Fresh ones lift. Etched ones may stay as a faint mark."
         ]
       },
@@ -2810,7 +2811,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What to take out",
         "paragraphs": [
-          "Remove valuables, documents, charging cables you still want, child seats if you can, garage remotes, and anything in the console you do not want moved. A [full detail](/full-detailing) and an [interior detail](/interior-detailing) both need access to the carpet and the seat rails. Loose trash is fine to leave. A laptop is not.",
+          "Remove valuables, documents, charging cables you still want, child seats if you can, garage remotes, and anything in the console you do not want moved. A [full detail](/full-detailing) and [in-shop interior cleaning](/interior-detailing) both need access to the carpet and the seat rails. Loose trash is fine to leave. A laptop is not.",
           "If a dog rides in the back, shake the mats at home first. Tell us about pet hair when you book. That note is on the [pet hair](/blog/pet-hair-interior-detailing) page."
         ]
       },
@@ -2824,7 +2825,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What to tell us",
         "paragraphs": [
-          "Year, make, model, and the one thing that bothers you. Stains, swirls, pet hair, or a coating question. Photos in daylight help. We will not invent a package that ignores the condition."
+          "Year, make, model, and the one thing that bothers you. Stains, swirls, pet hair, or a coating question. Photos in daylight help. The longer intake list is [what to tell the studio before your appointment](/blog/what-to-tell-a-detailer-before-you-book). We will not invent a package that ignores the condition."
         ]
       }
     ],
@@ -3030,14 +3031,14 @@ export const contentPages: ContentPage[] =
       {
         "heading": "What collects under the seat",
         "paragraphs": [
-          "Crumbs, sand, and a layer of dust weld themselves to the carpet under a seat that stays latched for a year. [Interior detailing](/interior-detailing) vacuums and cleans those rails when the seat is out. With the seat in, we clean around it and we say so. This is the cabin around a child seat. It is not a restraint cleaning, dismantling, or installation service.",
+          "Crumbs, sand, and a layer of dust weld themselves to the carpet under a seat that stays latched for a year. Those rails can be vacuumed and cleaned when the seat is out. With the seat in, we clean around it and we say so. This is the cabin around a child seat. It is not a restraint cleaning, dismantling, or installation service.",
           "[Universal City](/universal-city) and [Live Oak](/live-oak) family vehicles show the same pattern. If the rest of the cabin and the paint are both due, book a [full detail](/full-detailing)."
         ]
       },
       {
         "heading": "What to do before drop-off",
         "paragraphs": [
-          "Unbolt the seat at home if you are comfortable doing it, and take the snacks out of the pockets. Leave the seat if you are not comfortable reinstalling it. We would rather clean around a correctly installed seat than move a restraint we are not going to reinstall. The general drop-off list is [how to prepare for an in-shop detail](/blog/how-to-prepare-for-a-detail).",
+          "Unbolt the seat at home if you are comfortable doing it, and take the snacks out of the pockets. Leave the seat if you are not comfortable reinstalling it. We would rather clean around a correctly installed seat than move a restraint we are not going to reinstall. [Prepare your vehicle for interior detailing](/interior-detailing) by taking the seat out when you can. The general drop-off list is [how to prepare for an in-shop detail](/blog/how-to-prepare-for-a-detail).",
           "Tell us about stains on the seat itself. Cloth can improve. A dye stain may not leave. We will not promise a new seat."
         ]
       },
@@ -3245,7 +3246,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "The interior half",
         "paragraphs": [
-          "The cabin is where a full detail earns the word full. Carpets and mats are cleaned, not just vacuumed in a straight line down the middle. Seats, consoles, door panels, and the glass you actually look through get time. Leather is conditioned when the material can take it. Cloth is not promised to look new if a stain has lived there for a year. If the complaint is pet hair, say so. A [interior detailing](/interior-detailing) visit can stand alone, but a full detail is the better buy when the outside is just as tired.",
+          "The cabin is where a full detail earns the word full. Carpets and mats are cleaned, not just vacuumed in a straight line down the middle. Seats, consoles, door panels, and the glass you actually look through get time. Leather is conditioned when the material can take it. Cloth is not promised to look new if a stain has lived there for a year. If the complaint is pet hair, say so. An [interior-only detailing](/interior-detailing) visit can stand alone, but a full detail is the better buy when the outside is just as tired.",
           "Family trucks and three-row SUVs take longer because there is more carpet and more console. That is a time fact, not a surprise fee invented at the door. We quote from the vehicle, then hold the slot with a 20% non-refundable deposit of that total."
         ]
       },
@@ -3318,7 +3319,7 @@ export const contentPages: ContentPage[] =
       {
         "heading": "Why a quick vacuum fails",
         "paragraphs": [
-          "Short hair weaves into carpet fibers. Long hair wraps seat bolsters and sticks to the headliner edge. A shop-vac down the center of the floor leaves the edges, the seat rails, and the mat backing. [Interior detailing](/interior-detailing) is the service that spends time on those edges. Hair in the carpet is the same visit as [carpets and mats](/blog/floor-mats-and-carpets). Tell us whether the hair is from a dog that rides daily or a one-time trip. The quote changes with that, not with a coupon.",
+          "Short hair weaves into carpet fibers. Long hair wraps seat bolsters and sticks to the headliner edge. A shop-vac down the center of the floor leaves the edges, the seat rails, and the mat backing. Hair in the carpet is the same visit as [cleaning carpet fibers and floor mats](/blog/floor-mats-and-carpets). Tell us whether the hair is from a dog that rides daily or a one-time trip. That condition changes the quote. [In-shop interior detailing](/interior-detailing) is the appointment that spends time on those edges.",
           "Texas heat makes the cabin a closed box. Hair plus spilled drinks plus pollen is a different job from hair alone. If the paint is also dull, a [full detail](/full-detailing) covers both in one visit."
         ]
       },
@@ -4515,6 +4516,7 @@ export const contentPages: ContentPage[] =
   },
   ...batchArticles,
   ...correctionNotes,
+  ...interiorNotes,
 ]
 ;
 
