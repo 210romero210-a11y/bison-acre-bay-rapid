@@ -183,58 +183,61 @@ function openingHoursSpecification() {
   });
 }
 
-function photoUrls() {
-  return Object.values(IMAGES).map((image) => absoluteUrl(image.src));
-}
-
-/** Shop entity. Hours, email, logo, photos, map, and coordinates are the confirmed studio facts. */
-export function siteGraphJsonLd() {
-  const photos = photoUrls();
-  const placeFacts = {
-    name: BUSINESS.name,
-    url: `${ORIGIN}/`,
-    telephone: BUSINESS.phoneE164,
-    email: BUSINESS.email,
-    logo: mediaObject({ src: "/logo.png", alt: `${BUSINESS.name} logo` }),
-    image: photos.map((src) => mediaObject({ src: src.replace(ORIGIN, ""), alt: BUSINESS.name })),
+function studioPlace() {
+  return {
+    "@type": "Place" as const,
+    "@id": `${ORIGIN}/#studio`,
+    name: `${BUSINESS.name} studio`,
     address: postalAddress(),
     hasMap: BUSINESS.mapsUrl,
-    sameAs: [BUSINESS.googleBusinessUrl],
-    foundingDate: BUSINESS.foundingDate,
     geo: {
       "@type": "GeoCoordinates" as const,
       latitude: BUSINESS.latitude,
       longitude: BUSINESS.longitude,
     },
-    openingHoursSpecification: openingHoursSpecification(),
   };
+}
 
+/** Shop entity. Hours, email, logo, map, and coordinates are the confirmed studio facts. */
+export function siteGraphJsonLd() {
+  const place = studioPlace();
   return {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "AutoWash",
-        "@id": businessId(),
-        description:
-          "Southern Auto Detailers provides professional in-shop auto detailing, ceramic coating, paint correction, interior detailing, exterior detailing, and full detailing services in San Antonio, Texas.",
-        ...placeFacts,
-        hasOfferCatalog: {
-          "@type": "OfferCatalog",
-          name: "In-Shop Auto Detailing Services",
-          itemListElement: SERVICE_PAGES.map((service) => ({
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              "@id": `${absoluteUrl(service.path)}#service`,
-              name: service.name,
-            },
-          })),
-        },
+        "@type": "WebSite",
+        "@id": websiteId(),
+        url: `${ORIGIN}/`,
+        name: BUSINESS.name,
+        publisher: { "@id": businessId() },
+        inLanguage: "en-US",
       },
       {
-        "@type": "Organization",
+        "@type": ["LocalBusiness", "AutomotiveBusiness"],
+        "@id": businessId(),
+        name: BUSINESS.name,
+        description:
+          "Southern Auto Detailers provides professional in-shop auto detailing, ceramic coating, paint correction, interior detailing, exterior detailing, and full detailing services in San Antonio, Texas.",
+        url: `${ORIGIN}/`,
+        telephone: BUSINESS.phoneE164,
+        email: BUSINESS.email,
+        logo: absoluteUrl("/logo.png"),
+        image: [absoluteUrl(IMAGES.hero.src), absoluteUrl(IMAGES.interior.src), absoluteUrl(IMAGES.exterior.src)],
+        address: postalAddress(),
+        sameAs: [BUSINESS.googleBusinessUrl],
+        foundingDate: BUSINESS.foundingDate,
+        location: place,
+        openingHoursSpecification: openingHoursSpecification(),
+        areaServed: { "@type": "City", name: "San Antonio" },
+      },
+      {
+        "@type": "LocalBusiness",
         "@id": organizationId(),
-        ...placeFacts,
+        name: BUSINESS.name,
+        url: `${ORIGIN}/`,
+        telephone: BUSINESS.phoneE164,
+        address: postalAddress(),
+        location: { "@id": place["@id"] },
         founder: { "@id": authorId() },
       },
       authorPerson(),

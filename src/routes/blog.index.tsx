@@ -4,7 +4,15 @@ import { Section, Eyebrow } from "@/components/section";
 import { crumbsFor, pageHead, absoluteUrl } from "@/lib/seo";
 
 export const Route = createFileRoute("/blog/")({
-  loader: () => import("@/lib/content/pages").then((mod) => mod.blogPosts),
+  loader: () =>
+    import("@/lib/content/pages").then((mod) =>
+      mod.blogPosts.map((post) => ({
+        path: post.path,
+        h1: post.h1,
+        description: post.description,
+        image: { src: post.image.src, alt: post.image.alt },
+      })),
+    ),
   head: ({ loaderData }) =>
     pageHead(
       "Auto Detailing Blog | San Antonio TX",
@@ -61,6 +69,14 @@ const CLUSTER = [
   "/blog/how-to-wash-ceramic-coated-car",
 ] as const;
 
+const EXTERIOR = [
+  "/blog/windshield-film-san-antonio",
+  "/blog/hard-water-spots-san-antonio",
+  "/blog/oak-pollen-san-antonio-paint",
+  "/blog/wheel-detailing-san-antonio",
+  "/blog/hazy-headlights-san-antonio",
+] as const;
+
 const BATCH = [
   "/blog/iron-fallout-on-car-paint",
   "/blog/what-to-tell-a-detailer-before-you-book",
@@ -104,13 +120,16 @@ function BlogIndex() {
   const interior = INTERIOR.map((path) => blogPosts.find((post) => post.path === path)).filter(
     (post): post is (typeof blogPosts)[number] => Boolean(post),
   );
+  const exterior = EXTERIOR.map((path) => blogPosts.find((post) => post.path === path)).filter(
+    (post): post is (typeof blogPosts)[number] => Boolean(post),
+  );
   const cluster = CLUSTER.map((path) => blogPosts.find((post) => post.path === path)).filter(
     (post): post is (typeof blogPosts)[number] => Boolean(post),
   );
   const batch = BATCH.map((path) => blogPosts.find((post) => post.path === path)).filter(
     (post): post is (typeof blogPosts)[number] => Boolean(post),
   );
-  const featured = new Set<string>([...CORRECTION, ...DECISIONS, ...INTERIOR, ...CLUSTER, ...BATCH]);
+  const featured = new Set<string>([...CORRECTION, ...DECISIONS, ...INTERIOR, ...EXTERIOR, ...CLUSTER, ...BATCH]);
   const rest = blogPosts.filter((post) => !featured.has(post.path));
   return (
     <main>
@@ -151,6 +170,15 @@ function BlogIndex() {
           . These notes are not separate packages, and they do not cover a child restraint itself.
         </p>
         <PostList posts={interior} />
+        <h2 className="mt-14 font-display text-3xl">Exterior film, glass, and wheels</h2>
+        <p className="mt-3 max-w-2xl text-muted">
+          Windshield film, hard water, oak pollen, wheels, and hazy lenses. The service is{" "}
+          <Link to="/exterior-detailing" className="font-semibold text-primary">
+            exterior detailing in San Antonio
+          </Link>
+          . The vehicle comes to the studio.
+        </p>
+        <PostList posts={exterior} />
         <h2 className="mt-14 font-display text-3xl">Paint protection cluster</h2>
         <p className="mt-3 max-w-2xl text-muted">
           Coating versus wax, why a coating does not hide swirls, and how to wash a

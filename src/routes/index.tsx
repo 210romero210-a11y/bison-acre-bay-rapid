@@ -8,7 +8,7 @@ import { Section, Eyebrow } from "@/components/section";
 import { ServiceCard } from "@/components/service-card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { faqJsonLd, pageHead, websiteJsonLd } from "@/lib/seo";
+import { faqJsonLd, pageHead } from "@/lib/seo";
 import { BUSINESS, FAQS, GALLERY, IMAGES, REASONS, SERVICES, STEPS } from "@/lib/site";
 
 export const Route = createFileRoute("/")({
@@ -17,7 +17,7 @@ export const Route = createFileRoute("/")({
       "Auto Detailing San Antonio TX | Southern Auto Detailers",
       "Southern Auto Detailers provides professional in-shop auto detailing in San Antonio, Texas.",
       "/",
-      [websiteJsonLd(), faqJsonLd("/", FAQS)],
+      [faqJsonLd("/", FAQS)],
       "Auto Detailing San Antonio TX | Southern Auto Detailers",
       IMAGES.hero,
     ),
@@ -115,6 +115,28 @@ function Home() {
           </Link>{" "}
           when the clear coat is ready to be protected, not before.
         </p>
+        <div className="mt-6 max-w-3xl space-y-4 text-muted">
+          <p>
+            Interior detailing covers carpets, mats, seats, consoles, vents, and glass. It does
+            not promise that a dyed stain or a smell in the padding will leave. Exterior detailing
+            is a hand wash, wheel cleaning, and decontamination when the paint feels rough. Full
+            detailing is both, in one appointment, still at the studio.
+          </p>
+          <p>
+            Paint correction is a separate decision from a wash. It can improve swirls and haze
+            only where the clear coat is thick enough. Ceramic coating comes after that prep. It
+            does not hide swirls, and this studio does not install paint protection film. There
+            is no published package price. The quote follows the vehicle you describe.
+          </p>
+          <p>
+            The studio is 11692 Bricken Circle, San Antonio, TX 78233. Robert Romero Jr., an Alamo
+            Heights graduate and IDA-certified detailer, works by appointment, Tuesday through
+            Sunday, 7:00 AM to 11:00 PM. Monday is closed. Call (210) 201-4847. A 20% non-refundable
+            deposit of the quoted total holds the slot. Ten percent of every sale goes to Junior
+            Achievement of South Texas. Bring the vehicle to the studio. We do not travel to a
+            driveway or a parking lot.
+          </p>
+        </div>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((service) => (
             <ServiceCard key={service.slug} {...service} />

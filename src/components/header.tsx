@@ -66,6 +66,7 @@ export function Header() {
                 <Menu />
               </Button>
             </Dialog.Trigger>
+            {open ? (
             <Dialog.Portal>
               <Dialog.Overlay className="fixed inset-0 z-50 bg-bg/80" />
               <Dialog.Content
@@ -126,6 +127,7 @@ export function Header() {
                 </div>
               </Dialog.Content>
             </Dialog.Portal>
+            ) : null}
           </Dialog.Root>
         </div>
       </div>

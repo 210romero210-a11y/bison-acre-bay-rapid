@@ -1,0 +1,2 @@
+import{o as e}from"./useSelector-B_P3tCcN.js";import{s as t}from"./index-Bra_1R-a.js";import{t as n}from"./longform-CDPhoqk3.js";var r=e(),i=function(){return(0,r.jsx)(n,{page:t.useLoaderData()})};export{i as component};
+//# sourceMappingURL=blog.what-to-tell-a-detailer-before-you-book-BvsA4_MO.js.map

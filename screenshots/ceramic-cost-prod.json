@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/ceramic-coating/cost",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Ceramic Coating San Antonio Cost | What Changes the Price",
+      "hasCanvas": false,
+      "bodyTextLen": 6529,
+      "bodyTextHash": "736e3b675a287fdfe777c580e3fe6f4bd6bd9a7683bb96433ad8a6b891c0b120",
+      "bodyTextPrefix": "Skip to content Tue–Sun 7 AM–11 PM · Monday closed 11692 Bricken",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/ceramic-cost-prod.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Ceramic Coating San Antonio Cost | What Changes the Price",
+      "hasCanvas": false,
+      "bodyTextLen": 6340,
+      "bodyTextHash": "9e77b8006675006869c530c30cc866d00b1f738c84f67bbc1f217cb3f621900e",
+      "bodyTextPrefix": "Skip to content SOUTHERN Auto Detailers Home / Services / Cerami",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/ceramic-cost-prod-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/ceramic-cost-prod.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

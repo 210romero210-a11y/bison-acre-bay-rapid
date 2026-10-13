@@ -32,6 +32,23 @@ function ContactPage() {
           San Antonio based studio at {BUSINESS.addressLine}. Private, appointment-based
           work. Call, email, or send a request — we will confirm timing for your vehicle.
         </p>
+        <div className="mt-4 max-w-2xl space-y-4 text-muted">
+          <p>
+            Tell us the year, make, model, and the complaint: cabin soil, pet hair, swirls,
+            water spots, or a coating you are considering. Photos in daylight help. We quote
+            after that description. If we need to see the vehicle, we say so before a deposit
+            is collected. There is no published package price and no travel-to-you option.
+          </p>
+          <p>
+            The appointment is at 11692 Bricken Circle, San Antonio, TX 78233. Hours are
+            Tuesday through Sunday, 7:00 AM to 11:00 PM. Monday is closed. Once you accept a
+            quote, 20% of that total is the non-refundable deposit that holds the slot. The
+            balance is due when the work is finished. Remove valuables before drop-off. We do
+            not unbolt or reinstall a child restraint. If the paint and the cabin are both
+            the complaint, say that in the request so the quote is a full detail rather than
+            a guess.
+          </p>
+        </div>
         <div className="mt-10 grid gap-10 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="rounded-3xl border border-border bg-surface p-6 md:p-8">
             <h2 className="font-display text-2xl">Studio</h2>

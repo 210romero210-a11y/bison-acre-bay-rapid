@@ -1,2 +1,0 @@
-import{o as e}from"./useSelector-B_P3tCcN.js";import{b as t}from"./site-B3GRApHF.js";import{Ot as n}from"./index-C8WWIPYr.js";var r=e(),i=n(`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold tracking-wide`,{variants:{variant:{default:`bg-primary/15 text-primary`,accent:`bg-accent/15 text-accent`,muted:`bg-surface-2 text-muted`}},defaultVariants:{variant:`default`}});function a({className:e,variant:n,...a}){return(0,r.jsx)(`span`,{className:t(i({variant:n}),e),...a})}export{a as t};
-//# sourceMappingURL=badge-DVdtxHhD.js.map

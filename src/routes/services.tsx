@@ -105,6 +105,15 @@ function ServicesPage() {
               kids, pets, and highway miles pull that interval shorter. We will help you pick
               a realistic schedule.
             </p>
+            <p className="mt-4 text-muted">
+              Every service on this page is in-shop at 11692 Bricken Circle, San Antonio, TX
+              78233. Interior work does not correct paint. Exterior work does not extract a
+              carpet. Correction and coating are quoted on their own when they belong. Call
+              (210) 201-4847. Tuesday through Sunday, 7:00 AM to 11:00 PM. Monday is closed.
+              A 20% non-refundable deposit of the quoted total holds the slot. Photos of the
+              paint or the cabin in daylight make that quote more accurate than a model name
+              alone. The vehicle comes to the studio either way.
+            </p>
           </div>
         </div>
       </Section>

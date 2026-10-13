@@ -1,7 +1,7 @@
 import { c as HOURS, l as IMAGES, n as BUSINESS } from "./site-C-sVfkRh.mjs";
 import { n as clsx } from "../_libs/class-variance-authority+clsx.mjs";
 import { t as twMerge } from "../_libs/tailwind-merge.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/seo-BhVmHqbz.js
+//#region node_modules/.nitro/vite/services/ssr/assets/seo-DhSvL_LQ.js
 var ORIGIN = "https://southernautodetailers.com".replace(/\/$/, "");
 var SERVICE_PAGES = [
 	{
@@ -208,76 +208,70 @@ function openingHoursSpecification() {
 		}];
 	});
 }
-function photoUrls() {
-	return Object.values(IMAGES).map((image) => absoluteUrl(image.src));
-}
-/** Shop entity. Hours, email, logo, photos, map, and coordinates are the confirmed studio facts. */
-function siteGraphJsonLd() {
-	const photos = photoUrls();
-	const placeFacts = {
-		name: BUSINESS.name,
-		url: `${ORIGIN}/`,
-		telephone: BUSINESS.phoneE164,
-		email: BUSINESS.email,
-		logo: mediaObject({
-			src: "/logo.png",
-			alt: `${BUSINESS.name} logo`
-		}),
-		image: photos.map((src) => mediaObject({
-			src: src.replace(ORIGIN, ""),
-			alt: BUSINESS.name
-		})),
+function studioPlace() {
+	return {
+		"@type": "Place",
+		"@id": `${ORIGIN}/#studio`,
+		name: `${BUSINESS.name} studio`,
 		address: postalAddress(),
 		hasMap: BUSINESS.mapsUrl,
-		sameAs: [BUSINESS.googleBusinessUrl],
-		foundingDate: BUSINESS.foundingDate,
 		geo: {
 			"@type": "GeoCoordinates",
 			latitude: BUSINESS.latitude,
 			longitude: BUSINESS.longitude
-		},
-		openingHoursSpecification: openingHoursSpecification()
+		}
 	};
+}
+/** Shop entity. Hours, email, logo, map, and coordinates are the confirmed studio facts. */
+function siteGraphJsonLd() {
+	const place = studioPlace();
 	return {
 		"@context": "https://schema.org",
 		"@graph": [
 			{
-				"@type": "AutoWash",
+				"@type": "WebSite",
+				"@id": websiteId(),
+				url: `${ORIGIN}/`,
+				name: BUSINESS.name,
+				publisher: { "@id": businessId() },
+				inLanguage: "en-US"
+			},
+			{
+				"@type": ["LocalBusiness", "AutomotiveBusiness"],
 				"@id": businessId(),
+				name: BUSINESS.name,
 				description: "Southern Auto Detailers provides professional in-shop auto detailing, ceramic coating, paint correction, interior detailing, exterior detailing, and full detailing services in San Antonio, Texas.",
-				...placeFacts,
-				hasOfferCatalog: {
-					"@type": "OfferCatalog",
-					name: "In-Shop Auto Detailing Services",
-					itemListElement: SERVICE_PAGES.map((service) => ({
-						"@type": "Offer",
-						itemOffered: {
-							"@type": "Service",
-							"@id": `${absoluteUrl(service.path)}#service`,
-							name: service.name
-						}
-					}))
+				url: `${ORIGIN}/`,
+				telephone: BUSINESS.phoneE164,
+				email: BUSINESS.email,
+				logo: absoluteUrl("/logo.png"),
+				image: [
+					absoluteUrl(IMAGES.hero.src),
+					absoluteUrl(IMAGES.interior.src),
+					absoluteUrl(IMAGES.exterior.src)
+				],
+				address: postalAddress(),
+				sameAs: [BUSINESS.googleBusinessUrl],
+				foundingDate: BUSINESS.foundingDate,
+				location: place,
+				openingHoursSpecification: openingHoursSpecification(),
+				areaServed: {
+					"@type": "City",
+					name: "San Antonio"
 				}
 			},
 			{
-				"@type": "Organization",
+				"@type": "LocalBusiness",
 				"@id": organizationId(),
-				...placeFacts,
+				name: BUSINESS.name,
+				url: `${ORIGIN}/`,
+				telephone: BUSINESS.phoneE164,
+				address: postalAddress(),
+				location: { "@id": place["@id"] },
 				founder: { "@id": authorId() }
 			},
 			authorPerson()
 		]
-	};
-}
-function websiteJsonLd() {
-	return {
-		"@context": "https://schema.org",
-		"@type": "WebSite",
-		"@id": websiteId(),
-		url: `${ORIGIN}/`,
-		name: BUSINESS.name,
-		publisher: { "@id": organizationId() },
-		inLanguage: "en-US"
 	};
 }
 function crumbsFor(path, current) {
@@ -529,4 +523,4 @@ function cn(...inputs) {
 	return twMerge(clsx(inputs));
 }
 //#endregion
-export { faqJsonLd as a, websiteJsonLd as c, crumbsFor as i, absoluteUrl as n, pageHead as o, contentHead as r, siteGraphJsonLd as s, cn as t };
+export { faqJsonLd as a, crumbsFor as i, absoluteUrl as n, pageHead as o, contentHead as r, siteGraphJsonLd as s, cn as t };

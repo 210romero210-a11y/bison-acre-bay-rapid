@@ -158,6 +158,7 @@ export default defineConfig(({ command, isPreview }) => ({
   },
   resolve: { tsconfigPaths: true },
   build: {
+    cssMinify: true,
     sourcemap: true,
   },
   plugins: [
